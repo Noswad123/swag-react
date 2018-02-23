@@ -124,38 +124,38 @@ export default class GetInvolved extends Component {
   
         <Gallery>
             <div className="items">
-              <img src={"./img/9074079_4_orig.png"} alt="Picture" />
+              <img src={"./img/9074079_4_orig.png"} alt="Picture12" />
               <br/>
               <button >Opportunities for High School Students</button>
         
             </div>
         
             <div className="items">
-              <img src={"./img/jls-3197_orig.jpg"} alt="Picture" />
+              <img src={"./img/jls-3197_orig.jpg"} alt="Picture1" />
               <br/>
               <button >Opportunities for Community Leaders</button>
             </div>
   
             <div className="items">
-              <img src={"./img/20543_4_orig.png"} alt="Picture" />
+              <img src={"./img/20543_4_orig.png"} alt="Picture2" />
               <br/>
               <button >Opportunities for College Students</button>
             </div>
   
             <div className="items">
-              <img src={"./img/jls-3073_orig.jpg"} alt="Picture" />
+              <img src={"./img/jls-3073_orig.jpg"} alt="Picture3" />
               <br/>
               <button>Opportunities for Parents ​and Guardians</button>
             </div>
         
             <div className="items">
-              <img src={"./img/9769588_4_orig.png"} alt="Picture" />
+              <img src={"./img/9769588_4_orig.png"} alt="Picture4" />
               <br/>
               <button>Opportunities for Young Professionals</button>
             </div>
         
             <div className="items">
-              <img src={"./img/jls-3344_1_orig.jpg"} alt="Picture" />
+              <img src={"./img/jls-3344_1_orig.jpg"} alt="Picture4" />
               <br/>
               <button >Opportunities for School Administration</button>
             </div>

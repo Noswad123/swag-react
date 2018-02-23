@@ -37,7 +37,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <Container>
-        <img src={"./img/invertswag.png"}/>
+        <img src={"./img/invertswag.png"} alt="SWAG"/>
         <Links>
           <li>
             <Link  to="/">Home</Link>

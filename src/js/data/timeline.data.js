@@ -1,15 +1,10 @@
-import { Timeline, Month } from "../models/timeline";
 
-export const Timelines: Timeline[] = [
-    {
-        grade:"empty",
-        goals:[],
-        months:[]
-    },
+const Timelines = [
+   
     {
         grade: "Freshman",
         goals:[
-            "Earn all A\'s and B\'s becuase grades are important. ",
+            "Earn all A's and B's becuase grades are important. ",
             "Check grades weekly, and attend tutorials for classes below a B.",
             "Complete 30 or more hours of community service.",
             "Maintain a binder with college application requirements."
@@ -92,7 +87,7 @@ export const Timelines: Timeline[] = [
     {
         grade: "Sophomore",
         goals:[
-            "Earn all A\'s and B\'s because grades are important." ,
+            "Earn all A's and B's because grades are important." ,
             "Get to know teachers so they can help you and write recommendation letters.",
             "Check grades weekly and attend tutorials for any class below a B.",
             "Complete 30 or more hours of community service and track it using the volunteer log.",
@@ -133,7 +128,7 @@ export const Timelines: Timeline[] = [
             },
             {
                 month: "October",
-                steps: ["Study for this month\'s PSAT through Khan Academy."]
+                steps: ["Study for this month's PSAT through Khan Academy."]
             },
             {
                 month: "November",
@@ -189,7 +184,7 @@ export const Timelines: Timeline[] = [
     {
         grade: "Junior",
         goals:[
-                "Earn all A\'s and B\'s because grades are important.",
+                "Earn all A's and B's because grades are important.",
                 "Get to know teachers so they can help you and write recommendation letters",
                 "Check grades weekly and attend tutorials for any class below a B.",
                 "Complete 30 or more hours of community service and track them.",
@@ -289,7 +284,7 @@ export const Timelines: Timeline[] = [
                         "Ask teachers for letters of recommendation.",
                         "Finalize summer opportunity. ",
                         "Study for any standardized/state exam. ",
-                        "Register for SAT Subject Tests if you plan on applying to a Top 20 school or a school out of your state and if you don\'t have at least 3 secure SATII exam scores. ",
+                        "Register for SAT Subject Tests if you plan on applying to a Top 20 school or a school out of your state and if you don't have at least 3 secure SATII exam scores. ",
                         "Make a list of the colleges you are applying to share it with your parents."
 
                     ]
@@ -308,7 +303,7 @@ export const Timelines: Timeline[] = [
         grade: "Senior",
         goals:[
             "Apply for every scholarship you can. Sign up for updates on www.fastweb.com",
-            "Earn all A\'s and B\'s since grades are still crucial to college success",
+            "Earn all A's and B's since grades are still crucial to college success",
             "Check grades weekly and attend tutorials in classes with grades below an A or B."
         ],
         months: [
@@ -316,7 +311,7 @@ export const Timelines: Timeline[] = [
             {
                 month: "Summer",
                 steps: [
-                    "Register and take at least 3SATIIs if you plan on applying to a \'Top 20\' school or a school out of the state in which you reside.",
+                    "Register and take at least 3SATIIs if you plan on applying to a 'Top 20' school or a school out of the state in which you reside.",
                     "Complete your college list with 4-6 schools. Use Naviance to research the test score and GPA requirements of each school. Ensure 2 schools have test score and GPA range that you qualify for.",
                     "Create a chart to track and manage your college applications. Understand the requirements for all the colleges that you are applying to.",
                     "Visit 2 colleges from your list and talk to the admission representatives. ",
@@ -355,7 +350,7 @@ export const Timelines: Timeline[] = [
                 month: "September",
                 steps: [
                     "Continue the same club/sport from last year, or join a new one.", 
-                "Study for the SAT/ACT if you\'re taking one in October and SATII if you\'re taking one in December." ,
+                "Study for the SAT/ACT if you're taking one in October and SATII if you're taking one in December." ,
                 "Finalize your college resume including activities, academic achievements, and volunteer work." ,
                 "Have a third draft of your college essay ready to be edited."
             ]
@@ -403,7 +398,7 @@ export const Timelines: Timeline[] = [
                 month: "February",
                 steps: [
                     "Ensure that colleges have received your FAFSA orTAFSA." ,
-                    "If your FAFSA is \'audited\', be ready to submit extra paperwork."
+                    "If your FAFSA is 'audited', be ready to submit extra paperwork."
                 ]
             },
             {
@@ -587,3 +582,5 @@ export const Timelines: Timeline[] = [
     }//end of Parent
 
 ]
+
+export default Timelines;
