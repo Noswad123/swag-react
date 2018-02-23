@@ -1,0 +1,83 @@
+$primary-color: #09335D;
+$secondary-color: white;
+$tertiary-color: #33a27f;
+$link:#2a92e5;
+
+button{
+    background-color:white;
+    color:$link;
+    border-style: solid;
+    border-color: $link;
+    height: 50px;
+    width: 200px;
+}
+button:hover{
+    background-color:$link;
+    color:white;
+}
+h2{
+    margin-top: 2em;
+    text-align: center;
+    color: $tertiary-color;
+}
+.container{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+    .form{
+        grid-column-start: 5;
+        grid-column-end:7;
+        background-color: $primary-color;
+        color:white;
+        border-radius: 10px;
+
+        .formQuest{
+            margin:10px;
+        }
+        button{
+            width:30%;
+            height: 40px;
+            margin:10px;
+        }
+    }
+}
+.view{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end:5;
+}
+#landing{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.selection{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    margin-top:75px;
+    ul{
+        list-style-type: none;
+    }
+}
+.dropdown{
+  
+    background-color: $primary-color;
+    position: relative;
+    color:white;
+    padding:20px;
+    &:hover{
+        color:grey;
+        #buttonWrapper{
+            display:flex;
+            flex-direction: column;
+            position: absolute;
+        }
+    }
+}
+#buttonWrapper{
+    display: none;
+}
+
+

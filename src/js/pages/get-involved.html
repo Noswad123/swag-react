@@ -1,0 +1,413 @@
+<div class="container">
+    <div class="view" id="landing" *ngIf="selectedView=='landing'">
+        <h2>Get Involved</h2>
+        <div>
+          <p>
+            many ways to get involved, Mentor mentee, YP, etc. fill out form
+          </p>
+          <div class="dropdown">
+            How you would like to get involved?
+            <div id="buttonWrapper">
+                <div class="item">
+                  <button (click)="changeView('hs')">High School Students</button>
+                  <button (click)="changeView('school')">School Administration</button>
+                  <button (click)="changeView('college')">College Students</button>
+                  <button (click)="changeView('parents')">Parents/Guardians</button>
+                  <button (click)="changeView('yp')">Young Professionals</button>
+                  <button (click)="changeView('community')">Community Leaders</button>
+                  <button (click)="changeView('donate')">Make a Donation</button>
+                </div>
+              </div>
+          </div>
+        </div>
+       
+      </div>
+       
+      <!-- end landing wrap -->
+
+
+  <div class="form" *ngIf="selectedView !='landing'">
+    <h1>form</h1>
+    <h3>Already signed Up?</h3>
+    <div class="formQuest">
+
+      <div class="question">
+        <label>Question 1</label>
+        <input type="text">
+      </div>
+
+    </div>
+    <div class="formNav">
+
+      <button>Back</button>
+      <button>Next</button>
+    </div>
+  </div>
+  <div class="view selection" *ngIf="selectedView !='landing'">
+  
+  <ul>
+    <li>
+      <button (click)="changeView('college')">Opportunities for College Students</button>
+    </li>
+    <li>
+      <button (click)="changeView('hs')">Opportunities for High School</button>
+    </li>
+    <li>
+      <button (click)="changeView('yp')">Opportunities for Young Professionals</button>
+    </li>
+    <li>
+      <button (click)="changeView('parents')">Opportunities for Parents</button>
+    </li>
+    <li>
+      <button (click)="changeView('community')">Opportunities for Community Leaders</button>
+    </li>
+    <li>
+      <button (click)="changeView('donate')">Donate</button>
+    </li>
+    <li>
+      <button (click)="changeView('school')">Opportunities for School Administration</button>
+    </li>
+  </ul>
+</div>
+
+
+
+  <div class="view" *ngIf="selectedView=='college'">
+
+    <div id="wsite-content" class="wsite-elements wsite-not-footer">
+      <div class="wsite-content-title" style="text-align:center;">
+        <font color="#33a27f">
+          <font size="6">College Students</font>
+        </font>
+      </div>
+
+      <div>
+        <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+          <a>
+            <img src="assets/img/jls-3159.jpg?1505096070" alt="Picture" style="width:533;max-width:100%" />
+          </a>
+          <div style="display:block;font-size:90%"></div>
+        </div>
+      </div>
+
+      <div class="paragraph" style="text-align:left;">
+        <strong>
+          <span style="font-weight:bold">
+            <font size="3">As a college student, there are several ways to become involved in SWAG To College. Specifically, you can: (1)
+              serve as a mentor for a high school student; (2) if you are a college freshman or sophomore, receive an upperclassman
+              mentor; (3) if you are a college junior or senior, serve as a mentor for an underclassman; or (4) if you are
+              a college sophomore, junior, or senior, receive a mentor who is a Young Professional in your career field of
+              interest.&nbsp;
+            </font>
+          </span>
+        </strong>
+      </div>
+
+
+      <div class="paragraph" style="text-align:center;">
+        <span style="color:rgb(9, 51, 93); font-weight:bold">
+          <font size="5">Mentor a high school student</font>
+        </span>
+      </div>
+
+      <div class="paragraph">Are you interested in helping an underserved, first-generation, low-income high school student reach college? If so,
+        consider signing up to be a mentor. Through this program, you will be paired with a high school student whom you
+        check-in with weekly to support through high school and the college application process.&nbsp;</div>
+
+      <div style="text-align:center;">
+        <div style="height: 10px; overflow: hidden;"></div>
+        <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://www.tinyurl.com/swagmentor" target="_blank">
+          <span class="wsite-button-inner">SIGN UP To BE A MENTOR</span>
+        </a>
+        <div style="height: 10px; overflow: hidden;"></div>
+      </div>
+
+      <div style="text-align:center;">
+        <div style="height: 10px; overflow: hidden;"></div>
+        <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://www.tinyurl.com/swagmentorcheckin" target="_blank">
+          <span class="wsite-button-inner">SUBMIT THE CHECK-IN FORM</span>
+        </a>
+        <div style="height: 10px; overflow: hidden;"></div>
+      </div>
+
+
+      <div class="paragraph" style="text-align:center;">
+        <strong>
+          <font size="5">Underclassman Mentee</font>
+        </strong>
+      </div>
+
+      <div class="paragraph">Are you a freshman or sophomore in college? Would you like some support through these first two years of college? If
+        so, consider signing up for an Upperclassman mentor. Through this program, you will be paired with a junior or senior
+        in college who will guide you through these first two years of college.&nbsp;</div>
+
+      <div style="text-align:center;">
+        <div style="height: 10px; overflow: hidden;"></div>
+        <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://tinyurl.com/UpperclassmanMentees" target="_blank">
+          <span class="wsite-button-inner">BECOME AN UNDERCLASSMAN MENTEE</span>
+        </a>
+        <div style="height: 10px; overflow: hidden;"></div>
+      </div>
+
+      <div style="text-align:center;">
+        <div style="height: 10px; overflow: hidden;"></div>
+        <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://tinyurl.com/UpperclassmanMenteeCheckIn" target="_blank">
+          <span class="wsite-button-inner">SUBMIT UNDERCLASSMAN MENTEE CHECK-IN</span>
+        </a>
+        <div style="height: 10px; overflow: hidden;"></div>
+      </div>
+
+      <div class="paragraph" style="text-align:center;">
+        <strong style="color:rgb(9, 51, 93)">
+          <font size="5">Upperclassman Mentor</font>
+        </strong>
+      </div>
+
+      <div class="paragraph">
+        <span style="color:rgb(9, 51, 93)">Are you a junior or senior in college? Would you like to support a freshman or sophomore through the first two years
+          of college? If so, consider becoming an Upperclassman mentor. Through this program, you will be paired with a freshman
+          or sophomore in college whom you will check-in with monthly to support them through college. &nbsp;
+        </span>
+      </div>
+
+      <div style="text-align:center;">
+        <div style="height: 10px; overflow: hidden;"></div>
+        <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://tinyurl.com/UpperclassmanMentors" target="_blank">
+          <span class="wsite-button-inner">BECOME AN UPPERCLASSMAN MENTOR</span>
+        </a>
+        <div style="height: 10px; overflow: hidden;"></div>
+      </div>
+
+      <div style="text-align:center;">
+        <div style="height: 10px; overflow: hidden;"></div>
+        <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://tinyurl.com/UpperclassmanMentorCheckIn" target="_blank">
+          <span class="wsite-button-inner">SUBMIT UPPERCLASSMAN MENTOR CHECK-IN</span>
+        </a>
+
+      </div>
+
+
+
+      <div class="wsite-content-title" style="text-align:center;">
+        <font size="5">Young Professional Program</font>
+      </div>
+
+      <div class="paragraph">
+        <span style="color:rgb(9, 51, 93)">Are you a junior or senior in college? Would you like support to reach your career goals? If so, consider signing
+          up for a Young Professional mentor. Through this program, you will be paired with a Young Professional in your
+          career field who can help you reach your career goals. &nbsp;&nbsp;</span>
+      </div>
+
+      <div style="text-align:center;">
+        <div style="height: 10px; overflow: hidden;"></div>
+        <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://tinyurl.com/ypmenteesignup" target="_blank">
+          <span class="wsite-button-inner">BECOME A YP MENTEE</span>
+        </a>
+        <div style="height: 10px; overflow: hidden;"></div>
+      </div>
+
+      <div style="text-align:center;">
+        <div style="height: 10px; overflow: hidden;"></div>
+        <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://tinyurl.com/ypmenteecheckin" target="_blank">
+          <span class="wsite-button-inner">SUBMIT YP MENTEE CHECK-IN</span>
+        </a>
+        <div style="height: 10px; overflow: hidden;"></div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- end College wrap -->
+
+  <div class="view" *ngIf="selectedView=='hs'">
+
+    <h2>High School Students </h2>
+
+    <div>
+      <img src="assets/img/jls-3155.jpg?1505097368" alt="Picture" />
+    </div>
+
+    <div class="paragraph">
+      <span style="font-weight:bold">As a mentee, you will receive a college mentor who will check-in with you weekly through text, phone, or email. Your
+        mentor will walk you through our timelines that begin in 9th grade and continue until you graduate from high school
+        and start college. Your mentor will help make your college dreams possible!</span>
+    </div>
+
+    <h2>Mentee</h2>
+
+    <div class="paragraph">Are you interested in having a college student to help you with high school and the college application process? If so,
+      please consider signing up for a college mentor. Your mentor will check-in with you each week through text, phone call,
+      or email to ensure you reach your goals.&nbsp;</div>
+
+    <div style="text-align:center;">
+      <a class="wsite-button wsite-button-small wsite-button-highlight" href="https://docs.google.com/forms/d/e/1FAIpQLSfoQNigob61WhT1-F86-yofBpf_vHy9pf-zfnQfr9og3AmYeQ/viewform"
+        target="_blank">
+        <span class="wsite-button-inner">SIGN UP TO BE A MENTEE</span>
+      </a>
+    </div>
+
+    <div style="text-align:center;">
+      <a class="wsite-button wsite-button-small wsite-button-highlight" href="https://goo.gl/forms/RgI4NGOFQzvL8d4v1" target="_blank">
+        <span class="wsite-button-inner">SUBMIT THE CHECK-IN FORM</span>
+      </a>
+    </div>
+
+
+    <h2>High School Campus Representative</h2>
+
+    <div class="paragraph">Are you a SWAG To College mentee? Are you interested in leading a SWAG To College club at your high school? If so, apply
+      to be a campus representative. As a campus rep, you will lead meetings of existing SWAG To College mentees, expand
+      the program on your campus, and build a SWAG To College culture at your school.&nbsp;</div>
+
+
+    <a class="wsite-button wsite-button-small wsite-button-highlight" href="https://goo.gl/forms/QyyPyMOCZoBzFwbD3" target="_blank">
+      <span class="wsite-button-inner">APPLY TO BE A CAMPUS REPRESENTATIVE</span>
+    </a>
+
+  </div>
+  <!-- end HS wrap -->
+
+
+
+  <div class="view" *ngIf="selectedView=='yp'">
+
+
+    <h2> Young Professionals</h2>
+    <a>
+      <img src="assets/img/2171250_2.png?1505097494" alt="Picture" style="width:535;max-width:100%" />
+    </a>
+
+    <div class="paragraph" style="text-align:center;">
+      <strong>As a young professional (YP) mentor, you will be paired with a college student who aspires to enter your career field.
+        Through monthly check-ins, you will help your mentee build social capital, expand their network, and access new opportunities.
+        Your support will ensure your mentee secures the career of their dreams! &#8203;</strong>
+    </div>
+
+    <a class="wsite-button wsite-button-large wsite-button-highlight" href="http://www.tinyurl.com/swagyoungprofessional" target="_blank">
+      <span class="wsite-button-inner">Sign-up to be a Young Professional Mentor</span>
+    </a>
+
+    <div style="text-align:center;">
+      <div style="height: 10px; overflow: hidden;"></div>
+      <a class="wsite-button wsite-button-small wsite-button-highlight" href="http://tinyurl.com/ypmentorcheckin" target="_blank">
+        <span class="wsite-button-inner">Submit Young Professional Check-in</span>
+      </a>
+      <div style="height: 10px; overflow: hidden;"></div>
+    </div>
+  </div>
+  <!-- end YP wrap -->
+
+  <div class="view" *ngIf="selectedView=='parents'">
+
+    <h2>Parents </h2>
+    <div>
+      <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+        <a>
+          <img src="assets/img/parents.jpeg?1505051065" alt="Picture" style="width:auto;max-width:100%" />
+        </a>
+        <div style="display:block;font-size:90%"></div>
+      </div>
+    </div>
+
+
+    <div class="paragraph">As a parent, you are an important resource for your student. We are eager to work with parents just lke you to help support
+      your child. Please visit our Parent Timeline to see steps you can take to help your child. &nbsp;Also, please consider
+      joining our Parent Board to help solve important issues in your child's education.</div>
+
+    <div style="text-align:center;">
+      <div style="height: 10px; overflow: hidden;"></div>
+      <a class="wsite-button wsite-button-small wsite-button-highlight" href="https://docs.google.com/forms/d/e/1FAIpQLSdgwHLiT5-qnBaFdyODzxc7uVVV9wrUNTY36CnFxRDwMkdMYA/viewform"
+        target="_blank">
+        <span class="wsite-button-inner">Join the Parent Board</span>
+      </a>
+      <div style="height: 10px; overflow: hidden;"></div>
+    </div>
+
+
+    <div class="paragraph">Como padre, usted es un recurso importante para su estudiante. Estamos felices de trabajar con padres como usted para
+      ayudarle a su hijo. Visite la L&iacute;nea de Tiempo para Padres para ver los pasos que puede tomar para ayudar a su
+      hijo. Tambi&eacute;n, considere unirse a nuestro Concilio de Padres para ayudar a resolver problemas importantes en
+      la educaci&oacute;n de su hijo.
+      <br />
+    </div>
+
+    <div style="text-align:center;">
+      <div style="height: 10px; overflow: hidden;"></div>
+      <a class="wsite-button wsite-button-small wsite-button-highlight" href="https://goo.gl/forms/wHKBUQQ2J3uFDpHq2" target="_blank">
+        <span class="wsite-button-inner">Únete a la Junta de Padres</span>
+      </a>
+      <div style="height: 10px; overflow: hidden;"></div>
+    </div>
+  </div>
+  <!-- end Parent wrap -->
+
+
+  <div class="view" *ngIf="selectedView=='community'">
+
+    <h2>Community Members </h2>
+
+    <div>
+      <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+        <a>
+          <img src="assets/img/a29b4256-20da-40cf-a04d-077480121db8.jpg?1505243352" alt="Picture" style="width:640;max-width:100%"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="paragraph" style="text-align:center;">
+      <span style="font-weight:bold">We know that our community partners are crucial to our success. We also know that every person and every organization
+        has a role to play in this work and in our movement. Whether you are professional looking to mentor a service provider
+        looking to serve our students, or a community member just hoping to learn more about our movement to expand equality
+        of opportunity, we have a place for you. Please fill out the form below, so we can provide you more information about
+        SWAG To College.&nbsp;</span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="height: 10px; overflow: hidden;"></div>
+      <a class="wsite-button wsite-button-large wsite-button-highlight" href="https://goo.gl/forms/ui82d8yEyfwWMSd33" target="_blank">
+        <span class="wsite-button-inner">CLICK TO LEARN MORE</span>
+      </a>
+      <div style="height: 10px; overflow: hidden;"></div>
+    </div>
+  </div>
+
+  <!-- end Community wrap -->
+  <div class="view" *ngIf="selectedView=='donate'">
+    Donate</div>
+  <!-- end Donate wrap -->
+  <div class="view" *ngIf="selectedView=='school'">
+
+    <h2>School Administrator</h2>
+
+    <div>
+      <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+        <a>
+          <img src="assets/img/jls-3344.jpg?1505097194" alt="Picture" style="width:534;max-width:100%" />
+        </a>
+        <div style="display:block;font-size:90%"></div>
+      </div>
+    </div>
+
+    <div class="paragraph" style="text-align:center;">
+      <span style="font-weight:bold"></span>
+      <strong style="color:rgb(9, 51, 93)">We know that partnerships with school and university administrators are crucial to our success. We would love to work
+        with your students whether in high school or college. Through these partnerships, if your students are in high school
+        we will provide them with college mentors to navigate high school and reach their college dreams. If your students
+        are in college, we will provide them with young professional mentors to guide them through college and into the workforce.</strong>
+      <span style="font-weight:bold"></span>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="height: 10px; overflow: hidden;"></div>
+      <a class="wsite-button wsite-button-small wsite-button-highlight" href="https://docs.google.com/forms/d/e/1FAIpQLScgbxcPVatalcwzDRDFUFOVde36MXF-w72r_SVoueARBzHPBw/viewform?usp=send_form"
+        target="_blank">
+        <span class="wsite-button-inner">Click to Learn More</span>
+      </a>
+      <div style="height: 10px; overflow: hidden;"></div>
+    </div>
+
+  </div>
+
+  <!-- end School admin wrap -->
+</div>

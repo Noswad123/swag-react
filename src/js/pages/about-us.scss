@@ -1,0 +1,33 @@
+$primary-color: #09335D;
+$secondary-color: white;
+$link:#2a92e5;
+
+button{
+    background-color:white;
+    color:$link;
+    border-style: solid;
+    border-color: $link;
+    height: 3em;
+    width: 15em;
+}
+button:hover{
+    background-color:$link;
+    color:white;
+}
+
+.container{
+
+    margin:3em 1em 0 3em;
+
+
+}
+.view{
+.viewTitle{
+    
+    color:#248d6c;
+}
+.viewMain{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
