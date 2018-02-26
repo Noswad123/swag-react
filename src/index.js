@@ -4,13 +4,14 @@ import {BrowserRouter,Route} from 'react-router-dom';
 import './index.css';
 import Navbar from './js/component/navbar';
 import Footer from './js/component/footer';
-import AboutUs from './js/pages/about-us';
-import Blog from './js/pages/blog';
-import GetInvolved from './js/pages/get-involved';
-import Home from './js/pages/home';
-import Resources from './js/pages/resources';
-import Timeline from './js/pages/timeline';
+import AboutUs from './js/container/about-us/about-us';
+import Blog from './js/container/blog/blog';
+import GetInvolved from './js/container/get-involved/get-involved';
+import Home from './js/container/home/home';
+import Resources from './js/container/resources/resources';
+import Timeline from './js/container/timeline/timeline';
 import registerServiceWorker from './registerServiceWorker';
+
 import styled from "styled-components";
 
 
