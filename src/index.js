@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter,Route} from 'react-router-dom';
 import './index.css';
+import Test from './js/component/test';
 import Navbar from './js/component/navbar';
 import Footer from './js/component/footer';
 import AboutUs from './js/container/about-us/about-us';
@@ -27,6 +28,7 @@ ReactDOM.render(
       <Route exact path="/" component={Home}/>
       <Route exact path="/resources" component={Resources}/>
       <Route exact path="/timeline" component={Timeline}/>
+      <Route exact path="/test" component={Test}/>
   <Footer/>
 </Container>
 </BrowserRouter>, document.getElementById('root'));

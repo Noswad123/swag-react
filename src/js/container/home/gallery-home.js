@@ -39,7 +39,7 @@ export default class Gallery extends Component {
         return(
             <Container>
                 <div className="items">
-              <img src={"./img/9074079_4_orig.png"} alt="Picture12" />
+              <img src={"./img/mentees.png"} alt="Picture12" />
               <br/>
               <button >Opportunities for High School Students</button>
         
@@ -70,7 +70,7 @@ export default class Gallery extends Component {
             </div>
         
             <div className="items">
-              <img src={"./img/jls-3344_1_orig.jpg"} alt="Picture4" />
+              <img src={"./img/school-admin.jpg"} alt="Picture4" />
               <br/>
               <button >Opportunities for School Administration</button>
             </div>
