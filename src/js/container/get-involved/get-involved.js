@@ -10,20 +10,23 @@ display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 `
 const Dropdown = styled.div`
-color:#2a92e5;
 text-decoration:underline;
 position: relative;
 grid-column-start:1;
-grid-column-end:3;
+grid-row-start:1;
+grid-row-end:2;
 padding:20px;
 &:hover{
-    color:grey;
-    > div{
-        display:flex;
-        flex-direction: column;
-        position: absolute;
-    }
+  color:grey;
+  > div{
+      display:flex;
+      flex-direction: column;
+      position: absolute;
+  }
 }
+`
+const How=styled.div`
+
 `
 const ButtonWrapper = styled.div`
 display: none;
@@ -90,21 +93,13 @@ handler(i){
     show:i
   })
 }
-whatThis(index){
-  console.log(index);
-  console.log(this.state.how);
-  if(index){
-  console.log(index)
-  }else{
-    console.log("no index")
-  }
-}
+
   render() {
 
     return (
       <Container>
         <Dropdown>
-          How you would like to get involved?
+          <How>How you would like to get involved?</How>
              <ButtonWrapper>
                {this.state.how.map((element, index)=>{ 
                 return <Buttons  action={this.handler} key={index} index={index} data={element}/>
