@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//import base from './base';
 import {BrowserRouter,Route} from 'react-router-dom';
 import './index.css';
 import Test from './js/component/test';

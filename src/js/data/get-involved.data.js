@@ -35,12 +35,12 @@ const Involved = [
     },
     {
         level:"High School Student",
-        blurb:"Imporance of HS Rant...",
+        blurb:"As a mentee, you will receive a college mentor who will check-in with you weekly through text, phone, or email. Your mentor will walk you through our timelines that begin in 9th grade and continue until you graduate from high school and start college. Your mentor will help make your college dreams possible!",
         imgUrl:"./img/involved-mentee.jpg",
         options:[
             {
-                title:"Mentor",
-                summary:"As a mentee, you will receive a college mentor who will check-in with you weekly through text, phone, or email. Your mentor will walk you through our timelines that begin in 9th grade and continue until you graduate from high school and start college. Your mentor will help make your college dreams possible!",
+                title:"Mentee",
+                summary:"Are you interested in having a college student to help you with high school and the college application process? If so, please consider signing up for a college mentor. Your mentor will check-in with you each week through text, phone call, or email to ensure you reach your goals. ",
                 form:"link to HS mentee  form"
             },
             {

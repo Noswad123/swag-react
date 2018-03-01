@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link} from 'react-router-dom';
 import styled from 'styled-components';
+import Styles from '../style/styles'
 
 const Container=styled.div`
-background-color: #09335D;
+background-color: ${Styles.color.primary};
     height: 50px;
     margin: 0;
     padding: 8px;
@@ -22,9 +23,9 @@ li{
   color:white;
   margin-right:20px;
   padding: 8px;
-  border:solid #09335D;
+  border:solid ${Styles.color.primary};
   &:hover{
-    border:solid white;
+    border:solid ${Styles.color.secondary};
   }
   a{
     color:white;
