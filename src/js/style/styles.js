@@ -13,8 +13,9 @@ const Styles={
         xs:"8px",
         s:"16px",
         m:"32px",
-        xl:"64px",
-        xxl:"128px"
+        l:"64px",
+        xl:"128px",
+        xxl:"256px"
     }
 }
 

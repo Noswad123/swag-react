@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled, {keyframes} from 'styled-components';
-import Content from './content-involved'
-import Involved from '../../data/get-involved.data'
+import Content from './content-involved';
+import Involved from '../../data/get-involved.data';
+import Styles from '../../style/styles';
 
 const Container = styled.div`
 min-height:80vh;
@@ -9,36 +10,27 @@ display: grid;
     grid-column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 `
-const Dropdown = styled.div`
-text-decoration:underline;
-position: relative;
-grid-column-start:1;
-grid-row-start:1;
-grid-row-end:2;
-padding:20px;
-&:hover{
-  color:grey;
-  > div{
-      display:flex;
-      flex-direction: column;
-      position: absolute;
-  }
-}
-`
-const How=styled.div`
-
-`
 const ButtonWrapper = styled.div`
-display: none;
-margin-top:15px;
+  margin-top:${Styles.size.l};
+  margin-left:50px;
+  width: 200px;
+  max-height:300px;
+  background-color:${Styles.color.primary};
+  grid-column-start:1;
+  grid-row-start:1;
+  padding:20px;
+  display:flex;
+  border-radius:${Styles.size.xs};
+  flex-direction: column;
+  justify-content: space-around;
 `
 const Option = styled.button`
 background-color:white;
-    color:#2a92e5;
-    border-style: solid;
-    border-color: #2a92e5;
+    color:black;
+    border:solid black;
     height: 50px;
-    width: 200px;
+    border-radius:${Styles.size.xs};
+    margin-bottom:${Styles.size.xs};
     &:hover{
       background-color:#2a92e5;
       color:white;
@@ -97,9 +89,7 @@ handler(i){
   render() {
 
     return (
-      <Container>
-        <Dropdown>
-          <How>How you would like to get involved?</How>
+      <Container>          
              <ButtonWrapper>
                {this.state.how.map((element, index)=>{ 
                 return <Buttons  action={this.handler} key={index} index={index} data={element}/>
@@ -107,7 +97,7 @@ handler(i){
             
 
           </ButtonWrapper>
-        </Dropdown>
+        
         <Content data={this.state.how[this.state.show]}/>
         <Click>
         <Form onClick={()=>console.log(this.state.how[this.state.show].options[0].form)} formData={this.state.how[this.state.show].options[0].form}>
