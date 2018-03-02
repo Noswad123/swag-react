@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Styles from '../../style/styles'
 
 const Container=styled.div`
 display: flex;
       justify-content: space-between;
       grid-column-start:2;
-      grid-column-end: 4;
+      grid-column-end: 5;
       grid-row-start: 2;
 `
 const Option=styled.div`
 color: black;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-    background-image: url(./img/20543_4_orig.png);
-    height: 200px;
-      width: 200px;
+    background-color:${Styles.color.tertiary};
+      width: 30%;
       &:hover{
           display: hidden;
           background-color: #09335D;
