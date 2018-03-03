@@ -1,51 +1,106 @@
 import React, { Component } from 'react';
-
+import Styles from '../../style/styles'
 import styled from 'styled-components';
+import Blogs from '../../data/blog.data'
 
 const Container=styled.div`
-min-height:80vh;
+  min-height:80vh;
 `
-const Filter=styled.div``
+const Filter=styled.ul`
+  list-style-type:none;
+  > li{
+    display:inline-block;
+    margin-right:50px;
+  }
+`
+const QuickLinks=styled.ul`
+list-style-type:none;`
 const Wrapper=styled.div`
-
+  padding:64px;
+  width:70%;
 `
-const Title=styled.div`
-
-`
+const Title=styled.div``
 const Author=styled.div`
+  margin-left:20px;
+  margin-bottom:32px;
+`
+
+const SnippetWrapper=styled.div`
+  width:100%;
+  height:200px;
+  background-color:${Styles.color.tertiary};
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px;
+  box-sizing:border-box;
+`
+const Snippet=styled.div`
+  background-color:${Styles.color.secondary};
+  height:150px;
+  width:30%;
+  box-sizing:border-box;
 
 `
-const Article=styled.div``
+const VerticalSplit=styled.div`
+  display:flex;
+`
 
-export default class Blog extends Component {
-  render() {
-    return (
-      <Container>
-        <Filter>
-          by date
-          by blogger
-          by category
-          </Filter>
-        <Wrapper>
-          <Title>
-            Title of Blog
-           </Title>
-           <Author>
-             By Author Name
-             </Author>
-           <Article>
-             This is a short article about all the good that SWAG to College is doing in the world. 
-             I will add some ipsum text now.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-             Morbi finibus eros id urna accumsan,quis pulvinar urna accumsan. Donec quis nulla at nulla pellentesque finibus.
-             Phasellus iaculis lacus ac orci fermentum, vel tempus lacus ultricies. 
-             Aenean turpis risus, bibendum non facilisis vitae, ullamcorper at tortor.
-              Maecenas convallis dignissim feugiat. Nam metus nibh, interdum at ligula et, egestas fringilla urna.
-               Aliquam erat volutpat. Aliquam finibus turpis nunc, eget ultricies dolor pharetra vel. 
-               Praesent justo mi, laoreet eget maximus id, varius eu eros. Integer nec orci pretium sem consectetur tincidunt. 
-               Vivamus non pulvinar ex. In purus eros, blandit in leo sit amet, dapibus lacinia sapien.
-             </Article>
-        </Wrapper>
-      </Container>
+const Search=styled.input``
+
+  export default class Blog extends Component {
+    render() {
+      return (
+        <Container>
+          <SnippetWrapper>
+            <Snippet>
+              Mentee of the Month
+            </Snippet>
+            <Snippet>
+              Mentor of the Month
+            </Snippet>
+            <Snippet>
+              Testimonial of the Month
+            </Snippet>
+          </SnippetWrapper>
+            <Filter>
+              <li>Filter:</li>
+              <li>by date</li>
+              <li>by blogger</li>
+              <li>by category</li>
+              <Search placeholder="search"/>
+            </Filter>
+          
+          <VerticalSplit>
+            <Wrapper>
+              <Title>
+              {Blogs[0].title}
+              </Title>
+              <Author>
+              By {Blogs[0].author}
+              </Author>
+          
+              {Blogs[0].article.map((element,index)=>{
+                
+                if(element===2){
+                  return(<div><br/></div>)
+                }else{
+                  return(<span> {element}</span>)
+                }
+                
+
+
+              })}
+              
+             </Wrapper>
+              <QuickLinks>
+              <li>Recent Posts</li>
+              <li>Posts by author</li>
+              <li>category</li>
+              <li>...more</li>
+              </QuickLinks>
+          </VerticalSplit>
+        </Container>
     );
   }
 }

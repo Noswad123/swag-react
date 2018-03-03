@@ -13,7 +13,7 @@ display: grid;
 const ButtonWrapper = styled.div`
   margin-top:${Styles.size.l};
   margin-left:50px;
-  width: 200px;
+  width: 150px;
   max-height:300px;
   background-color:${Styles.color.primary};
   grid-column-start:1;

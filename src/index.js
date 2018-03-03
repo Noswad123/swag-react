@@ -21,7 +21,7 @@ const Container=styled.div`
   `
 ReactDOM.render(
 <BrowserRouter>
-<Container>
+<Container style={{width:"100%"}}>
   <Navbar/>
       <Route exact path="/aboutus" component={AboutUs}/>
       <Route exact path="/blog" component={Blog}/>
