@@ -6,7 +6,9 @@ const Styles={
         primary:"#09335D",
         secondary:"white",
         accent:"#2A92E5",
-        tertiary:"#33A27F"
+        tertiary:"#33A27F",
+        font1:"white",
+        font2:"grey"
     },
     size:{
         xxs:"4px",

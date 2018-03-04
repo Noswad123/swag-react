@@ -4,7 +4,7 @@ import Styles from '../../style/styles';
 import Team from '../../data/team.data';
 import TeamMember from './team-meet';
 import FilterOption from './filter-meet'
-
+import { Link} from 'react-router-dom';
 
 const Filter=styled.ul`
 list-style-type: none;`
@@ -13,10 +13,9 @@ const Staff=styled.div`
 display:flex;
 flex-wrap:wrap;
 justify-content:space-between;
-width:100%;
 padding:50px;
 box-sizing:border-box;
-background-color:${Styles.color.tertiary}
+color:${Styles.color.font2};
 `
 export default class Meet extends Component{
     constructor(){
@@ -31,7 +30,8 @@ export default class Meet extends Component{
     }
     render(){
         return(
-            <div>       
+            <div>
+                < Link to="/aboutus"> Back </Link>
                 <h1>Meet The Team </h1>
                 <Filter>                
                     <FilterOption key="all" filterName="All" current={this.state.current} changeFilter={this.changeFilter.bind(this)}>All</FilterOption>

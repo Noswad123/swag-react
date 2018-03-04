@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Styles from '../../style/styles'
+import Styles from '../../style/styles';
 import { Link} from 'react-router-dom';
+import CoreValues from './core-value';
 
 const Container=styled.div`
 min-height:80vh;
@@ -18,107 +19,55 @@ h1{
   border-bottom: solid ${Styles.color.tertiary};
 }
 `
-const Indicators =styled.div`
-bottom: -50px;
-         
-         li {
-            background-color: grey;
-            border: none;
-            width: 15px;
-            height: 15px;
-            margin: 0px;
-            margin-left: 5px;
-            margin-right: 5px;
-         }
-         
-         li.active {
-            background-color: ${Styles.color.tertiary};
-         }
-
+const Section=styled.div`
+display:flex;
+justify-content:space-between;
+padding:50px;
+width:100%;
+box-sizing:border-box;
+div{
+  width:60%;
+}
 `
-
+const Title=styled.h1``
+const LinkWrapper=styled.div`
+a{
+  margin-right:20px;
+}
+`
 
 export default class AboutUs extends Component {
   render() {
     return (
         <Container>
-            <Header className="header">
-              
-                    <h1 className="title">About Us</h1>
-                    <Link  to="/meet">meet the team</Link>
-                
-            </Header>
-
-            
-
-             
-
-              <section id="interns">
-                <h4 className="title">Our interns</h4>
-                <div className="content">
-                    <div className="container">
-                    <div id="intern-slider" className="carousel slide" data-ride="carousel" data-pause="null" data-interval="3500">
-                      <div id="intern-slider" className="carousel slide">
-                          <Indicators>
-                            <li data-target="#intern-slider" data-slide-to="0" className="active"></li>
-                            <li data-target="#intern-slider" data-slide-to="1"></li>
-                            <li data-target="#intern-slider" data-slide-to="2"></li>
-                          </Indicators>
-                          <div className="carousel-inner">
-                            <div className="item active">
-                                <div className="card flex">
-                            <h3 className="title-above">Pani Zlata</h3>
-                                  <div className="picture" style={{backgroundImage: "url(https://s14.postimg.org/p7hev60o1/Unknown_2.jpg)"}}></div>
-                                  <div className="info">
-                                      <h3 className="title">Pani Zlata</h3>
-                                      <p className="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corporis illum debitis deserunt velit quis non fuga necessitatibus recusandae beatae excepturi id consequuntur dignissimos ullam porro dolorum, sapiente optio repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ab dolor libero sequi laudantium provident, deserunt voluptatum dolorem necessitatibus quisquam neque quia odit perferendis quibusdam ratione ex culpa nisi fugiat?</p>
-                                  </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="card flex">
-                            <h3 className="title-above">Pani Zlata</h3>
-                                  <div className="picture" style={{backgroundImage: " url(https://s14.postimg.org/p7hev60o1/Unknown_2.jpg)"}}></div>
-                                  <div className="info">
-                                      <h3 className="title">Pani Zlata</h3>
-                                      <p className="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corporis illum debitis deserunt velit quis non fuga necessitatibus recusandae beatae excepturi id consequuntur dignissimos ullam porro dolorum, sapiente optio repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ab dolor libero sequi laudantium provident, deserunt voluptatum dolorem necessitatibus quisquam neque quia odit perferendis quibusdam ratione ex culpa nisi fugiat?</p>
-                                  </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="card flex">
-                            <h3 className="title-above">Pani Zlata</h3>
-                                  <div className="picture" style={{backgroundImage: "url(https://s14.postimg.org/p7hev60o1/Unknown_2.jpg)"}}></div>
-                                  <div className="info">
-                                      <h3 className="title">Pani Zlata</h3>
-                                      <p className="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corporis illum debitis deserunt velit quis non fuga necessitatibus recusandae beatae excepturi id consequuntur dignissimos ullam porro dolorum, sapiente optio repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ab dolor libero sequi laudantium provident, deserunt voluptatum dolorem necessitatibus quisquam neque quia odit perferendis quibusdam ratione ex culpa nisi fugiat?</p>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-                </div>
-              </section>
-
-              <section id="internship">
-                <h4 className="title">Are you interested in internship?</h4>
-                <div className="content">
-                    <div className="flex">
-                     
-                          <div>
-                            <h3>Join our team</h3>
-                          </div>
-                     
-                          <div>
-                            <h3>I want to be intern</h3>
-                          </div>
-                    
-                    </div>
-                </div>
-              </section>
-            </Container>
+          <Header className="header">
+            <h1 className="title">Who We Are</h1>
+            <LinkWrapper>
+              <Link  to="/meet">Meet the team</Link>
+              <Link  to="/contactus">Contact us</Link>
+            </LinkWrapper>
+          </Header>
+          <Section>
+            <Title> Our Story</Title>
+            <div> 
+              <p>In February 2015, Raj Salhotra, one of our co-founders, went out for lunch. He noticed the cashier seemed to be in high-school, so Raj asked him his goals. He told Raj that he was a 12th grade student and aspired to attend college but felt it was too expensive. Raj explained the resources available to him, the Pell Grant and the FAFSA.  This student had real dreams, but the lack of information could have left those goals unfulfilled.  Raj shared this interaction with Jamal, and they devised a plan to assist low-income and first generation students with matriculating to college.</p>
+              <p>Raj and Jamal, however, immediately realized they could not do this alone. They recruited several college students from Houston Independent School District (HISD), YES Prep, and KIPP to serve as the initial mentors. Today, many of those same students form the core SWAG To College Leadership Team, and their perspectives, experiences, and beliefs are invaluable to helping SWAG To College succeed. Quite simply, without our college student Leadership Team members, SWAG To College could not serve students effectively. </p>
+            </div>
+          </Section>
+          <Section>
+            <Title> Mission Statement</Title>
+            <div> 
+              <p>Our mission is to provide near-peer mentorship for underserved high school and college students to help them matriculate to college, graduate from college, and enter the workforce.</p>
+            </div>
+          </Section>
+          <Section>
+            <Title> Vision</Title>
+            <div>
+              <p>Our vision is to close the achievement gap and ensure every underserved high school and college student is on the pathway to reach their goals.</p>
+            </div> 
+          </Section>
+          <CoreValues/>
+        </Container>
     );
   }
 }
