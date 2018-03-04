@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Styles from '../../style/styles'
-
+import { Link} from 'react-router-dom';
 const Container=styled.div`
 display: flex;
       justify-content: space-between;
@@ -27,6 +27,10 @@ color: black;
               padding: 10px;
               align-items: center;
               text-align: center;
+              a{
+                text-decoration: none;
+                color:${Styles.color.font1};
+              }
           }
       }
       div{
@@ -36,6 +40,7 @@ color: black;
         height: 100%;
         width:100%;
       }
+  
 `
 
 export default class GetInvolved extends Component {
@@ -45,18 +50,18 @@ export default class GetInvolved extends Component {
         <Option>
         <h3>Become a Mentee</h3>
         <div >
-          Get help with the college process
+         <Link to="/getinvolved"> Get help with the college process</Link>
         </div>
       </Option>
 
       <Option>
         <h3>View Timeline</h3>
-        <div >Have a plan for every month for each year</div>
+        <div >  <Link to="/timeline">Have a plan for every month for each year </Link></div>
       </Option>
 
       <Option>
         <h3>Become a Mentor </h3>
-        <div >Help someone achieve their goals</div>
+        <div >  <Link to="/getinvolved">Help someone achieve their goals </Link></div>
       </Option>
 
     </Container>

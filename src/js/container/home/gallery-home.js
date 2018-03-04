@@ -54,7 +54,11 @@ export default class Gallery extends Component {
               <button >Opportunities for College Students</button>
             </div>
 
-
+            <div className="items">
+              <img src={"./img/9769588_4_orig.png"} alt="Picture4" />
+            
+              <button>Opportunities for Young Professionals</button>
+            </div>
             <div className="items">
               <img src={"./img/jls-3197_orig.jpg"} alt="Picture1" />
             
@@ -69,11 +73,7 @@ export default class Gallery extends Component {
               <button>Opportunities for Parents ​and Guardians</button>
             </div>
         
-            <div className="items">
-              <img src={"./img/9769588_4_orig.png"} alt="Picture4" />
-            
-              <button>Opportunities for Young Professionals</button>
-            </div>
+           
         
             <div className="items">
               <img src={"./img/school-admin.jpg"} alt="Picture4" />
