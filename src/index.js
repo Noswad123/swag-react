@@ -13,7 +13,7 @@ import Home from './js/container/home/home';
 import Resources from './js/container/resources/resources';
 import Timeline from './js/container/timeline/timeline';
 import registerServiceWorker from './registerServiceWorker';
-
+import Meet from './js/container/meet/meet';
 import styled from "styled-components";
 
 
@@ -30,6 +30,7 @@ ReactDOM.render(
       <Route exact path="/resources" component={Resources}/>
       <Route exact path="/timeline" component={Timeline}/>
       <Route exact path="/test" component={Test}/>
+      <Route exact path="/meet" component={Meet}/>
   <Footer/>
 </Container>
 </BrowserRouter>, document.getElementById('root'));
