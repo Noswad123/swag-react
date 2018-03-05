@@ -7,7 +7,9 @@ display: flex;
 flex-direction:column;
 align-items:center;
 `
-const Title=styled.h3``;
+const Title=styled.h3`
+color=${Styles.color.primary}
+`;
 const Value=styled.div`
 display: flex;
 flex-direction:column;

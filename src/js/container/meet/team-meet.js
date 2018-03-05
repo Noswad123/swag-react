@@ -11,25 +11,10 @@ align-items: center;
 height:300px;
 position:relative;
 margin-bottom:10px;
-
+cursor:pointer;
 img{
     width:100%;
 }
-&:hover{
-        height:auto;
-       
-        img, div:nth-child(2){
-            display:none;
-        }
-        >div{
-            &:last-child{
-                display:block;
-                position:absolute;
-                div{
-                    display:block;
-                }
-            }
-        } 
     
 }
 `
@@ -43,23 +28,17 @@ color:grey;
 display:flex;
 flex-direction:column;
 align-items:center;`
-const Bio=styled.div`
-display:none;
-color:${Styles.color.font1};
 
-`
 const Position=styled.div``
-export default class TeamMember extends Component {
-
+export default class TeamMember extends Component { 
     render(){
         return(
-            <Container>
+            <Container onClick={()=>this.props.openPopUp(this.props.id)}>
                 <Picture src={this.props.img} alt={this.props.name}/>
                 <Wrapper>
                 <Name>{this.props.name}</Name>
                 <Position>{this.props.position}</Position>
                 </Wrapper>
-                <div style={{position:"relative"}}><Bio>{this.props.bio}</Bio></div>
             </Container>
         )
     }

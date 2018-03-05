@@ -71,7 +71,7 @@ const Team=[
         name:"Maria Sanchez",
         position:"Intern",
         bio:"I am a first generation sophomore at Texas A&M University majoring in Industrial & Systems Engineering with a concentration in Health & Human systems. My hobbies include working out and watching Netflix. I also love helping people, which is one of the reasons I enjoy being a part of DACAmented team in SWAG. We provide resources for undocumented students and their families. Most of these students are first generation too and being undocumented can make them think that college is not an option at all but our goal is to help them learn that it is an option. ",
-        imgUrl:"./img/angie.png",
+        imgUrl:"./img/maria.jpg",
         domain:"Intern"
     },
     {
@@ -108,21 +108,21 @@ const Team=[
         name:"Nicole Trujillo",
         position:"Not the right picture",
         bio:"I am a first-generation",
-        imgUrl:"./img/angie.png",
+        imgUrl:"./img/nicole-tru.jpg",
         domain:"Intern"
     },
     {
         name:"Priscila Escamilla",
         position:"Not the right picture",
         bio:"I am a senior at the University of Houston, I am studying Integrated Communications which is basically a mix of public relations and advertising and double minoring in Business Administration and Marketing. My biggest passions are reading and watching shows from other countries, I love figuring out what that country values, i find it completely fascinating how each culture is so different yet in some aspects the same.  I have been a part of SWAG since August 2017, and my role in SWAG is the Chief Operating Officer where I work with each domain to manas",
-        imgUrl:"./img/angie.png",
+        imgUrl:"./img/priscilla.jpg",
         domain:"Intern"
     },
     {
         name:"Sarah Montero",
         position:"Intern",
         bio:"sarah-montero",
-        imgUrl:"./img/angie.png",
+        imgUrl:"./img/sarah-montero.png",
         domain:"Intern"
     },
     {
@@ -135,59 +135,90 @@ const Team=[
     {
         name:"Raj Salhotra",
         position:"Co-founder",
-        bio:"",
-        imgUrl:"./img/angie.png",
+        bio:`I am third-year law student at Harvard Law School. Before coming to law school, I served as a Teach For America Corps Member in Houston. I taught 11th and 12th grade math at YES Prep Southwest. Before YES, I was a student at Rice University where I majored in economics and public policy. While at Rice, I took classes in educational inequality and sociology and gained a greater understanding of the challenges many Americans face. My work teaching provided concrete experiences to complement my classroom learning. 
+        ​
+        After teaching, building on experiences inside and outside the classroom, I co-founded SWAG To College to help more students gain the knowledge and opportunities they neeed to reach their goals. Through SWAG, my hope is we can reduce educational inequality and ensure that all students, regardless of background, can reach their dreams. ​`,
+        imgUrl:"./img/raj.jpg",
         domain:"Board of Directors"
     },
     {
         name:"Marcus Rolls",
         position:"Board Member",
-        bio:"",
-        imgUrl:"./img/angie.png",
-        domain:"Board of Directors"
-    },
-    {
-        name:"Andy Canales",
-        position:"Board Member",
-        bio:"",
-        imgUrl:"./img/angie.png",
+        bio:"Associate Vice President at Morgan Stanley",
+        imgUrl:"./img/marcus.png",
         domain:"Board of Directors"
     },
     {
         name:"Eduardo Garcia",
         position:"not the right picture",
-        bio:"",
-        imgUrl:"./img/angie.png",
+        bio:"I am a senior at Mirabeau B. Lamar High School. I was born and raised in Houston, Texas. I am passionate about computer science and computers in general, you can constantly finding me making a new program for my own fun. I am heavily involved in community service and love being able to give back to the community that has already given me so much. I am the co-president of our high school’s Key Club. I am passionate about what SWAG to College has to offer to students, because I come from the exact same background as our mentees. I understand how hard it is when it feels like no one is there to help, but now it doesn’t have to be that way! I am a firm believer in equal access to higher education, and achieving something greater shouldn’t have to be impossible.",
+        imgUrl:"./img/eduardo.jpg",
         domain:"Intern"
     },
     {
         name:"Luly Castillo",
         position:"Board Member",
         bio:"",
-        imgUrl:"./img/angie.png",
+        imgUrl:"./img/luly.jpg",
         domain:"Board of Directors"
     },
     {
         name:"Andy Canales",
         position:"Board Member",
-        bio:"",
-        imgUrl:"./img/angie.png",
+        bio:"The Legend",
+        imgUrl:"./img/andy-canales.jpg",
         domain:"Board of Directors"
     },
     {
         name:"Norma Villanueva",
         position:"Board Member",
-        bio:"",
-        imgUrl:"./img/angie.png",
+        bio:"Yes Prep Dean",
+        imgUrl:"./img/norma.jpg",
         domain:"Board of Directors"
     },
     {
-        name:"Samantha Ray",
+        name:"Sumantha Ray",
         position:"Board Member",
-        bio:"",
-        imgUrl:"./img/angie.png",
+        bio:"Work hard. Stay humble. Be kind. Do everything in love.",
+        imgUrl:"./img/sumantha.jpg",
         domain:"Board of Directors"
     },
+    {
+        name:"Maddie Coles",
+        position:"Director Young Professional of Young Professional Mentorship",
+        bio:"I am a junior at Georgetown University, double majoring in government and theology with a minor in computer science. I am originally from New Braunfels, Texas. I serve as the director of the Young Professionals Program, co-director of High School Partnerships, and a mentor for SWAG To College. Outside of SWAG, I also copy edit for a student newspaper, participate in student theatre, and conduct research in religion and public affairs. I am interested in pursuing law school or a master’s related to peace studies after college. As a nerd who has always loved school, I want all students to have the support and resources to achieve their academic goals. ",
+        imgUrl:"./img/maddie.jpg",
+        domain:"intern"
+    },
+    {
+        name:"Chidozie Alozie",
+        position:"Intern",
+        bio:"I am a sophomore at Vanderbilt University, majoring in Mechanical Engineering, with a minor in German. I am a SWAG to College Data Analyst and Director of YES Prep Partnerships, Arnold Scholar at Vanderbilt, Vice President of JPAC (Juggling and Physical Acts Club), and amateur sports writer. I grew up loving sports, numbers, and current events. What I love most about being a part of SWAG is it feeds my passion for providing indispensable services to underrepresented students who would otherwise not have them. I am a firm believer that SWAG to College has what it takes to be a vital instrument in the challenge to provide for students in need. ",
+        imgUrl:"./img/chidozie.jpg",
+        domain:"intern"
+    },
+    {
+        name:"Karen Banda",
+        position:"Intern",
+        bio:"I am a sophomore at Smith College, double majoring in Government and Latin American Studies, with a theme in Latino Immigration Studies. I am a SWAG to College Intern/Mentor/Mentor Manager, EMERGE Scholar Board Founder and President, Smith College Nosotr@s Conference Chair, Smith College Pre-Law Society Social Chair, Capen House Social Events Coordinator, and the Office of Multicultural Affairs Intern. I love being part of SWAG and EMERGE because of my passion and dedication in college access for minority students. After college, I would like to pursue (hopefully) a Fulbright Research Fellowship in México and then a JD in either Human Rights, International Law, or Immigration Law. I am passionate about closing the educational gap and equal opportunities for all.",
+        imgUrl:"./img/karen-banda.jpg",
+        domain:"intern"
+    },
+    {
+        name:"Jessica Telles",
+        position:"Intern",
+        bio:"I am a sophomore at Rice University majoring in Computational and Applied Mathematics and minoring in Statistics and Financial Computation and Modeling. This is my second year as a SWAG To College mentor. I went to a high school that had very little resources and offered no support to students so having a mentor would have been life-changing. Interning with SWAG to College has made me realize the ample resources out there that, even as a college student, I didn’t know about. I am passionate about helping high school students who are first-generation, low income and/or underserved and who are unaware of the many opportunities available that can help them follow their dreams and continue their education. ",
+        imgUrl:"./img/jessica-telles.jpg",
+        domain:"intern"
+    },
+    {
+        name:"Joanna Slusarewicz",
+        position:"Intern",
+        bio:"I am a sophomore at Rice University, majoring in computer science. I am a SWAG to College Data Analyst/Mentor/Blogger. Additionally I do research in the Rice environmental engineering department, have taught creative writing classes in middle schools across the country, and am president of Fastwarp board game club. In my work analyzing data with SWAG To College I hope to ensure that we are serving our mentees in the ways they need us most. At the moment, after college I plan to attend grad school to study renewable energies' development and policy.",
+        imgUrl:"./img/joanna-slu.jpg",
+        domain:"intern"
+    }
+   
 ]
 
     export default Team;
