@@ -13,10 +13,10 @@ font-weight:700;
 text-align:center;`
 
 const Buttons=styled.div`
-background-color:white;
-    color:#2a92e5;
+background-color:${Styles.color.secondary};
+    color:${Styles.color.tertiary};
     border-style: solid;
-    border-color: #2a92e5;
+    border-color: ${Styles.color.tertiary};
     padding:10px 20px;
     text-align:center;
     height: 20px;

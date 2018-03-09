@@ -25,7 +25,7 @@ export default class FilterOption extends Component{
     }
    update(){
        if(this.props.filterName===this.props.current){
-        return {borderBottom:"solid green"}
+        return {borderBottom:"solid #58A4B0"}
        }
    }
     render(){

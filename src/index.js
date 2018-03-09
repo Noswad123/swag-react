@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 //import base from './base';
 import {BrowserRouter,Route} from 'react-router-dom';
 import './index.css';
+import styled from "styled-components";
+import Styles from "./js/style/styles";
+import registerServiceWorker from './registerServiceWorker';
+
+
 import Test from './js/component/test';
 import Navbar from './js/component/navbar';
 import Footer from './js/component/footer';
@@ -12,13 +17,14 @@ import GetInvolved from './js/container/get-involved/get-involved';
 import Home from './js/container/home/home';
 import Resources from './js/container/resources/resources';
 import Timeline from './js/container/timeline/timeline';
-import registerServiceWorker from './registerServiceWorker';
+
 import Meet from './js/container/meet/meet';
 import ContactUs from './js/container/about-us/contactus'
-import styled from "styled-components";
+
 
 
 const Container=styled.div` 
+background-color:${Styles.color.secondary};
   `
 ReactDOM.render(
 <BrowserRouter>

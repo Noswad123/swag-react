@@ -8,9 +8,10 @@ width:60%;
 background-color:${Styles.color.primary};
 padding:20px;
 height:300px;
+transform:translateX(-50%);
 position:fixed;
 top:25%;
-left:25%;
+left:50%;
 z-index:5;
 overflow-y:scroll;
 `
@@ -19,15 +20,22 @@ height:250px;
 object-fit:cover;
 object-position:0% 0%
 `
-const Name=styled.h1``
-const Bio=styled.p``
-const Position=styled.div``
+const Name=styled.h1`
+color:${Styles.color.font1};`
+const Bio=styled.p`
+color:${Styles.color.font1};`
+const Position=styled.div`
+color:${Styles.color.font1};`
 const XContainer=styled.div`
-color:white;
+color:${Styles.color.secondary};
 position:absolute;
 right:10px;
 top:10px;
 cursor:pointer;
+`
+
+const Wrapper=styled.div`
+padding:0 10px 10px 10px;
 `
 export default class PopUp extends Component{
    
@@ -36,7 +44,7 @@ export default class PopUp extends Component{
             <Container style={this.props.display}>
                 <X closePopUp={this.props.closePopUp} />>
                 <Picture src={this.props.img} alt={this.props.name}/>
-                <div>
+                <Wrapper>
                 <Name>
                     {this.props.name}
                 </Name>
@@ -46,7 +54,7 @@ export default class PopUp extends Component{
                 <Bio>
                     {this.props.bio}
                 </Bio>
-                </div>
+                </Wrapper>
             </Container>
         )
     }

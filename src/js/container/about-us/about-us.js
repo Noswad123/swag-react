@@ -16,7 +16,10 @@ width:100%;
 flex-direction:column;
 align-items:center;
 h1{
-  border-bottom: solid ${Styles.color.tertiary};
+  border-bottom: solid ${Styles.color.accent};
+}
+a{
+  color:${Styles.color.tertiary}
 }
 `
 const Section=styled.div`

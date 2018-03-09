@@ -1,14 +1,19 @@
 const Styles={
 
-
+    font:{
+        title:"'Bubblegum Sans', cursive",
+        text:"'Noto Sans', sans-serif",
+        header:"'Rozha One', serif"
+    },
     color:{
-
+        
         primary:"#09335D",
-        secondary:"white",
-        accent:"#2A92E5",
-        tertiary:"#33A27F",
-        font1:"white",
-        font2:"grey"
+        secondary:"#F6F7EB",
+        accent:"#643A71",
+        tertiary:"#69626D",
+        font1:"#F6F7EB",
+        font2:"#0F1020",
+        background:"#F6F7EB"
     },
     size:{
         xxs:"4px",

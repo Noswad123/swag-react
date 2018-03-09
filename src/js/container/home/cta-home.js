@@ -10,15 +10,13 @@ display: flex;
       grid-row-start: 2;
 `
 const Option=styled.div`
-color: black;
+color: ${Styles.color.font1};
       display: flex;
       justify-content: space-around;
       align-items: center;
-    background-color:${Styles.color.tertiary};
+    background-color:${Styles.color.primary};
       width: 30%;
       &:hover{
-          display: hidden;
-          background-color: #09335D;
           h3{
               display: none;
           }
@@ -29,14 +27,14 @@ color: black;
               text-align: center;
               a{
                 text-decoration: none;
-                color:${Styles.color.font1};
+                color:${Styles.color.font2};
               }
           }
       }
       div{
-          color:white;
+          color:${Styles.color.font1};
           display: none;
-        background-color: #09335D;
+        background-color:${Styles.color.accent};
         height: 100%;
         width:100%;
       }

@@ -28,7 +28,7 @@ li{
     border:solid ${Styles.color.secondary};
   }
   a{
-    color:white;
+    color:${Styles.color.font1};
     text-decoration:none;
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Styles from '../../style/styles'
 
 const Container = styled.div`
   width:300px;
@@ -7,16 +8,16 @@ const Container = styled.div`
 `
 const SubPanel = styled.div`
  
-  background-color: #09335D;
+  background-color:${Styles.color.primary};
   border-radius: 0 2% 2% 2% ;
   padding: 16px 32px;
   width:128px;
   height:200px;`
 const TabStyle = styled.button`
-  background-color: white;
+  background-color: ${Styles.color.secondary};
   color: #09335D;;
   border-radius: 10px 10px 0 0;
-  border-color: black;
+  border-color: ${Styles.color.font2};
   border-bottom: none;
  // margin-right: 10px;
 `
@@ -27,17 +28,17 @@ align-items: center;
 justify-content: space-around;
 height: 100%;
 button{
-  background-color:white;
-    color:black;
-    border-style: solid black;
-    border-color: #09335D;
+  background-color:${Styles.color.secondary};
+    color:${Styles.color.font2};
+    border: solid ${Styles.color.font2};
     border-radius: 8px;
     height: 32px;
     width: 128px;
+    font-family:${Styles.font.text};
     &:hover{
-      background-color:#2a92e5;
-      color:white;
-      border-color: grey;
+      background-color:${Styles.color.tertiary};
+      color:${Styles.color.accent};
+      border-color: ${Styles.color.accent};
     }
 }
 `

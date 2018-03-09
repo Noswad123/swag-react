@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
+import Styles from '../../style/styles'
 
 
 const Container=styled.div``
 
 const Month = styled.button`
 width:85%;
-height:30px;
+height:40px;
 opacity: 1;
 z-index: 100;
-background-color: #09335D;
-color: white;
-border: solid white;
+background-color: ${Styles.color.primary};
+color: ${Styles.color.font1};
+border: solid ${Styles.color.secondary};
+font-family:${Styles.font.header};
+font-size:${Styles.size.s};
 &:hover{
-    color: grey;
-    border:solid grey;
+    color: ${Styles.color.accent};
+    border:solid ${Styles.color.font2};
 }
 `
 const slide = keyframes`
@@ -43,6 +46,7 @@ const Steps= styled.div`
   animation-direction:normal;
   animation-timing-function: ease-in-out;
   padding:10px;
+  font-family:${Styles.font.text};
 
 `
 

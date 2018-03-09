@@ -25,15 +25,15 @@ const ButtonWrapper = styled.div`
   justify-content: space-around;
 `
 const Option = styled.button`
-background-color:white;
-    color:black;
-    border:solid black;
+background-color:${Styles.color.secondary};
+    color:${Styles.color.font2};
+    border:solid ${Styles.color.tertiary};
     height: 50px;
     border-radius:${Styles.size.xs};
     margin-bottom:${Styles.size.xs};
     &:hover{
-      background-color:#2a92e5;
-      color:white;
+      background-color:${Styles.color.tertiary};
+      color:${Styles.color.accent};
   }
 `
 const slideLeft=keyframes`

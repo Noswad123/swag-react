@@ -21,16 +21,16 @@ const Container=styled.div`
         margin: 1em;
       }
       button {
-        background-color: white;
-        color: #2a92e5;
+        background-color: ${Styles.color.secondary};
+        color: ${Styles.color.primary};
         border-style: solid;
-        border-color: #2a92e5;
+        border-color: ${Styles.color.primary};
         height: 3em;
         width: 15em;
       }
       button:hover {
-        background-color: #2a92e5;
-        color: white;
+        background-color: ${Styles.color.accent};
+        color: ${Styles.color.secondary};
       }
     }
 `

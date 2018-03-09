@@ -14,7 +14,7 @@ display:flex;
 flex-direction:column;
 align-items:center;`
 const Title = styled.div`
-color:${Styles.color.tertiary};
+color:${Styles.color.font2};
 font-size:35px;
 font-weight:700;`
 export default class Content extends Component{
