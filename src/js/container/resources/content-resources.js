@@ -4,6 +4,7 @@ import Styles from '../../style/styles'
 
 const Container=styled.div`
 min-height:80vh;
+background-color:${Styles.color.tertiary};
 `
 const Wrapper=styled.div`
 margin:20px;

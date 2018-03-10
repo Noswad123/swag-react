@@ -9,10 +9,10 @@ const Styles={
         
         primary:"#09335D",
         secondary:"#F6F7EB",
-        accent:"#643A71",
+        accent:"#61E786",
         tertiary:"#69626D",
         font1:"#F6F7EB",
-        font2:"#0F1020",
+        font2:"#0F0F0F",
         background:"#F6F7EB"
     },
     size:{

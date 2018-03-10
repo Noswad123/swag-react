@@ -42,7 +42,7 @@ export default class PopUp extends Component{
     render(){
         return(
             <Container style={this.props.display}>
-                <X closePopUp={this.props.closePopUp} />>
+                <X closePopUp={this.props.closePopUp} />
                 <Picture src={this.props.img} alt={this.props.name}/>
                 <Wrapper>
                 <Name>

@@ -83,13 +83,81 @@ const Resources=[
         ] 
      },
      {
-        section:"College Resources",
+        section:"Parent Resources",
         blurb:"",
-        links:[{
-            name:"",
-            url:"",
-            description:""
-        }] 
+        links:[
+            {
+                name:"Parent Letter",
+                url:"",
+                description:"This letter provides parents/guardians with information about the SWAG To College program. The letter also contains the contact information for the SWAG To College Co-Founders, whom you contact with any questions.​"
+            },
+            {
+                name:"Padres Carta",
+                url:"",
+                description:"Esta carta provee a los padres / tutores con información sobre el programa de SWAG Para la Universidad. La carta también contiene la información de contacto para el botín a la SWAG Para la Universidad Co-Fundadores, a quienes se ponga en contacto con cualquier pregunta."
+            },
+            {
+                name:"Parent FAFSA Flyer",
+                url:"",
+                description:"This flyer highlights important deadlines and information about the FAFSA. Reading this will help you and your family understand the basics of the FAFSA."
+            },
+            {
+                name:"Padres FAFSA Folleto",
+                url:"",
+                description:"Este folleto destaca los plazos importantes y la información sobre la FAFSA. Leer esto le ayudará a usted ya su familia a entender los fundamentos de la FAFSA."
+            },
+            {
+                name:"Parent FAFSA Details",
+                url:"",
+                description:"This document details the FAFSA and explains each step parents need to take in order to help their children navigate and complete the FAFSA. As compared to the flyer, this document is much more detailed and comprehensive. "
+            },
+            {
+                name:"Padres FAFSA Detalles",
+                url:"",
+                description:"Este documento detalla la FAFSA y explica cada paso que los padres deben tomar para ayudar a sus hijos a navegar y completar la FAFSA. En comparación con el folleto, este documento es mucho más detallado y completo."
+            },
+            {
+                name:"SAT/ACT Explainer",
+                url:"",
+                description:"This documents provides parents/guardians with information about the SAT and ACT and which test students should take and how they can prepare for it."
+            },
+            {
+                name:"SAT/ACT Explicador",
+                url:"",
+                description:"Este documento proporciona a los padres / tutores información sobre el SAT y el ACT y qué pruebas deben tomar los estudiantes y cómo pueden prepararse para él."
+            },
+            {
+                name:"Scholarships and Grants",
+                url:"",
+                description:"This document provides parents/guardians with information on how their child can secure scholarships and grants to help pay for college."
+            },
+            {
+                name:"Becas y Subvenciones",
+                url:"",
+                description:"Este documento proporciona a los padres o tutores información sobre cómo su hijo puede obtener becas y subsidios para ayudar a pagar la universidad."
+            }
+        ] 
+     },
+     {
+        section:"Important Documents",
+        blurb:"",
+        links:[
+            {
+                name:"Permission Slip",
+                url:"",
+                description:"This is the permission slip that we need all students to fill out before we pair them up with a mentor. Please print this out and sign it and either email it back to general@swagtocollege.org OR text a picture of it to 713­320­0303."
+            },
+            {
+                name:"Mentor Contract",
+                url:"",
+                description:"This is the contract that we need all the college mentors to fill out before we pair them up with a high school student. Please print this out and sign it and either email it back to general@swagtocollege.org OR text a picture of it to 713­320­0303."
+            },
+            {
+                name:"Mentee Contract",
+                url:"",
+                description:"This is the contract that we need all the high school mentees to fill out before we pair them up with a high school student. Please print this out and sign it and either email it back to general@swagtocollege.org OR text a picture of it to 713­320­0303."
+            },
+        ]
      }
 
 
