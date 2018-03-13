@@ -76,10 +76,8 @@ class StudentOptions extends Component{
   changeOptions(){
     
     if(this.props.isActive){
-      console.log(this.props.name+" "+this.props.isActive)
       return {display:"flex"}
     }else{
-      console.log(this.props.name+" "+this.props.isActive)
       return {display:"none"};
     }
  }
@@ -102,10 +100,8 @@ class ParentOptions extends Component{
   changeOptions(){
     
     if(this.props.isActive){
-      console.log(this.props.name+" "+this.props.isActive)
       return {display:"flex"}
     }else{
-      console.log(this.props.name+" "+this.props.isActive)
       return {display:"none"};
     }
  }

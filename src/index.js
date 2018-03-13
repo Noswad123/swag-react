@@ -1,25 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import base from './base';
+import { combineReducers, createStore } from 'redux'
+import { Provider } from 'react-redux';
 import {BrowserRouter,Route} from 'react-router-dom';
 import './index.css';
 import styled from "styled-components";
 import Styles from "./js/style/styles";
 import registerServiceWorker from './registerServiceWorker';
 
-
 import Test from './js/component/test';
 import Navbar from './js/component/navbar';
 import Footer from './js/component/footer';
+
+//import reducer from './js/reducers/reducer'
+
 import AboutUs from './js/container/about-us/about-us';
 import Blog from './js/container/blog/blog';
 import GetInvolved from './js/container/get-involved/get-involved';
 import Home from './js/container/home/home';
 import Resources from './js/container/resources/resources';
 import Timeline from './js/container/timeline/timeline';
-
 import Meet from './js/container/meet/meet';
-import ContactUs from './js/container/about-us/contactus'
+import ContactUs from './js/container/about-us/contactus';
+import langReducer from './js/reducers/language-reducer';
+
+
+let store=createStore(langReducer,{language:"English"});
 
 
 
@@ -27,6 +33,7 @@ const Container=styled.div`
 background-color:${Styles.color.secondary};
   `
 ReactDOM.render(
+  <Provider store={store}>
 <BrowserRouter>
 <Container style={{width:"100%"}}>
   <Navbar/>
@@ -41,5 +48,6 @@ ReactDOM.render(
       <Route exact path="/contactus" component={ContactUs}/>
   <Footer/>
 </Container>
-</BrowserRouter>, document.getElementById('root'));
+</BrowserRouter>
+</Provider>, document.getElementById('root'));
 registerServiceWorker();

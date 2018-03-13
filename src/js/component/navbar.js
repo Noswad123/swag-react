@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Link} from 'react-router-dom';
 import styled from 'styled-components';
-import Styles from '../style/styles'
+import Styles from '../style/styles';
+import navbarTrans from '../data/translations/navabar-translate'
+import {connect} from 'react-redux';
+import {updateLang} from '../actions/language-actions';
 
 const Container=styled.div`
 background-color: ${Styles.color.primary};
@@ -27,36 +30,85 @@ li{
   &:hover{
     border:solid ${Styles.color.secondary};
   }
+  &:last-child{
+    border:none;
+    &:hover{
+      border:none;
+    }
+  }
+ 
   a{
     color:${Styles.color.font1};
     text-decoration:none;
   }
 }
 `
+const English=styled.div`
+background-color:green;
+cursor:pointer;
+width:50px;
+&:hover{
+  opacity:.5;
+}
+border-radius:10px;
+position:relative;
+padding:5px 20px;
+`
 
-export default class Navbar extends Component {
+const Spanish=styled.div`
+background-color:black;
+cursor:pointer;
+border-radius:100%;
+width:30px;
+height:30px;
+position:absolute;
+top:0;
+left:0;
+`
+
+class Navbar extends Component {
+  constructor(){
+    super();
+    this.toggleLang=this.toggleLang.bind(this);
+    this.state={
+      isEng:true,
+      currentLang:navbarTrans.eng,
+      switchPos:{transform:"translateX(80px)"}
+    }
+  }
+  toggleLang(){
+
+    this.setState(
+      {
+        isEng:!this.state.isEng,
+        switchPos:(this.state.isEng)?{transform:"translateX(-10px)"}:{transform:"translateX(75px)"},
+        currentLang:(this.state.isEng)?navbarTrans.eng:navbarTrans.esp
+      }
+    )
+    
+  }
   render() {
     return (
       <Container>
-        <img src={"./img/invertswag.png"} alt="SWAG"/>
+        <Link  to="/"><img src={"./img/invertswag.png"} alt="SWAG"/></Link>
         <Links>
           <li>
-            <Link  to="/">Home</Link>
+            <Link  to="/timeline">{this.state.currentLang[0]}</Link>
           </li>
           <li>
-            <Link  to="/timeline">Timeline</Link>
+            <Link  to="/blog"> {this.state.currentLang[1]}</Link>
           </li>
           <li>
-            <Link  to="/blog"> Blog</Link>
-          </li>
-          <li>
-            <Link  to="/resources"> Resources</Link>
+            <Link  to="/resources"> {this.state.currentLang[2]}</Link>
             </li>
           <li>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/aboutus">{this.state.currentLang[3]}</Link>
           </li>
           <li>
-            <Link to="/getinvolved">Get Involved</Link>      
+            <Link to="/getinvolved">{this.state.currentLang[4]}</Link>      
+          </li>
+          <li>
+          <Toggle toggleLang={this.toggleLang} switch={this.state.switchPos} lang={(this.state.isEng)?"English":"Spanish"}/>
           </li>
         </Links>
       </Container>
@@ -64,3 +116,23 @@ export default class Navbar extends Component {
   }
 }
 
+
+class Toggle extends Component{
+  render(){
+    return(
+        <div>
+          <English onClick={this.props.toggleLang}>
+            {this.props.lang}
+            <Spanish style={this.props.switch}/>
+          </English>
+          </div>
+    )
+  }
+}
+
+const mapStateToProps= state=>{ state};
+
+const mapActionsToProps={
+  onUpdateLang:updateLang
+}
+export default connect(mapStateToProps, mapActionsToProps)(Navbar);
