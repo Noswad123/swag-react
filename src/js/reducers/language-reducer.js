@@ -1,15 +1,10 @@
-import {UPDATE_LANG} from '../actions/language-actions'
-export default function langReducer(state, {type, payload}){
-    
+
+export default function langReducer(state, {type, payload}){ 
     switch(type){
-
-        case UPDATE_LANG:
-        return payload
+        case "UPDATE_LANG":
+            console.log(state.isEng);
+            return Object.assign({},state,{isEng:!state.isEng})
         default:
-        return state;
-
-
+            return state;
     }
-    
-    return state;
   }

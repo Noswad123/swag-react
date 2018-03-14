@@ -4,13 +4,12 @@ import styled from 'styled-components';
 import Styles from '../style/styles';
 import navbarTrans from '../data/translations/navabar-translate'
 import {connect} from 'react-redux';
-import {updateLang} from '../actions/language-actions';
 
 const Container=styled.div`
 background-color: ${Styles.color.primary};
     height: 50px;
     margin: 0;
-    padding: 8px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +24,7 @@ li{
   display: inline-block;
   color:white;
   margin-right:20px;
-  padding: 8px;
+  padding: 5px;
   border:solid ${Styles.color.primary};
   &:hover{
     border:solid ${Styles.color.secondary};
@@ -43,19 +42,20 @@ li{
   }
 }
 `
-const English=styled.div`
-background-color:green;
+const SwitchWrap=styled.div`
+background-color:${Styles.color.accent};
 cursor:pointer;
-width:50px;
+width:100px;
+box-sizing:border-box;
 &:hover{
-  opacity:.5;
+  filter:saturate(50%);
 }
 border-radius:10px;
 position:relative;
 padding:5px 20px;
 `
 
-const Spanish=styled.div`
+const Switch=styled.div`
 background-color:black;
 cursor:pointer;
 border-radius:100%;
@@ -64,23 +64,30 @@ height:30px;
 position:absolute;
 top:0;
 left:0;
+transition: all 1s;
 `
 
 class Navbar extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
+    console.log(props)
     this.toggleLang=this.toggleLang.bind(this);
     this.state={
-      isEng:true,
+      isEng:props.isEng,
       currentLang:navbarTrans.eng,
       switchPos:{transform:"translateX(80px)"}
     }
   }
-  toggleLang(){
 
+  toggleLang(){
+    var opp=!this.state.isEng;
+    console.group("toggle lang")
+    console.log(this.state.isEng)
+    console.groupEnd()
+    this.props.onUpdateLang();
     this.setState(
       {
-        isEng:!this.state.isEng,
+        isEng:opp,
         switchPos:(this.state.isEng)?{transform:"translateX(-10px)"}:{transform:"translateX(75px)"},
         currentLang:(this.state.isEng)?navbarTrans.eng:navbarTrans.esp
       }
@@ -93,24 +100,22 @@ class Navbar extends Component {
         <Link  to="/"><img src={"./img/invertswag.png"} alt="SWAG"/></Link>
         <Links>
           <li>
-            <Link  to="/timeline">{this.state.currentLang[0]}</Link>
+            <Link  to="/timeline">{(this.state.isEng)?"Timeline":"Linea del Tiempo"}</Link>
           </li>
           <li>
-            <Link  to="/blog"> {this.state.currentLang[1]}</Link>
+            <Link  to="/blog"> Blog</Link>
           </li>
           <li>
-            <Link  to="/resources"> {this.state.currentLang[2]}</Link>
+            <Link  to="/resources"> {(this.state.isEng)?"Resources":"Recrusos"}</Link>
             </li>
           <li>
-            <Link to="/aboutus">{this.state.currentLang[3]}</Link>
+            <Link to="/aboutus">{(this.state.isEng)?"About Us":"Sobre Nosotros"}</Link>
           </li>
           <li>
-            <Link to="/getinvolved">{this.state.currentLang[4]}</Link>      
-          </li>
-          <li>
-          <Toggle toggleLang={this.toggleLang} switch={this.state.switchPos} lang={(this.state.isEng)?"English":"Spanish"}/>
+            <Link to="/getinvolved">{(this.state.isEng)?"Get Involved":"Involucrarse"}</Link>      
           </li>
         </Links>
+        <Toggle toggleLang={this.toggleLang} switch={this.state.switchPos} lang={(this.state.isEng)?"English":"Spanish"}/>
       </Container>
     );
   }
@@ -121,18 +126,28 @@ class Toggle extends Component{
   render(){
     return(
         <div>
-          <English onClick={this.props.toggleLang}>
+          <SwitchWrap onClick={()=>this.props.toggleLang()}>
             {this.props.lang}
-            <Spanish style={this.props.switch}/>
-          </English>
+            <Switch style={this.props.switch}/>
+          </SwitchWrap>
           </div>
     )
   }
 }
 
-const mapStateToProps= state=>{ state};
+const mapStateToProps= state=>{
+  return{
+      isEng:state.isEng
+    }
+  };
 
-const mapActionsToProps={
-  onUpdateLang:updateLang
+
+function mapDispatchToProps(dispatch){
+  return{
+    onUpdateLang:()=>{
+      const action={type:"UPDATE_LANG",payload:false};
+      dispatch(action);
+    }
+  }
 }
-export default connect(mapStateToProps, mapActionsToProps)(Navbar);
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);

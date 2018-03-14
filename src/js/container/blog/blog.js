@@ -87,17 +87,15 @@ const Search=styled.input``
                 }else{
                   return(<span> {element}</span>)
                 }
-                
-
-
               })}
               
              </Wrapper>
               <QuickLinks>
+              <li>All Posts</li>
               <li>Recent Posts</li>
-              <li>Posts by author</li>
-              <li>category</li>
-              <li>...more</li>
+              <li>Bloggers</li>
+              <li>Category</li>
+              <li>Month</li>
               </QuickLinks>
           </VerticalSplit>
         </Container>

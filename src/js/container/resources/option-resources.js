@@ -6,12 +6,6 @@ import Styles from '../../style/styles'
 const Container=styled.div`
     margin:20px 0;
 `
-const Blurb=styled.div`
-    color:${Styles.color.primary};
-    font-size:10px;
-    text-align:center;
-`
-
 const Name=styled.button`
     background-color:${Styles.color.secondary};
     color:${Styles.color.font2};

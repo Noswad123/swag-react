@@ -22,8 +22,6 @@ const Wrapper=styled.div`
   background-color:${Styles.color.primary};
   border-radius:10px;
 `
-const Name=styled.button``;
-const Blurb=styled.div``;
 
 export default class Resources extends Component {
   constructor(){
