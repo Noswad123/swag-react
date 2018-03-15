@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link} from 'react-router-dom';
 import styled from 'styled-components';
 import Styles from '../style/styles';
-import navbarTrans from '../data/translations/navabar-translate'
 import {connect} from 'react-redux';
 
 const Container=styled.div`
@@ -13,10 +12,9 @@ background-color: ${Styles.color.primary};
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    img {
-      height: 40px;
-  }
+`
+const Logo=styled.img`
+  height: 40px;
 `
 const Links=styled.ul`
 list-style: none;
@@ -40,6 +38,23 @@ li{
     color:${Styles.color.font1};
     text-decoration:none;
   }
+}
+`
+const Icons=styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+`
+const Social=styled.div`
+display:flex;
+justify-content:space-between;
+`
+const Icon=styled.img`
+height:30px;
+opacity:.5;
+cursor:pointer;
+&:hover{
+  opacity:1;
 }
 `
 const SwitchWrap=styled.div`
@@ -70,11 +85,10 @@ transition: all 1s;
 class Navbar extends Component {
   constructor(props){
     super(props);
-    console.log(props)
+
     this.toggleLang=this.toggleLang.bind(this);
     this.state={
       isEng:props.isEng,
-      currentLang:navbarTrans.eng,
       switchPos:{transform:"translateX(80px)"}
     }
   }
@@ -88,8 +102,7 @@ class Navbar extends Component {
     this.setState(
       {
         isEng:opp,
-        switchPos:(this.state.isEng)?{transform:"translateX(-10px)"}:{transform:"translateX(75px)"},
-        currentLang:(this.state.isEng)?navbarTrans.eng:navbarTrans.esp
+        switchPos:(this.state.isEng)?{transform:"translateX(-10px)"}:{transform:"translateX(75px)"}
       }
     )
     
@@ -97,13 +110,13 @@ class Navbar extends Component {
   render() {
     return (
       <Container>
-        <Link  to="/"><img src={"./img/invertswag.png"} alt="SWAG"/></Link>
+        <Link  to="/"><Logo src={"./img/invertswag.png"} alt="SWAG"/></Link>
         <Links>
           <li>
             <Link  to="/timeline">{(this.state.isEng)?"Timeline":"Linea del Tiempo"}</Link>
           </li>
           <li>
-            <Link  to="/blog"> Blog</Link>
+            <Link to="/getinvolved">{(this.state.isEng)?"Get Involved":"Involucrarse"}</Link>      
           </li>
           <li>
             <Link  to="/resources"> {(this.state.isEng)?"Resources":"Recrusos"}</Link>
@@ -111,11 +124,19 @@ class Navbar extends Component {
           <li>
             <Link to="/aboutus">{(this.state.isEng)?"About Us":"Sobre Nosotros"}</Link>
           </li>
-          <li>
-            <Link to="/getinvolved">{(this.state.isEng)?"Get Involved":"Involucrarse"}</Link>      
-          </li>
+          
         </Links>
-        <Toggle toggleLang={this.toggleLang} switch={this.state.switchPos} lang={(this.state.isEng)?"English":"Spanish"}/>
+
+        <Icons>
+          <Toggle toggleLang={this.toggleLang} switch={this.state.switchPos} lang={(this.state.isEng)?"English":"Spanish"}/>
+          <Social>
+          <a href="https://www.facebook.com/SWAGToCollege/" target="_blank" rel="noopener noreferrer">  <Icon src={'./img/facebook.ico'}/></a>
+          <a href="https://www.instagram.com/swagtocollege/" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/instagram.png'}/></a>
+          <a href="https://twitter.com/swagtocollege" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/twitter.png'}/></a>
+          <a href="https://medium.com/@swagtocollege" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/medium.png'}/></a>
+          <a href="https://www.linkedin.com/company/10801368/" target="_blank" rel="noopener noreferrer">  <Icon src={'./img/linkedin.png'}/></a>
+          </Social>
+        </Icons>
       </Container>
     );
   }

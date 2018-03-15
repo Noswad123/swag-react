@@ -4,7 +4,7 @@ import Styles from '../../style/styles'
 
 
 const Container=styled.div`
-    margin:20px 0;
+    margin:10px 0;
 `
 const Name=styled.button`
     background-color:${Styles.color.secondary};
@@ -14,8 +14,13 @@ const Name=styled.button`
     padding:5px 5px;
     text-align:center;
     height: 40px;
-    width:200px;
+    width:170px;
     border-radius:10px;
+    &:hover{
+        background-color:${Styles.color.tertiary};
+        color:${Styles.color.accent};
+        border-color: ${Styles.color.accent};
+    }
 `
 
 

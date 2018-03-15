@@ -12,7 +12,8 @@ const Container=styled.div`
   padding:30px;
 `
 const FlexWrapper=styled.div`
-  width:50%;
+  width:500px;
+  margin-right:50px;
 `
 
 const Wrapper=styled.div`
@@ -21,6 +22,7 @@ const Wrapper=styled.div`
   align-items:center;
   background-color:${Styles.color.primary};
   border-radius:10px;
+  padding:10px;
 `
 
 export default class Resources extends Component {

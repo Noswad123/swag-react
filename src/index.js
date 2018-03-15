@@ -15,7 +15,6 @@ import Footer from './js/component/footer';
 //import reducer from './js/reducers/reducer'
 
 import AboutUs from './js/container/about-us/about-us';
-import Blog from './js/container/blog/blog';
 import GetInvolved from './js/container/get-involved/get-involved';
 import Home from './js/container/home/home';
 import Resources from './js/container/resources/resources';
@@ -38,7 +37,6 @@ ReactDOM.render(
       <Container style={{width:"100%"}}>
         <Navbar/>
         <Route exact path="/aboutus" component={AboutUs}/>
-        <Route exact path="/blog" component={Blog}/>
         <Route exact path="/getinvolved" component={GetInvolved}/>
         <Route exact path="/" component={Home}/>
         <Route exact path="/resources" component={Resources}/>

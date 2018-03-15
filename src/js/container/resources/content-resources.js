@@ -4,16 +4,17 @@ import Styles from '../../style/styles'
 
 const Container=styled.div`
 min-height:80vh;
-background-color:${Styles.color.tertiary};
+background-color:${Styles.color.primary};
 `
 const Wrapper=styled.div`
 margin:20px;
 `;
 const Name=styled.a`
-color:${Styles.color.accent}
+color:${Styles.color.accent};
 `;
 const Description=styled.div`
-font-family:${Styles.font.text}
+font-family:${Styles.font.text};
+color:${Styles.color.secondary};
 
 `;
 
