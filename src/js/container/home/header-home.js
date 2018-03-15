@@ -29,10 +29,10 @@ export default class Header extends Component {
     render() {
       return (
         <Container>
-          <Title>Welcome</Title>
+          <Title >{(this.props.lang)?"Welcome":"Bienvenidos"}</Title>
           <Text>
-            Our vision is to close the achievement gap and ensure every underserved high school and college student has a pathway to
-            reach their goals.
+          {(this.props.lang)?"Our vision is to close the achievement gap and ensure every underserved high school and college student has a pathway to reach their goals."
+          :"Nuestro vision es cierrar la brecha del rendimiento y asegurar cada estudiante de la escuela secundario desatendido y del colegio tiene una manera para obtener sus metas"}
           </Text>
         </Container> 
       )

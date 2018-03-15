@@ -34,55 +34,35 @@ const Container=styled.div`
       }
     }
 `
-
 export default class Gallery extends Component {
     render(){
         return(
-            <Container>
-              
+          <Container>
             <div className="items">
               <img src={"./img/mentees.png"} alt="Picture12" />
-        
-              <button >Opportunities for High School Students</button>
-        
+              <button >{(this.props.lang)?"Opportunities for High School Students":"Need translation"}</button>
             </div>
-
-
             <div className="items">
               <img src={"./img/20543_4_orig.png"} alt="Picture2" />
-            
-              <button >Opportunities for College Students</button>
+              <button >{(this.props.lang)?"Opportunities for College Students":"Need translation"}</button>
             </div>
-
             <div className="items">
               <img src={"./img/9769588_4_orig.png"} alt="Picture4" />
-            
-              <button>Opportunities for Young Professionals</button>
+              <button>{(this.props.lang)?"Opportunities for Young Professionals":"Need translation"}</button>
             </div>
             <div className="items">
               <img src={"./img/jls-3197_orig.jpg"} alt="Picture1" />
-            
-              <button >Opportunities for Community Leaders</button>
+              <button >{(this.props.lang)?"Opportunities for Community Leaders":"Need translation"}</button>
             </div>
-  
-           
-  
             <div className="items">
               <img src={"./img/jls-3073_orig.jpg"} alt="Picture3" />
-           
-              <button>Opportunities for Parents ​and Guardians</button>
-            </div>
-        
-           
-        
+              <button>{(this.props.lang)?"Opportunities for Parents ​and Guardians":"Need translation"}</button>
+            </div> 
             <div className="items">
               <img src={"./img/school-admin.jpg"} alt="Picture4" />
-        
-              <button >Opportunities for School Administration</button>
+              <button >{(this.props.lang)?"Opportunities for School Administration":"Need translation"}</button>
             </div>
-            
-            </Container>
-
+          </Container>
         )
     }
 }

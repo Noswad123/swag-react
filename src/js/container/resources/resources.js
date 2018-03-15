@@ -4,6 +4,7 @@ import Styles from '../../style/styles';
 import ResourcesData from '../../data/resources.data';
 import OptionResources from './option-resources';
 import ContentResources from './content-resources';
+import {connect} from 'react-redux';
 
 const Container=styled.div`
   min-height:80vh;
@@ -25,7 +26,7 @@ const Wrapper=styled.div`
   padding:10px;
 `
 
-export default class Resources extends Component {
+class Resources extends Component {
   constructor(){
     super();
     this.state={
@@ -56,3 +57,20 @@ export default class Resources extends Component {
     );
   }
 }
+
+const mapStateToProps= state=>{
+  return{
+      isEng:state.isEng
+    }
+  };
+
+
+function mapDispatchToProps(dispatch){
+  return{
+    onUpdateLang:()=>{
+      const action={type:"UPDATE_LANG",payload:false};
+      dispatch(action);
+    }
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Resources);

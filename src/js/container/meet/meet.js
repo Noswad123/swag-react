@@ -5,7 +5,8 @@ import Team from '../../data/team.data';
 import TeamMember from './team-meet';
 import FilterOption from './filter-meet'
 import { Link} from 'react-router-dom';
-import PopUP from './popup'
+import PopUP from './popup';
+import {connect} from 'react-redux';
 
 const Filter=styled.ul`
 list-style-type: none;`
@@ -18,7 +19,7 @@ padding:50px;
 box-sizing:border-box;
 color:${Styles.color.font2};
 `
-export default class Meet extends Component{
+class Meet extends Component{
     constructor(){
         super();
         this.state={
@@ -38,7 +39,6 @@ export default class Meet extends Component{
         }else{
             return {display:"none"}
         }
-
     }
     openPopUp(id){
         console.log(id);
@@ -53,12 +53,12 @@ export default class Meet extends Component{
     render(){
         return(
             <div>
-                < Link to="/aboutus"> Back </Link>
-                <h1>Meet The Team </h1>
+                < Link to="/aboutus"> {(this.props.lang)?"Back":"Regresa"} </Link>
+                <h1>{(this.props.lang)?"Meet The Team ":"Conoce el equipo"}</h1>
                 <Filter>                
-                    <FilterOption key="all" filterName="All" current={this.state.current} changeFilter={this.changeFilter.bind(this)}>All</FilterOption>
-                    <FilterOption key="board" changeFilter={this.changeFilter.bind(this)} current={this.state.current} filterName="Board of Directors" >Board of Directors</FilterOption>
-                    <FilterOption key="intern" changeFilter={this.changeFilter.bind(this)}  current={this.state.current} filterName="Intern">Interns</FilterOption>
+                    <FilterOption key="all" filterName="All" current={this.state.current} changeFilter={this.changeFilter.bind(this)}>{(this.props.lang)?"All":"Todos"}</FilterOption>
+                    <FilterOption key="board" changeFilter={this.changeFilter.bind(this)} current={this.state.current} filterName="Board of Directors" >{(this.props.lang)?"Board of Directors":"Los directores"}</FilterOption>
+                    <FilterOption key="intern" changeFilter={this.changeFilter.bind(this)}  current={this.state.current} filterName="Intern">{(this.props.lang)?"Interns":"Need translation"}</FilterOption>
                 </Filter>
                 <PopUP closePopUp={this.closePopUp.bind(this)} display={this.changePopUp()} img={Team[this.state.selectedStaff].imgUrl} name={Team[this.state.selectedStaff].name} bio={Team[this.state.selectedStaff].bio} position={Team[this.state.selectedStaff].position}/>
                 <Staff>
@@ -81,3 +81,19 @@ export default class Meet extends Component{
         )
     }
 }
+const mapStateToProps= state=>{
+    return{
+        isEng:state.isEng
+    }
+};
+  
+  
+function mapDispatchToProps(dispatch){
+    return{
+      onUpdateLang:()=>{
+        const action={type:"UPDATE_LANG",payload:false};
+        dispatch(action);
+      }
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Meet);

@@ -3,20 +3,18 @@ import React, {Component} from 'react';
 import Styles from '../../style/styles';
 
 const Container=styled.div`
-display:flex;
-width:25%;
-flex-direction:column;
-background-color:${Styles.color.primary};
-align-items: center;
-height:300px;
-position:relative;
-margin-bottom:10px;
-cursor:pointer;
-img{
-    width:100%;
-}
-    
-}
+    display:flex;
+    width:25%;
+    flex-direction:column;
+    background-color:${Styles.color.primary};
+    align-items: center;
+    height:300px;
+    position:relative;
+    margin-bottom:10px;
+    cursor:pointer;
+    img{
+        width:100%;
+    }
 `
 const Name=styled.div``
 const Picture=styled.img`

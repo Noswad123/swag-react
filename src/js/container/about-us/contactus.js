@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Styles from '../../style/styles';
 import { Link} from 'react-router-dom';
+import {connect} from 'react-redux';
 
 const Container=styled.div`
 min-height:80vh;
@@ -22,12 +23,12 @@ const Header=styled.div``
 const Name=styled.div``
 const Phone=styled.div``
 const Email=styled.div``
-export default class ContactUs extends Component{
+class ContactUs extends Component{
     render(){
         return(
             <Container>
-                <Link to="/aboutus">back</Link>
-                <Title>Contact Us</Title>
+                <Link to="/aboutus">{(this.props.lang)?"back":"regresa"}</Link>
+                <Title>{(this.props.lang)?"Contact Us":"needs translate"}</Title>
                 <ContactWrapper>
                     <Contact>
                         <Header>   ​For general inquiries</Header>
@@ -50,9 +51,24 @@ export default class ContactUs extends Component{
                         <Name>Maddie Coles</Name>
                         <Email>​Email: maddie.coles@swagtocollege.org</Email>
                     </Contact>
-                        Follow us on Social Media
                 </ContactWrapper>
             </Container>
         )
     }
 }
+
+const mapStateToProps= state=>{
+    return{
+        isEng:state.isEng
+      }
+};
+  
+function mapDispatchToProps(dispatch){
+    return{
+      onUpdateLang:()=>{
+        const action={type:"UPDATE_LANG",payload:false};
+        dispatch(action);
+      }
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(ContactUs);

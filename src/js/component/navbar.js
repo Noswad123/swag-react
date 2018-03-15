@@ -95,9 +95,6 @@ class Navbar extends Component {
 
   toggleLang(){
     var opp=!this.state.isEng;
-    console.group("toggle lang")
-    console.log(this.state.isEng)
-    console.groupEnd()
     this.props.onUpdateLang();
     this.setState(
       {

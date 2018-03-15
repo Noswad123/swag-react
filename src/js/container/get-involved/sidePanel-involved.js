@@ -7,7 +7,6 @@ const Container = styled.div`
   padding: 50px;
 `
 const SubPanel = styled.div`
- 
   background-color:${Styles.color.primary};
   border-radius: 0 2% 2% 2% ;
   padding: 16px 32px;
@@ -19,7 +18,6 @@ const TabStyle = styled.button`
   border-radius: 10px 10px 0 0;
   border-color: ${Styles.color.font2};
   border-bottom: none;
- // margin-right: 10px;
 `
 const Option = styled.div`
 display:flex;
@@ -46,35 +44,30 @@ export default class SidePanel extends Component {
   constructor(){
     super();
     this.state={
-
       tabArray:[true,false]
     }
-    
   } 
   toggleActive(){
     var tabOne=this.state.tabArray[0];
     var tabTwo=this.state.tabArray[1];
     this.setState({tabArray:[!tabOne,!tabTwo]})
    }
-  
   render() {
       return (
         <Container>
-         <Tab  toggle={this.toggleActive.bind(this)} isActive={this.state.tabArray[0]} name="Learn More"/>
-        <Tab toggle={this.toggleActive.bind(this)} isActive={this.state.tabArray[1]} name="CheckIn"/>
+         <Tab  toggle={this.toggleActive.bind(this)} isActive={this.state.tabArray[0]} name={(this.props.lang)?"Learn More":"Need translation"}/>
+        <Tab toggle={this.toggleActive.bind(this)} isActive={this.state.tabArray[1]} name={(this.props.lang)?"CheckIn":"Need translation"}/>
         <SubPanel>
          
-          <LearnMore change={this.props.change} isActive={this.state.tabArray[0]}/>
-          <CheckIn  isActive={this.state.tabArray[1]}/>
+          <LearnMore lang={this.props.lang} change={this.props.change} isActive={this.state.tabArray[0]}/>
+          <CheckIn lang={this.props.lang} isActive={this.state.tabArray[1]}/>
         </SubPanel>
       </Container>
       )
     }
 }
 class LearnMore extends Component{
-
   changeOptions(){
-    
     if(this.props.isActive){
       return {display:"flex"}
     }else{
@@ -84,15 +77,13 @@ class LearnMore extends Component{
   render(){
     return(
       <Option style={this.changeOptions()}>
-            <button onClick={()=>this.props.change(0)}>High School Student  </button>
-            <button onClick={()=>this.props.change(1)}>College Student </button>
-            <button onClick={()=>this.props.change(2)}>Young Professional </button>
-            <button onClick={()=>this.props.change(3)}>Parents </button>
-            <button onClick={()=>this.props.change(4)}>School Administration </button>
-            <button onClick={()=>this.props.change(5)}>Community Member </button>
-            
+            <button onClick={()=>this.props.change(0)}>{(this.props.lang)?"High School Student":"Need translation"}  </button>
+            <button onClick={()=>this.props.change(1)}>{(this.props.lang)?"College Student ":"Need translation"}</button>
+            <button onClick={()=>this.props.change(2)}>{(this.props.lang)?"Young Professional":"Need translation"} </button>
+            <button onClick={()=>this.props.change(3)}>{(this.props.lang)?"Parents":"Los Padres"} </button>
+            <button onClick={()=>this.props.change(4)}>{(this.props.lang)?"School Administration":"Need translation"} </button>
+            <button onClick={()=>this.props.change(5)}>{(this.props.lang)?"Community Member":"Need translation"} </button>
       </Option>
-      
     )
   }
 }
@@ -111,7 +102,7 @@ class CheckIn extends Component{
   render(){
     return(
             <Option style={this.changeOptions()}>
-          <button> Checkin Form</button>
+          <button>{(this.props.lang)?"Checkin Form":"Need translation"} </button>
       </Option>
     )
   }
