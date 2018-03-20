@@ -8,12 +8,12 @@ const Styles={
     color:{
         
         primary:"#09335D",
-        secondary:"#F6F7EB",
+        secondary:"#FFFFFF",
         accent:"#61E786",
         tertiary:"#69626D",
         font1:"#F6F7EB",
         font2:"#0F0F0F",
-        background:"#F6F7EB"
+        background:"#FFFFFF"
     },
     size:{
         xxs:"4px",

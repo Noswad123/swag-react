@@ -53,12 +53,12 @@ class Meet extends Component{
     render(){
         return(
             <div>
-                < Link to="/aboutus"> {(this.props.lang)?"Back":"Regresa"} </Link>
-                <h1>{(this.props.lang)?"Meet The Team ":"Conoce el equipo"}</h1>
+                < Link to="/aboutus"> {(this.props.isEng)?"Back":"Regresa"} </Link>
+                <h1>{(this.props.isEng)?"Meet The Team ":"Conoce el equipo"}</h1>
                 <Filter>                
-                    <FilterOption key="all" filterName="All" current={this.state.current} changeFilter={this.changeFilter.bind(this)}>{(this.props.lang)?"All":"Todos"}</FilterOption>
-                    <FilterOption key="board" changeFilter={this.changeFilter.bind(this)} current={this.state.current} filterName="Board of Directors" >{(this.props.lang)?"Board of Directors":"Los directores"}</FilterOption>
-                    <FilterOption key="intern" changeFilter={this.changeFilter.bind(this)}  current={this.state.current} filterName="Intern">{(this.props.lang)?"Interns":"Need translation"}</FilterOption>
+                    <FilterOption key="all" filterName="All" current={this.state.current} changeFilter={this.changeFilter.bind(this)}>{(this.props.isEng)?"All":"Todos"}</FilterOption>
+                    <FilterOption key="board" changeFilter={this.changeFilter.bind(this)} current={this.state.current} filterName="Board of Directors" >{(this.props.isEng)?"Board of Directors":"Los directores"}</FilterOption>
+                    <FilterOption key="intern" changeFilter={this.changeFilter.bind(this)}  current={this.state.current} filterName="Intern">{(this.props.isEng)?"Interns":"Need translation"}</FilterOption>
                 </Filter>
                 <PopUP closePopUp={this.closePopUp.bind(this)} display={this.changePopUp()} img={Team[this.state.selectedStaff].imgUrl} name={Team[this.state.selectedStaff].name} bio={Team[this.state.selectedStaff].bio} position={Team[this.state.selectedStaff].position}/>
                 <Staff>

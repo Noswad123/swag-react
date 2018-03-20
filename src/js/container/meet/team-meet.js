@@ -4,7 +4,7 @@ import Styles from '../../style/styles';
 
 const Container=styled.div`
     display:flex;
-    width:25%;
+    width:15%;
     flex-direction:column;
     background-color:${Styles.color.primary};
     align-items: center;
@@ -15,6 +15,7 @@ const Container=styled.div`
     img{
         width:100%;
     }
+    border:solid white;
 `
 const Name=styled.div``
 const Picture=styled.img`
