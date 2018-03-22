@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Styles from '../../style/styles';
-import ResourcesData from '../../data/resources.data';
+import EngResources from '../../data/resources-eng.data';
+import EspResources from '../../data/resources-esp.data';
 import OptionResources from './option-resources';
 import ContentResources from './content-resources';
 import {connect} from 'react-redux';
@@ -32,6 +33,7 @@ class Resources extends Component {
     this.state={
       resourceIndex:0
     }
+    var ResourcesData=[];
   }
  
   changeIndex(input){
@@ -42,17 +44,24 @@ class Resources extends Component {
       <Container>
         <FlexWrapper>
           <Wrapper>
+             
             {
-              ResourcesData.map((element, index)=>{
-                return(
-                    <OptionResources key={index} linkIndex={index} changeIndex={this.changeIndex.bind(this)} name={element.section} blurb={element.blurb}/>
-                )
-              })
+              this.props.isEng
+                ?EngResources.map((element, index)=>{
+                  return(
+                      <OptionResources key={index} linkIndex={index} changeIndex={this.changeIndex.bind(this)} name={element.section} blurb={element.blurb}/>
+                  )
+                })
+                :EspResources.map((element, index)=>{
+                  return(
+                      <OptionResources key={index} linkIndex={index} changeIndex={this.changeIndex.bind(this)} name={element.section} blurb={element.blurb}/>
+                  )
+                })
               
             }
           </Wrapper>
           </FlexWrapper>
-        <ContentResources  resource={ResourcesData[this.state.resourceIndex].links}/>
+        <ContentResources  resource={this.props.isEng?EngResources[this.state.resourceIndex].links:EspResources[this.state.resourceIndex].links}/>
       </Container>
     );
   }

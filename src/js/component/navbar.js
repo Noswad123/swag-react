@@ -6,15 +6,23 @@ import {connect} from 'react-redux';
 
 const Container=styled.div`
 background-color: ${Styles.color.primary};
-    height: 50px;
+    height: 80px;
+    width:100%;
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing:border-box;
+    @media (max-width: 740px) {
+      height:80px;
+    }
 `
 const Logo=styled.img`
   height: 40px;
+  @media (max-width: 740px) {
+    height:30px;
+  }
 `
 const Links=styled.ul`
 list-style: none;
@@ -27,25 +35,34 @@ li{
   &:hover{
     border:solid ${Styles.color.secondary};
   }
-  &:last-child{
-    border:none;
-    &:hover{
-      border:none;
-    }
-  }
- 
   a{
     color:${Styles.color.font1};
     text-decoration:none;
   }
-}
+  @media (max-width: 740px) {
+    display:none;
+  }
 `
 const Icons=styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
+    .toggle{
+      display:none;
+    }
+   
+    @media (max-width: 740px) {
+      .social{
+        display:none;
+      }
+      .toggle{
+        display:block;
+        cursor:pointer;
+      }
+      
+    }
 `
-const Social=styled.div`
+const SocialStyle=styled.div`
 display:flex;
 justify-content:space-between;
 `
@@ -81,7 +98,36 @@ top:0;
 left:0;
 transition: all 1s;
 `
+const MobileMenu=styled.div`
+display: none;
+width:100%;
+background-color:${Styles.color.primary};
+color:white;
+padding:20px;
+box-sizing:border-box;
+a{
+  color:white;
+  text-decoration:none;
+}
+@media (max-width: 743px) {
+  display:none;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:100;
+  flex-direction:column;
+  justify-content:center;
+}
 
+`
+const Mobile=styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+a{
+  margin:20px;
+}
+`
 class Navbar extends Component {
   constructor(props){
     super(props);
@@ -89,7 +135,8 @@ class Navbar extends Component {
     this.toggleLang=this.toggleLang.bind(this);
     this.state={
       isEng:props.isEng,
-      switchPos:{transform:"translateX(80px)"}
+      switchPos:{transform:"translateX(80px)"},
+      isMenu:false
     }
   }
 
@@ -103,6 +150,16 @@ class Navbar extends Component {
       }
     )
     
+  }
+  hideMenu(){
+    this.setState({
+      isMenu:false
+    })
+  }
+  showMenu(){
+    this.setState({
+      isMenu:true
+    })
   }
   render() {
     return (
@@ -121,34 +178,64 @@ class Navbar extends Component {
           <li>
             <Link to="/aboutus">{(this.state.isEng)?"About Us":"Sobre Nosotros"}</Link>
           </li>
-          
+          <MobileMenu style={{display:`${this.state.isMenu?"block":"none"}`}}>
+            <MobileLinks click={this.hideMenu.bind(this)} lang={this.state.isEng}/>
+            <Social/>
+          </MobileMenu>
         </Links>
 
         <Icons>
           <Toggle toggleLang={this.toggleLang} switch={this.state.switchPos} lang={(this.state.isEng)?"English":"Spanish"}/>
-          <Social>
-          <a href="https://www.facebook.com/SWAGToCollege/" target="_blank" rel="noopener noreferrer">  <Icon src={'./img/facebook.ico'}/></a>
-          <a href="https://www.instagram.com/swagtocollege/" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/instagram.png'}/></a>
-          <a href="https://twitter.com/swagtocollege" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/twitter.png'}/></a>
-          <a href="https://medium.com/@swagtocollege" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/medium.png'}/></a>
-          <a href="https://www.linkedin.com/company/10801368/" target="_blank" rel="noopener noreferrer">  <Icon src={'./img/linkedin.png'}/></a>
-          </Social>
+          <Social />
+          <MenuToggle click={this.showMenu.bind(this)}/>
         </Icons>
       </Container>
     );
   }
 }
+class MobileLinks extends Component{
+  render(){
+    return(
+      <Mobile onClick={this.props.click}>
+        <Link  to="/">{(this.props.lang)?"Home":"Need Translation"}</Link> 
+        <Link  to="/timeline">{(this.props.lang)?"Timeline":"Linea del Tiempo"}</Link> 
+        <Link to="/getinvolved">{(this.props.lang)?"Get Involved":"Involucrarse"}</Link>      
+        <Link  to="/resources"> {(this.props.lang)?"Resources":"Recrusos"}</Link>
+        <Link to="/aboutus">{(this.props.lang)?"About Us":"Sobre Nosotros"}</Link>
+      </Mobile>
+    )
+  }
+}
 
-
+class Social extends Component{
+  render(){
+    return(
+      <SocialStyle className="social">
+          <a href="https://www.facebook.com/SWAGToCollege/" target="_blank" rel="noopener noreferrer">  <Icon src={'./img/facebook.ico'}/></a>
+          <a href="https://www.instagram.com/swagtocollege/" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/instagram.png'}/></a>
+          <a href="https://twitter.com/swagtocollege" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/twitter.png'}/></a>
+          <a href="https://medium.com/@swagtocollege" target="_blank" rel="noopener noreferrer"> <Icon src={'./img/medium.png'}/></a>
+          <a href="https://www.linkedin.com/company/10801368/" target="_blank" rel="noopener noreferrer">  <Icon src={'./img/linkedin.png'}/></a>
+      </SocialStyle>
+    )
+  }
+}
+class MenuToggle extends Component{
+  render(){
+    return(
+      <img onClick={this.props.click} style={{height:"50px"}}className="toggle" src={"./img/hamburger.png"} alt="hamburger"/>
+    )
+  }
+}
 class Toggle extends Component{
   render(){
     return(
-        <div>
-          <SwitchWrap onClick={()=>this.props.toggleLang()}>
-            {this.props.lang}
-            <Switch style={this.props.switch}/>
-          </SwitchWrap>
-          </div>
+      <div>
+        <SwitchWrap onClick={()=>this.props.toggleLang()}>
+          {this.props.lang}
+          <Switch style={this.props.switch}/>
+        </SwitchWrap>
+      </div>
     )
   }
 }

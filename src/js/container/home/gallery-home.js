@@ -17,8 +17,8 @@ const Container=styled.div`
       justify-content: center;
       margin: ${Styles.size.s};
       img {
-        width: 20em;
-        margin: 1em;
+        width: 100%;
+        margin:20px;;
       }
       button {
         background-color: ${Styles.color.secondary};
@@ -33,6 +33,16 @@ const Container=styled.div`
         color: ${Styles.color.secondary};
       }
     }
+    @media(max-width:900px){
+      .items{
+        width:30vw;
+      }
+    }
+    @media(max-width:700px){
+      .items{
+        width:80vw;
+      }
+    }
 `
 export default class Gallery extends Component {
     render(){
@@ -40,27 +50,27 @@ export default class Gallery extends Component {
           <Container>
             <div className="items">
               <img src={"./img/mentees.png"} alt="Picture12" />
-              <button >{(this.props.lang)?"Opportunities for High School Students":"Need translation"}</button>
+              <button >{(this.props.lang)?"Opportunities for High School Students":"Opportunidades para los estudiantes de secundaria"}</button>
             </div>
             <div className="items">
               <img src={"./img/20543_4_orig.png"} alt="Picture2" />
-              <button >{(this.props.lang)?"Opportunities for College Students":"Need translation"}</button>
+              <button >{(this.props.lang)?"Opportunities for College Students":"Opportunidades para los estudiantes universitarios"}</button>
             </div>
             <div className="items">
               <img src={"./img/9769588_4_orig.png"} alt="Picture4" />
-              <button>{(this.props.lang)?"Opportunities for Young Professionals":"Need translation"}</button>
+              <button>{(this.props.lang)?"Opportunities for Young Professionals":"Opportunidades para los jovenes profesionales"}</button>
             </div>
             <div className="items">
               <img src={"./img/jls-3197_orig.jpg"} alt="Picture1" />
-              <button >{(this.props.lang)?"Opportunities for Community Leaders":"Need translation"}</button>
+              <button >{(this.props.lang)?"Opportunities for Community Leaders":"Opportunidades para los líderes comunitarios"}</button>
             </div>
             <div className="items">
               <img src={"./img/jls-3073_orig.jpg"} alt="Picture3" />
-              <button>{(this.props.lang)?"Opportunities for Parents ​and Guardians":"Need translation"}</button>
+              <button>{(this.props.lang)?"Opportunities for Parents ​and Guardians":"Opportunidades para los padres"}</button>
             </div> 
             <div className="items">
               <img src={"./img/school-admin.jpg"} alt="Picture4" />
-              <button >{(this.props.lang)?"Opportunities for School Administration":"Need translation"}</button>
+              <button >{(this.props.lang)?"Opportunities for School Administration":"Opportunidades para la administración escolar"}</button>
             </div>
           </Container>
         )

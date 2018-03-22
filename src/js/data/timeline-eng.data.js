@@ -1,5 +1,5 @@
 
-const Timelines = [
+const EngTimelines = [
    
     {
         grade: "Freshman",
@@ -583,4 +583,4 @@ const Timelines = [
 
 ]
 
-export default Timelines;
+export default EngTimelines;

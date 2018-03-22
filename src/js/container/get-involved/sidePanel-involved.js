@@ -11,7 +11,7 @@ const SubPanel = styled.div`
   border-radius: 0 2% 2% 2% ;
   padding: 16px 32px;
   width:128px;
-  height:200px;`
+  min-height:200px;`
 const TabStyle = styled.button`
   background-color: ${Styles.color.secondary};
   color: #09335D;;
@@ -30,8 +30,9 @@ button{
     color:${Styles.color.font2};
     border: solid ${Styles.color.font2};
     border-radius: 8px;
-    height: 32px;
+    min-height: 32px;
     width: 160px;
+    margin:5px;
     font-family:${Styles.font.text};
     &:hover{
       background-color:${Styles.color.tertiary};
@@ -55,8 +56,8 @@ export default class SidePanel extends Component {
   render() {
       return (
         <Container>
-         <Tab  toggle={this.toggleActive.bind(this)} isActive={this.state.tabArray[0]} name={(this.props.lang)?"Learn More":"Need translation"}/>
-        <Tab toggle={this.toggleActive.bind(this)} isActive={this.state.tabArray[1]} name={(this.props.lang)?"CheckIn":"Need translation"}/>
+         <Tab  toggle={this.toggleActive.bind(this)} isActive={this.state.tabArray[0]} name={(this.props.lang)?"Learn More":"Aprenda Mas"}/>
+        <Tab toggle={this.toggleActive.bind(this)} isActive={this.state.tabArray[1]} name={(this.props.lang)?"CheckIn":"registrarse"}/>
         <SubPanel>
          
           <LearnMore lang={this.props.lang} change={this.props.change} isActive={this.state.tabArray[0]}/>
@@ -77,12 +78,12 @@ class LearnMore extends Component{
   render(){
     return(
       <Option style={this.changeOptions()}>
-            <button onClick={()=>this.props.change(0)}>{(this.props.lang)?"High School Student":"Need translation"}  </button>
-            <button onClick={()=>this.props.change(1)}>{(this.props.lang)?"College Student ":"Need translation"}</button>
-            <button onClick={()=>this.props.change(2)}>{(this.props.lang)?"Young Professional":"Need translation"} </button>
+            <button onClick={()=>this.props.change(0)}>{(this.props.lang)?"High School Student":"Estudiantes de secundaria"}  </button>
+            <button onClick={()=>this.props.change(1)}>{(this.props.lang)?"College Student ":"Estudiantes universitarios"}</button>
+            <button onClick={()=>this.props.change(2)}>{(this.props.lang)?"Young Professional":"jovenes profesionales"} </button>
             <button onClick={()=>this.props.change(3)}>{(this.props.lang)?"Parents":"Los Padres"} </button>
-            <button onClick={()=>this.props.change(4)}>{(this.props.lang)?"School Administration":"Need translation"} </button>
-            <button onClick={()=>this.props.change(5)}>{(this.props.lang)?"Community Member":"Need translation"} </button>
+            <button onClick={()=>this.props.change(4)}>{(this.props.lang)?"School Administration":"administracion escolar"} </button>
+            <button onClick={()=>this.props.change(5)}>{(this.props.lang)?"Community Member":"lideres comunitarios"} </button>
       </Option>
     )
   }

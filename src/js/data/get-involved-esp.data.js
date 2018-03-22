@@ -1,13 +1,11 @@
 
-const Involved = [
+const EspInvolved = [
    
     {
-        level:"College Student",
-        blurb:`As a college student, there are several ways to become involved in SWAG To College. Specifically, you can: (1)
-        serve as a mentor for a high school student; (2) if you are a college freshman or sophomore, receive an upperclassman
-        mentor; (3) if you are a college junior or senior, serve as a mentor for an underclassman; or (4) if you are
-        a college sophomore, junior, or senior, receive a mentor who is a Young Professional in your career field of
-        interest.`,
+        level:"Estudiante universitarios",
+        blurb:`Como un estudiante de universidad, han varias maneras incluyerse de SWAG To College. Especificamente, puede: (1)
+        sirve como un a mentor para un estudianted de secundaria; (2) si estas en su primer o segundo ano de universidad, recibe un mentor; (3) 
+        si estas en su segundo ano o mas, recibe un joven profesional.`,
         imgUrl:"./img/involved-mentor.jpg",
         options:[
             {
@@ -34,7 +32,7 @@ const Involved = [
         ]
     },
     {
-        level:"High School Student",
+        level:"Estudiante de secundaria",
         blurb:"As a mentee, you will receive a college mentor who will check-in with you weekly through text, phone, or email. Your mentor will walk you through our timelines that begin in 9th grade and continue until you graduate from high school and start college. Your mentor will help make your college dreams possible!",
         imgUrl:"./img/involved-mentee.jpg",
         options:[
@@ -44,7 +42,7 @@ const Involved = [
                 form:"link to HS mentee  form"
             },
             {
-                title:"Campus representative",
+                title:"Representante del campus",
                 summary:"Are you a SWAG To College mentee? Are you interested in leading a SWAG To College club at your high school? If so, apply to be a campus representative. As a campus rep, you will lead meetings of existing SWAG To College mentees, expand the program on your campus, and build a SWAG To College culture at your school. ",
                 form:"link to HS rep application"
             }
@@ -52,12 +50,12 @@ const Involved = [
         ]
     },
     {
-        level:"Young Professional",
+        level:"Joven Profesional",
         blurb:"As a young professional (YP) mentor, you will be paired with a college student who aspires to enter your career field. Through monthly check-ins, you will help your mentee build social capital, expand their network, and access new opportunities. Your support will ensure your mentee secures the career of their dreams! ​",
         imgUrl:"./img/involved-yp.png",
         options:[
             {
-                title:"YP Mentor",
+                title:"Joven Profesional Mentor",
                 summary:"As a young professional (YP) mentor, you will be paired with a college student who aspires to enter your career field. Through monthly check-ins, you will help your mentee build social capital, expand their network, and access new opportunities. Your support will ensure your mentee secures the career of their dreams! ​",
                 form:"link to YP mentor form"
             }
@@ -65,25 +63,25 @@ const Involved = [
         ]
     },
     {
-        level:"Parents",
-        blurb:"As a parent, you are an important resource for your student. We are eager to work with parents just lke you to help support your child. Please visit our Parent Timeline to see steps you can take to help your child.  Also, please consider joining our Parent Board to help solve important issues in your child's education. ​",
-        imgUrl:"./img/parents.jpeg",
+        level:"Padres",
+        blurb:"As a padre, you are an important resource for your student. We are eager to work with padres just lke you to help support your child. Please visit our Padre Timeline to see steps you can take to help your child.  Also, please consider joining our Padre Board to help solve important issues in your child's education. ​",
+        imgUrl:"./img/padres.jpeg",
         options:[
             {
-                title:"Parent",
-                summary:"As a parent, you are an important resource for your student. We are eager to work with parents just lke you to help support your child. Please visit our Parent Timeline to see steps you can take to help your child.  Also, please consider joining our Parent Board to help solve important issues in your child's education. ​",
-                form:"Parent Board"
+                title:"Padre",
+                summary:"As a padre, you are an important resource for your student. We are eager to work with padres just lke you to help support your child. Please visit our Padre Timeline to see steps you can take to help your child.  Also, please consider joining our Padre Board to help solve important issues in your child's education. ​",
+                form:"Padre Board"
             }
 
         ]
     },
     {
-        level:"School Administration",
+        level:"Administracion Escolar",
         blurb:"We know that partnerships with school and university administrators are crucial to our success. We would love to work with your students whether in high school or college. Through these partnerships, if your students are in high school we will provide them with college mentors to navigate high school and reach their college dreams. If your students are in college, we will provide them with young professional mentors to guide them through college and into the workforce. ​",
         imgUrl:"./img/school-admin.jpg",
         options:[
             {
-                title:"School Admin",
+                title:"Administracion Escolar",
                 summary:"",
                 form:"sign up to receive newsletter"
             }
@@ -91,12 +89,12 @@ const Involved = [
         ]
     },
     {
-        level:"Community Member",
+        level:"Lider Comunitario",
         blurb:"We know that our community partners are crucial to our success. We also know that every person and every organization has a role to play in this work and in our movement. Whether you are professional looking to mentor a service provider looking to serve our students, or a community member just hoping to learn more about our movement to expand equality of opportunity, we have a place for you. Please fill out the form below, so we can provide you more information about SWAG To College.​",
         imgUrl:"./img/community-members.jpg",
         options:[
             {
-                title:"Community Member",
+                title:"Lider Comunitario",
                 summary:"We know that our community partners are crucial to our success. We also know that every person and every organization has a role to play in this work and in our movement. Whether you are professional looking to mentor a service provider looking to serve our students, or a community member just hoping to learn more about our movement to expand equality of opportunity, we have a place for you. Please fill out the form below, so we can provide you more information about SWAG To College.",
                 form:"sign up to receive newsletter"
             }
@@ -107,4 +105,4 @@ const Involved = [
 
 ]
 
-export default Involved;
+export default EspInvolved;

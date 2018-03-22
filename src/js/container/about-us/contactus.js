@@ -27,11 +27,11 @@ class ContactUs extends Component{
     render(){
         return(
             <Container>
-                <Link to="/aboutus">{(this.props.lang)?"back":"regresa"}</Link>
-                <Title>{(this.props.lang)?"Contact Us":"needs translate"}</Title>
+                <Link to="/aboutus">{(this.props.isEng)?"back":"regresa"}</Link>
+                <Title>{(this.props.isEng)?"Contact Us":"needs translate"}</Title>
                 <ContactWrapper>
                     <Contact>
-                        <Header>   ​For general inquiries</Header>
+                        <Header >   ​For general inquiries</Header>
                         <Name> Raj Salhotra</Name>
                         <Email>Email: raj.salhotra@swagtocollege.org</Email>
                         <Phone>phone: 713-320-0303</Phone>

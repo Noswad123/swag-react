@@ -1,7 +1,6 @@
-const Resources=[
-   
+const EspResources=[
    {
-       section:"College Resources",
+       section:"Recursos de universidad",
        blurb:"This section contains information to reserach colleges including college fly-ins and full-need colleges. ",
         links:[
             {
@@ -42,7 +41,7 @@ const Resources=[
         ] 
     },
     {
-        section:"Academic Resources",
+        section:"Recursos Academica",
         blurb:"",
         links:[
             {
@@ -74,63 +73,38 @@ const Resources=[
                 name:"Coursera College Success Class",
                 url:"https://www.coursera.org/learn/study-in-usa",
                 description:""
-            },
-            {
-                name:"Best Colleges SAT Prep Guide",
-                url:"http://www.bestcolleges.com/resources/sat-prep/",
-                description:""
             }
         ] 
      },
      {
-        section:"Parent Resources",
+        section:"Recursos para los Padres",
         blurb:"",
         links:[
-            {
-                name:"Parent Letter",
-                url:"",
-                description:"This letter provides parents/guardians with information about the SWAG To College program. The letter also contains the contact information for the SWAG To College Co-Founders, whom you contact with any questions.​"
-            },
+       
             {
                 name:"Padres Carta",
                 url:"",
                 description:"Esta carta provee a los padres / tutores con información sobre el programa de SWAG Para la Universidad. La carta también contiene la información de contacto para el botín a la SWAG Para la Universidad Co-Fundadores, a quienes se ponga en contacto con cualquier pregunta."
             },
-            {
-                name:"Parent FAFSA Flyer",
-                url:"",
-                description:"This flyer highlights important deadlines and information about the FAFSA. Reading this will help you and your family understand the basics of the FAFSA."
-            },
+         
             {
                 name:"Padres FAFSA Folleto",
                 url:"",
                 description:"Este folleto destaca los plazos importantes y la información sobre la FAFSA. Leer esto le ayudará a usted ya su familia a entender los fundamentos de la FAFSA."
             },
-            {
-                name:"Parent FAFSA Details",
-                url:"",
-                description:"This document details the FAFSA and explains each step parents need to take in order to help their children navigate and complete the FAFSA. As compared to the flyer, this document is much more detailed and comprehensive. "
-            },
+          
             {
                 name:"Padres FAFSA Detalles",
                 url:"",
                 description:"Este documento detalla la FAFSA y explica cada paso que los padres deben tomar para ayudar a sus hijos a navegar y completar la FAFSA. En comparación con el folleto, este documento es mucho más detallado y completo."
             },
-            {
-                name:"SAT/ACT Explainer",
-                url:"",
-                description:"This documents provides parents/guardians with information about the SAT and ACT and which test students should take and how they can prepare for it."
-            },
+           
             {
                 name:"SAT/ACT Explicador",
                 url:"",
                 description:"Este documento proporciona a los padres / tutores información sobre el SAT y el ACT y qué pruebas deben tomar los estudiantes y cómo pueden prepararse para él."
             },
-            {
-                name:"Scholarships and Grants",
-                url:"",
-                description:"This document provides parents/guardians with information on how their child can secure scholarships and grants to help pay for college."
-            },
+       
             {
                 name:"Becas y Subvenciones",
                 url:"",
@@ -139,7 +113,7 @@ const Resources=[
         ] 
      },
      {
-        section:"Important Documents",
+        section:"Documentos importantes",
         blurb:"",
         links:[
             {
@@ -148,20 +122,16 @@ const Resources=[
                 description:"This is the permission slip that we need all students to fill out before we pair them up with a mentor. Please print this out and sign it and either email it back to general@swagtocollege.org OR text a picture of it to 713­320­0303."
             },
             {
-                name:"Mentor Contract",
+                name:"Mentor Contrato",
                 url:"",
-                description:"This is the contract that we need all the college mentors to fill out before we pair them up with a high school student. Please print this out and sign it and either email it back to general@swagtocollege.org OR text a picture of it to 713­320­0303."
+                description:"This is the contrato that we need all the college mentors to fill out before we pair them up with a high school student. Please print this out and sign it and either email it back to general@swagtocollege.org OR text a picture of it to 713­320­0303."
             },
             {
-                name:"Mentee Contract",
+                name:"Mentee Contrato",
                 url:"",
-                description:"This is the contract that we need all the high school mentees to fill out before we pair them up with a high school student. Please print this out and sign it and either email it back to general@swagtocollege.org OR text a picture of it to 713­320­0303."
+                description:"This is the contrato that we need all the high school mentees to fill out before we pair them up with a high school student. Please print this out and sign it and either email it back to general@swagtocollege.org OR text a picture of it to 713­320­0303."
             },
         ]
      }
-
-
 ]
-
-
-export default Resources;
+export default EspResources;
