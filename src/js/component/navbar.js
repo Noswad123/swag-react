@@ -68,12 +68,12 @@ const Icons = styled.div`
 `;
 
 const SwitchWrap = styled.div`
-  background-color: ${Styles.color.accent};
+  background-color: ${Styles.color.tertiary};
   cursor: pointer;
   width: 100px;
   box-sizing: border-box;
   &:hover {
-    filter: saturate(50%);
+    filter: brightness(90%);
   }
   border-radius: 10px;
   position: relative;

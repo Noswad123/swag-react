@@ -9,6 +9,7 @@ const Container = styled.div`
   grid-row-start: 3;
   grid-column-start: 2;
   grid-column-end: 5;
+  margin-bottom: 30px;
   .items {
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@ const Container = styled.div`
       margin: 20px;
     }
     button {
-      color: ${Styles.color.tertiary};
+      color: ${Styles.color.primary};
       background-color: ${Styles.color.secondary};
       padding: 5px;
       height: 3em;
