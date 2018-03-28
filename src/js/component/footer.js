@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 const Container = styled.div`
   width: 100%;
   box-sizing: border-box;
@@ -15,6 +16,9 @@ const SocialStyle = styled.div`
   display: flex;
   justify-content: space-between;
   width: 200px;
+  a {
+    color: white;
+  }
 `;
 const Icon = styled.img`
   height: 30px;
@@ -84,6 +88,7 @@ class Social extends Component {
           {" "}
           <Icon src={"./img/linkedin.png"} />
         </a>
+        <Link to="/checkin">Checkin form</Link>
       </SocialStyle>
     );
   }
