@@ -4,10 +4,11 @@ import Checkins from "../data/checkin.data";
 
 const Container = styled.div`
   width: 80vw;
-
-  background-color: pink;
+  display: flex;
+  justify-content: center;
   color: black;
   margin: 30px;
+  padding: 50px;
 `;
 
 export default class Checkin extends Component {

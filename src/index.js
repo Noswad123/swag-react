@@ -11,6 +11,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import Navbar from "./js/component/navbar";
 import Footer from "./js/component/footer";
 import Checkin from "./js/component/checkin-forms";
+import Existing from "./js/component/existing";
 
 //import reducer from './js/reducers/reducer'
 
@@ -33,6 +34,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Container style={{ width: "100%" }}>
         <Navbar />
+        <Existing />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/getinvolved" component={GetInvolved} />
         <Route exact path="/" component={Home} />
