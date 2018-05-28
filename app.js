@@ -1,37 +1,40 @@
-const express=require("express");
-const path=require("path");
-const bodyParser=require("body-parser");
-const nforce=require("nforce");
+import React, { Component } from "react";
 
+import logo from "./logo.svg";
 
-var app= express();
-app.use(express.static(__dirname+"/public"));
-app.use(bodyParser.json());
+import "./App.css";
 
-//connect to salesforce rest api using nforce
-var org=nforce.createConncetion({
-    clientId:"3MVG9uudbyLbNPZOEOw4DgOCjPWf4aRCnB6TjxRVOExjHRU.3VpuFnDQH7VJDrqZiJRDhDgT2bt1GjnslFmCD",
-    clientSecret:"1067671233602989788",
-    redirectUri:"http://localhost:3000",
-    apiVersion:"",
-    environment:"production",
-    mode:"multi"
+class App extends Component {
+  state = {
+    response: ""
+  };
 
-});
+  componentDidMount() {
+    this.callApi()
+      .then(res => this.setState({ response: res.express }))
+      .catch(err => console.log(err));
+  }
 
-//Connect to the database
-var server= app.listen(process.env.PORT || 8080,function(){
-    var port=server.address().port;
-    console.log("App now runnint on port",port);
-});
+  callApi = async () => {
+    const response = await fetch("/");
+    const body = await response.json();
 
-app.get("/contacts",function(req,res){
+    if (response.status !== 200) throw Error(body.message);
 
-    org.authenticate({ username:"jamal.a.dawson@swagtocollege.org", password:"Noswad123"})
-    if(err){
-        console.log("Error: "+ err.message);
-    }else{
-        console.log("Access Token: "+oauth.access_token);
-        org.query({query:"select id, firstName, lastName from contact"})
-    }
-})
+    return body;
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">{this.state.response}</p>
+      </div>
+    );
+  }
+}
+
+export default App;

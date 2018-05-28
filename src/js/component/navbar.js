@@ -12,15 +12,16 @@ const Container = styled.div`
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  text-transform: uppercase;
   align-items: center;
   box-sizing: border-box;
-  @media (max-width: 740px) {
+  @media (max-width: 1069px) {
     height: 80px;
   }
 `;
 const Logo = styled.img`
   height: 40px;
-  @media (max-width: 740px) {
+  @media (max-width: 1069px) {
     height: 30px;
   }
 `;
@@ -44,7 +45,7 @@ li{
     color:${Styles.color.font1};
     text-decoration:none;
   }
-  @media (max-width: 740px) {
+  @media (max-width: 1069px) {
     display:none;
   }
 `;
@@ -56,7 +57,7 @@ const Icons = styled.div`
     display: none;
   }
 
-  @media (max-width: 740px) {
+  @media (max-width: 1069px) {
     .social {
       display: none;
     }
@@ -70,10 +71,13 @@ const Icons = styled.div`
 const SwitchWrap = styled.div`
   background-color: ${Styles.color.tertiary};
   cursor: pointer;
-  width: 100px;
+  text-align: center;
+  width: 120px;
   box-sizing: border-box;
+  filter: brightness(80%);
+  transition: all 1s;
   &:hover {
-    filter: brightness(90%);
+    filter: brightness(100%);
   }
   border-radius: 10px;
   position: relative;
@@ -102,7 +106,7 @@ const MobileMenu = styled.div`
     color: white;
     text-decoration: none;
   }
-  @media (max-width: 743px) {
+  @media (max-width: 1069px) {
     display: none;
     position: fixed;
     left: 0;
@@ -120,6 +124,13 @@ const Mobile = styled.div`
     margin: 20px;
   }
 `;
+
+const Close = styled.div`
+  float: right;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+`;
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -127,7 +138,7 @@ class Navbar extends Component {
     this.toggleLang = this.toggleLang.bind(this);
     this.state = {
       isEng: props.isEng,
-      switchPos: { transform: "translateX(80px)" },
+      switchPos: { transform: "translateX(100px)" },
       isMenu: false
     };
   }
@@ -139,7 +150,7 @@ class Navbar extends Component {
       isEng: opp,
       switchPos: this.state.isEng
         ? { transform: "translateX(-10px)" }
-        : { transform: "translateX(75px)" }
+        : { transform: "translateX(100px)" }
     });
   }
   hideMenu() {
@@ -207,6 +218,7 @@ class MobileLinks extends Component {
   render() {
     return (
       <Mobile onClick={this.props.click}>
+        <Close>X</Close>
         <Link to="/">{this.props.lang ? "Home" : "Need Translation"}</Link>
         <Link to="/timeline">
           {this.props.lang ? "Timeline" : "Linea del Tiempo"}

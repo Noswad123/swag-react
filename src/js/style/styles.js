@@ -9,7 +9,7 @@ const Styles = {
     secondary: "#FFFFFF",
     accent: "#39A7FF",
     tertiary: "#97DFFC",
-    font1: "#F6F7EB",
+    font1: "#FFFFFF",
     font2: "#0F0F0F",
     background: "#FFFFFF"
   },

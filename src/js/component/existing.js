@@ -20,15 +20,31 @@ const Already = styled.div`
   top: 30%;
 `;
 const QuickMenu = styled.div`
-  background-color: green;
+  background-color: ${Styles.color.primary};
+  color: ${Styles.color.font1};
   width: 300px;
   height: 120px;
   position: absolute;
   top: -200px;
   left: -250px;
   transition: all 1s;
+  ul {
+    list-style-type: none;
+    cursor: pointer;
+    li:hover,
+    a:hover {
+      color: ${Styles.color.accent};
+    }
+  }
+  a {
+    color: ${Styles.color.font1};
+    text-decoration: none;
+  }
   &:hover {
     left: 20px;
+    div {
+      display: none;
+    }
   }
 `;
 class Existing extends Component {

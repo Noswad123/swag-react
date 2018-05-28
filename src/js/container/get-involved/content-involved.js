@@ -18,7 +18,9 @@ const Title = styled.div`
   font-size: 35px;
   font-weight: 700;
 `;
-const Picture = styled.img``;
+const Picture = styled.img`
+  max-width: 800px;
+`;
 
 export default class Content extends Component {
   render() {
