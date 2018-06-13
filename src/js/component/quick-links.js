@@ -12,13 +12,14 @@ const Container = styled.div`
   top: 20%;
   left: -20px;
 `;
-const Already = styled.div`
+const Header = styled.span`
   transform-origin: 50%;
   transform: rotate(90deg);
   position: absolute;
   right: -20px;
   top: 30%;
 `;
+
 const QuickMenu = styled.div`
   background-color: ${Styles.color.primary};
   color: ${Styles.color.font1};
@@ -28,6 +29,7 @@ const QuickMenu = styled.div`
   top: -200px;
   left: -250px;
   transition: all 1s;
+ 
   ul {
     list-style-type: none;
     cursor: pointer;
@@ -35,6 +37,7 @@ const QuickMenu = styled.div`
     a:hover {
       color: ${Styles.color.accent};
     }
+    
   }
   a {
     color: ${Styles.color.font1};
@@ -42,23 +45,53 @@ const QuickMenu = styled.div`
   }
   &:hover {
     left: 20px;
-    div {
-      display: none;
+    height:400px;
+    >span{
+      display:none;
     }
+    
   }
 `;
-class Existing extends Component {
+const Options = styled.div`
+display:flex;
+flex-direction: column;
+align-items: center;
+div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  &:hover{
+    >ul{
+      display:inline
+    }
+  }
+}
+ul{
+    display:none;
+}
+`;
+class QuickLinks extends Component {
   render() {
     return (
       <Container>
         <QuickMenu>
+          <Options>
+            <div> Main
+          <ul>
+            <li> HS Mentee</li>
+            <li>College Mentee</li>
+            <li>College Mentor</li>
+            <li>Young Professional</li>
+          </ul>
+          </div>
+            </Options>
           <ul>
             <li>Sign Up Forms</li>
             <li>
               <Link to="/checkin">Checkin form</Link>
             </li>
           </ul>
-          <Already>Quick Links</Already>
+          <Header>Quick Links</Header>
         </QuickMenu>
       </Container>
     );
@@ -79,4 +112,4 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Existing);
+export default connect(mapStateToProps, mapDispatchToProps)(QuickLinks);

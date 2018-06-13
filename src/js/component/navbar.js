@@ -170,9 +170,9 @@ class Navbar extends Component {
           <Logo src={"./img/invertswag.png"} alt="SWAG" />
         </Link>
         <Links>
-          <li>
-            <Link to="/timeline">
-              {this.state.isEng ? "Timeline" : "Linea del Tiempo"}
+        <li>
+            <Link to="/aboutus">
+              {this.state.isEng ? "About" : "Sobre Nosotros"}
             </Link>
           </li>
           <li>
@@ -182,15 +182,23 @@ class Navbar extends Component {
           </li>
           <li>
             <Link to="/resources">
-              {" "}
+              
               {this.state.isEng ? "Resources" : "Recrusos"}
             </Link>
           </li>
           <li>
-            <Link to="/aboutus">
-              {this.state.isEng ? "About Us" : "Sobre Nosotros"}
+            <a href="https://medium.com/@swagtocollege"  target="_blank">
+              {this.state.isEng ? "Blog" : "Blog"}
+            </a>
+          </li>
+          <li>
+            <Link to="/donate">
+              {this.state.isEng ? "Donate" : "needs translation"}
             </Link>
           </li>
+          
+          
+         
           <MobileMenu
             style={{ display: `${this.state.isMenu ? "block" : "none"}` }}
           >
