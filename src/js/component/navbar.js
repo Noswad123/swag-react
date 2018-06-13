@@ -187,7 +187,7 @@ class Navbar extends Component {
             </Link>
           </li>
           <li>
-            <a href="https://medium.com/@swagtocollege"  target="_blank">
+            <a href="https://medium.com/@swagtocollege"  rel="noopener noreferrer" target="_blank">
               {this.state.isEng ? "Blog" : "Blog"}
             </a>
           </li>

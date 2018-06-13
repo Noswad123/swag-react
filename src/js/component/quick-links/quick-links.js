@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../../js/style/styles";
+import Styles from "../../../js/style/styles";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+
+import Options from "../../data/quick-link.data";
+import DropDown from "./dropdown";
+import Links from "./links";
 
 const Container = styled.div`
   margin-top: ${Styles.size.xxl};
@@ -28,21 +31,8 @@ const QuickMenu = styled.div`
   position: absolute;
   top: -200px;
   left: -250px;
-  transition: all 1s;
- 
-  ul {
-    list-style-type: none;
-    cursor: pointer;
-    li:hover,
-    a:hover {
-      color: ${Styles.color.accent};
-    }
-    
-  }
-  a {
-    color: ${Styles.color.font1};
-    text-decoration: none;
-  }
+  transition: all 1s; 
+
   &:hover {
     left: 20px;
     height:400px;
@@ -52,45 +42,21 @@ const QuickMenu = styled.div`
     
   }
 `;
-const Options = styled.div`
-display:flex;
-flex-direction: column;
-align-items: center;
-div{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  &:hover{
-    >ul{
-      display:inline
-    }
-  }
-}
-ul{
-    display:none;
-}
-`;
+
 class QuickLinks extends Component {
+  constructor(props){
+    super(props);
+    this.state = {placeholder:0};
+  }
+  change(index){
+      this.setState({placeholder:index});
+  }
   render() {
     return (
       <Container>
         <QuickMenu>
-          <Options>
-            <div> Main
-          <ul>
-            <li> HS Mentee</li>
-            <li>College Mentee</li>
-            <li>College Mentor</li>
-            <li>Young Professional</li>
-          </ul>
-          </div>
-            </Options>
-          <ul>
-            <li>Sign Up Forms</li>
-            <li>
-              <Link to="/checkin">Checkin form</Link>
-            </li>
-          </ul>
+          <DropDown Selected={Options[this.state.placeholder]} change={this.change} options={Options}/>
+          <Links links={Options[this.state.placeholder].links}/>     
           <Header>Quick Links</Header>
         </QuickMenu>
       </Container>

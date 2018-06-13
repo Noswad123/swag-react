@@ -7,11 +7,13 @@ import Styles from '../../style/styles';
 import {connect} from 'react-redux'
 
 const Container = styled.div `
-min-height:80vh;
+padding:60px;
+min-height:170vh;
 margin-top: ${Styles.size.m};
   display: flex;
   flex-direction: column;
   align-items:center;
+  justify-content:space-between;
 `
 const Logo = styled.img`
 width:700px;

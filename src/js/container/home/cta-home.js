@@ -5,9 +5,7 @@ import { Link} from 'react-router-dom';
 const Container=styled.div`
 display: flex;
       justify-content: space-between;
-      grid-column-start:2;
-      grid-column-end: 5;
-      grid-row-start: 2;
+     width:70%;
       @media (max-width: 743px) {
         flex-direction:column;
         align-items:center;

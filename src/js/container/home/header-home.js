@@ -3,11 +3,8 @@ import styled from "styled-components";
 import Styles from "../../style/styles";
 
 const Container = styled.div`
-  grid-column-start: 2;
-  grid-column-end: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ 
+  max-width:50%;
   margin-bottom: 16px;
   margin-top: ${Styles.size.m};
 `;

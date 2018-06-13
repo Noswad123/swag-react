@@ -6,9 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  grid-row-start: 3;
-  grid-column-start: 2;
-  grid-column-end: 5;
+  width:80%;
   margin-bottom: 30px;
   .items {
     display: flex;

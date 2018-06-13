@@ -11,7 +11,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import Navbar from "./js/component/navbar";
 import Footer from "./js/component/footer";
 import Checkin from "./js/component/checkin-forms";
-import QuickLinks from "./js/component/quick-links";
+import QuickLinks from "./js/component/quick-links/quick-links";
 
 //import reducer from './js/reducers/reducer'
 
