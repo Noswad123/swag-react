@@ -16,6 +16,9 @@ const Container=styled.div`
         width:100%;
     }
     border:solid white;
+    a{
+        margin-top:100px;
+    }
 `
 const Name=styled.div``
 const Picture=styled.img`

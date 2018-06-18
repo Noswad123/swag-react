@@ -1,24 +1,25 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../../style/styles";
+import Styles from "../../../style/styles";
 
 const Container = styled.div`
  
   max-width:50%;
   margin-bottom: 16px;
   margin-top: ${Styles.size.m};
+  z-index:1;
 `;
 
 
 const Text = styled.p`
   font-size: ${Styles.size.s};
-  color: ${Styles.color.font2};
+  color: ${Styles.color.font1};
   
   text-align: center;
   font-family: ${Styles.font.text};
   margin-top: ${Styles.size.xs};
 `;
-export default class Header extends Component {
+export default class Mission extends Component {
   render() {
     return (
       <Container>

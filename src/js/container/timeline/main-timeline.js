@@ -7,6 +7,7 @@ const Container = styled.div`
 width:80vw;
 min-height:80vh;
 padding: 32px 0;
+margin-top:100px;
 `
 const Title = styled.div`
 font-size:${Styles.size.l};

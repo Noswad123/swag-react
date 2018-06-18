@@ -5,8 +5,10 @@ import Styles from '../../style/styles'
 const Container=styled.div`
 min-height:80vh;
 background-color:${Styles.color.primary};
+margin-top:100px;
 `
 const Wrapper=styled.div`
+
 margin:20px;
 `;
 const Name=styled.a`

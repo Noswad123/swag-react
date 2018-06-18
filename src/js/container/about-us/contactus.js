@@ -9,9 +9,14 @@ min-height:80vh;
 display: flex;
 flex-direction:column;
 align-items:center;
+a{
+    margin-top:100px;
+}
 `
 const Title=styled.h1`
-color:${Styles.color.primary}`
+    color:${Styles.color.primary}
+    
+`
 const ContactWrapper=styled.div`
 display:flex;
 flex-direction:column;

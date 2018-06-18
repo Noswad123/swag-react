@@ -1,35 +1,36 @@
+
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import ThirdPart from './third-part';
-import SecondPart from './second-part';
-import FirstPart from './first-part/first-part';
+//import Gallery from './gallery-home';
+
 import Styles from '../../style/styles';
 import {connect} from 'react-redux'
 
 const Container = styled.div `
+  min-height:70vh;
   width:100%;
-  min-height:60vh;
+  margin-top:80px;
+  color:${Styles.color.font1};
   display: flex;
   flex-direction: column;
   align-items:center;
   justify-content:space-between;
-  color:${Styles.color.font1};
-  postion:absolute;
+  opacity:0%;
+  z-index:0;
+
+  position:relative;
+  width:98vw;
+
+  background:url(./img/community-members.jpg);
+  background-size:contain;
+  repeat:no-repeat;
+  background-attachment: fixed;
+  position:relative;
 `
-const Text = styled.div`
-color:black;
-font-size:20px;
-`
-class Home extends Component {
+class ThirdPart extends Component {
   render() {
     return ( 
       < Container > 
-        <FirstPart lang = {this.props.isEng}/>
-        <Text>
-               Text
-               </Text>
-               <ThirdPart/>
-        <SecondPart/>
         
     </ Container >);
   }
@@ -50,4 +51,4 @@ function mapDispatchToProps(dispatch) {
     }
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(ThirdPart);

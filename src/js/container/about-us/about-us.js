@@ -14,6 +14,7 @@ const Container = styled.div`
 const Header = styled.div`
   display: flex;
   width: 100%;
+  margin-top:100px;
   flex-direction: column;
   align-items: center;
   h1 {

@@ -14,6 +14,7 @@ const Container = styled.div`
   position: fixed;
   top: 20%;
   left: -20px;
+  z-index:9999;
 `;
 const Header = styled.span`
   transform-origin: 50%;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Styles from "../../../js/style/styles";
 //import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const Container = styled.div`
 ul {

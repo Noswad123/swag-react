@@ -5,6 +5,7 @@ import Styles from '../../style/styles'
 const Container = styled.div`
   width:300px;
   padding: 50px;
+  margin-top:100px;
 `
 
 const SubPanel = styled.div`

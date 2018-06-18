@@ -7,7 +7,9 @@ import FilterOption from './filter-meet'
 import { Link} from 'react-router-dom';
 import PopUP from './popup';
 import {connect} from 'react-redux';
+const Container=styled.div`
 
+`
 const Filter=styled.ul`
 list-style-type: none;`
 
@@ -52,6 +54,7 @@ class Meet extends Component{
     }
     render(){
         return(
+            <Container>
             <div>
                 < Link to="/aboutus"> {(this.props.isEng)?"Back":"Regresa"} </Link>
                 <h1>{(this.props.isEng)?"Meet The Team ":"Conoce el equipo"}</h1>
@@ -78,6 +81,7 @@ class Meet extends Component{
                 }
                 </Staff>
             </div>
+            </Container>
         )
     }
 }

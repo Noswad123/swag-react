@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   background-color: ${Styles.color.primary};
   border-radius: 10px;
   padding: 10px;
+  margin-top:100px;
 `;
 
 class Resources extends Component {

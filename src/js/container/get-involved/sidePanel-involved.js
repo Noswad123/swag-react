@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Container = styled.div`
   width: 300px;
   padding: 50px;
+  margin-top:100px;
 `;
 const SubPanel = styled.div`
   background-color: ${Styles.color.primary};
