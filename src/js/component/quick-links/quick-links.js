@@ -15,13 +15,14 @@ const Container = styled.div`
   top: 20%;
   left: -20px;
   z-index:9999;
+  
 `;
 const Header = styled.span`
   transform-origin: 50%;
   transform: rotate(90deg);
   position: absolute;
   right: -20px;
-  top: 30%;
+  top: 40%;
 `;
 
 const QuickMenu = styled.div`
@@ -33,7 +34,7 @@ const QuickMenu = styled.div`
   top: -200px;
   left: -250px;
   transition: all 1s; 
-
+  border: white solid;
   &:hover {
     left: 20px;
     height:400px;

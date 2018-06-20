@@ -6,26 +6,27 @@ import Styles from '../../../style/styles';
 import {connect} from 'react-redux'
 
 const Container = styled.div `
-  min-height:70vh;
   width:100%;
-  margin-top:80px;
+  margin:80px 0 0px 0;
+  z-index:0;
   color:${Styles.color.font1};
-  display: flex;
+`
+const ParalaxWrap = styled.div`
+background:url(./img/background.jpg);
+background-size:contain;
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-position:center;
+position:relative;
+min-height:80vh;
+display: flex;
   flex-direction: column;
   align-items:center;
   justify-content:space-between;
-  opacity:0%;
-  z-index:0;
+  width:100%;
 
-  position:relative;
-  width:98vw;
+  padding:50px;
 
-  background:url(./img/background.jpg);
-  background-size:contain;
-  repeat:no-repeat;
-  background-attachment: fixed;
-  position:relative;
-  margin-bottom:50px;
 `
 
 const Logo = styled.img`
@@ -34,10 +35,12 @@ const Logo = styled.img`
 class FirstPart extends Component {
   render() {
     return ( 
-      < Container >        
-           < Logo src = {"./img/swag-logo-blue.png"} alt = "SWAG" /> 
+      < Container > 
+        <ParalaxWrap>       
+          < Logo src = {"./img/swag-logo-blue.png"} alt = "SWAG" /> 
           < Mission lang = {this.props.lang} /> 
-          < Cta lang = {this.props.lang} />     
+          < Cta lang = {this.props.lang} /> 
+        </ParalaxWrap>    
     </ Container >);
   }
 }

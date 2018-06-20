@@ -18,7 +18,10 @@ const Container = styled.div `
 `
 const Text = styled.div`
 color:black;
+background-color:#7A9BBA;
 font-size:20px;
+width:100%;
+height:100px;
 `
 class Home extends Component {
   render() {
@@ -26,12 +29,12 @@ class Home extends Component {
       < Container > 
         <FirstPart lang = {this.props.isEng}/>
         <Text>
-               Text
-               </Text>
-               <ThirdPart/>
+          Statistics
+          </Text>
+        <ThirdPart/>
         <SecondPart/>
         
-    </ Container >);
+    </Container>);
   }
 }
 

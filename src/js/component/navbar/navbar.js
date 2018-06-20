@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Styles from "../../style/styles";
 import { connect } from "react-redux";
-import MobileLinks from "./mobile-links";
+
 import LangToggle from "./lang-toggle";
 
 const Container = styled.div`
   background-color: ${Styles.color.primary};
+  color: ${Styles.color.secondary};
   height: 80px;
   width: 100%;
   margin: 0;
@@ -17,11 +18,15 @@ const Container = styled.div`
   text-transform: uppercase;
   align-items: center;
   box-sizing: border-box;
+  box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.45);    
+  position:fixed;
+  
+  transition: all 1s cubic-bezier(0.67,-0.62, 0.86, 0.89);
   @media (max-width: 1069px) {
     height: 80px;
   }
   position:fixed;
-  z-index:10;
+  z-index:9999;
 `;
 const Logo = styled.img`
   height: 40px;
@@ -31,10 +36,12 @@ const Logo = styled.img`
 `;
 const RightSide=styled.div`
   display:flex;
-  flex-direction:column;
-  align-items:end;
+  align-items:center;
 `
-
+const Wrapper=styled.div`
+  display:flex;
+  flex-direction:column;
+`
 const Links = styled.ul`
   list-style: none;
   height:100%;
@@ -61,26 +68,33 @@ const Links = styled.ul`
   }
 `;
 
-const MobileMenu = styled.div`
-  display: none;
-  width: 100%;
-  background-color: ${Styles.color.primary};
-  color: white;
-  padding: 20px;
-  box-sizing: border-box;
-  a {
-    color: white;
-    text-decoration: none;
+
+const HideMenu = styled.div`
+transform: rotate(270deg);
+font-size:15px;
+cursor:pointer;
+`;
+const ShowMenu = styled.div`
+  transform:translateX(-100px);
+  cursor:pointer;
+  color:${Styles.color.subtitle};
+  height:30px;
+  width:30px;
+  justify-content:center;
+  align-items: center;
+  background-color:${Styles.color.primary};
+  opacity:.8;
+  transition: all .5s;
+  &:hover{
+    opacity:1;
   }
-  @media (max-width: 1069px) {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    flex-direction: column;
-    justify-content: center;
+  img{
+    height:50px;
   }
+  @media (max-width:400px){
+    transform:translateX(-50px);
+  }
+
 `;
 
 class Navbar extends Component {
@@ -88,7 +102,8 @@ class Navbar extends Component {
     super(props);   
     this.state = {
       isEng: props.isEng,
-      isMenu: false
+      isMenu: false,
+      isHidden: true
       
     };
   }
@@ -97,54 +112,89 @@ class Navbar extends Component {
       isMenu: false
     });
   }
-  
+  toggleNav(bool) {
+    this.setState({ isHidden: bool });
+    console.log(this.state.isHidden);
+  }
   
   render() {
     return (
-      <Container>
+
+        <NavWrapper
+        show={this.state.isHidden}
+        toggle={this.toggleNav.bind(this)}
+        lang = {this.props.isEng}
+        menu={this.props.isMenu}
+        hideMenu={this.hideMenu}
+      />
+
+    )
+  }
+}
+
+
+class NavWrapper extends React.Component {
+  render() {
+    return (
+      <Container
+        style={{
+          transform: `${
+            this.props.show ? "translateX(100%)" : "translateX(0%)"
+          }`
+        }}
+      >
+      <ShowMenu
+          style={{ display: `${this.props.show ? "flex" : "none"}` }}
+          onClick={() => {
+            this.props.toggle(false);
+          }}
+        >
+        <img src={"./img/hamburger.png"} alt="hamburger" />
+      </ShowMenu>
+
         <Link to="/">
           <Logo src={"./img/invertswag.png"} alt="SWAG" />
         </Link>
         <RightSide>
+          <Wrapper>
           <Links>
             <li>
               <Link to="/aboutus">
-                {this.state.isEng ? "About" : "Sobre Nosotros"}
+                {this.props.lang ? "About" : "Sobre Nosotros"}
               </Link>
             </li>
             <li>
             <Link to="/getinvolved">
-              {this.state.isEng ? "Get Involved" : "Involucrarse"}
+              {this.props.lang ? "Get Involved" : "Involucrarse"}
             </Link>
             </li>
             <li>
               <Link to="/resources">
                 
-                {this.state.isEng ? "Resources" : "Recrusos"}
+                {this.props.lang ? "Resources" : "Recrusos"}
               </Link>
             </li>
             <li>
               <a href="https://medium.com/@swagtocollege"  rel="noopener noreferrer" target="_blank">
-                {this.state.isEng ? "Blog" : "Blog"}
+                {this.props.lang ? "Blog" : "Blog"}
               </a>
             </li>
             <li>
               <Link to="/donate">
-                {this.state.isEng ? "Donate" : "needs translation"}
+                {this.props.lang ? "Donate" : "needs translation"}
               </Link>
             </li>      
-         
-          <MobileMenu
-            style={{ display: `${this.state.isMenu ? "block" : "none"}` }}
-          >
-            <MobileLinks
-              click={this.hideMenu.bind(this)}
-              lang={this.state.isEng}
-            />
-          </MobileMenu>
         </Links>
-
-          <LangToggle lang={this.state.isEng}/>
+        
+          <LangToggle lang={this.props.lang}/>
+          </Wrapper>
+        <HideMenu
+          onClick={() => {
+            this.props.toggle(true);
+          }}
+        >
+          hide
+        </HideMenu>
         </RightSide>
       </Container>
     );

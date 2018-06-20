@@ -19,8 +19,9 @@ const Container = styled.div `
     }
     z-index:1;
 `
-
-const Text2 = styled.div``
+const Text2 = styled.div`
+height:200px;
+`
 const PicRow = styled.div`
 display: flex;
 justify-content: space-between;
@@ -29,21 +30,20 @@ height: 150px;`
 class SecondPart extends Component {
   render() {
     return ( 
-      < Container > 
-           
-               <PicRow>
-               <img src={"./img/mentees.png"} alt="Picture12" />
-               <img src={"./img/20543_4_orig.png"} alt="Picture2" />
-               <img src={"./img/9769588_4_orig.png"} alt="Picture4" />
-                   </PicRow>
-               <Text2>
-                   Mentorship for success
-                   </Text2>
-                   <PicRow>
-                   <img src={"./img/jls-3197_orig.jpg"} alt="Picture1" />
-                   <img src={"./img/jls-3073_orig.jpg"} alt="Picture3" />
-                   <img src={"./img/school-admin.jpg"} alt="Picture4" />
-                   </PicRow>
+      < Container >     
+        <PicRow>
+          <img src={"./img/mentees.png"} alt="Picture12" />
+          <img src={"./img/20543_4_orig.png"} alt="Picture2" />
+          <img src={"./img/9769588_4_orig.png"} alt="Picture4" />
+        </PicRow>
+        <Text2>
+          Mentorship for success
+        </Text2>
+        <PicRow>
+          <img src={"./img/jls-3197_orig.jpg"} alt="Picture1" />
+          <img src={"./img/jls-3073_orig.jpg"} alt="Picture3" />
+          <img src={"./img/school-admin.jpg"} alt="Picture4" />
+        </PicRow>
     </ Container >);
   }
 }

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import React,{Component} from 'react'
-import Styles from '../../style/styles'
+import React,{Component} from 'react';
+import Styles from '../../style/styles';
+
 
 
 const Container=styled.div`
@@ -29,7 +30,7 @@ export default class OptionResources extends Component{
 
         return(
             <Container>
-                <Name onClick={()=>this.props.changeIndex(this.props.linkIndex)}>  {this.props.name}</Name>
+                <Name onClick={()=>this.props.changeIndex(this.props.linkIndex)}>  {this.props.name}</Name>    
             </Container>
 
         )

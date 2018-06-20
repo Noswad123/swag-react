@@ -6,6 +6,7 @@ import EspResources from "../../data/resources-esp.data";
 import OptionResources from "./option-resources";
 import ContentResources from "./content-resources";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   min-height: 80vh;
@@ -44,6 +45,7 @@ class Resources extends Component {
       <Container>
         <FlexWrapper>
           <Wrapper>
+          <Link to="/timeline">Timeline</Link>
             {this.props.isEng
               ? EngResources.map((element, index) => {
                   return (

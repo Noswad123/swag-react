@@ -9,7 +9,6 @@ import {connect} from 'react-redux'
 const Container = styled.div `
   min-height:70vh;
   width:100%;
-  margin-top:80px;
   color:${Styles.color.font1};
   display: flex;
   flex-direction: column;
@@ -23,7 +22,8 @@ const Container = styled.div `
 
   background:url(./img/community-members.jpg);
   background-size:contain;
-  repeat:no-repeat;
+  background-repeat:no-repeat;
+  background-position:center;
   background-attachment: fixed;
   position:relative;
 `
