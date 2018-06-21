@@ -27,7 +27,8 @@ import langReducer from "./js/reducers/language-reducer";
 let store = createStore(langReducer, { isEng: true });
 
 const Container = styled.div`
-  background-color: ${Styles.color.secondary};
+  background-color:${Styles.color.grey};
+  font-family:${Styles.font.text};
 `;
 ReactDOM.render(
   <Provider store={store}>

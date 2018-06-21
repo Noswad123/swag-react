@@ -1,8 +1,8 @@
 const Styles = {
   font: {
-    title: "'Bubblegum Sans', cursive",
-    text: "'Noto Sans', sans-serif",
-    header: "'Rozha One', serif"
+    title: "'Oswald', sans-serif",
+    text: "'Roboto', sans-serif",
+    header: "'Oswald', sans-serif"
   },
   color: {
     primary: "#09335D",
@@ -11,7 +11,9 @@ const Styles = {
     tertiary: "#97DFFC",
     font1: "#FFFFFF",
     font2: "#0F0F0F",
-    background: "#FFFFFF"
+    background: "#FFFFFF",
+    temp:"#437F97",
+    grey:"#8B8982"
   },
   size: {
     xxs: "4px",

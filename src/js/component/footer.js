@@ -10,6 +10,7 @@ const Container = styled.div`
   overflow: hidden;
   background-color: #09335d;
   color: white;
+  z-index:5;
 `;
 
 const SocialStyle = styled.div`

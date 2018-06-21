@@ -136,55 +136,44 @@ class Navbar extends Component {
 class NavWrapper extends React.Component {
   render() {
     return (
-      <Container
-        style={{
-          transform: `${
-            this.props.show ? "translateX(100%)" : "translateX(0%)"
-          }`
-        }}
-      >
-      <ShowMenu
-          style={{ display: `${this.props.show ? "flex" : "none"}` }}
-          onClick={() => {
-            this.props.toggle(false);
-          }}
-        >
-        <img src={"./img/hamburger.png"} alt="hamburger" />
-      </ShowMenu>
+      <Container style={{transform: `${this.props.show ? "translateX(100%)" : "translateX(0%)" }` }}>
+        <ShowMenu style={{ display: `${this.props.show ? "flex" : "none"}` }}  onClick={() => { this.props.toggle(false); }} >
+          <img src={"./img/hamburger.png"} alt="hamburger" />
+        </ShowMenu>
 
         <Link to="/">
           <Logo src={"./img/invertswag.png"} alt="SWAG" />
         </Link>
         <RightSide>
           <Wrapper>
-          <Links>
-            <li>
-              <Link to="/aboutus">
-                {this.props.lang ? "About" : "Sobre Nosotros"}
-              </Link>
-            </li>
-            <li>
-            <Link to="/getinvolved">
-              {this.props.lang ? "Get Involved" : "Involucrarse"}
-            </Link>
-            </li>
-            <li>
-              <Link to="/resources">
-                
-                {this.props.lang ? "Resources" : "Recrusos"}
-              </Link>
-            </li>
-            <li>
-              <a href="https://medium.com/@swagtocollege"  rel="noopener noreferrer" target="_blank">
-                {this.props.lang ? "Blog" : "Blog"}
-              </a>
-            </li>
-            <li>
-              <Link to="/donate">
-                {this.props.lang ? "Donate" : "needs translation"}
-              </Link>
-            </li>      
-        </Links>
+            <Links>
+              <li>
+                <Link to="/aboutus">
+                  {this.props.lang ? "About" : "Sobre Nosotros"}
+                </Link>
+              </li>
+              <li>
+                <Link to="/getinvolved">
+                  {this.props.lang ? "Get Involved" : "Involucrarse"}
+                </Link>
+              </li>
+              <li>
+                <Link to="/resources">
+                  
+                  {this.props.lang ? "Resources" : "Recrusos"}
+                </Link>
+              </li>
+              <li>
+                <a href="https://medium.com/@swagtocollege"  rel="noopener noreferrer" target="_blank">
+                  {this.props.lang ? "Blog" : "Blog"}
+                </a>
+              </li>
+              <li>
+                <Link to="/donate">
+                  {this.props.lang ? "Donate" : "needs translation"}
+                </Link>
+              </li>      
+            </Links>
         
           <LangToggle lang={this.props.lang}/>
           </Wrapper>

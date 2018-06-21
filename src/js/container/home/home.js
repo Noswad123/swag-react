@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import ThirdPart from './third-part';
-import SecondPart from './second-part';
+import Paralax from '../../component/paralax';
+import SecondPart from './second-part/second-part';
 import FirstPart from './first-part/first-part';
 import Styles from '../../style/styles';
 import {connect} from 'react-redux'
@@ -17,11 +17,14 @@ const Container = styled.div `
   postion:absolute;
 `
 const Text = styled.div`
-color:black;
-background-color:#7A9BBA;
-font-size:20px;
-width:100%;
-height:100px;
+  color:${Styles.color.font1};
+  background-color:${Styles.color.primary};
+  font-size:20px;
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 `
 class Home extends Component {
   render() {
@@ -31,8 +34,9 @@ class Home extends Component {
         <Text>
           Statistics
           </Text>
-        <ThirdPart/>
+        <Paralax background="./img/community-members.jpg"/>
         <SecondPart/>
+        <Paralax background="./img/meet-the-team_orig.jpg"/>
         
     </Container>);
   }

@@ -1,9 +1,7 @@
 
 import React, {Component} from 'react';
 import styled from 'styled-components';
-//import Gallery from './gallery-home';
-
-import Styles from '../../style/styles';
+import Styles from '../style/styles';
 import {connect} from 'react-redux'
 
 const Container = styled.div `
@@ -14,23 +12,21 @@ const Container = styled.div `
   flex-direction: column;
   align-items:center;
   justify-content:space-between;
-  opacity:0%;
-  z-index:0;
+  z-index:2;
 
   position:relative;
   width:98vw;
-
-  background:url(./img/community-members.jpg);
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-position:center;
-  background-attachment: fixed;
-  position:relative;
 `
-class ThirdPart extends Component {
+class Paralax extends Component {
   render() {
     return ( 
-      < Container > 
+      < Container style={{
+        background:`url(${this.props.background})`,
+        backgroundSize:"contain",
+        backgroundRepeat:"no-repeat",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+        }}> 
         
     </ Container >);
   }
@@ -51,4 +47,4 @@ function mapDispatchToProps(dispatch) {
     }
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(ThirdPart);
+export default connect(mapStateToProps, mapDispatchToProps)(Paralax);

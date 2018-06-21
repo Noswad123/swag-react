@@ -12,7 +12,7 @@ const Container = styled.div`
 
 
 const Text = styled.p`
-  font-size: ${Styles.size.s};
+  font-size: 20px;
   color: ${Styles.color.font1};
   
   text-align: center;
