@@ -1,74 +1,64 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Styles from '../../style/styles';
-import Paralax from "../../component/paralax"
-
 
 const Container=styled.div`
-   
     display: flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
     width:100%;
-    min-height:250px;
+    min-height:200px;
     position:relative;
-`
-
+`;
 const Title=styled.div`
     color:${Styles.color.secondary};
-    background-color:${Styles.color.grey};
     font-size:${Styles.size.m};
     z-index:5;
-    padding-top:20px;
+    padding-top:10px;
     width:100%;
     text-align:center;
 `;
 const Wrapper=styled.div`
-display:flex;
-flex-wrap:wrap;
-justify-content:space-between;
-z-index:5;
-width:80%;
-`
-const Value=styled.div`
-position:relative;
-p{
-    display:none;
-}
-&:hover{
-    p{
-        display:flex;
-        position:fixed;
-        background-color:${Styles.color.secondary};
-        width:60vw;
-        padding:10px;
-        border-radius:10%;
-        z-index:9999;
-        bottom:-15px;
-        left:20%;
-        
-    }
-}
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    z-index:5;
+    width:80%;
 `;
-
+const Value=styled.div`
+    position:relative;
+    p{
+        display:none;
+    }
+    &:hover{
+        p{
+            display:flex;
+            position:fixed;
+            background-color:${Styles.color.secondary};
+            width:60vw;
+            padding:10px;
+            border-radius:10%;
+            z-index:9999;
+            bottom:-15px;
+            left:20%;
+        }
+    }
+`;
 const Name=styled.div`
-background-color:${Styles.color.primary};
-border-radius:100%;
-width:100px;
-height:100px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:${Styles.color.secondary};
+    background-color:${Styles.color.primary};
+    border-radius:100%;
+    width:100px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:${Styles.color.secondary};
 `;
 export default class CoreValues extends Component{
     render(){
         return(
-
             <Container>
-
-                <Title> {(this.props.lang)?"Core Values":"Need translation"}</Title>
                 <Wrapper>
                     <Value>
                         <Name>{(this.props.lang)?"Service":"Need translation"}</Name>
@@ -94,12 +84,8 @@ export default class CoreValues extends Component{
                         <Name>{(this.props.lang)?"Team":"Need translation"}</Name>
                         <p>{(this.props.lang)?"The SWAG To College team includes several communities working toward our community’s collective goals and our mentee’s individual goals in a trusting and judgement-free environment. Specifically, our team includes not only the SWAG To College staff but also mentees, mentors, parents, and schools. Every member of the SWAG To College team is committed to the organization’s mission and its development. As a team, we value every individual; we respect everyone’s work ethic and habits, and we support every other team member."
                         :"Need translation"}</p>
-                    </Value>
-                    
+                    </Value>                   
                 </Wrapper>
-                
-
-
             </Container>
         )
     }
