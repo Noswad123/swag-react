@@ -4,7 +4,6 @@ import Styles from '../../style/styles';
 import Team from '../../data/team.data';
 import TeamMember from './team-meet';
 import FilterOption from './filter-meet'
-import { Link} from 'react-router-dom';
 import PopUP from './popup';
 import {connect} from 'react-redux';
 const Container=styled.div`

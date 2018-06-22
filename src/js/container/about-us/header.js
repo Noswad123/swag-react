@@ -6,11 +6,10 @@ import { connect } from "react-redux";
 import Mission from "./mission";
 
 const Container = styled.div`
-   width:100%;
-   
+  width:100%;
 `;
 const Wrapper = styled.div`
-min-height:80vh;
+  min-height:80vh;
   z-index:0;
   display: flex;
   width: 100%;
@@ -37,8 +36,9 @@ min-height:80vh;
   padding:100px 0 0 0;
 `;
 const Title = styled.div`
-    font-size:${Styles.size.l};
-    font-family:${Styles.font.title};
+  font-size:${Styles.size.l};
+  font-family:${Styles.font.title};
+  font-weight:700;
 `;
 const LinkWrapper = styled.div`
   a {
@@ -51,7 +51,7 @@ const Text = styled.div`
   justify-content:space-between;
   align-items:center;
   text-transform: uppercase;
-  font-weight:700;
+  
   font-family:${Styles.font.title};
 `;
 

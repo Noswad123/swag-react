@@ -1,26 +1,28 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
-import Header from "./header";
-import Bottom from "./bottom";
 
 const Container = styled.div`
-
-  display: flex;
-  justify-content: space-between;
-  flex-direction:column;
-  align-items:center;
-  width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
 `;
-
-class GetInvolved extends Component {
+const Blurb = styled.div`
+border:white solid;
+padding:55px;`
+const Pic = styled.img`
+width:50px;
+`
+class MentorMentee extends Component {
 
   render() {
     return (
-      <Container>
-        <Header/>
-        <Bottom/>
-      </Container>
+        <Container>
+            <Pic src={this.props.pic}/>
+            <Blurb>
+                {this.props.text}
+            </Blurb>
+        </Container>
     );
   }
 }
@@ -38,4 +40,4 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
-export default connect(mapStateToProps, mapDispatchToProps)(GetInvolved);
+export default connect(mapStateToProps, mapDispatchToProps)(MentorMentee);

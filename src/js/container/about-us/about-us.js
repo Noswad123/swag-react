@@ -4,7 +4,6 @@ import CoreValues from "./core-value";
 import Story from "./story";
 import Header from "./header";
 import { connect } from "react-redux";
-import Paralax from "../../component/paralax";
 
 const Container = styled.div`
   display: flex;
