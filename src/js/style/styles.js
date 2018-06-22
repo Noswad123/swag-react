@@ -13,7 +13,9 @@ const Styles = {
     font2: "#0F0F0F",
     background: "#FFFFFF",
     temp:"#437F97",
-    grey:"#8B8982"
+    grey:"#D8D8D8",
+    teal:"#11485f",
+    blue:"#A3C4BC"
   },
   size: {
     xxs: "4px",

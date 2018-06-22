@@ -3,11 +3,10 @@ import styled from "styled-components";
 import CoreValues from "./core-value";
 import Story from "./story";
 import Header from "./header";
-import Mission from "./mission";
 import { connect } from "react-redux";
+import Paralax from "../../component/paralax";
 
 const Container = styled.div`
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
@@ -19,11 +18,8 @@ class AboutUs extends Component {
     return (
       <Container>
         <Header />
+        <Story /> 
         <CoreValues lang={this.props.isEng} />
-        <Mission lang={this.props.isEng}/>
-        <Story />
-        
-        
       </Container>
     );
   }

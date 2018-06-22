@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import Paralax from '../../component/paralax';
 import SecondPart from './second-part/second-part';
-import FirstPart from './first-part/first-part';
+import AboveFold from './above-fold/above-fold';
 import Styles from '../../style/styles';
 import {connect} from 'react-redux'
 
@@ -30,7 +30,7 @@ class Home extends Component {
   render() {
     return ( 
       < Container > 
-        <FirstPart lang = {this.props.isEng}/>
+        <AboveFold lang = {this.props.isEng}/>
         <Text>
           Statistics
           </Text>

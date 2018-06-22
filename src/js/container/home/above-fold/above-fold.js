@@ -31,7 +31,7 @@ const Logo = styled.img`
   z-index:10;
 `
 
-class FirstPart extends Component {
+class AboveFold extends Component {
   render() {
     return ( 
       < Container > 
@@ -59,4 +59,4 @@ function mapDispatchToProps(dispatch) {
     }
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(FirstPart);
+export default connect(mapStateToProps, mapDispatchToProps)(AboveFold);

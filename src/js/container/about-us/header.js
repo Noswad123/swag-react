@@ -3,31 +3,38 @@ import styled from "styled-components";
 import Styles from "../../style/styles";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import Mission from "./mission";
 
 const Container = styled.div`
-   min-height:30vh;
    width:100%;
-   display:flex;
-   flex-direction: column;
-  align-items: center;
-  
+   
 `;
 const Wrapper = styled.div`
+min-height:80vh;
   z-index:0;
-  position:fixed;
   display: flex;
   width: 100%;
-  margin-top:20px;
   flex-direction: column;
   align-items: center;
-  height:100%;
   justify-content:space-between;
   color: ${Styles.color.secondary};
-  
   a {
-    color: ${Styles.color.tertiary};
+    color: ${Styles.color.blue};
   }
   justify-content: space-between;
+
+  background:url(./img/meet-the-team_orig.jpg);
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  padding:100px 0 0 0;
 `;
 const Title = styled.div`
     font-size:${Styles.size.l};
@@ -38,16 +45,16 @@ const LinkWrapper = styled.div`
     margin-right: 20px;
   }
 `;
-
 const Text = styled.div`
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   align-items:center;
+  text-transform: uppercase;
+  font-weight:700;
+  font-family:${Styles.font.title};
 `;
-const Background =styled.img`
-  height:300px;
-`
+
 class Header extends Component {
   render() {
     return (
@@ -66,7 +73,8 @@ class Header extends Component {
                 </Link>
               </LinkWrapper>
             </Text>
-            <Background src={"./img/meet-the-team_orig.jpg"}/>  
+            <Mission lang={this.props.isEng}/>
+            <div></div>
           </Wrapper>
       </Container>
     );

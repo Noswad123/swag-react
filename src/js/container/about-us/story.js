@@ -18,7 +18,9 @@ const Container = styled.div`
     z-index:1;
 `;
 const Title = styled.div`
-font-size:${Styles.size.m};
+  font-size:${Styles.size.m};
+  font-family:${Styles.font.title};
+  text-transform:uppercase;
 `;
 class Story extends Component {
     render() {

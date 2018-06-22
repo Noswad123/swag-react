@@ -2,30 +2,26 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Styles from '../../style/styles';
 
-const Container=styled.div`
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-between;
-    width:100%;
-    min-height:200px;
-    position:relative;
-`;
-const Title=styled.div`
-    color:${Styles.color.secondary};
-    font-size:${Styles.size.m};
+const Container=styled.div` 
     z-index:5;
-    padding-top:10px;
+    min-height:70vh;
     width:100%;
-    text-align:center;
+    background:url(./img/background.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 `;
 const Wrapper=styled.div`
-    display:flex;
+display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
-    z-index:5;
     width:80%;
-`;
+`
 const Value=styled.div`
     position:relative;
     p{
@@ -54,6 +50,8 @@ const Name=styled.div`
     align-items:center;
     justify-content:center;
     color:${Styles.color.secondary};
+    font-family:${Styles.font.title};
+  text-transform:uppercase;
 `;
 export default class CoreValues extends Component{
     render(){
@@ -84,8 +82,8 @@ export default class CoreValues extends Component{
                         <Name>{(this.props.lang)?"Team":"Need translation"}</Name>
                         <p>{(this.props.lang)?"The SWAG To College team includes several communities working toward our community’s collective goals and our mentee’s individual goals in a trusting and judgement-free environment. Specifically, our team includes not only the SWAG To College staff but also mentees, mentors, parents, and schools. Every member of the SWAG To College team is committed to the organization’s mission and its development. As a team, we value every individual; we respect everyone’s work ethic and habits, and we support every other team member."
                         :"Need translation"}</p>
-                    </Value>                   
-                </Wrapper>
+                    </Value>     
+                </Wrapper>              
             </Container>
         )
     }
