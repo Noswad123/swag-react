@@ -43,7 +43,7 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => {
-  return {isEng: state.isEng}
+  return {isEng: state.LangReducer.isEng}
 };
 
 function mapDispatchToProps(dispatch) {

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Styles from "../../style/styles";
-import { connect } from "react-redux";
 
 const Container = styled.div`
     display:flex;
@@ -22,7 +21,7 @@ const Title = styled.div`
   font-family:${Styles.font.title};
   text-transform:uppercase;
 `;
-class Story extends Component {
+export default class Story extends Component {
     render() {
       return (
         <Container>
@@ -41,18 +40,3 @@ class Story extends Component {
         );
     }
 }
-const mapStateToProps = state => {
-    return {
-      isEng: state.isEng
-    };
-  };
-  
-  function mapDispatchToProps(dispatch) {
-    return {
-      onUpdateLang: () => {
-        const action = { type: "UPDATE_LANG", payload: false };
-        dispatch(action);
-      }
-    };
-  }
-  export default connect(mapStateToProps, mapDispatchToProps)(Story);

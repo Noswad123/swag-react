@@ -101,10 +101,8 @@ class Navbar extends Component {
   constructor(props) {
     super(props);   
     this.state = {
-      isEng: props.isEng,
       isMenu: false,
-      isHidden: true
-      
+      isHidden: false
     };
   }
   hideMenu() {
@@ -123,7 +121,7 @@ class Navbar extends Component {
         <NavWrapper
         show={this.state.isHidden}
         toggle={this.toggleNav.bind(this)}
-        lang = {this.props.isEng}
+        isEng = {this.props.isEng}
         menu={this.props.isMenu}
         hideMenu={this.hideMenu}
       />
@@ -149,33 +147,33 @@ class NavWrapper extends React.Component {
             <Links>
               <li>
                 <Link to="/aboutus">
-                  {this.props.lang ? "About" : "Sobre Nosotros"}
+                  {this.props.isEng ? "About" : "Sobre Nosotros"}
                 </Link>
               </li>
               <li>
                 <Link to="/getinvolved">
-                  {this.props.lang ? "Get Involved" : "Involucrarse"}
+                  {this.props.isEng ? "Get Involved" : "Involucrarse"}
                 </Link>
               </li>
               <li>
                 <Link to="/resources">
                   
-                  {this.props.lang ? "Resources" : "Recrusos"}
+                  {this.props.isEng ? "Resources" : "Recrusos"}
                 </Link>
               </li>
               <li>
                 <a href="https://medium.com/@swagtocollege"  rel="noopener noreferrer" target="_blank">
-                  {this.props.lang ? "Blog" : "Blog"}
+                  {this.props.isEng ? "Blog" : "Blog"}
                 </a>
               </li>
               <li>
                 <Link to="/donate">
-                  {this.props.lang ? "Donate" : "needs translation"}
+                  {this.props.isEng ? "Donate" : "needs translation"}
                 </Link>
               </li>      
             </Links>
         
-          <LangToggle lang={this.props.lang}/>
+          <LangToggle isEng={this.props.isEng}/>
           </Wrapper>
         <HideMenu
           onClick={() => {
@@ -190,13 +188,9 @@ class NavWrapper extends React.Component {
   }
 }
 
-
-
-
-
 const mapStateToProps = state => {
   return {
-    isEng: state.isEng
+    isEng: state.LangReducer.isEng
   };
 };
 

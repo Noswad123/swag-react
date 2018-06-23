@@ -24,11 +24,7 @@ class Links extends Component {
         return (
             <Container>                   
                 <ul>
-                {
-                        this.props.links.map(element=>{
-                            return <li>{element.text}</li>;
-                        })
-                    }
+             
                 </ul>
             </Container>
         )

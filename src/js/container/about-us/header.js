@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Styles from "../../style/styles";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
 import Mission from "./mission";
 
 const Container = styled.div`
@@ -55,7 +54,7 @@ const Text = styled.div`
   font-family:${Styles.font.title};
 `;
 
-class Header extends Component {
+export default class Header extends Component {
   render() {
     return (
       <Container>
@@ -73,26 +72,10 @@ class Header extends Component {
                 </Link>
               </LinkWrapper>
             </Text>
-            <Mission lang={this.props.isEng}/>
+            <Mission isEng={this.props.isEng}/>
             <div></div>
           </Wrapper>
       </Container>
     );
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    isEng: state.isEng
-  };
-};
-
-function mapDispatchToProps(dispatch) {
-  return {
-    onUpdateLang: () => {
-      const action = { type: "UPDATE_LANG", payload: false };
-      dispatch(action);
-    }
-  };
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Header);

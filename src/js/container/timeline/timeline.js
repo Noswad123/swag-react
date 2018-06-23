@@ -26,20 +26,16 @@ class Timeline extends Component {
       <Container>
         <SidePanel lang={this.props.isEng} timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]} changeGrade={this.state.changeGrade.bind(this)}/>
         <Main timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]}/>
-
       </Container>
     );
   }
 }
 
-
-
 const mapStateToProps= state=>{
   return{
-      isEng:state.isEng
+      isEng:state.LangReducer.isEng
     }
   };
-
 
 function mapDispatchToProps(dispatch){
   return{

@@ -9,6 +9,8 @@ const Container=styled.div`
 `
 const Name=styled.button`
     background-color:${Styles.color.secondary};
+    font-family:${Styles.font.text};
+    font-size:13px;
     color:${Styles.color.font2};
     border-style: solid;
     border-color: ${Styles.color.font2};

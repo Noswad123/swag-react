@@ -16,9 +16,9 @@ class AboutUs extends Component {
   render() {
     return (
       <Container>
-        <Header />
-        <Story /> 
-        <CoreValues lang={this.props.isEng} />
+        <Header isEng={this.props.isEng}/>
+        <Story isEng={this.props.isEng}/> 
+        <CoreValues isEng={this.props.isEng} />
       </Container>
     );
   }
@@ -26,7 +26,7 @@ class AboutUs extends Component {
 
 const mapStateToProps = state => {
   return {
-    isEng: state.isEng
+    isEng: state.LangReducer.isEng
   };
 };
 

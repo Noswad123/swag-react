@@ -54,7 +54,6 @@ class LangToggle extends Component {
         super(props);
         this.toggleLang = this.toggleLang.bind(this);
         this.state = {
-          isEng: props.isEng,
           isMenu: false,
           switchPos: { transform: "translateX(100px)" }
           
@@ -62,11 +61,10 @@ class LangToggle extends Component {
       }
     
       toggleLang() {
-        var opp = !this.state.isEng;
         this.props.onUpdateLang();
+        console.log(this);
         this.setState({
-          isEng: opp,
-          switchPos: this.state.isEng
+          switchPos: this.props.isEng
             ? { transform: "translateX(-10px)" }
             : { transform: "translateX(100px)" }
         });       
@@ -82,7 +80,7 @@ class LangToggle extends Component {
                 <Toggle
                 toggleLang={this.toggleLang}
                 switch={this.state.switchPos}
-                lang={this.state.isEng ? "English" : "Spanish"}
+                lang={this.props.isEng ? "English" : "Spanish"}
                 />
                 <HamburgerMenu click={this.showMenu.bind(this)} />
             </Container>
@@ -116,7 +114,7 @@ class Toggle extends Component {
   }
 const mapStateToProps = state => {
     return {
-      isEng: state.isEng
+      isEng: state.LangReducer.isEng
     };
   };
   

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./index.css";
@@ -22,18 +22,20 @@ import Resources from "./js/container/resources/resources";
 import Timeline from "./js/container/timeline/timeline";
 import Meet from "./js/container/meet/meet";
 import ContactUs from "./js/container/about-us/contactus";
-import langReducer from "./js/reducers/language-reducer";
+import LangReducer from "./js/reducers/lang-reducer";
+import InvolvementReducer from "./js/reducers/involvement-reducer";
 
-let store = createStore(langReducer, { isEng: true });
+let store = createStore(combineReducers({LangReducer,InvolvementReducer}),{});
 
 const Container = styled.div`
   background-color:${Styles.color.grey};
   font-family:${Styles.font.text};
+  width:100%;
 `;
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Container style={{ width: "100%" }}>
+      <Container>
         <Navbar />
         <QuickLinks />
         <Route exact path="/aboutus" component={AboutUs} />

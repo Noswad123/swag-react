@@ -19,7 +19,7 @@ export default class Mission extends Component {
       <Container>
         <Text>
           {
-            this.props.lang
+            this.props.isEng
             ? "Our mission is to provide near-peer mentorship for underserved high school and college students to help them matriculate to college, graduate from college, and enter the workforce."
             : "Need translation"
           }

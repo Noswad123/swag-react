@@ -2,64 +2,69 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Styles from "../../../js/style/styles";
 import { connect } from "react-redux";
-
-import Options from "../../data/quick-link.data";
 import DropDown from "./dropdown";
 import Links from "./links";
 
 const Container = styled.div`
   margin-top: ${Styles.size.xxl};
-  color: black;
+  color: ${Styles.color.font1};
   font-size: 15px;
   position: fixed;
   top: 20%;
-  left: -20px;
+  left: 85px;
   z-index:9999;
   
 `;
 const Header = styled.span`
   transform-origin: 50%;
-  transform: rotate(90deg);
+  display:flex;
+  align-items:end;
+  flex-direction:column;
+  justify-content:center;
   position: absolute;
-  right: -20px;
-  top: 40%;
+  right: 10px;
+  top: 20%;
+  
+  
 `;
 
 const QuickMenu = styled.div`
   background-color: ${Styles.color.primary};
-  color: ${Styles.color.font1};
-  width: 300px;
+  width: 250px;
   height: 120px;
   position: absolute;
   top: -200px;
-  left: -250px;
+  left: -300px;
   transition: all 1s; 
   border: white solid;
+  >div{
+    display:none;
+  }
   &:hover {
-    left: 20px;
-    height:400px;
+    left:-90px;
+    height:300px;
     >span{
       display:none;
     }
-    
+    >div{
+      display:flex;
+    }
   }
 `;
-
+const Letter = styled.span``
 class QuickLinks extends Component {
-  constructor(props){
-    super(props);
-    this.state = {placeholder:0};
-  }
-  change(index){
-      this.setState({placeholder:index});
-  }
   render() {
     return (
       <Container>
         <QuickMenu>
-          <DropDown Selected={Options[this.state.placeholder]} change={this.change} options={Options}/>
-          <Links links={Options[this.state.placeholder].links}/>     
-          <Header>Quick Links</Header>
+          <DropDown involvement={this.props.involvement} changeInvolvement={this.props.changeInvolvement}/>
+          <Links involvement={this.props.involvement}/>     
+          <Header>
+            <Letter>M</Letter>
+            <Letter>E</Letter>
+            <Letter>N</Letter>
+            <Letter>U</Letter>
+          </Header>
         </QuickMenu>
       </Container>
     );
@@ -68,7 +73,8 @@ class QuickLinks extends Component {
 
 const mapStateToProps = state => {
   return {
-    isEng: state.isEng
+    isEng: state.LangReducer.isEng,
+    involvement:state.InvolvementReducer.involvement
   };
 };
 
@@ -76,6 +82,10 @@ function mapDispatchToProps(dispatch) {
   return {
     onUpdateLang: () => {
       const action = { type: "UPDATE_LANG", payload: false };
+      dispatch(action);
+    },
+    changeInvolvement: (involvement) => {
+      const action = { type: "CHANGE_INVOLVEMENT", payload: involvement };
       dispatch(action);
     }
   };
