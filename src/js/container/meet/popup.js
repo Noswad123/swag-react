@@ -27,15 +27,16 @@ color:${Styles.color.font1};`
 const Position=styled.div`
 color:${Styles.color.font1};`
 const XContainer=styled.div`
-color:${Styles.color.secondary};
-position:absolute;
-right:10px;
-top:10px;
-cursor:pointer;
+    color:${Styles.color.font1};
+    position:absolute;
+    right:10px;
+    top:10px;
+    cursor:pointer;
+    font-size:${Styles.size.m};
 `
 
 const Wrapper=styled.div`
-padding:0 10px 10px 10px;
+    padding:0 10px 10px 10px;
 `
 export default class PopUp extends Component{
    

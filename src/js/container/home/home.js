@@ -5,6 +5,7 @@ import SecondPart from './second-part/second-part';
 import AboveFold from './above-fold/above-fold';
 import Styles from '../../style/styles';
 import {connect} from 'react-redux'
+import Statistics from './statistics';
 
 const Container = styled.div `
   width:100%;
@@ -16,28 +17,15 @@ const Container = styled.div `
   color:${Styles.color.font1};
   postion:absolute;
 `
-const Text = styled.div`
-  color:${Styles.color.font1};
-  background-color:${Styles.color.primary};
-  font-size:20px;
-  width:100%;
-  height:100px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-`
 class Home extends Component {
   render() {
     return ( 
       < Container > 
         <AboveFold lang = {this.props.isEng}/>
-        <Text>
-          Statistics
-          </Text>
+        <Statistics />
         <Paralax background="./img/community-members.jpg"/>
         <SecondPart/>
         <Paralax background="./img/meet-the-team_orig.jpg"/>
-        
     </Container>);
   }
 }

@@ -23,7 +23,8 @@ const Container=styled.div`
   }
 `;
 const SwitchWrap = styled.div`
-  background-color: ${Styles.color.tertiary};
+  background-color: ${Styles.color.accent};
+  color:${Styles.color.primary};
   cursor: pointer;
   text-align: center;
   width: 120px;

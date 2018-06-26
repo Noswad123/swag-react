@@ -9,8 +9,10 @@ import {connect} from 'react-redux';
 const Container=styled.div`
 `
 const Header=styled.div`
-font-family:${Styles.font.header};
-font-size:${Styles.size.l};
+    font-family:${Styles.font.header};
+    font-size:${Styles.size.l};
+    color:${Styles.color.font1};
+    text-transform:uppercase;
 `
 const Wrapper=styled.div`
     background-color:${Styles.color.secondary};
@@ -97,7 +99,7 @@ class Meet extends Component{
 }
 const mapStateToProps= state=>{
     return{
-        isEng:state.isEng
+        isEng:state.LangReducer.isEng
     }
 };
   

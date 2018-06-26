@@ -15,9 +15,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content:space-between;
-  color: ${Styles.color.secondary};
+  color: ${Styles.color.font1};
   a {
-    color: ${Styles.color.blue};
+    color: ${Styles.color.accent};
   }
   justify-content: space-between;
 
@@ -50,8 +50,9 @@ const Text = styled.div`
   justify-content:space-between;
   align-items:center;
   text-transform: uppercase;
-  
   font-family:${Styles.font.title};
+  background:rgb(9,51,93,30%);
+  padding:20px;
 `;
 
 export default class Header extends Component {

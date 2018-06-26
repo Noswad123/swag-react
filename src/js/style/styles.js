@@ -6,16 +6,23 @@ const Styles = {
   },
   color: {
     primary: "#09335D",
-    secondary: "#FFFFFF",
-    accent: "#39A7FF",
-    tertiary: "#97DFFC",
+    analogousPrimary:"#",
+
+    secondary: "#11485f",
+    analogousSecondary:"#419D78",
+    accent: "#FFD966",
+    tertiary: "#33658A",   
+    contrast: "#E63946",
+
     font1: "#FFFFFF",
     font2: "#0F0F0F",
     background: "#FFFFFF",
     temp:"#437F97",
-    grey:"#D8D8D8",
+    grey:"#364652",
     teal:"#11485f",
-    blue:"#A3C4BC"
+    blue:"#97DFFC",
+    orange:"#F28123",
+    oldprimary:"#09335D"
   },
   size: {
     xxs: "4px",

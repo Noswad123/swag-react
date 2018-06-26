@@ -1,5 +1,4 @@
-
-export default function InvolvementReducer(state={involvement:"HS Mentee"}, action){ 
+const InvolvementReducer = (state={involvement:"HS Mentee"}, action)=>{ 
     switch(action.type){
         case "CHANGE_INVOLVEMENT":
             console.log(action.payload);
@@ -8,3 +7,5 @@ export default function InvolvementReducer(state={involvement:"HS Mentee"}, acti
             return state;
     }
   }
+
+  export default InvolvementReducer;

@@ -70,14 +70,18 @@ const Links = styled.ul`
 
 
 const HideMenu = styled.div`
-transform: rotate(270deg);
-font-size:15px;
+font-size:25px;
 cursor:pointer;
+margin-left:20px;
+color:${Styles.color.font1};
+&:hover{
+  color:${Styles.color.accent};
+}
 `;
 const ShowMenu = styled.div`
   transform:translateX(-100px);
   cursor:pointer;
-  color:${Styles.color.subtitle};
+  color:${Styles.color.font1};
   height:30px;
   width:30px;
   justify-content:center;
@@ -102,7 +106,7 @@ class Navbar extends Component {
     super(props);   
     this.state = {
       isMenu: false,
-      isHidden: false
+      isHidden: true
     };
   }
   hideMenu() {
@@ -180,7 +184,7 @@ class NavWrapper extends React.Component {
             this.props.toggle(true);
           }}
         >
-          hide
+          ->
         </HideMenu>
         </RightSide>
       </Container>

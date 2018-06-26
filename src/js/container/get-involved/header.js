@@ -9,9 +9,9 @@ const Container = styled.div`
   justify-content: space-between;
   flex-direction:column;
   align-items:center;
-  padding: 80px 50px 50px 20px;
+  padding: 120px 50px 50px 20px;
   box-sizing:border-box;
-  color:${Styles.color.secondary};
+  color:${Styles.color.font1};
   width:100%;
 `;
 const Top = styled.div`
@@ -28,12 +28,14 @@ font-size:${Styles.size.l};
 const Front=styled.div`
   z-index:5;
   color:grey;
+  text-transform:uppercase;
 `
 const Shadow = styled.div`
   position:absolute;
   bottom:5px;
   right:-5px;
   z-index:0;
+  text-transform:uppercase;
 `
 const Text= styled.div``
 const Bottom = styled.div`

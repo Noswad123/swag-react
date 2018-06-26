@@ -1,19 +1,18 @@
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import { createStore, combineReducers } from "redux";
-import { Provider } from "react-redux";
 import { BrowserRouter, Route } from "react-router-dom";
-import "./index.css";
+import registerServiceWorker from "./registerServiceWorker";
+import { Provider } from "react-redux";
+import store from "./js/redux/store";
+
 import styled from "styled-components";
 import Styles from "./js/style/styles";
-import registerServiceWorker from "./registerServiceWorker";
 
 import Navbar from "./js/component/navbar/navbar";
 import Footer from "./js/component/footer";
 import Checkin from "./js/component/checkin-forms";
 import QuickLinks from "./js/component/quick-links/quick-links";
-
-//import reducer from './js/reducers/reducer'
 
 import AboutUs from "./js/container/about-us/about-us";
 import GetInvolved from "./js/container/get-involved/get-involved";
@@ -22,13 +21,11 @@ import Resources from "./js/container/resources/resources";
 import Timeline from "./js/container/timeline/timeline";
 import Meet from "./js/container/meet/meet";
 import ContactUs from "./js/container/about-us/contactus";
-import LangReducer from "./js/reducers/lang-reducer";
-import InvolvementReducer from "./js/reducers/involvement-reducer";
+import MenteeInvolvement from "./js/container/get-involved/templates/mentee-involvement";
 
-let store = createStore(combineReducers({LangReducer,InvolvementReducer}),{});
 
 const Container = styled.div`
-  background-color:${Styles.color.grey};
+  background-color:${Styles.color.teal};
   font-family:${Styles.font.text};
   width:100%;
 `;
@@ -40,6 +37,7 @@ ReactDOM.render(
         <QuickLinks />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/getinvolved" component={GetInvolved} />
+        <Route exact path="/mentee" component={MenteeInvolvement} />
         <Route exact path="/" component={Home} />
         <Route exact path="/resources" component={Resources} />
         <Route exact path="/timeline" component={Timeline} />

@@ -8,9 +8,10 @@ const Container = styled.li`
   padding: 5px 10px;
   box-sizing: border-box;
   margin: 0;
+  color:${Styles.color.font1};
   &:hover {
-    border-bottom: solid ${Styles.color.tertiary};
-    color: ${Styles.color.tertiary};
+    border-bottom: solid ${Styles.color.accent};
+    color: ${Styles.color.accent};
     cursor: pointer;
   }
 `;
@@ -22,7 +23,7 @@ export default class FilterOption extends Component {
   }
   update() {
     if (this.props.filterName === this.props.current) {
-      return { borderBottom: "solid #266FF0" };
+      return { borderBottom: `solid ${Styles.color.accent}` };
     }
   }
   render() {
