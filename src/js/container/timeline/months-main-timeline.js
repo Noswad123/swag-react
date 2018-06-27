@@ -15,9 +15,10 @@ color: ${Styles.color.font1};
 border: solid ${Styles.color.secondary};
 font-family:${Styles.font.header};
 font-size:${Styles.size.s};
+cursor:pointer;
 &:hover{
     color: ${Styles.color.accent};
-    border:solid ${Styles.color.font2};
+    border: solid ${Styles.color.accent};
 }
 `
 const slide = keyframes`
@@ -40,13 +41,14 @@ const Steps= styled.div`
   width:auto;
   transition:all 2s;
   animation-name: ${slide};
-  color: #09335D;
+  color: ${Styles.color.font1};
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-direction:normal;
   animation-timing-function: ease-in-out;
   padding:10px;
   font-family:${Styles.font.text};
+  
 
 `
 

@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
+import Twitter from "../../images/twitter.png"
+import Medium from "../../images/medium.png"
+import Facebook from "../../images/facebook.ico"
+import Linkedin from "../../images/linkedin.png"
+import Instagram from "../../images/instagram.png"
 
 const Container = styled.div`
   width: 100%;
@@ -55,7 +60,7 @@ class Social extends Component {
           rel="noopener noreferrer"
         >
           {" "}
-          <Icon src={"./img/facebook.ico"} />
+          <Icon src={Facebook} />
         </a>
         <a
           href="https://www.instagram.com/swagtocollege/"
@@ -63,7 +68,7 @@ class Social extends Component {
           rel="noopener noreferrer"
         >
           {" "}
-          <Icon src={"./img/instagram.png"} />
+          <Icon src={Instagram} />
         </a>
         <a
           href="https://twitter.com/swagtocollege"
@@ -71,7 +76,7 @@ class Social extends Component {
           rel="noopener noreferrer"
         >
           {" "}
-          <Icon src={"./img/twitter.png"} />
+          <Icon src={Twitter} />
         </a>
         <a
           href="https://medium.com/@swagtocollege"
@@ -79,7 +84,7 @@ class Social extends Component {
           rel="noopener noreferrer"
         >
           {" "}
-          <Icon src={"./img/medium.png"} />
+          <Icon src={Medium} />
         </a>
         <a
           href="https://www.linkedin.com/company/10801368/"
@@ -87,7 +92,7 @@ class Social extends Component {
           rel="noopener noreferrer"
         >
           {" "}
-          <Icon src={"./img/linkedin.png"} />
+          <Icon src={Linkedin} />
         </a>
       </SocialStyle>
     );

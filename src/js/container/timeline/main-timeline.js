@@ -4,17 +4,24 @@ import Styles from '../../style/styles'
 import Months from './months-main-timeline';
 
 const Container = styled.div`
-width:80vw;
-min-height:80vh;
-padding: 32px 0;
-margin-top:100px;
+    width:80vw;
+    min-height:80vh;
+    padding: 32px 0;
+    margin-top:100px;
 `
 const Title = styled.div`
-font-size:${Styles.size.l};
-font-family:${Styles.font.title};`
+    font-size:${Styles.size.l};
+    font-family:${Styles.font.title};
+    color:${Styles.color.font1};
+    text-transform:uppercase;`
 const Goals = styled.ul`
-font-size:${Styles.size.s};
-font-family:${Styles.font.text};`
+    font-size:${Styles.size.s};
+    color:${Styles.color.font1};
+    list-style:none;
+    li{
+        margin-top:10px;
+    }
+    `
 
 export default class Main extends Component{
  

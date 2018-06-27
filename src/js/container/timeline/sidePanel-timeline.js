@@ -18,27 +18,29 @@ const SubPanel = styled.div`
 
 const TabStyle = styled.button`
   background-color: ${Styles.color.secondary};
-  color: #09335D;;
+  color: ${Styles.color.font1};
   border-radius: 10px 10px 0 0;
   border-color: ${Styles.color.font2};
   border-bottom: none;
   margin-right: 10px;
+  cursor:pointer;
 `
 
-const Option = styled.div`
+const Options = styled.div`
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 100%;
   button{
-    background-color:${Styles.color.secondary};
+    background-color:${Styles.color.font1};
       color:${Styles.color.font2};
       border: solid ${Styles.color.font2};
       border-radius: 8px;
       height: 32px;
       width: 128px;
       font-family:${Styles.font.text};
+      cursor:pointer;
       &:hover{
         background-color:${Styles.color.tertiary};
         color:${Styles.color.accent};
@@ -87,12 +89,12 @@ class StudentOptions extends Component{
  }
   render(){
     return(
-      <Option style={this.changeOptions()}>
+      <Options style={this.changeOptions()}>
         <button onClick={()=>this.props.changeGrade(0)}>{this.props.lang?"Freshman":"Año Primero"}  </button>
         <button onClick={()=>this.props.changeGrade(1)}> {this.props.lang?"Sophomore":"Año segundo"} </button>
         <button onClick={()=>this.props.changeGrade(2)}> {this.props.lang?"Junior":"Año tercero"}</button>
         <button onClick={()=>this.props.changeGrade(3)}> {this.props.lang?"Senior":"Año final"}</button>
-      </Option>
+      </Options>
       
     )
   }
@@ -108,9 +110,9 @@ class ParentOptions extends Component{
  }
   render(){
     return(
-            <Option style={this.changeOptions()}>
+            <Options style={this.changeOptions()}>
           <button  onClick={()=>this.props.changeGrade(4)} > {this.props.lang?"Parent":"Padre"}</button>
-      </Option>
+      </Options>
     )
   }
 }
@@ -119,8 +121,9 @@ class Tab extends Component{
    active(){
     if(this.props.isActive===true){
       let activeTab={
-        color:"white",
-        backgroundColor: "#09335D"
+        color:`${Styles.color.font1}`,
+        backgroundColor: `${Styles.color.primary}`,
+        borderColor: `${Styles.color.font1}`
       }
       return(activeTab)
     }

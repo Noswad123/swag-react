@@ -66,7 +66,7 @@ export default class Bottom extends Component {
           <Wrapper>
                 
             <BlueDiv>
-                <Link to="/mentee">
+                <Link to="/getinvolved/0">
                     <Pic src={"./img/profile2.jpg"} alt="pic1"/>
                     <Text>
                         High School Student
@@ -74,34 +74,44 @@ export default class Bottom extends Component {
                 </Link>
             </BlueDiv>
                 <BlueDiv>
-                    <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                    <Text>
-                        College Student
-                    </Text>
+                    <Link to="/getinvolved/1">
+                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                        <Text>
+                            College Student
+                        </Text>
+                    </Link>
                 </BlueDiv>
                 <BlueDiv>
-                    <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                    <Text>
-                        Parent
-                    </Text>
+                    <Link to="/getinvolved/3">
+                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                        <Text>
+                            Parent
+                        </Text>
+                    </Link>
                 </BlueDiv>
                 <BlueDiv>
-                    <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                    <Text>
-                        Community Member
-                    </Text>
+                    <Link to="/getinvolved/5">
+                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                        <Text>
+                            Community Member
+                        </Text>
+                    </Link>
                 </BlueDiv>
                 <BlueDiv>
-                    <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                    <Text>
-                        Young Professional
-                    </Text>
+                    <Link to="/getinvolved/2">
+                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                        <Text>
+                            Young Professional
+                        </Text>
+                    </Link>
                 </BlueDiv>
                 <BlueDiv>
-                    <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                    <Text>
-                        School Admin
-                    </Text>
+                    <Link to="/getinvolved/4">
+                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                        <Text>
+                            School Admin
+                        </Text>
+                    </Link>
                 </BlueDiv>
             </Wrapper>
       </Container>

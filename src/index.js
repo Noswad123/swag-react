@@ -22,7 +22,7 @@ import Timeline from "./js/container/timeline/timeline";
 import Meet from "./js/container/meet/meet";
 import ContactUs from "./js/container/about-us/contactus";
 import MenteeInvolvement from "./js/container/get-involved/templates/mentee-involvement";
-
+import GetInvolvementTemplate from "./js/container/get-involved/templates/get-involved-template";
 
 const Container = styled.div`
   background-color:${Styles.color.teal};
@@ -37,6 +37,8 @@ ReactDOM.render(
         <QuickLinks />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/getinvolved" component={GetInvolved} />
+        <Route exact path="/getinvolved/:id" component={GetInvolvementTemplate} />
+        
         <Route exact path="/mentee" component={MenteeInvolvement} />
         <Route exact path="/" component={Home} />
         <Route exact path="/resources" component={Resources} />

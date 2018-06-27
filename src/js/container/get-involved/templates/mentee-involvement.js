@@ -120,16 +120,16 @@ export default class MenteeInvolvement extends Component {
             {
                 EngInvolved[0].options.map((element)=>{
                         return(
-                            <Section className="section">
+                            <Section className="section" key={element.title}>
                                 <Wrapper className="wrapper">
                                     <ArrowL className="arrowL">
-                                    <img src={"./img/arrowl.png"}/>
+                                    <img src={"./img/arrowl.png"} alt="left arrow"/>
                                     </ArrowL>
                                         <Position>
                                         {element.title}
                                         </Position>
                                     <ArrowR className="arrowR">
-                                        <img src={"./img/arrowr.png"}/>
+                                        <img src={"./img/arrowr.png"} alt="right arrow"/>
                                     </ArrowR>
                                 </Wrapper>
                                     <Summary>
@@ -137,10 +137,8 @@ export default class MenteeInvolvement extends Component {
                                     </Summary>
                             </Section>
                         )
-
                 })
             }
-            
         </Sections>
         <SignUp>
             SignUp

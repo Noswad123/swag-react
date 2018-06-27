@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Styles from "../../../js/style/styles";
 import { connect } from "react-redux";
 import DropDown from "./dropdown";
-import Links from "./links";
 
 const Container = styled.div`
   margin-top: ${Styles.size.xxl};
@@ -12,7 +11,7 @@ const Container = styled.div`
   position: fixed;
   top: 20%;
   left: 85px;
-  z-index:9999;
+  z-index:9000;
   
 `;
 const Header = styled.span`
@@ -57,8 +56,7 @@ class QuickLinks extends Component {
     return (
       <Container>
         <QuickMenu>
-          <DropDown involvement={this.props.involvement} changeInvolvement={this.props.changeInvolvement}/>
-          <Links involvement={this.props.involvement}/>     
+          <DropDown involvement={this.props.involvement} changeInvolvement={this.props.changeInvolvement}/>    
           <Header>
             <Letter>M</Letter>
             <Letter>E</Letter>

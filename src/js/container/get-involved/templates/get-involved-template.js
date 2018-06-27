@@ -1,7 +1,10 @@
-import styled from "styled-components";
 import React, { Component } from "react";
 import styled from "styled-components";
 import Styles from "../../../style/styles";
+import EngInvolved from "../../../data/get-involved-eng.data";
+import MenteeInvolvment from "./mentee-involvement";
+import arrowL from "../../../../images/arrowl.png"
+import arrowR from "../../../../images/arrowr.png"
 
 const Container = styled.div`
     min-height: 90vh;
@@ -37,43 +40,125 @@ const Text = styled.div`
 `
 const Sections = styled.div`
     width:100%;
+    .section:nth-child(odd){
+        .arrowL{
+            display:none;
+        }
+    }
+    .section:nth-child(even){
+        .arrowR{
+            display:none;
+        }
+    }
 `
 const Section = styled.div`
-    width:100%;
     display:flex;
-    justify-content:space-between;
-    background-color:${Styles.color.accent};
+    flex-direction:column;
+    align-items:center;
+    margin-top:20px;
+    padding:40px;
     color:${Styles.color.teal};
+    box-sizing:border-box;
 `
 const ArrowL = styled.div`
     color:${Styles.color.secondary};
+    img{
+        height:200%;
+        top:-50%;
+        position:absolute;
+        left:-25px;
+    }
 `
 const ArrowR = styled.div`
     color:${Styles.color.secondary};
+    background-color:${Styles.color.secondary};
+    img{
+        height:200%;
+        top:-50%;
+        position:absolute;
+        right:-25px;
+    }
+`
+const Wrapper = styled.div`
+    display:flex;
+    justify-content:center;
+    width:100%;
+    position:relative;
+    background-color:${Styles.color.accent};
+`
+const SignUp = styled.div`
+    font-size:${Styles.size.m};
+    font-family:${Styles.font.title};
+    display:flex;
+    justify-content:center;
+    width:100%;
+    text-transform:uppercase;
+    color:${Styles.color.font1};
  `
-export default class MenteeInvolvement extends Component {
+ const Position = styled.div`
+ font-size:${Styles.size.m};
+ font-family:${Styles.font.title};
+    color:${Styles.color.secondary};
+`
+const Summary = styled.div`
+    display:flex;
+    justify-content:space-between;
+    width:80%;
+    margin-top:40px;
+    color:${Styles.color.font1};
+`
+export default class GetInvolvementTemplate extends Component {
+    constructor(props){
+        super(props);
+        this.state={ id:props.match.params.id}
+    }
   render() {
-    return (
-      <Container>
-        <Header>
-            <Title>
-                High School Student
-            </Title>
-            <Text>
-                As a mentee, you will receive a college mentor who will check in with you weekly through text, phone, or email. Your mentor will walk you through our timelines that begin in 9th grade and continue until you graduate from high school and start college. Your mentor will help make your college dreams possible!                </Text>
-            </Header>
-        <Sections>
-            <Section>
-                <ArrowL>
-                {"<"}
-                </ArrowL>
-                Campus Representative
-                <ArrowR>
-                {">"}
-                </ArrowR>
-            </Section>
-        </Sections>
-      </Container>
-    );
-  }
+        if(this.state.id>0 && this.state.id<6)
+        {
+            return (
+                <Container>
+                    <Header>
+                        <Title>
+                            {EngInvolved[this.state.id].level}
+                        </Title>
+                        <Text>
+                            {EngInvolved[this.state.id].blurb}
+                        </Text>
+                    </Header>
+                    <Sections>
+                    {
+                        EngInvolved[this.state.id].options.map((element)=>{
+                            return(
+                                <Section className="section" key={element.title}>
+                                    <Wrapper className="wrapper">
+                                        <ArrowL className="arrowL">
+                                            <img src={arrowL} alt="left"/>
+                                        </ArrowL>
+                                            <Position>
+                                            {element.title}
+                                            </Position>
+                                        <ArrowR className="arrowR">
+                                            <img src={arrowR} alt="right"/>
+                                        </ArrowR>
+                                    </Wrapper>
+                                        <Summary>
+                                            {element.summary}
+                                        </Summary>
+                                </Section>
+                            )
+                        })
+                    }
+                    </Sections>
+                <SignUp>
+                    SignUp
+                </SignUp>
+            </Container>
+            );
+        }
+        else{
+            return(
+            <MenteeInvolvment key="bacon"/>
+            )
+        }
+    }
 }

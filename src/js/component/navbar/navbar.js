@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Styles from "../../style/styles";
 import { connect } from "react-redux";
-
+import logo from "../../../images/swag-logo-white.png"
+import hamburger from"../../../images/hamburger.png"
 import LangToggle from "./lang-toggle";
+import CircleArrow from "../../../images/circle-arrow.png"
 
 const Container = styled.div`
   background-color: ${Styles.color.primary};
@@ -140,11 +142,11 @@ class NavWrapper extends React.Component {
     return (
       <Container style={{transform: `${this.props.show ? "translateX(100%)" : "translateX(0%)" }` }}>
         <ShowMenu style={{ display: `${this.props.show ? "flex" : "none"}` }}  onClick={() => { this.props.toggle(false); }} >
-          <img src={"./img/hamburger.png"} alt="hamburger" />
+          <img src={hamburger} alt="hamburger" />
         </ShowMenu>
 
         <Link to="/">
-          <Logo src={"./img/invertswag.png"} alt="SWAG" />
+          <Logo src={logo} alt="SWAG" />
         </Link>
         <RightSide>
           <Wrapper>
@@ -184,7 +186,7 @@ class NavWrapper extends React.Component {
             this.props.toggle(true);
           }}
         >
-          ->
+          <img src={CircleArrow} alt="circle arrow" style={{height: 40}}/>
         </HideMenu>
         </RightSide>
       </Container>

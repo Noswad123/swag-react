@@ -10,40 +10,50 @@ const Container = styled.div`
     
 `;
 const DropDown = styled.span`
-padding:5px;
-z-index:1;
+padding:5px 5px 5px 0;
+z-index:9800;
+span{
+    color:${Styles.color.blue};
+    cursor:pointer
+}
+>div{
+    font-size:20px;
+}
 &:hover{
-    >ul{
-      display:inline
-    }
-    span{
-        color:${Styles.color.blue};
-        cursor:pointer
-    }
+        >ul{
+        display:inline
+        
+        }
+        span{
+            color:${Styles.color.accent};
+        }
     }
 `
 const Menu=styled.ul`
-    padding:25px 25px 25px 30px;
+    padding:20px 0;
     display:none;
     list-style:none;
     position:absolute;
     background-color:${Styles.color.primary};
-   left:0px;
-   top:10px;
-  
+    box-sizing:border-box;
+   left:20px;
+   top:15px;
+   z-index:9700;
     li{
+        padding:5px 10px;
+        text-align:center;
+        width:100%;
         &:hover{
             background-color:${Styles.color.blue};
             cursor:pointer;
         }
     }
 `
-
 class DropDownMenu extends Component {
     render() {
         return (
             <Container>
-                   <DropDown> I am a {this.props.involvement}
+                   <DropDown> <div>I am a <span>{this.props.involvement}</span></div>
                         <Menu>
                             <li onClick={()=>{this.props.changeInvolvement("HS Mentee")}}> HS Mentee</li>
                             <li onClick={()=>{this.props.changeInvolvement("College Mentee")}}>College Mentee</li>
@@ -52,7 +62,7 @@ class DropDownMenu extends Component {
                             <li onClick={()=>{this.props.changeInvolvement("Parent")}}>Parent</li>
                             <li onClick={()=>{this.props.changeInvolvement("School Administrator")}}>School Administrator</li>
                             <li onClick={()=>{this.props.changeInvolvement("Community Member")}}>Community Member</li>
-                            <li onClick={()=>{this.props.changeInvolvement("Other")}}>Other</li>
+                            <li onClick={()=>{this.props.changeInvolvement("Other")}}>Visitor</li>
                         </Menu>
                     </DropDown>
                     <DynamicContent involvement={this.props.involvement}/>

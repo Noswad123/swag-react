@@ -7,7 +7,6 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   color: black;
-  margin: 30px;
   padding: 50px;
 `;
 
