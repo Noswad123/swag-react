@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import Styles from "../style/styles";
 import { connect } from "react-redux";
 import Twitter from "../../images/twitter.png"
 import Medium from "../../images/medium.png"
@@ -13,7 +14,7 @@ const Container = styled.div`
   height: 100px;
   padding: 20px;
   overflow: hidden;
-  background-color: #09335d;
+  background-color: ${Styles.color.primary};
   color: white;
   z-index:5;
 `;

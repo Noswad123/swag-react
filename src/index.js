@@ -25,7 +25,7 @@ import MenteeInvolvement from "./js/container/get-involved/templates/mentee-invo
 import GetInvolvementTemplate from "./js/container/get-involved/templates/get-involved-template";
 
 const Container = styled.div`
-  background-color:${Styles.color.teal};
+  background-color:${Styles.color.secondary};
   font-family:${Styles.font.text};
   width:100%;
 `;

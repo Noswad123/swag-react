@@ -162,9 +162,9 @@ class NavWrapper extends React.Component {
                 </Link>
               </li>
               <li>
-                <Link to="/resources">
+                <Link to="/timeline">
                   
-                  {this.props.isEng ? "Resources" : "Recrusos"}
+                  {this.props.isEng ? "Timeline" : "Linea del Tiemp"}
                 </Link>
               </li>
               <li>

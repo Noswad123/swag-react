@@ -5,10 +5,10 @@ const Styles = {
     header: "'Oswald', sans-serif"
   },
   color: {
-    primary: "#09335D",
-    analogousPrimary:"#",
+    primary: "#11485f",
+    analogousPrimary:"#A3C4BC",
 
-    secondary: "#11485f",
+    secondary: "#A3C4BC",
     analogousSecondary:"#419D78",
     accent: "#FFD966",
     tertiary: "#33658A",   
@@ -22,7 +22,8 @@ const Styles = {
     teal:"#11485f",
     blue:"#97DFFC",
     orange:"#F28123",
-    oldprimary:"#09335D"
+    oldprimary:"#09335D",
+    fadedblue:"#A3C4BC"
   },
   size: {
     xxs: "4px",

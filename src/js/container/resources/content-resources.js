@@ -3,36 +3,34 @@ import styled from 'styled-components';
 import Styles from '../../style/styles'
 
 const Container=styled.div`
-min-height:80vh;
-background-color:${Styles.color.primary};
-margin-top:100px;
+    min-height:80vh;
+    background-color:${Styles.color.primary};
+    margin-top:100px;
+    width:90%;
 `
 const Wrapper=styled.div`
-
-margin:20px;
+    margin:20px;
 `;
 const Name=styled.a`
-color:${Styles.color.accent};
+    color:${Styles.color.accent};
 `;
 const Description=styled.div`
-font-family:${Styles.font.text};
-color:${Styles.color.secondary};
-
+    font-family:${Styles.font.text};
+    color:${Styles.color.secondary};
 `;
-
 
 export default class ContentResources extends Component {
  
   render() {
     return (
         <Container>
-          {this.props.resource.map((element,index)=>{
+            {this.props.resource.map((element,index)=>{
                 return(
                     <div>
                         <Resource key={element} url={element.url} description={element.description} name={element.name} />
                     </div>
                 )
-          })}
+            })}
         </Container>
     );
   }
@@ -40,15 +38,12 @@ export default class ContentResources extends Component {
 
 
 class Resource extends Component{
-
-render(){
-
-    return(
-        <Wrapper>
-            <Name href={this.props.url} target="_blank">{this.props.name}</Name>
-            <Description>{this.props.description}</Description>
-        </Wrapper>
-    )
-}
-
+    render(){
+        return(
+            <Wrapper>
+                <Name href={this.props.url} target="_blank">{this.props.name}</Name>
+                <Description>{this.props.description}</Description>
+            </Wrapper>
+        )
+    }
 }

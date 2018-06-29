@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React,{Component} from 'react';
-import Styles from '../../style/styles';
+import Styles from '../../../style/styles';
 
 
 
