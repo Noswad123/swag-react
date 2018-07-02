@@ -24,7 +24,7 @@ const Header = styled.div`
     text-transform:uppercase;
 `;
 const BlueDiv=styled.div`
-    border-right:solid ${Styles.color.grey};
+    border-right:solid ${Styles.color.grey} 20px;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -46,8 +46,12 @@ const Wrapper=styled.div`
     display: flex;
     justify-content:space-around;
     align-items:center;
-    background: linear-gradient(90deg, ${Styles.color.blue} 0%, ${Styles.color.primary} 70%);
+    background: linear-gradient(90deg, ${Styles.color.primary} 0%, ${Styles.color.blue} 70%);
     width:100%;
+    div:nth-last-child(1)
+    {
+        border:none;
+    }
 `;
 const Text = styled.div`
     width:50px;

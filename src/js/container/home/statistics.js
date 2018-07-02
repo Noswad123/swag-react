@@ -13,7 +13,7 @@ const Container = styled.div `
   color:${Styles.color.font1};
   padding:10px 40px;
   box-sizing:border-box;
-
+  min-height:250px;
   div:nth-child(odd) {
     background-color:${Styles.color.tertiary};
 }

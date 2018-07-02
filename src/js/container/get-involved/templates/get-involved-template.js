@@ -66,7 +66,7 @@ const ArrowL = styled.div`
         height:200%;
         top:-50%;
         position:absolute;
-        left:-25px;
+        left:-45px;
     }
 `
 const ArrowR = styled.div`
@@ -76,7 +76,7 @@ const ArrowR = styled.div`
         height:200%;
         top:-50%;
         position:absolute;
-        right:-25px;
+        right:-45px;
     }
 `
 const Wrapper = styled.div`
@@ -99,6 +99,7 @@ const SignUp = styled.div`
  font-size:${Styles.size.m};
  font-family:${Styles.font.title};
     color:${Styles.color.secondary};
+    padding:20px 0;
 `
 const Summary = styled.div`
     display:flex;
@@ -113,52 +114,44 @@ export default class GetInvolvementTemplate extends Component {
         this.state={ id:props.match.params.id}
     }
   render() {
-        if(this.state.id>0 && this.state.id<6)
-        {
-            return (
-                <Container>
-                    <Header>
-                        <Title>
-                            {EngInvolved[this.state.id].level}
-                        </Title>
-                        <Text>
-                            {EngInvolved[this.state.id].blurb}
-                        </Text>
-                    </Header>
-                    <Sections>
-                    {
-                        EngInvolved[this.state.id].options.map((element)=>{
-                            return(
-                                <Section className="section" key={element.title}>
-                                    <Wrapper className="wrapper">
-                                        <ArrowL className="arrowL">
-                                            <img src={arrowL} alt="left"/>
-                                        </ArrowL>
-                                            <Position>
-                                            {element.title}
-                                            </Position>
-                                        <ArrowR className="arrowR">
-                                            <img src={arrowR} alt="right"/>
-                                        </ArrowR>
-                                    </Wrapper>
-                                        <Summary>
-                                            {element.summary}
-                                        </Summary>
-                                </Section>
-                            )
-                        })
-                    }
-                    </Sections>
-                <SignUp>
-                    SignUp
-                </SignUp>
-            </Container>
-            );
-        }
-        else{
-            return(
-            <MenteeInvolvment key="bacon"/>
-            )
-        }
+    return (
+        <Container>
+            <Header>
+                <Title>
+                    {EngInvolved[(this.state.id>0 && this.state.id<6)?this.state.id:0].level}
+                </Title>
+                <Text>
+                    {EngInvolved[(this.state.id>0 && this.state.id<6)?this.state.id:0].blurb}
+                </Text>
+            </Header>
+            <Sections>
+            {
+                EngInvolved[(this.state.id>0 && this.state.id<6)?this.state.id:0].options.map((element)=>{
+                    return(
+                        <Section className="section" key={element.title}>
+                            <Wrapper className="wrapper">
+                                <ArrowL className="arrowL">
+                                    <img src={arrowL} alt="left"/>
+                                </ArrowL>
+                                    <Position>
+                                    {element.title}
+                                    </Position>
+                                <ArrowR className="arrowR">
+                                    <img src={arrowR} alt="right"/>
+                                </ArrowR>
+                            </Wrapper>
+                                <Summary>
+                                    {element.summary}
+                                </Summary>
+                        </Section>
+                    )
+                })
+            }
+            </Sections>
+            <SignUp>
+                SignUp
+            </SignUp>
+        </Container>
+    );
     }
 }

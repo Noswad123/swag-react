@@ -21,6 +21,7 @@ const Text = styled.div`
   align-items:center;
   justify-content:center;
   font-size: ${Styles.size.l};
+  text-transform:uppercase;
 `
 
 const PicRow = styled.div`

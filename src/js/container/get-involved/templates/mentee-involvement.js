@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Styles from "../../../style/styles";
 import EngInvolved from "../../../data/get-involved-eng.data";
+import MenteeInvolvment from "./mentee-involvement";
+import arrowL from "../../../../images/arrowl.png"
+import arrowR from "../../../../images/arrowr.png"
 
 const Container = styled.div`
     min-height: 90vh;
@@ -104,46 +107,47 @@ const Summary = styled.div`
     margin-top:40px;
     color:${Styles.color.font1};
 `
-export default class MenteeInvolvement extends Component {
+export default class GetInvolvementTemplate extends Component {
   render() {
-    return (
-      <Container>
-        <Header>
-            <Title>
-                {EngInvolved[0].level}
-            </Title>
-            <Text>
-                {EngInvolved[0].blurb}
-            </Text>
-            </Header>
-        <Sections>
-            {
-                EngInvolved[0].options.map((element)=>{
-                        return(
-                            <Section className="section" key={element.title}>
-                                <Wrapper className="wrapper">
-                                    <ArrowL className="arrowL">
-                                    <img src={"./img/arrowl.png"} alt="left arrow"/>
-                                    </ArrowL>
-                                        <Position>
-                                        {element.title}
-                                        </Position>
-                                    <ArrowR className="arrowR">
-                                        <img src={"./img/arrowr.png"} alt="right arrow"/>
-                                    </ArrowR>
-                                </Wrapper>
-                                    <Summary>
-                                        {element.summary}
-                                    </Summary>
-                            </Section>
-                        )
-                })
-            }
-        </Sections>
-        <SignUp>
-            SignUp
-        </SignUp>
-      </Container>
-    );
-  }
+            return (
+                <Container>
+                    <Header>
+                        <Title>
+                            {EngInvolved[0].level}
+                        </Title>
+                        <Text>
+                            {EngInvolved[0].blurb}
+                        </Text>
+                    </Header>
+                    <Sections>
+                    {
+                        EngInvolved[0].options.map((element)=>{
+                            return(
+                                <Section className="section" key={element.title}>
+                                    <Wrapper className="wrapper">
+                                        <ArrowL className="arrowL">
+                                            <img src={arrowL} alt="left"/>
+                                        </ArrowL>
+                                            <Position>
+                                            {element.title}
+                                            </Position>
+                                        <ArrowR className="arrowR">
+                                            <img src={arrowR} alt="right"/>
+                                        </ArrowR>
+                                    </Wrapper>
+                                        <Summary>
+                                            {element.summary}
+                                        </Summary>
+                                </Section>
+                            )
+                        })
+                    }
+                    </Sections>
+                <SignUp>
+                    SignUp
+                </SignUp>
+            </Container>
+            );
+    
+    }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Styles from '../../style/styles';
+import { connect } from "react-redux";
 
 const Container=styled.div`
 min-height:80vh;
@@ -26,7 +27,7 @@ const Header=styled.div``
 const Name=styled.div``
 const Phone=styled.div``
 const Email=styled.div``
-export default class ContactUs extends Component{
+class ContactUs extends Component{
     render(){
         return(
             <Container>
@@ -58,3 +59,18 @@ export default class ContactUs extends Component{
         )
     }
 }
+const mapStateToProps = state => {
+    return {
+      isEng: state.LangReducer.isEng
+    };
+  };
+  
+  function mapDispatchToProps(dispatch) {
+    return {
+      onUpdateLang: () => {
+        const action = { type: "UPDATE_LANG", payload: false };
+        dispatch(action);
+      }
+    };
+  }
+  export default connect(mapStateToProps, mapDispatchToProps)(ContactUs);

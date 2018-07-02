@@ -23,7 +23,8 @@ const ParalaxWrap = styled.div`
   align-items:center;
   justify-content:space-between;
   width:100%;
-  padding:100px 0 0 0;
+  padding:100px 0 100px 0;
+  margin-bottom:
 `
 
 const Logo = styled.img`

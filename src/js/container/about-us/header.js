@@ -51,7 +51,6 @@ const Text = styled.div`
   align-items:center;
   text-transform: uppercase;
   font-family:${Styles.font.title};
-  background:rgb(9,51,93,30%);
   padding:20px;
 `;
 

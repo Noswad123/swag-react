@@ -24,19 +24,10 @@ font-size:${Styles.size.l};
   font-family:${Styles.font.title};
   font-weight:700;
   position:relative;
-`
-const Front=styled.div`
-  z-index:5;
-  color:grey;
   text-transform:uppercase;
+  color:${Styles.color.font1};
 `
-const Shadow = styled.div`
-  position:absolute;
-  bottom:5px;
-  right:-5px;
-  z-index:0;
-  text-transform:uppercase;
-`
+
 const Text= styled.div``
 const Bottom = styled.div`
 width:70%;
@@ -48,14 +39,8 @@ export default class Header extends Component {
     return (
       <Container>
           <Top>
-            <Title>
-            <Shadow>
+            <Title>    
                 Get Involved
-              </Shadow>
-              <Front>
-                Get Involved
-              </Front>
-              
             </Title>
             <Text>
               Some text about involvement...
