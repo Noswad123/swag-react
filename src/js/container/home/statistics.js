@@ -32,16 +32,16 @@ class Statistics extends Component {
     return ( 
       < Container > 
         <Statistic>
-            675 high school students from over 71 different high schools including
+          College Matriculation Rate: 88% National Average: 60%
         </Statistic>
         <Statistic>
-            120 high school graduates persevering through college
+          College Persistence Rate: 74% National Average: 40%
         </Statistic>
         <Statistic>
-            605 college mentors from over 132 colleges and universities
+          SAT Score: 1106 (out of 1600); National Average: 1083 (out of 1600)
         </Statistic>
         <Statistic>
-            60 Young Professionals at 39 companies and graduate school
+          GPA: 3.48 (out of 4.00): National Average: 3.00 (out of 4.00)
         </Statistic>
     </Container>);
   }

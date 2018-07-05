@@ -4,28 +4,50 @@ import Styles from '../../style/styles';
 import { connect } from "react-redux";
 
 const Container=styled.div`
-min-height:80vh;
+min-height:90vh;
 display: flex;
 flex-direction:column;
 align-items:center;
+width:100%;
 a{
     margin-top:100px;
 }
 `
-const Title=styled.h1`
-    color:${Styles.color.primary}
+const Title=styled.div`
+    margin-top:100px;
+    color:${Styles.color.font1};
+    text-transform: uppercase;
+  font-family:${Styles.font.title};
+  font-size:${Styles.size.l};
     
 `
 const ContactWrapper=styled.div`
-display:flex;
-flex-direction:column;
+    width:100%;   
+    display:flex;
+    flex-direction:column;
+    margin-top:100px;
+`
+const Row=styled.div`
+    width:100%;
+    display:flex;
+    justify-content:space-Between;
+    padding:0 20px;
+    box-sizing:border-box;
 `
 const Contact=styled.div`
-margin-bottom:30px;
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 `
 const Header=styled.div``
 const Name=styled.div``
-const Phone=styled.div``
+const Logo=styled.div`
+height:100px;
+width:100px;
+border-radius:100%;
+background-color:grey;`
+
 const Email=styled.div``
 class ContactUs extends Component{
     render(){
@@ -33,27 +55,33 @@ class ContactUs extends Component{
             <Container>
                 <Title>{(this.props.isEng)?"Contact Us":"needs translate"}</Title>
                 <ContactWrapper>
+                    <Row>
                     <Contact>
-                        <Header >   ​For general inquiries</Header>
+                        <Logo/>
+                        <Header >   ​General Inquiries</Header>
                         <Name> Raj Salhotra</Name>
-                        <Email>Email: raj.salhotra@swagtocollege.org</Email>
-                        <Phone>phone: 713-320-0303</Phone>
+                        <Email>raj.salhotra@swagtocollege.org</Email>
                     </Contact>
                     <Contact>
+                    <Logo/>
                         <Header> High School Program</Header>
                         <Name>​​Graciela Lopez</Name>
-                        <Email>Email: graciela.lopez@swagtocollege.org</Email>
+                        <Email>graciela.lopez@swagtocollege.org</Email>
                     </Contact>
+                    
                     <Contact>
+                    <Logo/>
                         <Header> Upperclassmen Program</Header>
                         <Name>​​Jennifer Dzul</Name>
-                        <Email>Email: jennifer.dzul@swagtocollege.org</Email>
+                        <Email>jennifer.dzul@swagtocollege.org</Email>
                     </Contact>
                     <Contact>
+                    <Logo/>
                         <Header> Young Professional Program</Header>
                         <Name>Maddie Coles</Name>
-                        <Email>​Email: maddie.coles@swagtocollege.org</Email>
+                        <Email>maddie.coles@swagtocollege.org</Email>
                     </Contact>
+                    </Row>
                 </ContactWrapper>
             </Container>
         )
