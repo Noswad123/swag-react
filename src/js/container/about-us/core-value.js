@@ -6,7 +6,7 @@ const Container=styled.div`
     z-index:5;
     min-height:70vh;
     width:100%;
-    background:url(./img/background.jpg);
+    background:url(./img/meet-the-team_orig.jpg);
     background-size:contain;
     background-repeat:no-repeat;
     background-attachment: fixed;
@@ -15,7 +15,7 @@ const Container=styled.div`
 `;
 const Title=styled.div`
     font-family:${Styles.font.title};
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     font-size:${Styles.size.l};
     text-transform:uppercase;
 `
@@ -50,7 +50,7 @@ const Name=styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     font-family:${Styles.font.title};
   text-transform:uppercase;
 `;
@@ -59,7 +59,7 @@ const Name=styled.div`
 const Description=styled.p`
     position:absolute;
     background-color:${Styles.color.primary};
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     width:60vw;
     padding:20px;
     z-index:9999;

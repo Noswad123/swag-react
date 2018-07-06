@@ -9,7 +9,8 @@ align-items:center;
 `;
 const Blurb = styled.div`
 border:white solid;
-padding:55px;`
+padding:30px;
+width:250px;`
 const Pic = styled.img`
 width:50px;
 `

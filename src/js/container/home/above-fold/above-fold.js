@@ -8,7 +8,7 @@ import {connect} from 'react-redux'
 const Container = styled.div `
   width:100%;
   z-index:0;
-  color:${Styles.color.font1};
+  color:${Styles.color.lightFont};
 `
 const ParalaxWrap = styled.div`
   background:url(./img/maddie.jpg);

@@ -4,26 +4,60 @@ const Styles = {
     text: "'Roboto', sans-serif",
     header: "'Oswald', sans-serif"
   },
-  color: {
-    primary: "#11485f",
-    analogousPrimary:"#A3C4BC",
-
-    secondary: "#A3C4BC",
-    analogousSecondary:"#419D78",
-    accent: "#FFD966",
-    tertiary: "#33658A",   
-    contrast: "#E63946",
-
-    font1: "#FFFFFF",
-    font2: "#0F0F0F",
-    background: "#FFFFFF",
-    temp:"#437F97",
+  colors: {
     grey:"#364652",
     teal:"#11485f",
     blue:"#97DFFC",
     orange:"#F28123",
     oldprimary:"#09335D",
-    fadedblue:"#A3C4BC"
+    //thrice blue
+    fadedblue:"#A3C4BC",
+    cerulean:"#2B59C3",
+    darkCerulean:"#00487C",
+    portlandOrange:"#F46036",
+    sunglow:"FFD966"
+    
+  },
+  pinks:{//pinks
+    primary: "#DA627D",
+    secondary: "#FFA5AB",
+    accent: "#06D6A0",
+    tertiary: "#450920",   
+    contrast: "#FFE74C",
+    lightFont: "#FFFFFF",
+    darkFont: "#00487C",
+  },
+  crimson:{//crimson
+    primary: "#6B0F1A",
+    secondary: "#EF8354",
+    accent: "#F7FFF6 ",
+    tertiary: "#DF2935",   
+    contrast: "#23C9FF",
+    lightFont: "#FFFFFF",
+    darkFont: "#00487C",
+  },
+  bluered:{//blue with red accent
+    primary: "#009FFD",
+    secondary: "#003F91",
+    tertiary: "#DF2935",  
+    accent: "#FFA400 ",
+    
+    contrast: "#A30000",
+    lightFont: "#FFFFFF",
+    darkFont: "#00487C",
+  },
+  color:{//thriceblue
+    primary: "#2B59C3",
+    secondary: "#4BB3FD",
+    tertiary: "#00487C", 
+    accent: "#FFD966",
+    contrast: "#F46036",
+
+    analogousPrimary:"#A3C4BC",
+    analogousSecondary:"#2b59c3",
+    lightFont: "#FFFFFF",
+    darkFont: "#00487C",
+    background: "#FFFFFF",
   },
   size: {
     xxs: "4px",

@@ -12,11 +12,11 @@ const Container = styled.div`
 const Title = styled.div`
     font-size:${Styles.size.l};
     font-family:${Styles.font.title};
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     text-transform:uppercase;`
 const Goals = styled.ul`
     font-size:${Styles.size.s};
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     list-style:none;
     li{
         margin-top:10px;

@@ -18,7 +18,7 @@ const Container = styled.div`
 const Title=styled.div`
   font-size:${Styles.size.l};
   font-family:${Styles.font.title};
-  color:${Styles.color.font1};
+  color:${Styles.color.lightFont};
   font-weight:700;
   text-transform:uppercase;
 `

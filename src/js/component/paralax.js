@@ -7,7 +7,7 @@ import {connect} from 'react-redux'
 const Container = styled.div `
   min-height:70vh;
   width:100%;
-  color:${Styles.color.font1};
+  color:${Styles.color.lightFont};
   display: flex;
   flex-direction: column;
   align-items:center;

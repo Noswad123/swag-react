@@ -4,7 +4,7 @@ import Styles from "../../../js/style/styles";
 import DynamicContent from "./dynamic-content";
 const Container = styled.div`
   display:flex;
-  color: ${Styles.color.font1};
+  color: ${Styles.color.darkFont};
   flex-direction: column;
   align-items: center;
     
@@ -13,7 +13,7 @@ const DropDown = styled.span`
 padding:5px 5px 5px 0;
 z-index:9800;
 span{
-    color:${Styles.color.blue};
+    color:${Styles.color.tertiary};
     cursor:pointer
 }
 >div{
@@ -25,7 +25,7 @@ span{
         
         }
         span{
-            color:${Styles.color.accent};
+            color:${Styles.color.contrast};
         }
     }
 `
@@ -34,7 +34,7 @@ const Menu=styled.ul`
     display:none;
     list-style:none;
     position:absolute;
-    background-color:${Styles.color.primary};
+    background-color:${Styles.color.accent};
     box-sizing:border-box;
    left:20px;
    top:15px;
@@ -44,7 +44,7 @@ const Menu=styled.ul`
         text-align:center;
         width:100%;
         &:hover{
-            background-color:${Styles.color.blue};
+            background-color:${Styles.color.contrast};
             cursor:pointer;
         }
     }

@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 
 const Container=styled.div`
 min-height:90vh;
+background-color:${Styles.color.accent};
 display: flex;
 flex-direction:column;
 align-items:center;
@@ -15,7 +16,7 @@ a{
 `
 const Title=styled.div`
     margin-top:100px;
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     text-transform: uppercase;
   font-family:${Styles.font.title};
   font-size:${Styles.size.l};
@@ -33,6 +34,7 @@ const Row=styled.div`
     justify-content:space-Between;
     padding:0 20px;
     box-sizing:border-box;
+    color:${Styles.color.darkFont};
 `
 const Contact=styled.div`
     margin-bottom:30px;
@@ -46,7 +48,7 @@ const Logo=styled.div`
 height:100px;
 width:100px;
 border-radius:100%;
-background-color:grey;`
+background-color:${Styles.color.lightFont};`
 
 const Email=styled.div``
 class ContactUs extends Component{

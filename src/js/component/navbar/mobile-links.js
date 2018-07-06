@@ -8,7 +8,7 @@ const Mobile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:${Styles.color.font1};
+  color:${Styles.color.lightFont};
   a {
     margin: 20px;
   }

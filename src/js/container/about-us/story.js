@@ -9,7 +9,7 @@ const Container = styled.div`
     justify-content:center;
     width:100%;
     background-color:${Styles.color.primary};
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     padding:20px;
     p{
         width:60%;

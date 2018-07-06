@@ -29,10 +29,11 @@ const SwitchWrap = styled.div`
   text-align: center;
   width: 120px;
   box-sizing: border-box;
-  filter: brightness(80%);
+  filter: brightness(100%);
+  
   transition: all 1s;
   &:hover {
-    filter: brightness(100%);
+    filter: brightness(80%);
   }
   border-radius: 10px;
   position: relative;
@@ -81,7 +82,7 @@ class LangToggle extends Component {
                 <Toggle
                 toggleLang={this.toggleLang}
                 switch={this.state.switchPos}
-                lang={this.props.isEng ? "English" : "Spanish"}
+                lang={this.props.isEng ? "Espanol" : "English"}
                 />
                 <HamburgerMenu click={this.showMenu.bind(this)} />
             </Container>

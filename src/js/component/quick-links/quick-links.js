@@ -6,7 +6,7 @@ import DropDown from "./dropdown";
 
 const Container = styled.div`
   margin-top: ${Styles.size.xxl};
-  color: ${Styles.color.font1};
+  color: ${Styles.color.primary};
   font-size: 15px;
   position: fixed;
   top: 20%;
@@ -28,7 +28,7 @@ const Header = styled.span`
 `;
 
 const QuickMenu = styled.div`
-  background-color: ${Styles.color.primary};
+  background-color: ${Styles.color.accent};
   width: 250px;
   height: 120px;
   position: absolute;

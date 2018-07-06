@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items:center;
   padding: 80px 50px 50px 20px;
   box-sizing:border-box;
-  color:${Styles.color.font1};
+  color:${Styles.color.lightFont};
   width:100%;
 `;
 const Header = styled.div`
@@ -24,13 +24,15 @@ const Header = styled.div`
     text-transform:uppercase;
 `;
 const BlueDiv=styled.div`
-    border-right:solid ${Styles.color.grey} 20px;
+    border-right:solid ${Styles.color.secondary} 20px;
+    border-top:solid ${Styles.color.secondary} 20px;
+    border-bottom:solid ${Styles.color.secondary} 20px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
     width:20%;
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     height:250px;
     a{
         text-decoration:none;
@@ -46,18 +48,21 @@ const Wrapper=styled.div`
     display: flex;
     justify-content:space-around;
     align-items:center;
-    background: linear-gradient(90deg, ${Styles.color.primary} 0%, ${Styles.color.blue} 70%);
+    background: linear-gradient(90deg, ${Styles.color.primary} 0%, ${Styles.color.contrast} 80%);
     width:100%;
+    border-top: solid${Styles.color.lightFont};
+    border-bottom: solid${Styles.color.lightFont};
+    
     div:nth-last-child(1)
     {
-        border:none;
+        border-right:none;
     }
 `;
 const Text = styled.div`
     width:50px;
     height:30px;
     margin-top:10px;
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
 `;
 
 export default class Bottom extends Component {

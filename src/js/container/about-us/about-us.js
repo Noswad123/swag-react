@@ -4,12 +4,14 @@ import CoreValues from "./core-value";
 import Story from "./story";
 import Header from "./header";
 import { connect } from "react-redux";
+import Styles from "../../style/styles";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content:space-between;
   align-items: center;
+  background-color:${Styles.color.accent};
 `;
 
 class AboutUs extends Component {

@@ -62,7 +62,7 @@ const Links = styled.ul`
     }
   }
   a{
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     text-decoration:none;
   }
   @media (max-width: 1069px) {
@@ -75,7 +75,7 @@ const HideMenu = styled.div`
 font-size:25px;
 cursor:pointer;
 margin-left:20px;
-color:${Styles.color.font1};
+color:${Styles.color.lightFont};
 &:hover{
   color:${Styles.color.accent};
 }
@@ -83,7 +83,7 @@ color:${Styles.color.font1};
 const ShowMenu = styled.div`
   transform:translateX(-100px);
   cursor:pointer;
-  color:${Styles.color.font1};
+  color:${Styles.color.lightFont};
   height:30px;
   width:30px;
   justify-content:center;

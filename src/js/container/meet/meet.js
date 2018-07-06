@@ -11,7 +11,7 @@ const Container=styled.div`
 const Header=styled.div`
     font-family:${Styles.font.header};
     font-size:${Styles.size.l};
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
     text-transform:uppercase;
 `
 const Wrapper=styled.div`

@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items:center;
   padding: 120px 50px 50px 20px;
   box-sizing:border-box;
-  color:${Styles.color.font1};
+  color:${Styles.color.lightFont};
   width:100%;
 `;
 const Top = styled.div`
@@ -25,7 +25,7 @@ font-size:${Styles.size.l};
   font-weight:700;
   position:relative;
   text-transform:uppercase;
-  color:${Styles.color.font1};
+  color:${Styles.color.lightFont};
 `
 
 const Text= styled.div``
@@ -47,8 +47,10 @@ export default class Header extends Component {
             </Text>
           </Top>
           <Bottom>
-            <MentorMentee pic="./img/profile.png" text="As a mentee..."/>
-            <MentorMentee pic="./img/profile.png" text="As a mentor..."/>
+            <MentorMentee pic="./img/profile.png" 
+            text="As a mentee, you will receive the help you need on your journey to college. "/>
+            <MentorMentee pic="./img/profile.png" 
+              text="As a mentor, you will provide the support and counsel a student needs to succeed."/>
           </Bottom>
       </Container>
     );

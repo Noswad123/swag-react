@@ -32,11 +32,11 @@ const Title = styled.div`
     justify-content:center;
     width:100%;
     text-transform:uppercase;
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
 `
 const Text = styled.div`
     text-align:center;
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
 `
 const Sections = styled.div`
     width:100%;
@@ -93,7 +93,7 @@ const SignUp = styled.div`
     justify-content:center;
     width:100%;
     text-transform:uppercase;
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
  `
  const Position = styled.div`
  font-size:${Styles.size.m};
@@ -106,7 +106,7 @@ const Summary = styled.div`
     justify-content:space-between;
     width:80%;
     margin-top:40px;
-    color:${Styles.color.font1};
+    color:${Styles.color.lightFont};
 `
 export default class GetInvolvementTemplate extends Component {
     constructor(props){

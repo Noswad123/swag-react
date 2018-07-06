@@ -18,9 +18,9 @@ const SubPanel = styled.div`
 
 const TabStyle = styled.button`
   background-color: ${Styles.color.secondary};
-  color: ${Styles.color.font1};
+  color: ${Styles.color.lightFont};
   border-radius: 10px 10px 0 0;
-  border-color: ${Styles.color.font2};
+  border-color: ${Styles.color.darkFont};
   border-bottom: none;
   margin-right: 10px;
   cursor:pointer;
@@ -33,16 +33,16 @@ const Options = styled.div`
   justify-content: space-around;
   height: 100%;
   button{
-    background-color:${Styles.color.font1};
+    background-color:${Styles.color.lightFont};
       color:${Styles.color.font2};
-      border: solid ${Styles.color.font2};
+      border: solid ${Styles.color.darkFont};
       border-radius: 8px;
       height: 32px;
       width: 128px;
       font-family:${Styles.font.text};
       cursor:pointer;
       &:hover{
-        background-color:${Styles.color.tertiary};
+        background-color:${Styles.color.contrast};
         color:${Styles.color.accent};
         border-color: ${Styles.color.accent};
       }
@@ -121,9 +121,9 @@ class Tab extends Component{
    active(){
     if(this.props.isActive===true){
       let activeTab={
-        color:`${Styles.color.font1}`,
+        color:`${Styles.color.lightFont}`,
         backgroundColor: `${Styles.color.primary}`,
-        borderColor: `${Styles.color.font1}`
+        borderColor: `${Styles.color.lightFont}`
       }
       return(activeTab)
     }

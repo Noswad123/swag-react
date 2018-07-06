@@ -4,7 +4,7 @@ import Styles from "../../../js/style/styles";
 import { Link} from 'react-router-dom';
 
 const Container = styled.div`
-  color: ${Styles.color.font1};
+  color: ${Styles.color.lightFont};
   height: 100%
 `;
 
@@ -16,9 +16,9 @@ const LinkList =styled.div`
     align-items:center;
     width:100%
     text-decoration:none;
-    color:${Styles.color.font1};
+    color:${Styles.color.primary};
     a{
-        color:${Styles.color.font1};
+        color:${Styles.color.primary};
         text-decoration:none;
         font-size:15px;
         margin-bottom:30px

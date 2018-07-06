@@ -8,20 +8,20 @@ const Container = styled.div`
   width:100%;
 `;
 const Wrapper = styled.div`
-  min-height:80vh;
+  min-height:90vh;
   z-index:0;
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content:space-between;
-  color: ${Styles.color.font1};
+  color: ${Styles.color.lightFont};
   a {
-    color: ${Styles.color.accent};
+    color: ${Styles.color.primary};
   }
   justify-content: space-between;
 
-  background:url(./img/meet-the-team_orig.jpg);
+  //background:url(./img/meet-the-team_orig.jpg);
   background-size:contain;
   background-repeat:no-repeat;
   background-attachment: fixed;

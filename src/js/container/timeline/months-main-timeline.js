@@ -11,7 +11,7 @@ height:40px;
 opacity: 1;
 z-index: 100;
 background-color: ${Styles.color.primary};
-color: ${Styles.color.font1};
+color: ${Styles.color.lightFont};
 border: solid ${Styles.color.secondary};
 font-family:${Styles.font.header};
 font-size:${Styles.size.s};
@@ -41,7 +41,7 @@ const Steps= styled.div`
   width:auto;
   transition:all 2s;
   animation-name: ${slide};
-  color: ${Styles.color.font1};
+  color: ${Styles.color.lightFont};
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-direction:normal;
