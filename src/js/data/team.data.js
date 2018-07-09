@@ -168,7 +168,17 @@ const Team = [
   {
     name: "Luly Castillo",
     position: "Board Member",
-    bio: "",
+    bio: `I graduated from YES College Prep in 2001 and then from Drexel University as a Mechanical Engineer in 2006.  
+    Luly has been working in the Oil and Gas industry for over 10 years where she is part of the Business Development group.
+     She was the first to graduate from college from her family and feels very fortunate for having a lot of support from her
+      family, high school teachers/councilors and friends. Now as a parent of two boys, Luly would like to be supportive 
+      to the students in my community so that they can also achieve their dreams as she did.  Luly joined SWAG in 2016 and 
+      became a young professional mentor of couple of college students, this experience changed her life as it was an 
+      opportunity see how a little bit of work can make a difference in someone else’s life. 
+      Little by little she became more involved with her community where she started running the PTO group of the 
+      charter school my son attends and then became part of the board of Directors for SWAG and YES College Prep. Luly is so 
+      proud to be part of organizations who's mission is helping others and improving the academic achievements of our kids.
+    `,
     imgUrl: "./img/luly.jpg",
     domain: "Board of Directors"
   },
@@ -177,13 +187,6 @@ const Team = [
     position: "Board Member",
     bio: "The Legend",
     imgUrl: "./img/andy-canales.jpg",
-    domain: "Board of Directors"
-  },
-  {
-    name: "Norma Villanueva",
-    position: "Board Member",
-    bio: "Yes Prep Dean",
-    imgUrl: "./img/norma.jpg",
     domain: "Board of Directors"
   },
   {
