@@ -32,12 +32,18 @@ const Logo = styled.img`
   z-index:10;
   margin-top:100px;
 `
-
+const Cover=styled.div`
+position:absolute;
+width:100%;
+height:100%;
+opacity:.2;
+background-color:${Styles.color.primary};`
 class AboveFold extends Component {
   render() {
     return ( 
       < Container > 
         <ParalaxWrap>  
+          <Cover/>
           <HomeHeader/>     
           < Logo src = {"./img/swag-logo-white.png"} alt = "SWAG" /> 
           < Mission lang = {this.props.lang} /> 

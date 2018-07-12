@@ -45,7 +45,6 @@ class Footer extends Component {
   render(props) {
     return (
       <Container>
-        Follow Us:
         <Social />
       </Container>
     );
