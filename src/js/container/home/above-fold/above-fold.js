@@ -4,6 +4,7 @@ import Cta from './cta-home';
 import Mission from './mission';
 import Styles from '../../../style/styles';
 import {connect} from 'react-redux'
+import HomeHeader from '../../../component/header';
 
 const Container = styled.div `
   width:100%;
@@ -11,32 +12,33 @@ const Container = styled.div `
   color:${Styles.color.lightFont};
 `
 const ParalaxWrap = styled.div`
-  background:url(./img/maddie.jpg);
-  background-size:contain;
+  background:url(./img/homepage.png);
+  background-size:cover;
   background-repeat:no-repeat;
   background-attachment: fixed;
   background-position:center;
   position:relative;
-  min-height:80vh;
+  
   display: flex;
   flex-direction: column;
   align-items:center;
   justify-content:space-between;
   width:100%;
-  padding:100px 0 100px 0;
-  margin-bottom:
+  padding:0px 0 100px 0;
 `
 
 const Logo = styled.img`
   width:700px;
   z-index:10;
+  margin-top:100px;
 `
 
 class AboveFold extends Component {
   render() {
     return ( 
       < Container > 
-        <ParalaxWrap>       
+        <ParalaxWrap>  
+          <HomeHeader/>     
           < Logo src = {"./img/swag-logo-white.png"} alt = "SWAG" /> 
           < Mission lang = {this.props.lang} /> 
           < Cta lang = {this.props.lang} /> 

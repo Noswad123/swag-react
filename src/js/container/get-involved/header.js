@@ -6,7 +6,6 @@ import MentorMentee from "./mentor-mentee";
 const Container = styled.div`
     min-height: 90vh;
   display: flex;
-  justify-content: space-between;
   flex-direction:column;
   align-items:center;
   padding: 120px 50px 50px 20px;
@@ -30,11 +29,14 @@ font-size:${Styles.size.l};
 
 const Text= styled.div`
 width:50%;
-text-align:center;`
+display: flex;
+justify-content: center;
+flex-wrap:wrap;`
 const Bottom = styled.div`
 width:70%;
 display:flex;
 justify-content:space-between;
+margin-top:50px;
 `
 export default class Header extends Component {
   render() {

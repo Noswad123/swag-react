@@ -34,7 +34,6 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Container>
-        <Navbar />
         <QuickLinks />
         <Route exact path="/" component={Home} />
         <Route exact path="/aboutus" component={AboutUs} />
@@ -42,7 +41,7 @@ ReactDOM.render(
         <Route exact path="/getinvolved/:id" component={GetInvolvementTemplate} />
         <Route exact path="/donate" component={donate} />
         <Route exact path="/mentee" component={MenteeInvolvement} />
-        
+
         <Route exact path="/resources" component={Resources} />
         <Route exact path="/timeline" component={Timeline} />
         <Route exact path="/meet" component={Meet} />

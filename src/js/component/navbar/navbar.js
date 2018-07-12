@@ -3,40 +3,37 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Styles from "../../style/styles";
 import { connect } from "react-redux";
-import logo from "../../../images/swag-logo-white.png"
-import hamburger from"../../../images/hamburger.png"
+import logo from "../../../images/swag-logo-white.png";
+import hamburger from"../../../images/hamburger.png";
 import LangToggle from "./lang-toggle";
 import CircleArrow from "../../../images/circle-arrow.png"
 
 const Container = styled.div`
-  background-color: ${Styles.color.primary};
-  color: ${Styles.color.secondary};
+color: ${Styles.color.secondary};
+height: 80px;
+width: 100%;
+margin: 0;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+text-transform: uppercase;
+align-items: center;
+box-sizing: border-box; 
+
+transition: all 1s cubic-bezier(0.67,-0.62, 0.86, 0.89);
+@media (max-width: 1069px) {
   height: 80px;
-  width: 100%;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-  align-items: center;
-  box-sizing: border-box;
-  box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.45);    
-  position:fixed;
-  
-  transition: all 1s cubic-bezier(0.67,-0.62, 0.86, 0.89);
-  @media (max-width: 1069px) {
-    height: 80px;
-  }
-  @media (max-width: 715px) {
-    flex-direction:column;
-    justify-content:center;
-    height: 300px;
-  }
-  @media (max-width: 369px) {
-    padding:0px;
-  }
-  position:fixed;
-  z-index:9999;
+}
+@media (max-width: 715px) {
+  flex-direction:column;
+  justify-content:center;
+  height: 300px;
+}
+@media (max-width: 369px) {
+  padding:0px;
+}
+position:fixed;
+z-index:8000;
 `;
 const Logo = styled.img`
   height: 40px;
@@ -52,9 +49,33 @@ const RightSide=styled.div`
   }
 `
 const Wrapper=styled.div`
-  display:flex;
+background-color: ${Styles.color.primary};
+color: ${Styles.color.secondary};
+height: 80px;
+width: 100%;
+margin: 0;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+text-transform: uppercase;
+align-items: center;
+box-sizing: border-box;
+box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.45);    
+
+transition: all 1s cubic-bezier(0.67,-0.62, 0.86, 0.89);
+@media (max-width: 1069px) {
+  height: 80px;
+}
+@media (max-width: 715px) {
   flex-direction:column;
- 
+  justify-content:center;
+  height: 300px;
+}
+@media (max-width: 369px) {
+  padding:0px;
+}
+position:fixed;
+z-index:8000;
 `
 const Links = styled.ul`
   list-style: none;
@@ -85,23 +106,21 @@ const Links = styled.ul`
   }
 `;
 
-
-const HideMenu = styled.div`
-font-size:25px;
-cursor:pointer;
-margin-left:20px;
-color:${Styles.color.lightFont};
-&:hover{
-  color:${Styles.color.accent};
-}
-@media (max-width: 715px) {
-  position:absolute;
-  right:20px;
-  top:20px;
-}
+const CollapseMenu = styled.div`
+  font-size:25px;
+  cursor:pointer;
+  margin-left:20px;
+  color:${Styles.color.lightFont};
+  &:hover{
+    color:${Styles.color.accent};
+  }
+  @media (max-width: 715px) {
+    position:absolute;
+    right:20px;
+    top:20px;
+  }
 `;
-const ShowMenu = styled.div`
-  transform:translateX(-100px);
+const HamburgerMenu = styled.div`
   cursor:pointer;
   color:${Styles.color.lightFont};
   height:30px;
@@ -110,7 +129,8 @@ const ShowMenu = styled.div`
   align-items: center;
   background-color:${Styles.color.primary};
   opacity:.8;
-  transition: all .5s;
+  position:relative;
+  right:50px;
   &:hover{
     opacity:1;
   }
@@ -138,7 +158,6 @@ class Navbar extends Component {
   }
   toggleNav(bool) {
     this.setState({ isHidden: bool });
-    console.log(this.state.isHidden);
   }
   
   render() {
@@ -151,7 +170,6 @@ class Navbar extends Component {
         menu={this.props.isMenu}
         hideMenu={this.hideMenu}
       />
-
     )
   }
 }
@@ -160,16 +178,17 @@ class Navbar extends Component {
 class NavWrapper extends React.Component {
   render() {
     return (
-      <Container style={{transform: `${this.props.show ? "translateX(100%)" : "translateX(0%)" }` }}>
-        <ShowMenu style={{ display: `${this.props.show ? "flex" : "none"}` }}  onClick={() => { this.props.toggle(false); }} >
+      <Container >
+        <HamburgerMenu style={{ display: `${this.props.show ? "flex" : "none"}` }}  onClick={() => { this.props.toggle(false); }} >
           <img src={hamburger} alt="hamburger" />
-        </ShowMenu>
+        </HamburgerMenu>
 
+        <Wrapper style={{transform: `${this.props.show ? "TranslateX(100%)" : "TranslateX(100%)" }` }}>
         <Link to="/">
           <Logo src={logo} alt="SWAG" />
         </Link>
         <RightSide>
-          <Wrapper>
+          
             <Links>
               <li>
                 <Link to="/aboutus">
@@ -200,15 +219,16 @@ class NavWrapper extends React.Component {
             </Links>
         
           <LangToggle isEng={this.props.isEng}/>
-          </Wrapper>
-        <HideMenu
+          
+        <CollapseMenu
           onClick={() => {
             this.props.toggle(true);
           }}
         >
           <img src={CircleArrow} alt="circle arrow" style={{height: 40}}/>
-        </HideMenu>
+        </CollapseMenu>
         </RightSide>
+        </Wrapper>
       </Container>
     );
   }
