@@ -32,7 +32,7 @@ const BlueDiv=styled.div`
     align-items:center;
     justify-content:center;
     width:20%;
-    color:${Styles.color.lightFont};
+    color:${Styles.color.darkFont};
     height:250px;
     a{
         text-decoration:none;
@@ -48,7 +48,7 @@ const Wrapper=styled.div`
     display: flex;
     justify-content:space-around;
     align-items:center;
-    background: linear-gradient(90deg, ${Styles.color.primary} 0%, ${Styles.color.contrast} 80%);
+    background: linear-gradient(90deg, ${Styles.color.accent} 0%, ${Styles.color.accent} 80%);
     width:100%;
     border-top: solid${Styles.color.lightFont};
     border-bottom: solid${Styles.color.lightFont};
@@ -63,6 +63,8 @@ const Text = styled.div`
     height:30px;
     margin-top:10px;
     color:${Styles.color.lightFont};
+  font-family:${Styles.font.title};
+  font-weight:700;
 `;
 
 export default class Bottom extends Component {

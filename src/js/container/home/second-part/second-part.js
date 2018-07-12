@@ -5,13 +5,13 @@ import {connect} from 'react-redux';
 
 const Container = styled.div `
     min-height:50vw;
-    color: ${Styles.color.lightFont};
+    color: ${Styles.color.darkFont};
     width:100%;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content:space-between;
-    background-color:${Styles.color.contrast};
+    background-color:${Styles.color.accent};
     z-index:1;
 `
 const Text = styled.div`

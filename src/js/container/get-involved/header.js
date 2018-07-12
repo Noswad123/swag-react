@@ -28,7 +28,9 @@ font-size:${Styles.size.l};
   color:${Styles.color.lightFont};
 `
 
-const Text= styled.div``
+const Text= styled.div`
+width:50%;
+text-align:center;`
 const Bottom = styled.div`
 width:70%;
 display:flex;
@@ -43,13 +45,14 @@ export default class Header extends Component {
                 Get Involved
             </Title>
             <Text>
-              Some text about involvement...
+            We all know someone, whether ourselves, a friend, or a daughter who wants to pursue higher education, but doesn’t know where to start. We believe everyone deserves equal access to the information needed to apply and succeed in college. At Swag, we pair students with mentors that will guide them through the application process. Join us today to be a part of our growing community. 
+
             </Text>
           </Top>
           <Bottom>
-            <MentorMentee pic="./img/profile.png" 
+            <MentorMentee pic="./img/person-icon.png" 
             text="As a mentee, you will receive the help you need on your journey to college. "/>
-            <MentorMentee pic="./img/profile.png" 
+            <MentorMentee pic="./img/person-icon.png" 
               text="As a mentor, you will provide the support and counsel a student needs to succeed."/>
           </Bottom>
       </Container>

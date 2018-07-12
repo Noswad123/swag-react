@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Styles from '../../style/styles';
 import { connect } from "react-redux";
 
+
 const Container=styled.div`
 min-height:90vh;
 background-color:${Styles.color.accent};
@@ -20,6 +21,7 @@ const Title=styled.div`
     text-transform: uppercase;
   font-family:${Styles.font.title};
   font-size:${Styles.size.l};
+  font-weight:700;
     
 `
 const ContactWrapper=styled.div`
@@ -41,14 +43,25 @@ const Contact=styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
+
 `
-const Header=styled.div``
-const Name=styled.div``
+const Header=styled.div`
+color:${Styles.color.lightFont};
+font-size:20px;
+font-family:${Styles.font.title};`
+const Name=styled.div`
+margin-top:15px;`
 const Logo=styled.div`
 height:100px;
 width:100px;
+display:flex;
+justify-content:center;
+align-items:center;
 border-radius:100%;
-background-color:${Styles.color.lightFont};`
+background-color:${Styles.color.mediumFont};
+img{
+    height:80px;
+}`
 
 const Email=styled.div``
 class ContactUs extends Component{
@@ -59,26 +72,34 @@ class ContactUs extends Component{
                 <ContactWrapper>
                     <Row>
                     <Contact>
-                        <Logo/>
+                        <Logo>
+                            <img src={"./img/inbox-icon.png"}/>
+                            </Logo>
                         <Header >   ​General Inquiries</Header>
                         <Name> Raj Salhotra</Name>
                         <Email>raj.salhotra@swagtocollege.org</Email>
                     </Contact>
                     <Contact>
-                    <Logo/>
+                        <Logo>
+                            <img src={"./img/library-icon.png"}/>
+                        </Logo>
                         <Header> High School Program</Header>
                         <Name>​​Graciela Lopez</Name>
                         <Email>graciela.lopez@swagtocollege.org</Email>
                     </Contact>
                     
                     <Contact>
-                    <Logo/>
+                        <Logo>
+                            <img src={"./img/student-hat-icon.png"}/>
+                        </Logo>
                         <Header> Upperclassmen Program</Header>
                         <Name>​​Jennifer Dzul</Name>
                         <Email>jennifer.dzul@swagtocollege.org</Email>
                     </Contact>
                     <Contact>
-                    <Logo/>
+                        <Logo>
+                            <img src={"./img/network-icon.png"}/>
+                        </Logo>
                         <Header> Young Professional Program</Header>
                         <Name>Maddie Coles</Name>
                         <Email>maddie.coles@swagtocollege.org</Email>

@@ -27,6 +27,14 @@ const Container = styled.div`
   @media (max-width: 1069px) {
     height: 80px;
   }
+  @media (max-width: 715px) {
+    flex-direction:column;
+    justify-content:center;
+    height: 300px;
+  }
+  @media (max-width: 369px) {
+    padding:0px;
+  }
   position:fixed;
   z-index:9999;
 `;
@@ -39,10 +47,14 @@ const Logo = styled.img`
 const RightSide=styled.div`
   display:flex;
   align-items:center;
+  @media (max-width: 715px) {
+    flex-direction: column;
+  }
 `
 const Wrapper=styled.div`
   display:flex;
   flex-direction:column;
+ 
 `
 const Links = styled.ul`
   list-style: none;
@@ -65,8 +77,11 @@ const Links = styled.ul`
     color:${Styles.color.lightFont};
     text-decoration:none;
   }
-  @media (max-width: 1069px) {
-    display:none;
+}
+  @media (max-width: 715px) {
+    li{
+      display:list-item;
+    }
   }
 `;
 
@@ -78,6 +93,11 @@ margin-left:20px;
 color:${Styles.color.lightFont};
 &:hover{
   color:${Styles.color.accent};
+}
+@media (max-width: 715px) {
+  position:absolute;
+  right:20px;
+  top:20px;
 }
 `;
 const ShowMenu = styled.div`

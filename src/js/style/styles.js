@@ -10,7 +10,7 @@ const Styles = {
     blue:"#97DFFC",
     orange:"#F28123",
     oldprimary:"#09335D",
-    //thrice blue
+    
     fadedblue:"#A3C4BC",
     cerulean:"#2B59C3",
     darkCerulean:"#00487C",
@@ -22,6 +22,15 @@ const Styles = {
     primary: "#DA627D",
     secondary: "#FFA5AB",
     accent: "#06D6A0",
+    tertiary: "#450920",   
+    contrast: "#FFE74C",
+    lightFont: "#FFFFFF",
+    darkFont: "#00487C",
+  },
+  classic:{//classic
+    primary: "#09335d",
+    secondary: "#FFFFFF",
+    accent: "#FFD966",
     tertiary: "#450920",   
     contrast: "#FFE74C",
     lightFont: "#FFFFFF",
@@ -46,7 +55,7 @@ const Styles = {
     lightFont: "#FFFFFF",
     darkFont: "#00487C",
   },
-  color:{//thriceblue
+  thriceblue:{//thriceblue
     primary: "#2B59C3",
     secondary: "#4BB3FD",
     tertiary: "#00487C", 
@@ -59,12 +68,27 @@ const Styles = {
     darkFont: "#00487C",
     background: "#FFFFFF",
   },
+
+  color:{//colorful
+    primary: "#09335d",
+    secondary: "#4BB3FD",
+    tertiary: "#09335d", 
+    accent: "#FFD966",
+    contrast: "#F46036",
+
+    analogousPrimary:"#A3C4BC",
+    analogousSecondary:"#2b59c3",
+    lightFont: "#FFFFFF",
+    mediumFont:"#DCEDFF",
+    darkFont: "#00487C",
+    background: "#FFFFFF",
+  },
   size: {
     xxs: "4px",
     xs: "8px",
     s: "16px",
     m: "32px",
-    l: "64px",
+    l: "80px",
     xl: "128px",
     xxl: "256px"
   }

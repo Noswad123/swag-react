@@ -12,15 +12,6 @@ const Container=styled.div`
   }
   padding-bottom:20px;
  font-size:12px;
-  @media (max-width: 1069px) {
-    .social {
-      display: none;
-    }
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-  }
 `;
 const SwitchWrap = styled.div`
   background-color: ${Styles.color.accent};

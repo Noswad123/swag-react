@@ -9,6 +9,7 @@ const Container = styled.div`
   box-sizing: border-box;
   text-align:center;
   z-index:1;
+  margin-top:50px;
 `;
 const Text = styled.div`
   font-family=${Styles.font.text};

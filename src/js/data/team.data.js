@@ -2,7 +2,14 @@ const Team = [
   {
     name: "Jamal Dawson",
     position: "Co-founder",
-    bio: "Taught math",
+    bio: `Jamal Dawson received a degree in applied mathematics with a minor in statics from University of Houston Downtown.  
+    Starting his teaching career as an Apollo Fellow, Jamal fought to close the achievement gap.  
+    He has been involved with education for over 5 years. Jamal has established after school tutorial programs and SAT prep 
+    courses to better serve the youth in the Missouri city area.
+
+    Currently, Jamal is a math teacher at Beechnut Academy, where he continues to dedicate himself to 
+    improving students’ success inside and outside the classroom.  As a co-founder of SWAG to College, 
+    he hopes to diminish high school and college dropout rates by providing clarity to the college process.`,
     imgUrl: "./img/jamal.jpg",
     domain: "Board of Directors"
   },

@@ -9,17 +9,17 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   min-height:90vh;
+  width: 100%;
   z-index:0;
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content:space-between;
+
   color: ${Styles.color.lightFont};
   a {
     color: ${Styles.color.primary};
   }
-  justify-content: space-between;
+  
 
   //background:url(./img/meet-the-team_orig.jpg);
   background-size:contain;
@@ -27,15 +27,10 @@ const Wrapper = styled.div`
   background-attachment: fixed;
   background-position:center;
   position:relative;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:space-between;
-  width:100%;
   padding:100px 0 0 0;
 `;
 const Title = styled.div`
-  font-size:${Styles.size.l};
+  font-size:80px;
   font-family:${Styles.font.title};
   font-weight:700;
 `;
@@ -47,7 +42,7 @@ const LinkWrapper = styled.div`
 const Text = styled.div`
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
+  
   align-items:center;
   text-transform: uppercase;
   font-family:${Styles.font.title};

@@ -23,6 +23,7 @@ import Meet from "./js/container/meet/meet";
 import ContactUs from "./js/container/about-us/contactus";
 import MenteeInvolvement from "./js/container/get-involved/templates/mentee-involvement";
 import GetInvolvementTemplate from "./js/container/get-involved/templates/get-involved-template";
+import donate from "./js/container/donate/donate";
 
 const Container = styled.div`
   background-color:${Styles.color.secondary};
@@ -35,12 +36,13 @@ ReactDOM.render(
       <Container>
         <Navbar />
         <QuickLinks />
+        <Route exact path="/" component={Home} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/getinvolved" component={GetInvolved} />
         <Route exact path="/getinvolved/:id" component={GetInvolvementTemplate} />
-        
+        <Route exact path="/donate" component={donate} />
         <Route exact path="/mentee" component={MenteeInvolvement} />
-        <Route exact path="/" component={Home} />
+        
         <Route exact path="/resources" component={Resources} />
         <Route exact path="/timeline" component={Timeline} />
         <Route exact path="/meet" component={Meet} />

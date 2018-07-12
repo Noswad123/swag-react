@@ -31,7 +31,7 @@ justify-content:space-between;
 padding:50px;
 box-sizing:border-box;
 color:${Styles.color.font2};
-background-color:${Styles.color.primary};
+background-color:${Styles.color.secondary};
 `
 class Meet extends Component{
     constructor(){
