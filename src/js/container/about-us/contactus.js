@@ -2,29 +2,32 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Styles from '../../style/styles';
 import { connect } from "react-redux";
-
+import Navbar from "../../component/header"
 
 const Container=styled.div`
 min-height:90vh;
 background-color:${Styles.color.accent};
 display: flex;
 flex-direction:column;
+width:100%;
+`
+const Wrapper=styled.div`
+display: flex;
+flex-direction:column;
 align-items:center;
 width:100%;
-a{
-    margin-top:100px;
-}
+margin-bottom:50px;
 `
 const Title=styled.div`
-    margin-top:100px;
-    color:${Styles.color.lightFont};
+    margin-top:50px;
+    color:${Styles.color.font1};
     text-transform: uppercase;
   font-family:${Styles.font.title};
   font-size:${Styles.size.l};
   font-weight:700;
     
 `
-const ContactWrapper=styled.div`
+const ContentWrapper=styled.div`
     width:100%;   
     display:flex;
     flex-direction:column;
@@ -36,7 +39,7 @@ const Row=styled.div`
     justify-content:space-Between;
     padding:0 20px;
     box-sizing:border-box;
-    color:${Styles.color.darkFont};
+    color:${Styles.color.font2};
 `
 const Contact=styled.div`
     margin-bottom:30px;
@@ -46,7 +49,7 @@ const Contact=styled.div`
 
 `
 const Header=styled.div`
-color:${Styles.color.lightFont};
+color:${Styles.color.font1};
 font-size:20px;
 font-family:${Styles.font.title};`
 const Name=styled.div`
@@ -58,7 +61,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 border-radius:100%;
-background-color:${Styles.color.mediumFont};
+background-color:${Styles.color.accentFont};
 img{
     height:80px;
 }`
@@ -68,8 +71,10 @@ class ContactUs extends Component{
     render(){
         return(
             <Container>
+                <Navbar/>
+                <Wrapper>
                 <Title>{(this.props.isEng)?"Contact Us":"needs translate"}</Title>
-                <ContactWrapper>
+                <ContentWrapper>
                     <Row>
                     <Contact>
                         <Logo>
@@ -105,7 +110,8 @@ class ContactUs extends Component{
                         <Email>maddie.coles@swagtocollege.org</Email>
                     </Contact>
                     </Row>
-                </ContactWrapper>
+                </ContentWrapper>
+                </Wrapper>
             </Container>
         )
     }

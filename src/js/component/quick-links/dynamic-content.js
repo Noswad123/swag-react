@@ -4,7 +4,7 @@ import Styles from "../../../js/style/styles";
 import { Link} from 'react-router-dom';
 
 const Container = styled.div`
-  color: ${Styles.color.lightFont};
+  color: ${Styles.color.font1};
   height: 100%
 `;
 

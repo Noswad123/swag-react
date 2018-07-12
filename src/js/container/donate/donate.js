@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { connect } from "react-redux";
 import Styles from "../../style/styles";
 import PayPalLogo from "../../../images/paypal.png"
+import Navbar from "../../component/header"
 
 const Container = styled.div`
     min-height:90vh;
@@ -11,7 +12,7 @@ const Container = styled.div`
     justify-content:space-between;
     align-items: center;
     background-color:${Styles.color.tertiary};
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
 `;
 const Title =styled.div`
 font-size:${Styles.size.l};
@@ -50,6 +51,7 @@ class Donate extends Component {
   render() {
     return (
       <Container>
+          <Navbar/>
      <Title>Donate</Title>
      <Blurb>Your donation will go towards helping support a student pursuing higher education.</Blurb>
      <Form>

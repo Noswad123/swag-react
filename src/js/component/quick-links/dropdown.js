@@ -4,7 +4,7 @@ import Styles from "../../../js/style/styles";
 import DynamicContent from "./dynamic-content";
 const Container = styled.div`
   display:flex;
-  color: ${Styles.color.darkFont};
+  color: ${Styles.color.font2};
   flex-direction: column;
   align-items: center;
     

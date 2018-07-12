@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { connect } from "react-redux";
 import Header from "./header";
 import Bottom from "./bottom";
+import Navbar from "../../component/header"
 
 const Container = styled.div`
 
@@ -18,6 +19,7 @@ class GetInvolved extends Component {
   render() {
     return (
       <Container>
+        <Navbar/>
         <Header/>
         <Bottom/>
       </Container>

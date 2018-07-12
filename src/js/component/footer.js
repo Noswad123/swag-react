@@ -11,7 +11,7 @@ import Instagram from "../../images/instagram.png"
 const Container = styled.div`
   width: 100%;
   box-sizing: border-box;
-  height: 100px;
+  height: 80px;
   padding: 20px;
   overflow: hidden;
   background-color: ${Styles.color.primary};

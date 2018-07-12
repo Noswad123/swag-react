@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Text = styled.p`
   font-size: 20px;
-  color: ${Styles.color.lightFont};
+  color: ${Styles.color.font1};
   
   text-align: center;
   font-family: ${Styles.font.text};

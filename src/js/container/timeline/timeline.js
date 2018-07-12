@@ -5,9 +5,15 @@ import EspTimelines from '../../data/timeline-esp.data';
 import SidePanel from './sidePanel-timeline';
 import Main from './main-timeline';
 import {connect} from 'react-redux'
+import Navbar from "../../component/header"
 
 const Container = styled.div`
   min-height:80vh;
+  display: flex;
+  flex-direction:column;
+`
+const Wrapper = styled.div`
+ 
   display: flex;
 `
 class Timeline extends Component {
@@ -24,8 +30,11 @@ class Timeline extends Component {
   render() {
     return (
       <Container>
-        <SidePanel lang={this.props.isEng} timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]} changeGrade={this.state.changeGrade.bind(this)}/>
-        <Main timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]}/>
+        <Navbar/>
+        <Wrapper>
+          <SidePanel lang={this.props.isEng} timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]} changeGrade={this.state.changeGrade.bind(this)}/>
+          <Main timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]}/>
+        </Wrapper>
       </Container>
     );
   }

@@ -26,7 +26,7 @@ height:250px;
 object-fit:cover;
 object-position:0% 0%`
 const Wrapper=styled.div`
-color:${Styles.color.lightFont};
+color:${Styles.color.font1};
 display:flex;
 flex-direction:column;
 align-items:center;`

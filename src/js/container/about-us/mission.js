@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 const Text = styled.div`
   font-family=${Styles.font.text};
-  color: ${Styles.color.lightFont};
+  color: ${Styles.color.font1};
   font-size:25px;
 `
 export default class Mission extends Component {

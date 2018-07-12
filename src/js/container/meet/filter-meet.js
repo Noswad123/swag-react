@@ -8,7 +8,7 @@ const Container = styled.li`
   padding: 5px 10px;
   box-sizing: border-box;
   margin: 0;
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
   &:hover {
     border-bottom: solid ${Styles.color.accent};
     color: ${Styles.color.accent};

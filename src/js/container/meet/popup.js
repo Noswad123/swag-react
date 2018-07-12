@@ -21,13 +21,13 @@ object-fit:cover;
 object-position:0% 0%
 `
 const Name=styled.h1`
-color:${Styles.color.lightFont};`
+color:${Styles.color.font1};`
 const Bio=styled.p`
-color:${Styles.color.lightFont};`
+color:${Styles.color.font1};`
 const Position=styled.div`
-color:${Styles.color.lightFont};`
+color:${Styles.color.font1};`
 const XContainer=styled.div`
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
     position:absolute;
     right:10px;
     top:10px;

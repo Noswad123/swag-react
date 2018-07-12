@@ -15,7 +15,7 @@ const Container=styled.div`
 `;
 const Title=styled.div`
     font-family:${Styles.font.title};
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
     font-size:${Styles.size.l};
     text-transform:uppercase;
 `
@@ -50,7 +50,7 @@ const Name=styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
     font-family:${Styles.font.title};
   text-transform:uppercase;
 `;
@@ -59,7 +59,7 @@ const Name=styled.div`
 const Description=styled.p`
     position:absolute;
     background-color:${Styles.color.primary};
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
     width:60vw;
     padding:20px;
     z-index:9999;

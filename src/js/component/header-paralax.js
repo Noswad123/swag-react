@@ -8,7 +8,7 @@ import logo from "../../images/swag-logo-white.png"
 const Container = styled.div `
   min-height:20vh;
   width:90%;
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
   background-color:${Styles.color.primary};
   display: flex;
   align-items:center;
@@ -52,7 +52,7 @@ const Links = styled.ul`
     }
   }
   a{
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
     text-decoration:none;
   }
 }

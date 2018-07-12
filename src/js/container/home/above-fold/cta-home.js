@@ -13,7 +13,7 @@ const Container=styled.div`
   z-index:10;
 `
 const Option=styled.div`
-  color: ${Styles.color.lightFont};
+  color: ${Styles.color.font1};
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,12 +33,12 @@ const Option=styled.div`
           text-align: center;
           a{
             text-decoration: none;
-            color:${Styles.color.font2};
+            color:${Styles.color.accentFont};
           }
       }
   }
   div{
-      color:${Styles.color.lightFont};
+      color:${Styles.color.font1};
       display: none;
       
     background-color:${Styles.color.accent};

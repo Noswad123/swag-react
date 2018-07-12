@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 
 const Container = styled.div `
     min-height:50vw;
-    color: ${Styles.color.darkFont};
+    color: ${Styles.color.font2};
     width:100%;
     display: flex;
     flex-direction: column;

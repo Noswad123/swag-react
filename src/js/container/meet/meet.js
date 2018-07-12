@@ -6,12 +6,14 @@ import TeamMember from './team-meet';
 import FilterOption from './filter-meet'
 import PopUP from './popup';
 import {connect} from 'react-redux';
+import Navbar from "../../component/header"
 const Container=styled.div`
 `
 const Header=styled.div`
     font-family:${Styles.font.header};
     font-size:${Styles.size.l};
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
+    font-weight:700;
     text-transform:uppercase;
 `
 const Wrapper=styled.div`
@@ -67,6 +69,7 @@ class Meet extends Component{
     render(){
         return(
             <Container>
+                <Navbar/>
             <Wrapper>
                 <Header>{(this.props.isEng)?"Meet The Team ":"Conoce el equipo"}</Header>
                 <Filter>                

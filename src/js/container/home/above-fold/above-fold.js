@@ -9,7 +9,7 @@ import HomeHeader from '../../../component/header';
 const Container = styled.div `
   width:100%;
   z-index:0;
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
 `
 const ParalaxWrap = styled.div`
   background:url(./img/homepage.png);

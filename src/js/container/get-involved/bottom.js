@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items:center;
   padding: 80px 50px 50px 20px;
   box-sizing:border-box;
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
   width:100%;
 `;
 const Header = styled.div`
@@ -32,7 +32,7 @@ const BlueDiv=styled.div`
     align-items:center;
     justify-content:center;
     width:20%;
-    color:${Styles.color.darkFont};
+    color:${Styles.color.font2};
     height:250px;
     a{
         text-decoration:none;
@@ -50,8 +50,8 @@ const Wrapper=styled.div`
     align-items:center;
     background: linear-gradient(90deg, ${Styles.color.accent} 0%, ${Styles.color.accent} 80%);
     width:100%;
-    border-top: solid${Styles.color.lightFont};
-    border-bottom: solid${Styles.color.lightFont};
+    border-top: solid${Styles.color.font1};
+    border-bottom: solid${Styles.color.font1};
     
     div:nth-last-child(1)
     {
@@ -62,7 +62,7 @@ const Text = styled.div`
     width:50px;
     height:30px;
     margin-top:10px;
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
   font-family:${Styles.font.title};
   font-weight:700;
 `;

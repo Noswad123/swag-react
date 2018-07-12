@@ -10,7 +10,7 @@ const Container = styled.div `
   align-items:center;
   justify-content:space-between;
   background-color:${Styles.color.primary};
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
   padding:10px 40px;
   box-sizing:border-box;
   min-height:250px;

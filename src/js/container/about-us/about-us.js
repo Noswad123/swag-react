@@ -5,6 +5,7 @@ import Story from "./story";
 import Header from "./header";
 import { connect } from "react-redux";
 import Styles from "../../style/styles";
+import Navbar from "../../component/header"
 
 const Container = styled.div`
   display: flex;
@@ -18,6 +19,7 @@ class AboutUs extends Component {
   render() {
     return (
       <Container>
+        <Navbar />
         <Header isEng={this.props.isEng}/>
         <Story isEng={this.props.isEng}/> 
         <CoreValues isEng={this.props.isEng} />

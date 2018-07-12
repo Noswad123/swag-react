@@ -95,7 +95,7 @@ const Links = styled.ul`
     }
   }
   a{
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
     text-decoration:none;
   }
 }
@@ -110,7 +110,7 @@ const CollapseMenu = styled.div`
   font-size:25px;
   cursor:pointer;
   margin-left:20px;
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
   &:hover{
     color:${Styles.color.accent};
   }
@@ -122,7 +122,7 @@ const CollapseMenu = styled.div`
 `;
 const HamburgerMenu = styled.div`
   cursor:pointer;
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
   height:30px;
   width:30px;
   justify-content:center;

@@ -47,21 +47,23 @@ const RightSide=styled.div`
 const Links = styled.ul`
   list-style: none;
   height:100%;
+  box-sizing:border-box;
   li{
     display: inline-block;
     color:white;
-    font-size:12px;
+    font-size:15px;
     margin-right:20px;
     padding: 5px;
     height:100%;
+    border-bottom:solid rgba(0,0,0,0);
   &:hover{
-    border-bottom:solid ${Styles.color.accent};
+    border-bottom:solid ${Styles.color.accentFont};
     a{
-      color:${Styles.color.accent};
+      color:${Styles.color.accentFont};
     }
   }
   a{
-    color:${Styles.color.lightFont};
+    color:${Styles.color.font1};
     text-decoration:none;
   }
 }

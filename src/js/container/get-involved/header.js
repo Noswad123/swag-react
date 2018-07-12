@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items:center;
   padding: 120px 50px 50px 20px;
   box-sizing:border-box;
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
   width:100%;
 `;
 const Top = styled.div`
@@ -24,7 +24,7 @@ font-size:${Styles.size.l};
   font-weight:700;
   position:relative;
   text-transform:uppercase;
-  color:${Styles.color.lightFont};
+  color:${Styles.color.font1};
 `
 
 const Text= styled.div`
