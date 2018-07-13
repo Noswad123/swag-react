@@ -15,6 +15,12 @@ const Header=styled.div`
     color:${Styles.color.font1};
     font-weight:700;
     text-transform:uppercase;
+    @media (max-width: 520px) {
+        font-size:60px;
+    } 
+    @media (max-width: 390px) {
+        font-size:40px;
+    } 
 `
 const Wrapper=styled.div`
     background-color:${Styles.color.secondary};
@@ -34,6 +40,10 @@ padding:50px;
 box-sizing:border-box;
 color:${Styles.color.font2};
 background-color:${Styles.color.secondary};
+@media (max-width: 690px) {
+    flex-direction:column;
+    align-items:center;
+} 
 `
 class Meet extends Component{
     constructor(){

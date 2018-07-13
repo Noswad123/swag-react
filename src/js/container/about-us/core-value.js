@@ -18,6 +18,12 @@ const Title=styled.div`
     color:${Styles.color.font1};
     font-size:${Styles.size.l};
     text-transform:uppercase;
+    @media (max-width: 480px) {
+        font-size:60px;
+    }
+    @media (max-width: 340px) {
+        font-size:45px;
+    }
 `
 const Wrapper=styled.div`
     display:flex;
@@ -32,8 +38,12 @@ const Wrapper=styled.div`
 const Values=styled.div`
     display:flex;
     justify-content:space-between;
-    
-    width:80%;
+    width:90%;
+    @media (max-width: 580px) {
+        flex-direction:column;
+        align-items:center;
+        justify-content:initial;
+    }
 `;
 const Value=styled.div`
     &:hover{
@@ -41,6 +51,10 @@ const Value=styled.div`
             display:flex;
         }
     }
+    @media (max-width: 580px) {
+        margin:5px;
+    }
+    
 `
 const Name=styled.div`
     background-color:${Styles.color.primary};
@@ -53,6 +67,15 @@ const Name=styled.div`
     color:${Styles.color.font1};
     font-family:${Styles.font.title};
   text-transform:uppercase;
+  @media (max-width: 700px) {
+    width:100px;
+    height:100px;
+  }
+  @media (max-width: 580px) {
+    width:85px;
+    height:85px;
+    font-size:12px;
+  }
 `;
 
 
@@ -60,12 +83,17 @@ const Description=styled.p`
     position:absolute;
     background-color:${Styles.color.primary};
     color:${Styles.color.font1};
-    width:60vw;
+    width:70vw;
     padding:20px;
     z-index:9999;
-    left:18%;
+    left:12%;
     display:none;
     bottom:50%;
+    @media (max-width: 580px) {
+        bottom:30%;
+    }
+
+    
 `;
 
 export default class CoreValues extends Component{

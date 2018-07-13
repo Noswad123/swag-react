@@ -12,14 +12,25 @@ const Container = styled.div`
     color:${Styles.color.font1};
     padding:20px;
     p{
-        width:60%;
+        width:70%;
     }
     z-index:1;
+    @media (max-width: 600px) {
+        p{
+            width:90%;
+        }
+      }
+      @media (max-width: 400px) {
+        p{
+            font-size:15px;
+      }
+    }
+
 `;
 const Title = styled.div`
-  font-size:${Styles.size.m};
-  font-family:${Styles.font.title};
-  text-transform:uppercase;
+  font-size: ${Styles.size.m};
+  font-family: ${Styles.font.title};
+  text-transform: uppercase;
 `;
 export default class Story extends Component {
     render() {

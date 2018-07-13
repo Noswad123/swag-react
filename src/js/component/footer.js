@@ -30,7 +30,9 @@ const SocialStyle = styled.div`
   }
 `;
 const Email = styled.div`
-  
+@media (max-width: 520px) {
+  display:none;
+}
 
 `;
 const Icon = styled.img`
@@ -40,6 +42,7 @@ const Icon = styled.img`
   &:hover {
     opacity: 1;
   }
+  
 `;
 class Footer extends Component {
   constructor(props) {

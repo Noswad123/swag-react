@@ -5,7 +5,7 @@ import Styles from "../../style/styles";
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   box-sizing: border-box;
   text-align:center;
   z-index:1;
@@ -15,6 +15,12 @@ const Text = styled.div`
   font-family=${Styles.font.text};
   color: ${Styles.color.font1};
   font-size:25px;
+  @media (max-width: 800px) {
+    font-size:20px;
+  }
+  @media (max-width: 370px) {
+    font-size:15px;
+  }
 `
 export default class Mission extends Component {
   render() {

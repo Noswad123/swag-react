@@ -27,22 +27,30 @@ const Wrapper = styled.div`
   background-attachment: fixed;
   background-position:center;
   position:relative;
-  padding:100px 0 0 0;
+  padding:50px 0 0 0;
 `;
 const Title = styled.div`
   font-size:80px;
   font-family:${Styles.font.title};
   font-weight:700;
+  @media (max-width: 470px) {
+    font-size:60px;
+  }
+  @media (max-width: 370px) {
+    font-size:40px;
+  }
 `;
 const LinkWrapper = styled.div`
   a {
     margin-right: 20px;
   }
+  @media (max-width: 370px) {
+    font-size:15px;
+  }
 `;
 const Text = styled.div`
   display:flex;
   flex-direction:column;
-  
   align-items:center;
   text-transform: uppercase;
   font-family:${Styles.font.title};

@@ -16,31 +16,41 @@ display: flex;
 flex-direction:column;
 align-items:center;
 width:100%;
-margin-bottom:50px;
+
 `
 const Title=styled.div`
-    margin-top:50px;
     color:${Styles.color.font1};
     text-transform: uppercase;
   font-family:${Styles.font.title};
   font-size:${Styles.size.l};
   font-weight:700;
-    
+  @media (max-width: 420px) {
+        font-size:60px;
+    }  
+    @media (max-width: 330px) {
+        font-size:45px;
+    }  
 `
 const ContentWrapper=styled.div`
     width:100%;   
     display:flex;
     flex-direction:column;
-    margin-top:100px;
+    align-items:center;
+    margin-top:50px;
 `
 const Row=styled.div`
-    width:100%;
+    width:80%;
     display:flex;
-    justify-content:space-Between;
     padding:0 20px;
     box-sizing:border-box;
     color:${Styles.color.font2};
+   justify-content:space-between;
+   align-items:center;
+   @media (max-width: 700px) {
+        flex-direction:column;
+    }
 `
+
 const Contact=styled.div`
     margin-bottom:30px;
     display:flex;
@@ -92,7 +102,8 @@ class ContactUs extends Component{
                         <Name>​​Graciela Lopez</Name>
                         <Email>graciela.lopez@swagtocollege.org</Email>
                     </Contact>
-                    
+                    </Row>
+                    <Row>
                     <Contact>
                         <Logo>
                             <img src={"./img/student-hat-icon.png"}/>

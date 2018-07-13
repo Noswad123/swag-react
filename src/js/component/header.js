@@ -20,10 +20,9 @@ box-sizing: border-box;
 @media (max-width: 1069px) {
   height: 80px;
 }
-@media (max-width: 715px) {
-  flex-direction:column;
+@media (max-width: 720px) {
+  align-items:center;
   justify-content:center;
-  height: 300px;
 }
 @media (max-width: 369px) {
   padding:0px;
@@ -32,15 +31,19 @@ z-index:8000;
 `;
 const Logo = styled.img`
   height: 40px;
+ 
   @media (max-width: 1069px) {
     height: 30px;
+  }
+  @media (max-width: 720px) {
+    display:none;
   }
 `;
 const RightSide=styled.div`
   display:flex;
   align-items:center;
   @media (max-width: 715px) {
-    flex-direction: column;
+    
   }
 `
 
@@ -67,10 +70,8 @@ const Links = styled.ul`
     text-decoration:none;
   }
 }
-  @media (max-width: 715px) {
-    li{
-      display:list-item;
-    }
+  @media (max-width: 560px) {
+    display:none;
   }
 `;
 

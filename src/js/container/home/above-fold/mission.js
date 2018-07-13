@@ -4,20 +4,23 @@ import Styles from "../../../style/styles";
 
 const Container = styled.div`
  
-  max-width:50%;
+  max-width:70%;
   margin-bottom: 16px;
   margin-top: ${Styles.size.m};
   z-index:1;
+ 
 `;
 
 
 const Text = styled.p`
   font-size: 20px;
   color: ${Styles.color.font1};
-  
   text-align: center;
   font-family: ${Styles.font.text};
   margin-top: ${Styles.size.xs};
+  @media (max-width: 600px) {
+    font-size:15px;
+  }
 `;
 export default class Mission extends Component {
   render() {

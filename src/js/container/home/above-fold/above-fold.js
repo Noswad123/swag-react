@@ -31,6 +31,14 @@ const Logo = styled.img`
   width:700px;
   z-index:10;
   margin-top:100px;
+  
+  @media (max-width: 800px) {
+    width:500px;
+  }
+  @media (max-width: 600px) {
+    width:300px;
+    margin-top:50px;
+  }
 `
 const Cover=styled.div`
 position:absolute;

@@ -19,6 +19,16 @@ const Container=styled.div`
     a{
         margin-top:100px;
     }
+    @media (max-width: 1080px) {
+        width:20%;
+    } 
+    @media (max-width: 800px) {
+        width:25%;
+    } 
+    @media (max-width: 690px) {
+        width:250px
+    } 
+   
 `
 const Name=styled.div``
 const Picture=styled.img`

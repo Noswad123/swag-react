@@ -13,6 +13,10 @@ const Container = styled.div `
     justify-content:space-between;
     background-color:${Styles.color.accent};
     z-index:1;
+    @media (max-width: 990px) {
+      justify-content:center;
+    }
+    
 `
 const Text = styled.div`
   height:30%;
@@ -22,6 +26,15 @@ const Text = styled.div`
   justify-content:center;
   font-size: ${Styles.size.l};
   text-transform:uppercase;
+  @media (max-width: 910px) {
+    font-size:80px;
+  }
+  @media (max-width: 850px) {
+    font-size:60px;
+  }
+  @media (max-width: 630px) {
+    font-size:40px;
+  }
 `
 
 const PicRow = styled.div`
@@ -30,6 +43,9 @@ const PicRow = styled.div`
   align-items:center;
   width: 100%;
   height:30%;
+  @media (max-width: 990px) {
+    display:none;
+  }
 `
 const Pic=styled.img`
   
@@ -45,6 +61,13 @@ const Quote =styled.div`
   align-items:center;
   padding:10px;
     box-sizing:border-box;
+    
+    @media (max-width: 1060px) {
+      font-size:15px;
+    }
+    @media (max-width: 990px) {
+      display:none;
+    }
 `
 class SecondPart extends Component {
   render() {
