@@ -23,9 +23,9 @@ class Home extends Component {
       < Container > 
         <AboveFold lang = {this.props.isEng}/>
         <Statistics />
-        <Paralax background="./img/community-members.jpg"/>
+        <Paralax background="./img/jls-3073_orig.jpg"/>
         <SecondPart/>
-        <Paralax background="./img/meet-the-team_orig.jpg"/>
+        <Paralax background="./img/interns.jpg"/>
     </Container>);
   }
 }

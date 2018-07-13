@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-direction:column;
   align-items:center;
-  padding: 120px 50px 50px 20px;
+  padding: 20px 50px 50px 20px;
   box-sizing:border-box;
   color:${Styles.color.font1};
   width:100%;
@@ -28,10 +28,8 @@ font-size:${Styles.size.l};
 `
 
 const Text= styled.div`
-width:50%;
-display: flex;
-justify-content: center;
-flex-wrap:wrap;`
+width:70%;
+text-align:center;`
 const Bottom = styled.div`
 width:70%;
 display:flex;

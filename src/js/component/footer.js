@@ -15,8 +15,10 @@ const Container = styled.div`
   padding: 20px;
   overflow: hidden;
   background-color: ${Styles.color.primary};
-  color: white;
+  color: ${Styles.color.font1};
   z-index:5;
+  display:flex;
+  justify-content:space-between;
 `;
 
 const SocialStyle = styled.div`
@@ -26,6 +28,10 @@ const SocialStyle = styled.div`
   a {
     color: white;
   }
+`;
+const Email = styled.div`
+  
+
 `;
 const Icon = styled.img`
   height: 30px;
@@ -46,6 +52,9 @@ class Footer extends Component {
     return (
       <Container>
         <Social />
+        <Email>
+          email: general@swagtocollege.org
+        </Email>
       </Container>
     );
   }

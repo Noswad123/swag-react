@@ -51,35 +51,35 @@ class SecondPart extends Component {
     return ( 
       < Container >     
         <PicRow>
-          <Pic src={"./img/mentees.png"} altText="mentee" quote=""/>
+          <Pic src={"./img/squarehs.jpg"} altText="hs" />
           <Quote>
-              Nothing is work unless you'd rather be doing something else.
+          You cannot change the circumstances, the seasons, or the wind, but you can change yourself. That is something you have.
           </Quote>
-          <Pic src={"./img/20543_4_orig.png"} altText="mentee"/>
+          <Pic src={"./img/squarecollege.jpg"} altText="college"/>
           <Quote>
-              Nothing is work unless you'd rather be doing something else.
+            Every Action in our lives touches on some chord that will vibrate in eternity
           </Quote>
-          <Pic src={"./img/9769588_4_orig.png"} altText="mentee"/>
+          <Pic src={"./img/squareyp.png"} altText="yp"/>
           <Quote>
-              Nothing is work unless you'd rather be doing something else.
+            When you do the common things in life in an uncommon way, you will command the attention of the world.
           </Quote>
         </PicRow>
         <Text>
           Mentorship for success
         </Text>
         <PicRow>
-          <Pic src={"./img/jls-3197_orig.jpg"} altText="mentee" />
+          <Pic src={"./img/community-members.jpg"} altText="community members" />
           
           <Quote>
-              Nothing is work unless you'd rather be doing something else.
+            You must be the change you wish to see in the world.
           </Quote>
-          <Pic src={"./img/jls-3073_orig.jpg"} altText="mentee" />
+          <Pic src={"./img/squareparent.jpeg"} altText="parent" />
           <Quote>
-              Nothing is work unless you'd rather be doing something else.
+            Learn from yesterday, live for today, hope for tomorrow.
           </Quote>
-          <Pic src={"./img/school-admin.jpg"} altText="mentee"/>
+          <Pic src={"./img/jim.jpg"} altText="mentee"/>
           <Quote>
-              Nothing is work unless you'd rather be doing something else.
+            In any moment of decision, the best thing you can do is the right thing. The worst thing you can do is nothing.
           </Quote>
         </PicRow>
     </ Container >);

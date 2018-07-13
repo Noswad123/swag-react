@@ -2,23 +2,23 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Styles from "../../../style/styles";
 import EngInvolved from "../../../data/get-involved-eng.data";
-import MenteeInvolvment from "./mentee-involvement";
 import arrowL from "../../../../images/arrowl.png"
 import arrowR from "../../../../images/arrowr.png"
+import Navbar from "../../../component/header"
 
 const Container = styled.div`
     min-height: 90vh;
-  display: flex;
-  flex-direction:column;
-  align-items:center;
-  padding: 100px 0;
-  box-sizing:border-box;
-  color:${Styles.color.secondary};
-  width:100%;
-  background-color:${Styles.color.teal};
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 0px 5px;
+    box-sizing:border-box;
+    color:${Styles.color.secondary};
+    width:100%;
+    background-color:${Styles.color.teal};
 `;
 const Header = styled.div`
-    width:60%;
+    width:80%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -87,13 +87,13 @@ const Wrapper = styled.div`
     background-color:${Styles.color.accent};
 `
 const SignUp = styled.div`
+    color:${Styles.color.font1};    
     font-size:${Styles.size.m};
     font-family:${Styles.font.title};
     display:flex;
     justify-content:center;
     width:100%;
     text-transform:uppercase;
-    color:${Styles.color.font1};
  `
  const Position = styled.div`
  font-size:${Styles.size.m};
@@ -116,6 +116,7 @@ export default class GetInvolvementTemplate extends Component {
   render() {
     return (
         <Container>
+            <Navbar/>
             <Header>
                 <Title>
                     {EngInvolved[(this.state.id>0 && this.state.id<6)?this.state.id:0].level}

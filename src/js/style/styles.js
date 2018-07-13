@@ -67,10 +67,10 @@ const Styles = {
     background: "#FFFFFF",
   },
 
-  colorful:{//colorful
+  color:{//colorful
     primary: "#09335d",
-    secondary: "#4BB3FD",
-    tertiary: "#09335d", 
+    secondary: "#3f88c5",
+    tertiary: "#006992", 
     accent: "#FFD966",
     contrast: "#F46036",
     background: "#FFFFFF",
@@ -79,7 +79,7 @@ const Styles = {
     font1: "#FFFFFF",
     
     font2: "#00487C",
-    accentFont:"#DCEDFF"
+    accentFont:"#F46036"
     
   },
   arely1:{//arely design with boston Red
@@ -138,7 +138,7 @@ const Styles = {
     font2: "#00487C",
     background: "#FFFFFF",
   },
-  color:{//arely design with alabaster
+  arely5:{//arely design with alabaster
     primary: "#27476e",
     secondary: "#3f88c5",
     tertiary: "#006992", 

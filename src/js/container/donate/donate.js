@@ -20,7 +20,8 @@ font-family:${Styles.font.title};
 font-weight:700;
 text-transform:uppercase;
 `
-const Blurb =styled.div``
+const Text =styled.div`
+margin:20px;`
 const Form =styled.div`
     background-color:${Styles.color.primary};
     width:100%;
@@ -34,18 +35,22 @@ const Form =styled.div`
     align-items:center;
     justify-content:space-between;
     border:solid ${Styles.color.accent};
-    width:50%;
+    width:35%;
     padding:20px;
     height:150px;`
 const Row =styled.div`
     width:90%;
     display: flex;
     justify-content:space-between;
+    input{
+        width:150px;
+    }
 `
 const PayPal =styled.div`
 img{
     height:50px;
-}`
+}
+margin-bottom:30px;`
 
 class Donate extends Component {
   render() {
@@ -53,7 +58,7 @@ class Donate extends Component {
       <Container>
           <Navbar/>
      <Title>Donate</Title>
-     <Blurb>Your donation will go towards helping support a student pursuing higher education.</Blurb>
+     <Text>Your donation will go towards helping support a student pursuing higher education.</Text>
      <Form>
         <Wrapper>
             <Row>
@@ -68,17 +73,24 @@ class Donate extends Component {
 
             <Row>
                 <input placeholder="Card Number"/>
-                <input placeholder="mm/yy"/>
-                <input placeholder="CVV"/>
+                <div style={{display:"flex", justifyContent:"space-between",width:"150px"}}>
+                <input style={{width:"50px"}} placeholder="mm/yy"/>
+                <input style={{width:"50px"}} placeholder="CVV"/>
+                </div>
             </Row>
 
             <Row>
                 <input placeholder="Billing Address"/>
-                <input placeholder="City State"/>
+                <div style={{display:"flex", justifyContent:"space-between"}}>
+                <input style={{width:"100px"}} placeholder="City"/>
+                <input style={{width:"50px"}} placeholder="State"/>
+                </div>
             </Row>   
         </Wrapper>  
     </Form>
-    or
+    <Text>
+        or
+    </Text>
     <PayPal>
         <img src={PayPalLogo} alt="Pay Pal"/>
         </PayPal>

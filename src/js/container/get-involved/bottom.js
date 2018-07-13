@@ -48,7 +48,7 @@ const Wrapper=styled.div`
     display: flex;
     justify-content:space-around;
     align-items:center;
-    background: linear-gradient(90deg, ${Styles.color.accent} 0%, ${Styles.color.accent} 80%);
+    background: linear-gradient(90deg, #97DFFC 0%, ${Styles.color.primary} 80%);
     width:100%;
     border-top: solid${Styles.color.font1};
     border-bottom: solid${Styles.color.font1};

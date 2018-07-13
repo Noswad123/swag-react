@@ -13,6 +13,7 @@ padding:30px;
 width:250px;`
 const Pic = styled.img`
 width:100px;
+margin-bottom: 50px;
 `
 class MentorMentee extends Component {
 
