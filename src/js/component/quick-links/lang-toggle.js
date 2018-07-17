@@ -14,8 +14,8 @@ const Container=styled.div`
  font-size:12px;
 `;
 const SwitchWrap = styled.div`
-  background-color: ${Styles.color.accent};
-  color:${Styles.color.primary};
+  background-color: ${Styles.color.secondary};
+  color:${Styles.color.font1};
   cursor: pointer;
   text-align: center;
   width: 120px;
@@ -73,7 +73,7 @@ class LangToggle extends Component {
                 <Toggle
                 toggleLang={this.toggleLang}
                 switch={this.state.switchPos}
-                lang={this.props.isEng ? "Espanol" : "English"}
+                lang={this.props.isEng ? "English" : "Espanol"}
                 />
                 <HamburgerMenu click={this.showMenu.bind(this)} />
             </Container>

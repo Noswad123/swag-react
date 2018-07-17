@@ -17,7 +17,10 @@ const Wrapper = styled.div`
 
   color: ${Styles.color.font1};
   a {
-    color: ${Styles.color.primary};
+    color: ${Styles.color.accent};
+    &:hover{
+      color:${Styles.color.contrast};
+    }
   }
   
 

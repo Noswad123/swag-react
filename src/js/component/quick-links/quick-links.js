@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Styles from "../../../js/style/styles";
 import { connect } from "react-redux";
-import DropDown from "./dropdown";
+import DynamicContent from "./dynamic-content";
+import LangToggle from "./lang-toggle";
 
 const Container = styled.div`
   margin-top: ${Styles.size.xxl};
@@ -56,7 +57,8 @@ class QuickLinks extends Component {
     return (
       <Container>
         <QuickMenu>
-          <DropDown involvement={this.props.involvement} changeInvolvement={this.props.changeInvolvement}/>    
+          <DynamicContent/> 
+        
           <Header>
             <Letter>M</Letter>
             <Letter>E</Letter>

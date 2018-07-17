@@ -6,8 +6,7 @@ import Months from './months-main-timeline';
 const Container = styled.div`
     width:80vw;
     min-height:80vh;
-    padding: 32px 0;
-    
+    padding: 32px 0;   
 `
 const Title = styled.div`
     font-size:${Styles.size.l};
@@ -25,8 +24,6 @@ const Goals = styled.ul`
     `
 
 export default class Main extends Component{
- 
-    
       render(){
         return(
             <Container >

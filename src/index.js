@@ -9,7 +9,7 @@ import store from "./js/redux/store";
 import styled from "styled-components";
 import Styles from "./js/style/styles";
 
-import Navbar from "./js/component/navbar/navbar";
+
 import Footer from "./js/component/footer";
 import Checkin from "./js/component/checkin-forms";
 import QuickLinks from "./js/component/quick-links/quick-links";

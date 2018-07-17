@@ -8,6 +8,7 @@ const Container=styled.div`
     flex-direction:column;
     background-color:${Styles.color.primary};
     align-items: center;
+    justify-content:space-between;
     height:300px;
     position:relative;
     margin-bottom:10px;
@@ -38,8 +39,12 @@ object-position:0% 0%`
 const Wrapper=styled.div`
 color:${Styles.color.font1};
 display:flex;
+width:100%;
+height:100%;
 flex-direction:column;
-align-items:center;`
+align-items:center;
+justify-content:center;
+border-top:solid white;`
 
 const Position=styled.div``
 export default class TeamMember extends Component { 
@@ -54,6 +59,4 @@ export default class TeamMember extends Component {
             </Container>
         )
     }
-
-
 }
