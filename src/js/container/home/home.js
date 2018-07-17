@@ -25,7 +25,7 @@ class Home extends Component {
         <Statistics />
         <Paralax background="./img/jls-3073_orig.jpg"/>
         <SecondPart/>
-        <Paralax background="./img/interns.jpg"/>
+        <Paralax background="./img/intern.jpg"/>
     </Container>);
   }
 }
