@@ -25,18 +25,28 @@ font-size:${Styles.size.l};
   position:relative;
   text-transform:uppercase;
   color:${Styles.color.font1};
+  @media (max-width: 550px) {
+    font-size:60px;
+  }
+  @media (max-width: 400px) {
+    font-size:40px;
+  }
 `
 
 const Text= styled.div`
 width:70%;
 text-align:center;`
 const Bottom = styled.div`
-width:70%;
+width:80%;
 display:flex;
 justify-content:space-between;
 margin-top:50px;
+@media (max-width: 700px) {
+  flex-direction:column;
+  align-items:center;
+}
 `
-export default class Header extends Component {
+export default class AboveFold extends Component {
   render() {
     return (
       <Container>
@@ -50,9 +60,9 @@ export default class Header extends Component {
             </Text>
           </Top>
           <Bottom>
-            <MentorMentee pic="./img/person-icon.png" 
+            <MentorMentee pic="./img/menteesays.jpg" 
             text="As a mentee, you will receive the help you need on your journey to college. "/>
-            <MentorMentee pic="./img/person-icon.png" 
+            <MentorMentee pic="./img/mentorsays.jpg" 
               text="As a mentor, you will provide the support and counsel a student needs to succeed."/>
           </Bottom>
       </Container>

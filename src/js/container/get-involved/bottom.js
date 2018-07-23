@@ -13,7 +13,7 @@ const Container = styled.div`
   box-sizing:border-box;
   color:${Styles.color.font1};
   width:100%;
-`;
+`
 const Header = styled.div`
     font-size:${Styles.size.l};
     font-family:${Styles.font.title};
@@ -22,7 +22,7 @@ const Header = styled.div`
     justify-content:center;
     width:100%;
     text-transform:uppercase;
-`;
+`
 const BlueDiv=styled.div`
     border-right:solid ${Styles.color.secondary} 20px;
     border-top:solid ${Styles.color.secondary} 20px;
@@ -41,9 +41,10 @@ const BlueDiv=styled.div`
         background-color:${Styles.color.accent};
         cursor:pointer;
     }
-`;
+`
 const Pic=styled.img`
-    width:50px;`;
+    width:50px;
+`
 const Wrapper=styled.div`
     display: flex;
     justify-content:space-around;
@@ -68,64 +69,63 @@ const Text = styled.div`
 `;
 
 export default class Bottom extends Component {
-  render() {
-    return (
-      <Container>
-          <Header>
+    render() {
+        return (
+            <Container>
+                <Header>
                     Join Us
-          </Header>
-          <Wrapper>
-                
-            <BlueDiv>
-                <Link to="/getinvolved/0">
-                    <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                    <Text>
-                        High School Student
-                    </Text>
-                </Link>
-            </BlueDiv>
-                <BlueDiv>
-                    <Link to="/getinvolved/1">
-                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                        <Text>
-                            College Student
-                        </Text>
-                    </Link>
-                </BlueDiv>
-                <BlueDiv>
-                    <Link to="/getinvolved/3">
-                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                        <Text>
-                            Parent
-                        </Text>
-                    </Link>
-                </BlueDiv>
-                <BlueDiv>
-                    <Link to="/getinvolved/5">
-                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                        <Text>
-                            Community Member
-                        </Text>
-                    </Link>
-                </BlueDiv>
-                <BlueDiv>
-                    <Link to="/getinvolved/2">
-                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                        <Text>
-                            Young Professional
-                        </Text>
-                    </Link>
-                </BlueDiv>
-                <BlueDiv>
-                    <Link to="/getinvolved/4">
-                        <Pic src={"./img/profile2.jpg"} alt="pic1"/>
-                        <Text>
-                            School Admin
-                        </Text>
-                    </Link>
-                </BlueDiv>
-            </Wrapper>
-      </Container>
-    );
-  }
+                </Header>
+                <Wrapper>
+                    <BlueDiv>
+                        <Link to="/getinvolved/0">
+                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                            <Text>
+                                High School Student
+                            </Text>
+                        </Link>
+                    </BlueDiv>
+                    <BlueDiv>
+                        <Link to="/getinvolved/1">
+                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                            <Text>
+                                College Student
+                            </Text>
+                        </Link>
+                    </BlueDiv>
+                    <BlueDiv>
+                        <Link to="/getinvolved/3">
+                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                            <Text>
+                                Parent
+                            </Text>
+                        </Link>
+                    </BlueDiv>
+                    <BlueDiv>
+                        <Link to="/getinvolved/5">
+                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                            <Text>
+                                Community Member
+                            </Text>
+                        </Link>
+                    </BlueDiv>
+                    <BlueDiv>
+                        <Link to="/getinvolved/2">
+                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                            <Text>
+                                Young Professional
+                            </Text>
+                        </Link>
+                    </BlueDiv>
+                    <BlueDiv>
+                        <Link to="/getinvolved/4">
+                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                            <Text>
+                                School Admin
+                            </Text>
+                        </Link>
+                    </BlueDiv>
+                </Wrapper>
+            </Container>
+        );
+    }
 }

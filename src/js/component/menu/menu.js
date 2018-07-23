@@ -24,8 +24,6 @@ const Header = styled.span`
   position: absolute;
   right: 10px;
   top: 20%;
-  
-  
 `;
 
 const QuickMenu = styled.div`
@@ -52,7 +50,7 @@ const QuickMenu = styled.div`
   }
 `;
 const Letter = styled.span``
-class QuickLinks extends Component {
+class Menu extends Component {
   render() {
     return (
       <Container>
@@ -90,4 +88,4 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
-export default connect(mapStateToProps, mapDispatchToProps)(QuickLinks);
+export default connect(mapStateToProps, mapDispatchToProps)(Menu);

@@ -6,6 +6,9 @@ const Container = styled.div`
   width:300px;
   padding: 50px;
   margin-top:100px;
+  @media (max-width: 920px) {
+    display:none;
+  }
 `
 
 const SubPanel = styled.div`

@@ -11,8 +11,9 @@ import Styles from "./js/style/styles";
 
 
 import Footer from "./js/component/footer";
-import Checkin from "./js/component/checkin-forms";
-import QuickLinks from "./js/component/quick-links/quick-links";
+import Checkin from "./js/container/checkin/checkin";
+import CheckinForms from "./js/container/checkin/checkin-forms";
+import Menu from "./js/component/menu/menu";
 
 import AboutUs from "./js/container/about-us/about-us";
 import GetInvolved from "./js/container/get-involved/get-involved";
@@ -34,7 +35,7 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Container>
-        <QuickLinks />
+        <Menu/>
         <Route exact path="/" component={Home} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/getinvolved" component={GetInvolved} />
@@ -47,6 +48,7 @@ ReactDOM.render(
         <Route exact path="/meet" component={Meet} />
         <Route exact path="/contactus" component={ContactUs} />
         <Route exact path="/checkin" component={Checkin} />
+        <Route exact path="/checkin:route" component={CheckinForms} />
         <Footer />
       </Container>
     </BrowserRouter>

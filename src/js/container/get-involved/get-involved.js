@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
-import Header from "./header";
+import AboveFold from "./above-fold";
 import Bottom from "./bottom";
 import Navbar from "../../component/header"
 
@@ -20,7 +20,7 @@ class GetInvolved extends Component {
     return (
       <Container>
         <Navbar/>
-        <Header/>
+        <AboveFold/>
         <Bottom/>
       </Container>
     );

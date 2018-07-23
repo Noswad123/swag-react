@@ -3,20 +3,22 @@ import styled from "styled-components";
 import { connect } from "react-redux";
 
 const Container = styled.div`
-display:flex;
-flex-direction:column;
-align-items:center;
-`;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:40%;
+`
 const Blurb = styled.div`
-border:white solid;
-padding:30px;
-width:250px;`
+  border:white solid;
+  padding:30px;
+  width:100%;
+  margin-bottom: 30px;
+`
 const Pic = styled.img`
-width:100px;
-margin-bottom: 50px;
+  height:200px;
+  margin-bottom: 10px;
 `
 class MentorMentee extends Component {
-
   render() {
     return (
         <Container>

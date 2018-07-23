@@ -5,10 +5,12 @@ import { Link} from 'react-router-dom';
 import LangToggle from "./lang-toggle";
 
 const Container = styled.div`
-  color: ${Styles.color.font1};
-  height: 100%
-  display:flex;
+    color: ${Styles.color.font1};
+    height:100%;
+ 
+    display:flex;
     justify-content: center;
+    align-items:center;
 `;
 
 const LinkList =styled.div`

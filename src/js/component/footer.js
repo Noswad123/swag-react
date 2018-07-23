@@ -11,29 +11,24 @@ import Instagram from "../../images/instagram.png"
 const Container = styled.div`
   width: 100%;
   box-sizing: border-box;
-  height: 80px;
-  padding: 20px;
+  height: 50px;
+  padding: 10px 20px;
   overflow: hidden;
   background-color: ${Styles.color.primary};
   color: ${Styles.color.font1};
   z-index:5;
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
+  align-items:center;
 `;
 
 const SocialStyle = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 270px;
   a {
     color: white;
   }
-`;
-const Email = styled.div`
-@media (max-width: 520px) {
-  display:none;
-}
-
 `;
 const Icon = styled.img`
   height: 30px;
@@ -55,9 +50,6 @@ class Footer extends Component {
     return (
       <Container>
         <Social />
-        <Email>
-          email: general@swagtocollege.org
-        </Email>
       </Container>
     );
   }

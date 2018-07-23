@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Styles from '../../style/styles'
 
-
 const Container=styled.div``
-
 const Month = styled.button`
 width:85%;
 height:40px;
@@ -48,11 +46,7 @@ const Steps= styled.div`
   animation-timing-function: ease-in-out;
   padding:10px;
   font-family:${Styles.font.text};
-  
-
 `
-
-
 export default class Months extends Component{
     render(){
         return(

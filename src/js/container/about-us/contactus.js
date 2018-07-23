@@ -6,7 +6,7 @@ import Navbar from "../../component/header"
 
 const Container=styled.div`
 min-height:90vh;
-background-color:${Styles.color.accent};
+background-color:${Styles.color.secondary};
 display: flex;
 flex-direction:column;
 width:100%;
@@ -65,13 +65,13 @@ font-family:${Styles.font.title};`
 const Name=styled.div`
 margin-top:15px;`
 const Logo=styled.div`
-height:100px;
-width:100px;
+height:120px;
+width:120px;
 display:flex;
 justify-content:center;
 align-items:center;
 border-radius:100%;
-background-color:${Styles.color.accentFont};
+background-color:${Styles.color.accent};
 img{
     height:80px;
 }`

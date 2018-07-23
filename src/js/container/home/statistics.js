@@ -9,17 +9,17 @@ const Container = styled.div `
   display: flex;
   align-items:center;
   justify-content:space-between;
-  background-color:${Styles.color.primary};
+  background-color:${Styles.color.accent};
   color:${Styles.color.font1};
   padding:10px 40px;
   box-sizing:border-box;
   min-height:250px;
   div:nth-child(odd) {
-    background-color:${Styles.color.tertiary};
+    background-color:${Styles.color.secondary};
 }
 
 div:nth-child(even) {
-    background-color:${Styles.color.accent};
+    background-color:${Styles.color.contrast};
 }
   
 `
