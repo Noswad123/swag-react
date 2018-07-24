@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { connect } from "react-redux";
 import AboveFold from "./above-fold";
 import Bottom from "./bottom";
-import Navbar from "../../component/header"
+import Navbar from "../../component/navbar"
 
 const Container = styled.div`
 

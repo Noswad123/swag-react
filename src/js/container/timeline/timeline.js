@@ -5,7 +5,7 @@ import EspTimelines from '../../data/timeline-esp.data';
 import SidePanel from './sidePanel-timeline';
 import Main from './main-timeline';
 import {connect} from 'react-redux'
-import Navbar from "../../component/header"
+import Navbar from "../../component/navbar"
 import Hamburger from "./hamburger"
 
 const Container = styled.div`

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { connect } from "react-redux";
 import Styles from "../../style/styles";
 import PayPalLogo from "../../../images/paypal.png"
-import Navbar from "../../component/header"
+import Navbar from "../../component/navbar"
 
 const Container = styled.div`
     min-height:90vh;

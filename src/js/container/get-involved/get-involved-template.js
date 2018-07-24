@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../../../style/styles";
-import EngInvolved from "../../../data/get-involved-eng.data";
-import arrowL from "../../../../images/arrowl.png"
-import arrowR from "../../../../images/arrowr.png"
-import Navbar from "../../../component/header"
+import Styles from "../../style/styles";
+import EngInvolved from "../../data/get-involved-eng.data";
+import arrowL from "../../../images/arrowl.png"
+import arrowR from "../../../images/arrowr.png"
+import Navbar from "../../component/navbar"
+import {Link} from "react-router-dom"
 
 const Container = styled.div`
     min-height: 90vh;
@@ -87,13 +88,16 @@ const Wrapper = styled.div`
     background-color:${Styles.color.accent};
 `
 const SignUp = styled.div`
-    color:${Styles.color.font1};    
+       
     font-size:${Styles.size.m};
     font-family:${Styles.font.title};
     display:flex;
     justify-content:center;
     width:100%;
     text-transform:uppercase;
+    a{
+        color:${Styles.color.accent};
+    }
  `
  const Position = styled.div`
  font-size:${Styles.size.m};
@@ -109,25 +113,34 @@ const Summary = styled.div`
     color:${Styles.color.font1};
 `
 export default class GetInvolvementTemplate extends Component {
+    formatRoute(route){
+        var formIndex=EngInvolved.findIndex((element)=>{
+          return element.route===route;
+        })
+        return(formIndex===-1)?0:formIndex
+      }
     constructor(props){
         super(props);
-        this.state={ id:props.match.params.id}
+        this.state={ route:this.formatRoute(props.match.params.route)}
     }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
   render() {
     return (
         <Container>
             <Navbar/>
             <Header>
                 <Title>
-                    {EngInvolved[(this.state.id>0 && this.state.id<6)?this.state.id:0].level}
+                    {EngInvolved[this.state.route].level}
                 </Title>
                 <Text>
-                    {EngInvolved[(this.state.id>0 && this.state.id<6)?this.state.id:0].blurb}
+                    {EngInvolved[this.state.route].blurb}
                 </Text>
             </Header>
             <Sections>
             {
-                EngInvolved[(this.state.id>0 && this.state.id<6)?this.state.id:0].options.map((element)=>{
+                EngInvolved[this.state.route].options.map((element)=>{
                     return(
                         <Section className="section" key={element.title}>
                             <Wrapper className="wrapper">
@@ -144,14 +157,15 @@ export default class GetInvolvementTemplate extends Component {
                                 <Summary>
                                     {element.summary}
                                 </Summary>
+                                <SignUp>
+                                   <Link to={`/signup/${element.form}`}> SignUp</Link>
+                                </SignUp>
                         </Section>
                     )
                 })
             }
             </Sections>
-            <SignUp>
-                SignUp
-            </SignUp>
+            
         </Container>
     );
     }

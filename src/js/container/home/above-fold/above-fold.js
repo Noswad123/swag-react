@@ -4,7 +4,7 @@ import Cta from './cta-home';
 import Mission from './mission';
 import Styles from '../../../style/styles';
 import {connect} from 'react-redux'
-import HomeHeader from '../../../component/header';
+import Navbar from '../../../component/navbar';
 
 const Container = styled.div `
   width:100%;
@@ -52,7 +52,7 @@ class AboveFold extends Component {
       < Container > 
         <ParalaxWrap>  
           <Cover/>
-          <HomeHeader/>     
+          <Navbar/>     
           < Logo src = {"./img/swag-logo-white.png"} alt = "SWAG" /> 
           < Mission lang = {this.props.lang} /> 
           < Cta lang = {this.props.lang} /> 

@@ -22,9 +22,11 @@ import Resources from "./js/container/resources/resources";
 import Timeline from "./js/container/timeline/timeline";
 import Meet from "./js/container/meet/meet";
 import ContactUs from "./js/container/about-us/contactus";
-import MenteeInvolvement from "./js/container/get-involved/templates/mentee-involvement";
-import GetInvolvementTemplate from "./js/container/get-involved/templates/get-involved-template";
+import GetInvolvementTemplate from "./js/container/get-involved/get-involved-template";
 import donate from "./js/container/donate/donate";
+import SignUp from "./js/container/signup/signup"
+import SignUpForms from "./js/container/signup/signup-forms"
+
 
 const Container = styled.div`
   background-color:${Styles.color.secondary};
@@ -39,16 +41,17 @@ ReactDOM.render(
         <Route exact path="/" component={Home} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/getinvolved" component={GetInvolved} />
-        <Route exact path="/getinvolved/:id" component={GetInvolvementTemplate} />
+        <Route exact path="/getinvolved/:route" component={GetInvolvementTemplate} />
         <Route exact path="/donate" component={donate} />
-        <Route exact path="/mentee" component={MenteeInvolvement} />
 
         <Route exact path="/resources" component={Resources} />
         <Route exact path="/timeline" component={Timeline} />
         <Route exact path="/meet" component={Meet} />
         <Route exact path="/contactus" component={ContactUs} />
         <Route exact path="/checkin" component={Checkin} />
-        <Route exact path="/checkin:route" component={CheckinForms} />
+        <Route exact path="/checkin/:route" component={CheckinForms} />
+        <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/signup/:route" component={SignUpForms} />
         <Footer />
       </Container>
     </BrowserRouter>

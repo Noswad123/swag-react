@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import FormsArray from "../../data/checkin.data";
+import FormsArray from "../../data/signup-form.data";
 import Navbar from"../../component/navbar";
 
 const Container = styled.div`
@@ -12,7 +12,7 @@ const Container = styled.div`
   padding-top: 50px;
 `;
 
-export default class CheckinForms extends Component {
+export default class SignUPForms extends Component {
   formatRoute(route){
     var formIndex=FormsArray.findIndex((element)=>{
       return element.form===route;

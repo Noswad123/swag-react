@@ -5,7 +5,7 @@ import Story from "./story";
 import Header from "./header";
 import { connect } from "react-redux";
 import Styles from "../../style/styles";
-import Navbar from "../../component/header"
+import Navbar from "../../component/navbar"
 
 const Container = styled.div`
   display: flex;

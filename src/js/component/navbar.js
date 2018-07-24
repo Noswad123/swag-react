@@ -75,7 +75,7 @@ const Links = styled.ul`
   }
 `;
 
-class HomeHeader extends React.Component {
+class Navbar extends React.Component {
   render() {
     return (
       <Container >
@@ -131,4 +131,4 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
-export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader);
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);

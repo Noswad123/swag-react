@@ -6,7 +6,7 @@ import TeamMember from './team-meet';
 import FilterOption from './filter-meet'
 import PopUP from './popup';
 import {connect} from 'react-redux';
-import Navbar from "../../component/header"
+import Navbar from "../../component/navbar"
 const Container=styled.div`
 `
 const Header=styled.div`

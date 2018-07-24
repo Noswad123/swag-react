@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Styles from "../../../js/style/styles";
 import { connect } from "react-redux";
 import DynamicContent from "./dynamic-content";
-import LangToggle from "./lang-toggle";
 
 const Container = styled.div`
   margin-top: ${Styles.size.xxl};

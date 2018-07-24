@@ -1,0 +1,57 @@
+const signUpForm=[
+    {
+        form:"hsmentee",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLSfoQNigob61WhT1-F86-yofBpf_vHy9pf-zfnQfr9og3AmYeQ/viewform?embedded=true"
+    },
+    {
+        form:"hsrep",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLScTish7dhonAuBSSr66TAatGww9blSlHQXHXRbG-uPtCEN4hA/viewform?embedded=true"
+    },
+    {
+        form:"hsmentor",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLSeBSbdNaRoex7e-C1b_B014L43aHDGR1BRwo8GrAbmVkLEd3A/viewform?embedded=true"
+    },
+    {
+        form:"uppermentor",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLSfG8LnZKqtrUW0o-ue0CSSYXlAb65f8dbmA-2cG_4G5iPeKow/viewform?embedded=true"
+    },
+    {
+        form:"uppermentee",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLSeq84Vr8wbV_ECaP5MIaiF49-0sC4VPW7NfOBhbzIPOvXHxgA/viewform?embedded=true"
+    },
+    {
+        form:"ypmentee",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLScEI2fAhYewvSwTiedXe1fLH_z_ZGkIizslwQOquqsWMALyEg/viewform?embedded=true"
+    },
+    {
+        form:"ypmentor",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLSfIWBBBrkykVwCzepnh_CoU5nTy3-y-I5COFCx1DBlIj09zuQ/viewform?embedded=true"
+    },
+    {
+        form:"communitymember",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLScq4fRsk7vPNCxlgoB8mfsiaCPv1PBZMun_RZ62ksq2Ms60Xg/viewform?embedded=true"
+    },
+    {
+        form:"parentboard",
+        link:""
+    },
+    {
+        form:"schooladmin",
+        link:"https://docs.google.com/forms/d/e/1FAIpQLScgbxcPVatalcwzDRDFUFOVde36MXF-w72r_SVoueARBzHPBw/viewform?embedded=true"
+    },
+    {
+        form:"",
+        link:""
+    },
+    {
+        form:"",
+        link:""
+    },
+    {
+        form:"",
+        link:""
+    },
+
+]
+
+export default signUpForm;

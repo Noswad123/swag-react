@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import React,{Component} from 'react';
 import Styles from '../../../style/styles';
 
-
-
 const Container=styled.div`
     margin:10px 0;
 `

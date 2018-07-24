@@ -42,7 +42,7 @@ const Title = styled.div`
     font-size:30px;
   }
 `
-export default class Checkin extends Component {
+export default class signup extends Component {
   render() {
     return (
       <Container>
@@ -52,12 +52,15 @@ export default class Checkin extends Component {
             Select a Form
           </Title>
             <ul>
-              <li><Link to="/checkin/hsmentee"> High School Mentee</Link></li>
-              <li><Link to="/checkin/hsmentor"> High School Mentor</Link></li>
-              <li><Link to="/checkin/uppermentee"> Upper classmen Mentee</Link></li>
-              <li><Link to="/checkin/uppermentor"> Upper classmen Mentor</Link></li>
-              <li><Link to="/checkin/ypmentee"> Young Professional Mentee</Link></li>
-              <li><Link to="/checkin/ypmentor"> Young Professional Mentor</Link></li>       
+            <li><Link to="/signup/hsrep"> High School Campus Rep</Link></li>
+              <li><Link to="/signup/hsmentee"> High School Mentee</Link></li>
+              <li><Link to="/signup/hsmentor"> High School Mentor</Link></li>
+              <li><Link to="/signup/uppermentee"> Upper classmen Mentee</Link></li>
+              <li><Link to="/signup/uppermentor"> Upper classmen Mentor</Link></li>
+              <li><Link to="/signup/ypmentee"> Young Professional Mentee</Link></li>
+              <li><Link to="/signup/ypmentor"> Young Professional Mentor</Link></li>
+              <li><Link to="/signup/communitymember">Community Member</Link></li>
+              <li><Link to="/signup/schooladmin"> School Admin</Link></li>       
             </ul>
           
         </Wrapper>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Styles from '../../style/styles';
 import { connect } from "react-redux";
-import Navbar from "../../component/header"
+import Navbar from "../../component/navbar"
 
 const Container=styled.div`
 min-height:90vh;
