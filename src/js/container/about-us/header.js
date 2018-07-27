@@ -22,8 +22,6 @@ const Wrapper = styled.div`
       color:${Styles.color.contrast};
     }
   }
-  
-
   //background:url(./img/meet-the-team_orig.jpg);
   background-size:contain;
   background-repeat:no-repeat;

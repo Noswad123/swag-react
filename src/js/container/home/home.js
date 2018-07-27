@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import Paralax from '../../component/paralax';
-import SecondPart from './second-part/second-part';
+import SecondPart from './second-part';
 import AboveFold from './above-fold/above-fold';
 import Styles from '../../style/styles';
 import {connect} from 'react-redux'

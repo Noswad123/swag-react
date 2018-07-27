@@ -7,6 +7,7 @@ const Container = styled.div`
   flex-direction:column;
   align-items:center;
   width:40%;
+  
 `
 const Blurb = styled.div`
   border:white solid;
@@ -17,6 +18,7 @@ const Blurb = styled.div`
 const Pic = styled.img`
   height:200px;
   margin-bottom: 10px;
+  border-radius:100%;
 `
 class MentorMentee extends Component {
   render() {

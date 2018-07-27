@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   justify-content:center;
   color: black;
   a{
-    color:${Styles.color.accent};
+    color:${Styles.color.font1};
   }
   li{
     margin-bottom:20px;
@@ -42,6 +42,18 @@ const Title = styled.div`
     font-size:30px;
   }
 `
+const LinkWrapper = styled.div`
+  background-color:${Styles.color.primary};
+  width:100%;
+  margin-top:50px;
+  ul{
+    border:solid ${Styles.color.accent};
+    padding:50px 300px;
+  }
+  display:flex;
+  justify-content:center;
+  align-items:center;
+`
 export default class Checkin extends Component {
   render() {
     return (
@@ -51,6 +63,7 @@ export default class Checkin extends Component {
           <Title>
             Select a Form
           </Title>
+          <LinkWrapper>
             <ul>
               <li><Link to="/checkin/hsmentee"> High School Mentee</Link></li>
               <li><Link to="/checkin/hsmentor"> High School Mentor</Link></li>
@@ -59,7 +72,7 @@ export default class Checkin extends Component {
               <li><Link to="/checkin/ypmentee"> Young Professional Mentee</Link></li>
               <li><Link to="/checkin/ypmentor"> Young Professional Mentor</Link></li>       
             </ul>
-          
+          </LinkWrapper>
         </Wrapper>
       </Container>
     );

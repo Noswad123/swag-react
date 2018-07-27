@@ -2,17 +2,18 @@ import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Styles from '../../style/styles'
 
-const Container=styled.div``
+const Container=styled.div`
+width:100%;`
 const Month = styled.button`
-width:85%;
-height:40px;
+width:100%;
+height:50px;
 opacity: 1;
 z-index: 100;
 background-color: ${Styles.color.primary};
 color: ${Styles.color.font1};
 border: solid ${Styles.color.secondary};
 font-family:${Styles.font.header};
-font-size:${Styles.size.s};
+font-size:25px;
 cursor:pointer;
 &:hover{
     color: ${Styles.color.accent};
@@ -20,18 +21,18 @@ cursor:pointer;
 }
 `
 const slide = keyframes`
-0% {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-50% {
-  transform: translateY(0);
-  opacity: 1;
-}
-100% {
-  transform: translateY(0);
-  opacity: 1;
-}
+    0% {
+    transform: translateY(-100%);
+    opacity: 0;
+    }
+    50% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
 `
 
 const Steps= styled.div`

@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import EngTimelines from '../../data/timeline-eng.data';
 import EspTimelines from '../../data/timeline-esp.data';
-import SidePanel from './sidePanel-timeline';
+import GradeLevel from './grade-level-timeline';
 import Main from './main-timeline';
 import {connect} from 'react-redux'
 import Navbar from "../../component/navbar"
-import Hamburger from "./hamburger"
 
 const Container = styled.div`
   min-height:80vh;
@@ -16,7 +15,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   width:100%;
-  justify-content:flex-end;
+  flex-direction:column;
+  align-items:center;
 `
 class Timeline extends Component {
   constructor(){
@@ -33,10 +33,9 @@ class Timeline extends Component {
       <Container>
         <Navbar/>
         <Wrapper>
-          <SidePanel lang={this.props.isEng} timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]} changeGrade={this.state.changeGrade.bind(this)}/>
+          <GradeLevel lang={this.props.isEng} timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]} changeGrade={this.state.changeGrade.bind(this)}/>
           <Main timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]}/>
         </Wrapper>
-        <Hamburger/>
       </Container>
     );
   }

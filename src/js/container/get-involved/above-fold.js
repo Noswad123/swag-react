@@ -35,7 +35,8 @@ font-size:${Styles.size.l};
 
 const Text= styled.div`
 width:70%;
-text-align:center;`
+text-align:center;
+font-size:25px;`
 const Bottom = styled.div`
 width:80%;
 display:flex;

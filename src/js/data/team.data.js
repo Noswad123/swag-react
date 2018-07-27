@@ -152,8 +152,9 @@ const Team = [
   {
     name: "Raj Salhotra",
     position: "Co-founder",
-    bio: `I am third-year law student at Harvard Law School. Before coming to law school, I served as a Teach For America Corps Member in Houston. I taught 11th and 12th grade math at YES Prep Southwest. Before YES, I was a student at Rice University where I majored in economics and public policy. While at Rice, I took classes in educational inequality and sociology and gained a greater understanding of the challenges many Americans face. My work teaching provided concrete experiences to complement my classroom learning. 
-        ​  After teaching, building on experiences inside and outside the classroom, I co-founded SWAG To College to help more students gain the knowledge and opportunities they neeed to reach their goals. Through SWAG, my hope is we can reduce educational inequality and ensure that all students, regardless of background, can reach their dreams. ​`,
+    bio: `I am first-year Associate at Baker Botts and recent graduate of Harvard Law School in May 2018. Before coming to law school, I served as a Teach For America Corps Member in Houston. I taught 11th and 12th grade math at YES Prep Southwest. Before YES, I was a student at Rice University where I majored in economics and public policy. While at Rice, I took classes in educational inequality and sociology and gained a greater understanding of the challenges many Americans face. My work teaching provided concrete experiences to complement my classroom learning.
+   
+    After teaching, building on experiences inside and outside the classroom, I co-founded SWAG To College to help more students gain the knowledge and opportunities they need to reach their goals. Through SWAG, my hope is we can reduce educational inequality and ensure that all students, regardless of background, can reach their dreams. ​ ​`,
     imgUrl: "./img/raj.jpg",
     domain: "Board of Directors"
   },

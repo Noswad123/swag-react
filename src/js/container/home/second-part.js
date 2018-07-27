@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Styles from '../../../style/styles';
+import Styles from '../../style/styles';
 import {connect} from 'react-redux';
 
 const Container = styled.div `
     min-height:50vw;
-    color: ${Styles.color.font2};
+    color: ${Styles.color.font1};
     width:100%;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content:space-between;
-    background-color:${Styles.color.accent};
+    background-color:${Styles.color.primary};
     z-index:1;
     @media (max-width: 990px) {
       justify-content:center;
