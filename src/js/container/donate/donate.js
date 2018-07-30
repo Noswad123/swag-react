@@ -61,31 +61,7 @@ class Donate extends Component {
      <Text>Your donation will go towards helping support a student pursuing higher education.</Text>
      <Form>
         <Wrapper>
-            <Row>
-                <input placeholder="First Name"/>
-                <input placeholder="Last Name"/>
-            </Row>
-
-            <Row>
-                <input placeholder="Email Address"/>
-                <input placeholder="Cardholder Name"/>
-            </Row>
-
-            <Row>
-                <input placeholder="Card Number"/>
-                <div style={{display:"flex", justifyContent:"space-between",width:"150px"}}>
-                <input style={{width:"50px"}} placeholder="mm/yy"/>
-                <input style={{width:"50px"}} placeholder="CVV"/>
-                </div>
-            </Row>
-
-            <Row>
-                <input placeholder="Billing Address"/>
-                <div style={{display:"flex", justifyContent:"space-between"}}>
-                <input style={{width:"100px"}} placeholder="City"/>
-                <input style={{width:"50px"}} placeholder="State"/>
-                </div>
-            </Row>   
+       <a href=" https://www.gofundme.com/swagtocollege18 " target="_blank">gofundme</a>
         </Wrapper>  
     </Form>
     <Text>
