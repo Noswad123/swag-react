@@ -68,7 +68,7 @@ class Donate extends Component {
         or
     </Text>
     <PayPal>
-        <img src={PayPalLogo} alt="Pay Pal"/>
+        <a href="https://www.paypal.com/fundraiser/charity/1832625" ><img src={PayPalLogo} alt="Pay Pal"/></a>
         </PayPal>
       </Container>
     );

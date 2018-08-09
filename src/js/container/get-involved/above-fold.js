@@ -36,7 +36,7 @@ font-size:${Styles.size.l};
 const Text= styled.div`
 width:70%;
 text-align:center;
-font-size:25px;`
+font-size:20px;`
 const Bottom = styled.div`
 width:80%;
 display:flex;
@@ -61,11 +61,13 @@ export default class AboveFold extends Component {
             </Text>
           </Top>
           <Bottom>
-            <MentorMentee pic="./img/menteesays.jpg" 
-            text="As a mentee, you will receive the help you need on your journey to college. "/>
+            
             <MentorMentee pic="./img/mentorsays.jpg" 
               text="As a mentor, you will provide the support and counsel a student needs to succeed."/>
+              <MentorMentee pic="./img/menteesays.jpg" 
+            text="As a mentee, you will receive the help you need on your journey to college. "/>
           </Bottom>
+          
       </Container>
     );
   }

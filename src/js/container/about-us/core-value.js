@@ -12,21 +12,6 @@ const Container=styled.div`
     background-attachment: fixed;
     background-position:center;
     position:relative;
-`;
-const Title=styled.div`
-    font-family:${Styles.font.title};
-    color:${Styles.color.font1};
-    font-size:${Styles.size.l};
-    position:absolute;
-    top:10%;
-    left:35%;
-    text-transform:uppercase;
-    @media (max-width: 480px) {
-        font-size:60px;
-    }
-    @media (max-width: 340px) {
-        font-size:45px;
-    }
 `
 const Wrapper=styled.div`
     display:flex;
@@ -35,12 +20,26 @@ const Wrapper=styled.div`
     align-items:center;
     width:100%;
     min-height:70vh;
-    padding:100px 10px;
+    padding:100px 100px;
     box-sizing:border-box;
 `
+const Title=styled.div`
+    font-family:${Styles.font.title};
+    color:${Styles.color.font1};
+    font-size:${Styles.size.l};
+
+    text-transform:uppercase;
+    @media (max-width: 480px) {
+        font-size:60px;
+    }
+    @media (max-width: 340px) {
+        font-size:45px;
+    }
+`
+
 const Values=styled.div`
-    position: relative;
-    min-height:90vh;
+   display:flex;
+   justify-content:space-between;
     width:100%;
     padding:0px;
 `
@@ -49,9 +48,6 @@ const Value=styled.div`
     border-radius:100%;
     width:125px;
     height:125px;
-    position: absolute;
-    bottom:50%;
-    left:45%;
     z-index:1;
     &:hover{
         p{
@@ -65,24 +61,20 @@ const Value=styled.div`
     
 `
 const Service=Value.extend`
-   margin:0;
-   transform:  translate(0px, -300px) ;
    p{
        left:-400px;
         bottom:-350px;
    }
 `
 const Diversity=Value.extend`
-    margin:0;
-   transform: translate(285.3px, -93.7px);
+ 
    p{
     left:-700px;
      bottom:-200px;
 }
 `
 const Accessibility=Value.extend`
-    margin:0;
-   transform: translate(176.3px,242.7px);
+
    p{
     left:-600px;
      bottom:150px;
@@ -90,7 +82,7 @@ const Accessibility=Value.extend`
 `
 const Dependability=Value.extend`
     margin:0;
-    transform: translate( -176.3px,242.7px) ;
+  
     p{
         left:-200px;
          bottom:200px;
@@ -98,7 +90,7 @@ const Dependability=Value.extend`
 `
 const Team=Value.extend`
 margin:0;
-   transform: translate( -285.3px,-93.7px) ;
+   
    p{
     left:-200px;
      bottom:-150px;
@@ -146,10 +138,10 @@ export default class CoreValues extends Component{
         return(
             <Container>
                 <Wrapper> 
-                    <Values>
-                        <Title>
-                            Core Values
-                        </Title>
+                    <Title>
+                        Core Values
+                    </Title>
+                        <Values>
                         <Service>
                             <Name>{(this.props.isEng)?"Service":"Servicio"}</Name>
                             <Description  className="service">

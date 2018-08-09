@@ -33,8 +33,7 @@ class Timeline extends Component {
       <Container>
         <Navbar/>
         <Wrapper>
-          <GradeLevel lang={this.props.isEng} timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]} changeGrade={this.state.changeGrade.bind(this)}/>
-          <Main timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]}/>
+          <Main isEng={this.props.isEng} timeline={this.props.isEng?EngTimelines[this.state.grade]:EspTimelines[this.state.grade]} changeGrade={this.state.changeGrade.bind(this)}/>
         </Wrapper>
       </Container>
     );

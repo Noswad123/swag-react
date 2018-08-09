@@ -243,6 +243,22 @@ const Team = [
       "I am a sophomore at Rice University, majoring in computer science. I am a SWAG to College Data Analyst/Mentor/Blogger. Additionally I do research in the Rice environmental engineering department, have taught creative writing classes in middle schools across the country, and am president of Fastwarp board game club. In my work analyzing data with SWAG To College I hope to ensure that we are serving our mentees in the ways they need us most. At the moment, after college I plan to attend grad school to study renewable energies' development and policy.",
     imgUrl: "./img/joanna-slu.jpg",
     domain: "Intern"
+  },
+  {
+    name: "Shannen Garza",
+    position: "Advisor",
+    bio:
+      "Shannen Garza currently serves as the Director of Alumni Affairs at YES Prep Public Schools. Her work centers around working with 5,000+ alumni to increase matriculation, persistence, and college graduation among the alumni student body. She previously served as a College Counselor at KIPP Houston High School and Program Coordinator at Genesys Works working to expand college access for underserved minority students. She holds a degree in Communications from the University of St. Thomas and a MA in Cross-Cultural Studies from the University of Houston-Clear Lake.",
+    imgUrl: "./img/shannen-garza.jpg",
+    domain: "Board of Advisors"
+  },
+  {
+    name: "Randi Jones",
+    position: "Advisor",
+    bio:
+      "Randi Lawrence Jones joined YES Prep Public School as its Managing Director of College Initiatives in Spring of 2017 where she is over both College Readiness and Alumni Support Programs and has a strong belief in promoting multiple pathways to college and life success. Prior to this role, Randi served as the Executive Director for The Princeton's Review's business in Georgia and Alabama, providing broad oversight over sales, program quality, execution of strategic initiatives and overall profitability of the region. Her background sprung from her time in New York City as National Director of Recruitment at New Leaders Org. where she re-designed the national teacher recruitment strategy which allowed for excessive growth within the applicant pool and consistently hitting matriculation targets year over year. Randi received her BA in Political Science at Northwestern State University and her Master’s in Public Policy from New England College and holds additional certifications from both Harvard School of Education and Columbia School of Business.",
+    imgUrl: "./img/randi-johnson.jpg",
+    domain: "Board of Advisors"
   }
 ];
 

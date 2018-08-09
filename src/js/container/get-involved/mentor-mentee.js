@@ -16,6 +16,7 @@ const Blurb = styled.div`
   margin-bottom: 30px;
 `
 const Pic = styled.img`
+  width:200px;
   height:200px;
   margin-bottom: 10px;
   border-radius:100%;

@@ -76,15 +76,15 @@ class SecondPart extends Component {
         <PicRow>
           <Pic src={"./img/squarehs.jpg"} altText="hs" />
           <Quote>
-          You cannot change the circumstances, the seasons, or the wind, but you can change yourself. That is something you have.
+          “This program makes it so easy to find someone who is willing to give you free advice, motivation, and support.” - Nadia 2020
           </Quote>
           <Pic src={"./img/squarecollege.jpg"} altText="college"/>
           <Quote>
-            Every Action in our lives touches on some chord that will vibrate in eternity
+          “Swag to college has truly helped me feel more motivated and supported.” - Acsa 
           </Quote>
           <Pic src={"./img/squareyp.png"} altText="yp"/>
           <Quote>
-            When you do the common things in life in an uncommon way, you will command the attention of the world.
+          “SWAG helps younger students interact with older students that have gone through the same things.” -Rosmany
           </Quote>
         </PicRow>
         <Text>
@@ -94,15 +94,15 @@ class SecondPart extends Component {
           <Pic src={"./img/community-members.jpg"} altText="community members" />
           
           <Quote>
-            You must be the change you wish to see in the world.
+          “My mentor wanted to know about any concerns I had which allowed me to feel heard.” -Jessica
           </Quote>
           <Pic src={"./img/squareparent.jpeg"} altText="parent" />
           <Quote>
-            Learn from yesterday, live for today, hope for tomorrow.
+          “Swag to college has a great mission statement, and follows through very efficiently. This is an amazing service that I’m glad I got a chance to be in.” -Kailey
           </Quote>
           <Pic src={"./img/jim.jpg"} altText="mentee"/>
           <Quote>
-            In any moment of decision, the best thing you can do is the right thing. The worst thing you can do is nothing.
+            “SWAG To College gives students a chance to make an impact in their community, whether in school or other peers that do not know about the college process.”          
           </Quote>
         </PicRow>
     </ Container >);
