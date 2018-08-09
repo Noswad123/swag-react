@@ -12,7 +12,10 @@ const Container = styled.div `
   color:${Styles.color.font1};
 `
 const ParalaxWrap = styled.div`
-  background:url(./img/homepage.png);
+  //background:url(./img/homepage.png);
+ //background:url(./img/test.jpg);
+ background:url(./img/mentee-home.jpg);
+  
   background-size:cover;
   background-repeat:no-repeat;
   background-attachment: fixed;

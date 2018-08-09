@@ -11,7 +11,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    background-color:${Styles.color.tertiary};
+    background-color:${Styles.color.secondary};
     color:${Styles.color.font1};
 `;
 const Title =styled.div`
