@@ -32,7 +32,6 @@ const Wrapper =styled.div`
   flex-direction:column;
   align-items:center;
   justify-content:space-between;
-  border:solid ${Styles.color.accent};
   width:35%;
   padding:20px;
 `

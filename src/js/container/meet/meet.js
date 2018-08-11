@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React, {Component} from 'react';
 import Styles from '../../style/styles';
 import Team from '../../data/team.data';
-import TeamMember from './team-meet';
+import TeamMember from './team-member';
 import FilterOption from './filter-meet'
 import PopUP from './popup';
 import {connect} from 'react-redux';
@@ -85,7 +85,8 @@ class Meet extends Component{
                 <Filter>                
                     <FilterOption key="all" filterName="All" current={this.state.current} changeFilter={this.changeFilter.bind(this)}>{(this.props.isEng)?"All":"Todos"}</FilterOption>
                     <FilterOption key="board" changeFilter={this.changeFilter.bind(this)} current={this.state.current} filterName="Board of Directors" >{(this.props.isEng)?"Board of Directors":"Los directores"}</FilterOption>
-                    <FilterOption key="intern" changeFilter={this.changeFilter.bind(this)}  current={this.state.current} filterName="Intern">{(this.props.isEng)?"Interns":"Need translation"}</FilterOption>
+                    <FilterOption key="intern" changeFilter={this.changeFilter.bind(this)}  current={this.state.current} filterName="Interns">{(this.props.isEng)?"Interns":"Need translation"}</FilterOption>
+                    <FilterOption key="advisors" changeFilter={this.changeFilter.bind(this)}  current={this.state.current} filterName="Board of Advisors">{(this.props.isEng)?"Board of Advisors":"Need translation"}</FilterOption>
                 </Filter>
                 </Wrapper>
                 <PopUP closePopUp={this.closePopUp.bind(this)} display={this.changePopUp()} img={Team[this.state.selectedStaff].imgUrl} name={Team[this.state.selectedStaff].name} bio={Team[this.state.selectedStaff].bio} position={Team[this.state.selectedStaff].position}/>
