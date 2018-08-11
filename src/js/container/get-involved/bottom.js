@@ -27,19 +27,26 @@ const BlueDiv=styled.div`
     border-right:solid ${Styles.color.secondary} 20px;
     border-top:solid ${Styles.color.secondary} 20px;
     border-bottom:solid ${Styles.color.secondary} 20px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    
     width:20%;
     color:${Styles.color.font2};
     height:250px;
     a{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
         text-decoration:none;
+        height:100%;
+        width:100%;
+        
+        &:hover{
+            cursor:pointer;
+        }
     }
     &:hover{
         background-color:${Styles.color.accent};
-        cursor:pointer;
+        
     }
 `
 const Pic=styled.img`

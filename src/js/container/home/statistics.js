@@ -26,6 +26,7 @@ const Statistic=styled.div`
   flex-direction:column;
   align-items:center;
   padding:20px;
+  font-family:${Styles.font.title};
 `
 const Icon=styled.img`
   width:100px;

@@ -259,6 +259,20 @@ const Team = [
       "Randi Lawrence Jones joined YES Prep Public School as its Managing Director of College Initiatives in Spring of 2017 where she is over both College Readiness and Alumni Support Programs and has a strong belief in promoting multiple pathways to college and life success. Prior to this role, Randi served as the Executive Director for The Princeton's Review's business in Georgia and Alabama, providing broad oversight over sales, program quality, execution of strategic initiatives and overall profitability of the region. Her background sprung from her time in New York City as National Director of Recruitment at New Leaders Org. where she re-designed the national teacher recruitment strategy which allowed for excessive growth within the applicant pool and consistently hitting matriculation targets year over year. Randi received her BA in Political Science at Northwestern State University and her Master’s in Public Policy from New England College and holds additional certifications from both Harvard School of Education and Columbia School of Business.",
     imgUrl: "./img/randi-johnson.jpg",
     domain: "Board of Advisors"
+  },
+  {
+    name: "John Hansen, Ph.D",
+    position: "Advisor",
+    bio:
+      `Elected to the Houston Community College Board of Trustees in November 2015, Dr. John P. Hansen represents District VI.  Trustee Hansen served on the Board of the Alief Independent School District for 22 years, including three terms as Board President.  During his tenure, Alief ISD passed three bond issues, which resulted in the construction of 17 new schools and laid the groundwork for such District improvements as the Career and Technology Education (CTE) Center and Pre-Kindergarten pods at each elementary school. 
+
+      Trustee Hansen has made a long-lasting impact in the Alief community with contributions including: the creation of a magnet academic program for gifted and talented students at the elementary level; improving college readiness for graduating students through building relationships with HCC; and giving Alief ISD one of the lowest tax rates in the region while moving teacher salaries to among the highest in the region and producing a major turnaround in student academic success.  Trustee Hansen has served for 20 years on the Alief ISD Education Foundation Board of Directors, including numerous terms as President of the Foundation Board.  During his tenure, the Alief ISD Foundation has increased fundraising by a factor of 15.  In addition, Trustee Hansen serves as the Chairman of the Boy Scouts of America Tatanka (Alief) District.  He also served as Co-Chair of the successful capital campaign to build the Alief YMCA.
+      
+      Trustee Hansen holds a Bachelor of Science degree in Mathematics from Spring Hill College in Mobile, Alabama and Master of Arts and Doctor of Philosophy degrees in Economics from Rice University.  A resident of the Alief area since 1980, he has lengthy experience as a college professor at the University of St. Thomas, Ohio Wesleyan University and Houston Baptist University, where he was President of the Faculty Assembly.  He also has extensive experience as a business consultant and has served on a number of corporate boards.
+      
+      As the newest member of the HCC Board of Trustees, Trustee Hansen intends to bring his many years of experience on the Alief ISD Board to the service of the College and expects to play a constructive and integral part in taking the College to even higher levels of success.  Trustee Hansen believes that, other than the statutory functions, the most important role of a governing board is to create a supportive environment in which the professional staff are encouraged to achieve their individual and group potential.  Trustee Hansen initial areas of interest will be to enhance the effectiveness of the Student Success Initiative, to enhance programs to improve the quality of instruction and to expand programs for workforce development.`,
+    imgUrl: "./img/john-hansen.jpg",
+    domain: "Board of Advisors"
   }
 ];
 

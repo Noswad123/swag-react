@@ -3,17 +3,15 @@ import styled from "styled-components";
 import Styles from "../../../style/styles";
 
 const Container = styled.div`
- 
   max-width:70%;
   margin-bottom: 16px;
   margin-top: ${Styles.size.m};
   z-index:1;
- 
 `;
 
 
 const Text = styled.p`
-  font-size: 20px;
+  font-size: 30px;
   color: ${Styles.color.font1};
   text-align: center;
   font-family: ${Styles.font.text};

@@ -88,7 +88,7 @@ class ContactUs extends Component{
                     <Row>
                     <Contact>
                         <Logo>
-                            <img src={"./img/inbox-icon.png"}/>
+                            <img src={"./img/inbox-icon.png"} alt="general inquiries"/>
                             </Logo>
                         <Header >   ​General Inquiries</Header>
                         <Name> Raj Salhotra</Name>
@@ -96,7 +96,7 @@ class ContactUs extends Component{
                     </Contact>
                     <Contact>
                         <Logo>
-                            <img src={"./img/library-icon.png"}/>
+                            <img src={"./img/library-icon.png"} alt="HS Program"/>
                         </Logo>
                         <Header> High School Program</Header>
                         <Name>​​Graciela Lopez</Name>
@@ -106,7 +106,7 @@ class ContactUs extends Component{
                     <Row>
                     <Contact>
                         <Logo>
-                            <img src={"./img/student-hat-icon.png"}/>
+                            <img src={"./img/student-hat-icon.png"} alt="Upper Classmen"/>
                         </Logo>
                         <Header> Upperclassmen Program</Header>
                         <Name>​​Jennifer Dzul</Name>
@@ -114,7 +114,7 @@ class ContactUs extends Component{
                     </Contact>
                     <Contact>
                         <Logo>
-                            <img src={"./img/network-icon.png"}/>
+                            <img src={"./img/network-icon.png"} alt="yp"/>
                         </Logo>
                         <Header> Young Professional Program</Header>
                         <Name>Maddie Coles</Name>

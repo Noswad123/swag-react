@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import EngTimelines from '../../data/timeline-eng.data';
 import EspTimelines from '../../data/timeline-esp.data';
-import GradeLevel from './grade-level-timeline';
 import Main from './main-timeline';
 import {connect} from 'react-redux'
 import Navbar from "../../component/navbar"

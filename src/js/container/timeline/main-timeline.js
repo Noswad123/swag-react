@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import Styles from '../../style/styles'
 import Months from './months-main-timeline';
 import GradeLevels from './grade-level-timeline';
-import EngTimelines from '../../data/timeline-eng.data';
-import EspTimelines from '../../data/timeline-esp.data';
 
 const Container = styled.div`
     width:80%;

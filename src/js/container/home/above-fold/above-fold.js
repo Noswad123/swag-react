@@ -12,8 +12,6 @@ const Container = styled.div `
   color:${Styles.color.font1};
 `
 const ParalaxWrap = styled.div`
-  //background:url(./img/homepage.png);
- //background:url(./img/test.jpg);
  background:url(./img/mentee-home.jpg);
   
   background-size:cover;
@@ -47,7 +45,7 @@ const Cover=styled.div`
 position:absolute;
 width:100%;
 height:100%;
-opacity:.2;
+opacity:.25;
 background-color:${Styles.color.primary};`
 class AboveFold extends Component {
   render() {

@@ -82,7 +82,7 @@ class SecondPart extends Component {
           <Quote>
           “Swag to college has truly helped me feel more motivated and supported.” - Acsa 
           </Quote>
-          <Pic src={"./img/squareyp.png"} altText="yp"/>
+          <Pic src={"./img/computer-mentee.jpg"} altText="computer"/>
           <Quote>
           “SWAG helps younger students interact with older students that have gone through the same things.” -Rosmany
           </Quote>
@@ -98,11 +98,11 @@ class SecondPart extends Component {
           </Quote>
           <Pic src={"./img/squareparent.jpeg"} altText="parent" />
           <Quote>
-          “Swag to college has a great mission statement, and follows through very efficiently. This is an amazing service that I’m glad I got a chance to be in.” -Kailey
+          “SWAG has a great mission statement. This is an amazing service that I’m glad I got a chance to be in.” -Kailey
           </Quote>
-          <Pic src={"./img/jim.jpg"} altText="mentee"/>
+          <Pic src={"./img/swarthmouth-mentee.jpg"} altText="mentee"/>
           <Quote>
-            “SWAG To College gives students a chance to make an impact in their community, whether in school or other peers that do not know about the college process.”          
+            “SWAG gives students a chance to make an impact in their community.”          
           </Quote>
         </PicRow>
     </ Container >);

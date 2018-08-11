@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Styles from "../../style/styles";
 import { connect } from "react-redux";
 const Container=styled.div`
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items:flex-end;
   width:100%;
