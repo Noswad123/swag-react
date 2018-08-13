@@ -10,6 +10,7 @@ const Container = styled.div`
     width:100%;
     background-color:${Styles.color.primary};
     color:${Styles.color.font1};
+    font-size:20px;
     padding:20px;
     p{
         width:70%;
@@ -28,7 +29,7 @@ const Container = styled.div`
 
 `;
 const Title = styled.div`
-  font-size: ${Styles.size.m};
+  font-size: ${Styles.size.l};
   font-family: ${Styles.font.title};
   text-transform: uppercase;
 `;

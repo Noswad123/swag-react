@@ -14,7 +14,7 @@ const Container=styled.div`
     margin:40px;
     @media (max-width: 580px) {
         bottom:30%;
-    }   
+    } 
     box-sizing:border-box;
 `
 
@@ -23,7 +23,6 @@ export default class Description extends React.Component{
         return (
             <Container style={{padding:this.props.description===""?0:20}}>
                 {this.props.description}
-                
             </Container>
         )  
     }
