@@ -19,6 +19,9 @@ cursor:pointer;
     color: ${Styles.color.accent};
     border: solid ${Styles.color.accent};
 }
+@media (max-width: 500px) {
+    font-size:20px;
+  }
 `
 const slide = keyframes`
     0% {
@@ -47,6 +50,10 @@ const Steps= styled.div`
   animation-timing-function: ease-in-out;
   padding:10px;
   font-family:${Styles.font.text};
+
+  @media (max-width: 500px) {
+    font-size:15px;
+  }
 `
 export default class Months extends Component{
     render(){

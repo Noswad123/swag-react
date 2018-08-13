@@ -112,6 +112,17 @@ const Team = [
     domain: "Interns"
   },
   {
+    name: "Stephanie Square",
+    position: "Board Member",
+    bio:`Stephanie Square, along with her twin sister, was born in Houston, Texas to immigrant parents. Both parents are native to Nicaragua and moved to the United States to escape perils of civil war and to provide their children better opportunities.  In the next five years, the family grew by three, a new sister three years later, and another set of twin girls two years after that. Stephanie is a product of Houston ISD schools, and graduated with distinguished honor roll from Texas Southern University. She is also a graduate of Rice University’s Jones Graduate School of Business. Square began her teaching career as an Algebra I teacher at Yates High School, where she also served as a lead teacher, varsity soccer coach, and math department chairperson. In 2011, she won Teacher of the Year. She also served as a Teacher Specialist at Wheatley High School and Assistant Principal at North Forest High School. As an Assistant Principal at Austin High School, she led the mathematics department, oversaw dual credit programming, and executed a plan to increase linkage and usage of Khan Academy and College Board resources. 
+
+    Stephanie currently serves as principal of East Early College High School in Houston’s East End. She is most proud for the opportunity to support first generation college goers like herself. 
+    
+    Stephanie Square has been married for 14 years and is a proud mom of three boys, including a set of identical twins. `,
+    imgUrl: "./img/stephanie-square.jpg",
+    domain: "Board of Directors"
+  },
+  {
     name: "Nancy Uroza",
     position: "Intern",
     bio: `Hi! My name is Nancy Uroza and I am a first-generation college sophomore at the University of Houston-Downtown. I am currently working towards a Bachelor of Art degree in Mathematics with a minor in General Business. I am still unsure about what I plan to do with my degree but, as of right now, I am looking into becoming an actuary. I hope that whatever my future career is, I am able to make enough money so that I can create my own non-profit organization and focus on helping orphan children and/or scholars.

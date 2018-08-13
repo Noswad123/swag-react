@@ -12,7 +12,7 @@ const Container = styled.div `
   color:${Styles.color.font1};
 `
 const ParalaxWrap = styled.div`
- background:url(./img/mentee-home.jpg);
+ background-image:url(./img/mentee-home.jpg);
   
   background-size:cover;
   background-repeat:no-repeat;

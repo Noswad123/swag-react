@@ -17,7 +17,14 @@ const Title = styled.div`
     font-family:${Styles.font.title};
     color:${Styles.color.font1};
     font-weight:700;
-    text-transform:uppercase;`
+    text-transform:uppercase;
+    @media (max-width: 420px) {
+        font-size:70px;
+      }
+      @media (max-width: 3500px) {
+        font-size:50px;
+      }
+      `
 const Goals = styled.ul`
     font-size:20px;
     color:${Styles.color.font1};
@@ -25,6 +32,9 @@ const Goals = styled.ul`
     li{
         margin-top:10px;
     }
+    @media (max-width: 500px) {
+        font-size:15px;
+      }
 `
 
 export default class Main extends Component{

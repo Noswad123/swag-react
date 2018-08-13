@@ -32,15 +32,18 @@ const Container=styled.div`
    
 `
 const Name=styled.div``
-const Picture=styled.img`
-height:250px;
-object-fit:cover;
-object-position:0% 0%`
+const Picture=styled.div`
+    height:200px;
+    width:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:top;
+`
 const Wrapper=styled.div`
 color:${Styles.color.font1};
 display:flex;
 width:100%;
-height:100%;
+height:100px;
 flex-direction:column;
 align-items:center;
 justify-content:center;
@@ -51,7 +54,11 @@ export default class TeamMember extends Component {
     render(){
         return(
             <Container onClick={()=>this.props.openPopUp(this.props.id)}>
-                <Picture src={this.props.img} alt={this.props.name}/>
+                <Picture style={{
+                    
+                    backgroundImage:`url(${this.props.img})`,
+
+                    }}/>
                 <Wrapper>
                 <Name>{this.props.name}</Name>
                 <Position>{this.props.position}</Position>

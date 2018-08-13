@@ -24,8 +24,8 @@ box-sizing: border-box;
   align-items:center;
   justify-content:center;
 }
-@media (max-width: 369px) {
-  padding:0px;
+@media (max-width: 560px) {
+  display:none;
 }
 z-index:8000;
 `;
@@ -70,9 +70,7 @@ const Links = styled.ul`
     text-decoration:none;
   }
 }
-  @media (max-width: 560px) {
-    display:none;
-  }
+  
 `;
 
 class Navbar extends React.Component {

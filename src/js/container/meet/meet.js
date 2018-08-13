@@ -8,6 +8,7 @@ import PopUP from './popup';
 import {connect} from 'react-redux';
 import Navbar from "../../component/navbar"
 const Container=styled.div`
+min-height:100vh;
 `
 const Header=styled.div`
     font-family:${Styles.font.header};

@@ -9,7 +9,6 @@ import store from "./js/redux/store";
 import styled from "styled-components";
 import Styles from "./js/style/styles";
 
-
 import Footer from "./js/component/footer";
 import Checkin from "./js/container/checkin/checkin";
 import CheckinForms from "./js/container/checkin/checkin-forms";

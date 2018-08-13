@@ -14,11 +14,18 @@ top:25%;
 left:50%;
 z-index:5;
 overflow-y:scroll;
+@media (max-width: 1050px) {
+    flex-direction:column;
+} 
 `
 const Picture=styled.img`
 height:250px;
 object-fit:cover;
-object-position:0% 0%
+//object-position:0% 0%
+@media (max-width: 1050px) {
+    max-height:300px;
+    object-fit:contain;
+} 
 `
 const Name=styled.h1`
 color:${Styles.color.font1};`

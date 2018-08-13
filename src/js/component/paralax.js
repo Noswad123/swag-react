@@ -15,19 +15,17 @@ const Container = styled.div `
   z-index:2;
 
   position:relative;
+  
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 `
 class Paralax extends Component {
   render() {
     return ( 
-      < Container style={{
-        background:`url(${this.props.background})`,
-        backgroundSize:"cover",
-        backgroundRepeat:"no-repeat",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-        }}> 
-        
-    </ Container >);
+      < Container style={{backgroundImage:`url(${this.props.background})`}}/>
+    );
   }
 }
 

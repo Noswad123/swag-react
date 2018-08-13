@@ -18,15 +18,31 @@ const Container = styled.div `
   padding:10px 40px;
   box-sizing:border-box;
   min-height:250px;
+  @media (max-width: 880px) {
+    flex-direction:column;
+  }
   
 `
+const Row=styled.div`
+width:50%;
+display: flex;
+justify-content:space-around;
+@media (max-width: 880px) {
+  width:100%;
+}
+@media (max-width: 500px) {
+  flex-direction:column;
+  align-items:center;
+}
+`
 const Statistic=styled.div`
-  width:25%;
+  width:40%;
   display:flex;
   flex-direction:column;
   align-items:center;
   padding:20px;
   font-family:${Styles.font.title};
+  text-align:center;
 `
 const Icon=styled.img`
   width:100px;
@@ -34,7 +50,8 @@ const Icon=styled.img`
 class Statistics extends Component {
   render() {
     return ( 
-      < Container > 
+      < Container >
+      <Row> 
         <Statistic>
           <Icon src={GradCap}/>
           College Matriculation Rate:
@@ -51,6 +68,8 @@ class Statistics extends Component {
           <br/>
           National Average: 40%
         </Statistic>
+        </Row>
+        <Row>
         <Statistic>
         <Icon src={Chart}/>
           85% of SWAG Students qualify for Free/Reduced Lunch
@@ -59,6 +78,7 @@ class Statistics extends Component {
         <Icon src={Person}/>
           First Generation Students Make Up 78% of Our Community
         </Statistic>
+        </Row>
     </Container>);
   }
 }

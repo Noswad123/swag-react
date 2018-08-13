@@ -3,16 +3,25 @@ import styled from "styled-components";
 import Styles from "../../../js/style/styles";
 import { Link} from 'react-router-dom';
 import LangToggle from "./lang-toggle";
+import logo from "../../../images/swag-logo-white.png";
 
 const Container = styled.div`
     color: ${Styles.color.font1};
     height:100%;
- 
+    padding:20px;
     display:flex;
-    justify-content: center;
+    flex-direction:column;
+    justify-content: space-around;
     align-items:center;
 `;
-
+const SWAGLogo =styled.img`
+display:none;
+height:30px;
+@media (max-width: 720px) {
+    display:initial;
+    bottom:30%;
+}
+`
 const LinkList =styled.div`
     height:250px;
     display:flex;
@@ -39,7 +48,9 @@ export default class DynamicContent extends Component {
     render() {
         return (
             <Container>
+                <Link to="/"><SWAGLogo src={logo}/></Link>
                 <LinkList >
+                
                     <Link to="/aboutus">About</Link>
                     <Link to="/getinvolved">Get Involved</Link>
                     <Link to="/timeline">Timeline</Link> 
