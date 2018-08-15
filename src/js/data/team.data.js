@@ -177,6 +177,13 @@ const Team = [
     domain: "Board of Directors"
   },
   {
+    name: "Rick Cruz",
+    position: "Advisor",
+    bio: `Rick Cruz currently serves as the Chief Strategy & Innovation Officer for the Houston Independent School District. In that role, he is responsible for overseeing a wide portfolio of programming and initiatives aimed at promoting equity, increasing educational opportunities, and driving student achievement. He’s held a number of other senior leadership roles within the district all focused on preparing students for postsecondary success. After graduating from Yale, Rick worked at the law firm of Baker Botts before joining Teach for America, through which he became a fifth grade bilingual teacher in Houston ISD. His experiences in the classroom led him to found EMERGE, a college readiness, access, and persistence program that helps talented low-income students attend and graduate from the nation’s top colleges and universities. Rick successfully entered into a public-private partnership with Houston ISD and led the expansion of the program from one high school to 45 high schools.  Rick’s passion is helping students – particularly those from underserved communities – prepare to be successful in college.  This is why he strongly supports programs like SWAG To College that are bridging the college opportunity gap. Rick also holds a master’s and a doctorate in educational leadership and policy from the University of Texas at Austin.`,
+    imgUrl: "./img/rick-cruz.jpg",
+    domain: "Board of Advisors"
+  },
+  {
     name: "Eduardo Garcia",
     position: "Intern",
     bio:

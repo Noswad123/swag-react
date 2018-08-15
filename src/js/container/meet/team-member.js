@@ -9,7 +9,7 @@ const Container=styled.div`
     background-color:${Styles.color.primary};
     align-items: center;
     justify-content:space-between;
-    height:300px;
+    height:270px;
     position:relative;
     margin-bottom:10px;
     cursor:pointer;
@@ -33,7 +33,7 @@ const Container=styled.div`
 `
 const Name=styled.div``
 const Picture=styled.div`
-    height:200px;
+    height:220px;
     width:100%;
     background-size:cover;
     background-repeat:no-repeat;
@@ -43,7 +43,7 @@ const Wrapper=styled.div`
 color:${Styles.color.font1};
 display:flex;
 width:100%;
-height:100px;
+height:50px;
 flex-direction:column;
 align-items:center;
 justify-content:center;
