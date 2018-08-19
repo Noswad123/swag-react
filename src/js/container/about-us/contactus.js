@@ -39,13 +39,19 @@ const ContentWrapper=styled.div`
     margin-top:50px;
 `
 const Row=styled.div`
-    width:80%;
+    width:50%;
     display:flex;
     padding:0 20px;
     box-sizing:border-box;
     color:${Styles.color.font2};
    justify-content:space-between;
    align-items:center;
+   @media (max-width: 1140px) {
+        width:60%;
+    }
+    @media (max-width: 880px) {
+        width:75%;
+    }
    @media (max-width: 700px) {
         flex-direction:column;
     }

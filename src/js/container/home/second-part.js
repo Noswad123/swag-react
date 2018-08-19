@@ -49,7 +49,7 @@ const PicRow = styled.div`
 `
 const Pic=styled.img`
   
-width:15vw;
+
 height:15vw;
 `
 const Quote =styled.div`
@@ -76,33 +76,35 @@ class SecondPart extends Component {
         <PicRow>
           <Pic src={"./img/squarehs.jpg"} altText="hs" />
           <Quote>
-          “This program makes it so easy to find someone who is willing to give you free advice, motivation, and support.” - Nadia 2020
+            “This program makes it so easy to find someone who is willing to give you free advice, motivation, and support.” -Nadia
           </Quote>
           <Pic src={"./img/squarecollege.jpg"} altText="college"/>
           <Quote>
-          “Swag to college has truly helped me feel more motivated and supported.” - Acsa 
+            “Swag to college has truly helped me feel more motivated and supported.” -Acsa 
           </Quote>
           <Pic src={"./img/computer-mentee.jpg"} altText="computer"/>
           <Quote>
-          “SWAG helps younger students interact with older students that have gone through the same things.” -Rosmany
+            “SWAG helps younger students interact with older students that have gone through the same things.” -Rosmany
           </Quote>
         </PicRow>
+
         <Text>
           Mentorship for success
         </Text>
+        
         <PicRow>
-          <Pic src={"./img/community-members.jpg"} altText="community members" />
+          <Pic src={"./img/panel1.jpg"} altText="community members" />
           
           <Quote>
-          “My mentor wanted to know about any concerns I had which allowed me to feel heard.” -Jessica
+            “My mentor wanted to know about any concerns I had which allowed me to feel heard.” -Jessica
           </Quote>
           <Pic src={"./img/squareparent.jpeg"} altText="parent" />
           <Quote>
-          “SWAG has a great mission statement. This is an amazing service that I’m glad I got a chance to be in.” -Kailey
+            “SWAG has a great mission statement. This is an amazing service that I’m glad I got a chance to be in.” -Kailey
           </Quote>
           <Pic src={"./img/swarthmouth-mentee.jpg"} altText="mentee"/>
           <Quote>
-            “SWAG gives students a chance to make an impact in their community.”          
+            “SWAG gives students a chance to make an impact in their community.”   -James       
           </Quote>
         </PicRow>
     </ Container >);

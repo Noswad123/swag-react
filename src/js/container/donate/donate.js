@@ -7,14 +7,14 @@ import GoFundMeLogo from "../../../images/gofundme.png"
 import Navbar from "../../component/navbar"
 
 const Container = styled.div`
-    min-height:90vh;
+    min-height:100vh;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     background-color:${Styles.color.secondary};
     color:${Styles.color.font1};
-    padding:50px;
+  
 `;
 const Title =styled.div`
 font-size:${Styles.size.l};
@@ -25,26 +25,40 @@ text-transform:uppercase;
 const Text =styled.div`
   margin:20px;
   font-family:${Styles.font.text};
-  font-size:30px;
+  font-size:25px;
 `
 const Wrapper =styled.div`
   display: flex;
-  flex-direction:column;
   align-items:center;
-  justify-content:space-between;
-  width:35%;
+  justify-content:space-around;
+  width:100%;
+  height:200px;
   padding:20px;
+  background-color:${Styles.color.primary};
+  margin-bottom:50px;
 `
 const FundingDiv=styled.div`
-img{
-  height:50px;
-}
-margin-bottom:30px;
-`
-const PayPal =FundingDiv.extend`
-`
 
+  
+`
+const Circle=styled.div`
+  height:100px;
+  width:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:${Styles.color.accent};
+  border-radius:100%;
+  `
+const PayPal =FundingDiv.extend`
+  img{
+    height:75px;
+  }
+`
 const GoFundMe =FundingDiv.extend`
+  img{
+    height:50px;
+  }
 `
 
 class Donate extends Component {
@@ -62,9 +76,11 @@ class Donate extends Component {
     <Text>
         or
     </Text>
-    <PayPal>
-        <a href="https://www.paypal.com/fundraiser/charity/1832625" target="_blank" rel="noopener noreferrer"><img src={PayPalLogo} alt="Pay Pal"/></a>
-        </PayPal>
+    <Circle>
+      <PayPal>
+          <a href="https://www.paypal.com/fundraiser/charity/1832625" target="_blank" rel="noopener noreferrer"><img src={PayPalLogo} alt="Pay Pal"/></a>
+      </PayPal>
+    </Circle>
         </Wrapper>
       </Container>
     );

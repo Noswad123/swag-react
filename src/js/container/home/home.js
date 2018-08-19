@@ -18,6 +18,9 @@ const Container = styled.div `
   postion:absolute;
 `
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     return ( 
       < Container > 
@@ -25,7 +28,7 @@ class Home extends Component {
         <Statistics />
         <Paralax background="./img/jls-3073_orig.jpg"/>
         <SecondPart/>
-        <Paralax background="./img/interns.jpg"/>
+        <Paralax background="./img/homebottom.jpg"/>
     </Container>);
   }
 }

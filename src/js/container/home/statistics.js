@@ -37,6 +37,7 @@ justify-content:space-around;
 `
 const Statistic=styled.div`
   width:40%;
+  height:200px;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -46,6 +47,7 @@ const Statistic=styled.div`
 `
 const Icon=styled.img`
   width:100px;
+  margin-bottom:20px;
 `
 class Statistics extends Component {
   render() {
@@ -54,7 +56,7 @@ class Statistics extends Component {
       <Row> 
         <Statistic>
           <Icon src={GradCap}/>
-          College Matriculation Rate:
+          College Matriculation Rate
           <br/>
           SWAG Average: 88%
            <br/>
@@ -62,7 +64,7 @@ class Statistics extends Component {
         </Statistic>
         <Statistic>
         <Icon src={Pencil}/>
-          College Retention Rate:
+          College Retention Rate
           <br/>
           SWAG Average: 74% 
           <br/>

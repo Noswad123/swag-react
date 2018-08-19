@@ -21,15 +21,19 @@ const Title = styled.div`
     @media (max-width: 420px) {
         font-size:70px;
       }
-      @media (max-width: 3500px) {
+      @media (max-width: 350px) {
         font-size:50px;
       }
       `
-const Goals = styled.ul`
+const Goals = styled.div`
     font-size:20px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    padding:50px;
     color:${Styles.color.font1};
     list-style:none;
-    li{
+    div{
         margin-top:10px;
     }
     @media (max-width: 500px) {
@@ -45,7 +49,7 @@ export default class Main extends Component{
                 <GradeLevels isEng={this.props.isEng} timeline={this.props.timeline} changeGrade={this.props.changeGrade.bind(this)}/>
                 <Goals>
                     {this.props.timeline.goals.map((element,index) => {
-                        return <li key={index}>{element}</li>
+                        return <div key={index}>{element}</div>
                     })}
                 </Goals>
                 <Months timeline={this.props.timeline}/>

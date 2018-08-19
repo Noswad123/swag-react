@@ -15,7 +15,7 @@ const Container = styled.div`
     align-items:center;
 `;
 const SWAGLogo =styled.img`
-display:none;
+
 height:30px;
 @media (max-width: 720px) {
     display:initial;

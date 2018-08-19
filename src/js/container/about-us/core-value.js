@@ -7,8 +7,8 @@ const Container=styled.div`
     z-index:5;
     min-height:70vh;
     width:100%;
-    background:url(./img/meet-the-team_orig.jpg);
-    background-size:contain;
+    background:url(./img/interns.jpg);
+    background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position:center;
@@ -23,12 +23,14 @@ const Wrapper=styled.div`
     min-height:70vh;
     padding:100px 100px;
     box-sizing:border-box;
+    background-color:rgba(9,51,93,.2);
+    
 `
 const Title=styled.div`
     font-family:${Styles.font.title};
     color:${Styles.color.font1};
     font-size:${Styles.size.l};
-
+    
     text-transform:uppercase;
     @media (max-width: 480px) {
         font-size:60px;
@@ -74,6 +76,7 @@ const Name=styled.div`
     justify-content:center;
     color:${Styles.color.font1};
     font-family:${Styles.font.title};
+    
     text-transform:uppercase;
     @media (max-width: 700px) {
         width:100px;

@@ -56,7 +56,7 @@ export default class AboveFold extends Component {
                 Get Involved
             </Title>
             <Text>
-            We all know someone, whether ourselves, a friend, or a daughter who wants to pursue higher education, but doesn’t know where to start. We believe everyone deserves equal access to the information needed to apply and succeed in college. At Swag, we pair students with mentors that will guide them through the application process. Join us today to be a part of our growing community. 
+            We all know someone, whether ourselves, a friend, or a family member who wants to pursue higher education, but doesn’t know where to start. We believe everyone deserves equal access to the information needed to apply and succeed in college. At Swag, we pair students with mentors that will guide them through the application process. Join us today to be a part of our growing community. 
 
             </Text>
           </Top>

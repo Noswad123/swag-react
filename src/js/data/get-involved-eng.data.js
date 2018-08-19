@@ -32,22 +32,22 @@ const EngInvolved = [
     options: [
       {
         title: "Mentor",
-        summary: "Are you interested in helping an underserved, first-generation, low-income high school student reach college? If so, consider signing up to be a mentor. Through this program, you will be paired with a high school student whom you check-in with weekly to support through high school and the college application process.",
+        summary: "Through this program, you will be paired with a high school student whom you check-in with weekly to support through high school and the college application process.",
         form: "collegementor"
       },
       {
         title: "Upper Classman Mentee",
-        summary: "Are you a freshman or sophomore in college? Would you like some support through these first two years of college? If so, consider signing up for an Upperclassman mentor. Through this program, you will be paired with a junior or senior in college who will guide you through these first two years of college.",
+        summary: "Through this program, you will be paired with a junior or senior in college who will guide you through these first two years of college.",
         form: "uppermentee"
       },
       {
         title: "Upper Classmen Mentor",
-        summary: "Are you a junior or senior in college? Would you like to support a freshman or sophomore through the first two years of college? If so, consider becoming an Upperclassman mentor. Through this program, you will be paired with a freshman or sophomore in college whom you will check-in with monthly to support them through college.",
+        summary: "Through this program, you will be paired with a freshman or sophomore in college whom you will check-in with monthly to support them through college.",
         form: "uppermentor"
       },
       {
         title: "Young Professional Mentee",
-        summary: "Are you a junior or senior in college? Would you like support to reach your career goals? If so, consider signing up for a Young Professional mentor. Through this program, you will be paired with a Young Professional in your career field who can help you reach your career goals. ",
+        summary: "Through this program, you will be paired with a Young Professional in your career field who can help you reach your career goals. ",
         form: "ypmentee"
       }
     ]

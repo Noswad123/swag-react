@@ -6,10 +6,11 @@ import Styles from '../../style/styles';
 const Container=styled.div`
     display:flex;
     align-items:center;
-    background-color:${Styles.color.primary};
+    background-color:rgba(9,51,93,.5);
+    
     color:${Styles.color.font1};
     font-size:20px;
-    max-width:70vw;
+    max-width:100vw;
     height:200px;
     margin:40px;
     @media (max-width: 580px) {

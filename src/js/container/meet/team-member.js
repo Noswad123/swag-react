@@ -29,7 +29,6 @@ const Container=styled.div`
     @media (max-width: 690px) {
         width:250px
     } 
-   
 `
 const Name=styled.div``
 const Picture=styled.div`
@@ -54,11 +53,7 @@ export default class TeamMember extends Component {
     render(){
         return(
             <Container onClick={()=>this.props.openPopUp(this.props.id)}>
-                <Picture style={{
-                    
-                    backgroundImage:`url(${this.props.img})`,
-
-                    }}/>
+                <Picture style={{ backgroundImage:`url(${this.props.img})`}}/>
                 <Wrapper>
                 <Name>{this.props.name}</Name>
                 <Position>{this.props.position}</Position>

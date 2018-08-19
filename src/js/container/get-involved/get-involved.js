@@ -15,7 +15,9 @@ const Container = styled.div`
 `;
 
 class GetInvolved extends Component {
-
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     return (
       <Container>

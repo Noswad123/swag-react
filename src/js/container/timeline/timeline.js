@@ -18,6 +18,9 @@ const Wrapper = styled.div`
   align-items:center;
 `
 class Timeline extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   constructor(){
     super();
     this.state={
