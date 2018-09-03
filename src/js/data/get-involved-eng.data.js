@@ -36,12 +36,12 @@ const EngInvolved = [
         form: "collegementor"
       },
       {
-        title: "Upper Classman Mentee",
+        title: "Upperclassman Mentee",
         summary: "Through this program, you will be paired with a junior or senior in college who will guide you through these first two years of college.",
         form: "uppermentee"
       },
       {
-        title: "Upper Classmen Mentor",
+        title: "Upperclassmen Mentor",
         summary: "Through this program, you will be paired with a freshman or sophomore in college whom you will check-in with monthly to support them through college.",
         form: "uppermentor"
       },
@@ -63,7 +63,7 @@ const EngInvolved = [
       {
         title: "YP Mentor",
         summary:
-          "As a young professional (YP) mentor, you will be paired with a college student who aspires to enter your career field. Through monthly check-ins, you will help your mentee build social capital, expand their network, and access new opportunities. Your support will ensure your mentee secures the career of their dreams! ​",
+          "​",
         form: "ypmentor"
       }
     ]
@@ -78,7 +78,7 @@ const EngInvolved = [
       {
         title: "Parent",
         summary:
-          "As a parent, you are an important resource for your student. We are eager to work with parents just lke you to help support your child. Please visit our Parent Timeline to see steps you can take to help your child.  Also, please consider joining our Parent Board to help solve important issues in your child's education. ​",
+          "​",
         form: "parentboard"
       }
     ]
@@ -107,7 +107,7 @@ const EngInvolved = [
       {
         title: "Community Member",
         summary:
-          "We know that our community partners are crucial to our success. We also know that every person and every organization has a role to play in this work and in our movement. Whether you are professional looking to mentor a service provider looking to serve our students, or a community member just hoping to learn more about our movement to expand equality of opportunity, we have a place for you. Please fill out the form below, so we can provide you more information about SWAG To College.",
+          "",
         form: "communitymember"
       }
     ]

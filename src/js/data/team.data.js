@@ -1,16 +1,18 @@
 const Team = [
+  
   {
-    name: "Jamal Dawson",
-    position: "Co-founder",
-    bio: `Jamal Dawson received a degree in applied mathematics with a minor in statics from University of Houston Downtown.  
-    Starting his teaching career as an Apollo Fellow, Jamal fought to close the achievement gap.  
-    He has been involved with education for over 5 years. Jamal has established after school tutorial programs and SAT prep 
-    courses to better serve the youth in the Missouri city area.
-
-    Currently, Jamal is a math teacher at Beechnut Academy, where he continues to dedicate himself to 
-    improving students’ success inside and outside the classroom.  As a co-founder of SWAG to College, 
-    he hopes to diminish high school and college dropout rates by providing clarity to the college process.`,
-    imgUrl: "./img/jamal.jpg",
+    name: "Ana Lenaker",
+    position: "Enrichment Director",
+    bio:
+      "I am a first-generation, low-income student from northern California with a deep love of coffee, couches, and cats. I am also a junior at Brown University double concentrating in religious studies and philosophy, and am spending this year abroad in England at the University of Oxford. I am currently the co-manager of the SWAG Essay Board as well as the manager for the Enrichment Domain. My domain’s departments provide feedback on students’ college application essays, as well as provide resources for and answer questions regarding financial aid and DACA. I strongly believe that the work that SWAG is doing is making a difference by mitigating some of the barriers that students of color, first-generation and low-income students, and students with low resources, face throughout high school and the college application process. I joined SWAG because I wanted to be a part of a community invested in creating positive structures of support for students -- community structures that defy the institutional structures that disadvantage them.",
+    imgUrl: "./img/ana-lenaker.png",
+    domain: "Interns"
+  },
+  {
+    name: "Andy Canales",
+    position: "Board Member",
+    bio: "The Legend",
+    imgUrl: "./img/andy-canales.jpg",
     domain: "Board of Directors"
   },
   {
@@ -21,14 +23,7 @@ const Team = [
     imgUrl: "./img/angie.png",
     domain: "Interns"
   },
-  {
-    name: "Ana Lenaker",
-    position: "Enrichment Director",
-    bio:
-      "I am a first-generation, low-income student from northern California with a deep love of coffee, couches, and cats. I am also a junior at Brown University double concentrating in religious studies and philosophy, and am spending this year abroad in England at the University of Oxford. I am currently the co-manager of the SWAG Essay Board as well as the manager for the Enrichment Domain. My domain’s departments provide feedback on students’ college application essays, as well as provide resources for and answer questions regarding financial aid and DACA. I strongly believe that the work that SWAG is doing is making a difference by mitigating some of the barriers that students of color, first-generation and low-income students, and students with low resources, face throughout high school and the college application process. I joined SWAG because I wanted to be a part of a community invested in creating positive structures of support for students -- community structures that defy the institutional structures that disadvantage them.",
-    imgUrl: "./img/ana-lenaker.png",
-    domain: "Interns"
-  },
+  
   {
     name: "Belkis Moreno",
     position: "Intern",
@@ -38,19 +33,35 @@ const Team = [
     domain: "Interns"
   },
   {
-    name: "Sheyla Meza",
-    position: "Marketing Director",
-    bio:
-      "I am a first generation, low income college student from Houston, Texas. I am currently a junior at Texas State University majoring in marketing with a sales concentration. On my free time I like to be active on social media, take hikes with my dog and hang out with friends. My biggest passion is seeing a good change happen in the world. Little by little I am able to help SWAG to College fulfill its goal of helping low income communities have a better chance at attaining a higher education. Through the social media marketing domain my team and I can spread awareness of the positive change this organization is doing as well as gain new mentors and mentees. This has allowed us to continue to grow the organization as a whole! I will be forever thankful for having the opportunity to be part of such an amazing change.",
-    imgUrl: "./img/sheyla.png",
-    domain: "Interns"
+    name: "Charles J. Ogletree, Jr",
+    position: "Advisor",
+    bio:`​Charles Ogletree, the Harvard Law School Jesse Climenko Professor of Law, and Founding and Executive Director of the Charles Hamilton Houston Institute for Race and Justice, is a prominent legal theorist who has made an international reputation by taking a hard look at complex issues of law and by working to secure the rights guaranteed by the Constitution for everyone equally under the law. Professor Ogletree opened the offices of The Charles Hamilton Houston Institute for Race and Justice www.charleshamiltonhouston.org in September 2005 as a tribute to the legendary civil rights lawyer and mentor and teacher of such great civil rights lawyers as Thurgood Marshall and Oliver Hill. The Institute has engaged in a wide range of important educational, legal, and policy issues over the past 6 years.
+    Professor Ogletree is the author of several important books on race and justice. His most recent publication is a book co-edited with Professor Austin Sarat of Amherst College entitled Life without Parole: America's New Death Penalty?(NYU Press, 2012). Other publications include The Presumption of Guilt: The Arrest of Henry Louis Gates, Jr. and Race, Class, and Crime in America(Palgrave Macmillan, 2010).In November 2009, NYU Press published Professor Ogletree’s book, co-edited with Professor Austin Sarat, The Road to Abolition: The Future of Capital Punishment in the United States. Also edited with Austin Sarat, When Law Fails: Making Sense of Miscarriages of Justice andFrom Lynch Mobs to the Killing State: Race and the Death Penalty in America were published by NYU Press in January of 2009 and May of 2006 respectively. His historical memoir, All Deliberate Speed: Reflections on the First Half-Century of Brown v. Board of Education, was published by W.W. Norton & Company in April 2004. Professor Ogletree also co-authored Beyond the Rodney King Story: An Investigation of Police Conduct in Minority Communities (Northeastern University Press 1995).
+    
+    Professor Ogletree is a native of Merced, California, where he attended public schools. Professor Ogletree earned an M.A. and B.A. (with distinction) in Political Science from Stanford University, where he was Phi Beta Kappa. He also holds a J.D. from Harvard Law School.
+    
+    In 2009 Professor Ogletree was awarded the prestigious ABA Spirit of Excellence Award in recognition of his many contributions to the legal profession. In 2008, the National Law Journal named Professor Ogletree one of the 50 Most Influential Minority Lawyers in America. Every year since 2006, Professor Ogletree has been named by Ebony Magazine as one of the 100+ Most Influential Black Americans. He was presented with the Lifetime Achievement Award when he was inducted into the Hall of Fame for the National Black Law Students Association, where he served as National President from 1977-1978. Professor Ogletree also received the first ever Rosa Parks Civil Rights Award given by the City of Boston, the Hugo A. Bedau Award given by the Massachusetts Anti-Death Penalty Coalition, and Morehouse College’s Gandhi, King, Ikeda Community Builders Prize. He has also received honorary doctorates from several universities and colleges including Cambridge College, Wilberforce University, the University of Miami, the New England School of Law, Lincoln College, Tougaloo College, Mount Holyoke College, and Amherst College.
+    
+    Professor Ogletree has been married to his fellow Stanford graduate, Pamela Barnes, since 1975. They are the proud parents of two children, Charles Ogletree III and Rashida Ogletree, and grandparents to granddaughters, Marquelle, Nia Mae, Jamila Ogletree, and Makayla George. The Ogletrees live in Cambridge and are members of St. Paul African Methodist Episcopal Church.`,
+    imgUrl:"./img/charles-ogletree.jpg",
+    domain:"Board of Advisors"
   },
   {
-    name: "Dallas Wilson",
+    name: "Dr. David Nino",
+    position: "Advisor",
+    bio:`​David Niño is a Senior Lecturer in the Bernard M. Gordon-MIT Engineering Leadership Program. Previously, he was Professor in the Practice of Engineering Leadership and Lecturer in Management at Rice University. While at Rice, he led the establishment of the university’s first four-year academic certificate in engineering leadership and was Director of Leadership Rice, the university-wide leadership development program.
+    ​
+    A former management professor, Dr. Niño has published on the subjects of leadership, ethics, organizational culture, and the development of professional management skills. He has conducted research in high technology environments and is currently interested in investigating how leadership is developed among engineers and engineering organizations.
+    Dr. Niño has taught leadership since 1998 at the undergraduate, masters, doctoral, and executive/professional levels. He is currently a founding officer of the Leadership Development Division of the American Society of Engineering Education and consults with professionals and executives in the areas of leadership and team development. He holds a Ph.D. in Management from the University of Texas at Austin, where he also earned his B.A., B.B.A., and M.A. degrees.`,
+    imgUrl:"./img/david-nino.jpg",
+    domain:"Board of Advisors"
+  },
+  {
+    name: "Eduardo Garcia",
     position: "Intern",
     bio:
-      "I’m a sophomore at Vanderbilt University in Nashville, TN studying Human & Organizational Development with a double minor in Business & Economics. I love coffee, video games, sleeping, and my dog Cooper. I am passionate about helping students in their college endeavors, and have two great mentees with SWAG to College. I’m also on the SWAG Social Media team, and I get to reach out to so many great people. I have loved watching SWAG grow over my time with the organization and can’t wait to see what the future has in store.",
-    imgUrl: "./img/dallas.png",
+      "I am a senior at Mirabeau B. Lamar High School. I was born and raised in Houston, Texas. I am passionate about computer science and computers in general, you can constantly finding me making a new program for my own fun. I am heavily involved in community service and love being able to give back to the community that has already given me so much. I am the co-president of our high school’s Key Club. I am passionate about what SWAG to College has to offer to students, because I come from the exact same background as our mentees. I understand how hard it is when it feels like no one is there to help, but now it doesn’t have to be that way! I am a firm believer in equal access to higher education, and achieving something greater shouldn’t have to be impossible.",
+    imgUrl: "./img/eduardo.jpg",
     domain: "Interns"
   },
   {
@@ -73,6 +84,60 @@ const Team = [
     domain: "Interns"
   },
   {
+    name: "Jamal Dawson",
+    position: "Co-founder",
+    bio: `Jamal Dawson received a degree in applied mathematics with a minor in statics from University of Houston Downtown.  
+    Starting his teaching career as an Apollo Fellow, Jamal fought to close the achievement gap.  
+    He has been involved with education for over 5 years. Jamal has established after school tutorial programs and SAT prep 
+    courses to better serve the youth in the Missouri city area.
+
+    Currently, Jamal is a math teacher at Beechnut Academy, where he continues to dedicate himself to 
+    improving students’ success inside and outside the classroom.  As a co-founder of SWAG to College, 
+    he hopes to diminish high school and college dropout rates by providing clarity to the college process.`,
+    imgUrl: "./img/jamal.jpg",
+    domain: "Board of Directors"
+  },
+  {
+    name: "Jessica Telles",
+    position: "Intern",
+    bio:
+      "I am a sophomore at Rice University majoring in Computational and Applied Mathematics and minoring in Statistics and Financial Computation and Modeling. This is my second year as a SWAG To College mentor. I went to a high school that had very little resources and offered no support to students so having a mentor would have been life-changing. Interning with SWAG to College has made me realize the ample resources out there that, even as a college student, I didn’t know about. I am passionate about helping high school students who are first-generation, low income and/or underserved and who are unaware of the many opportunities available that can help them follow their dreams and continue their education. ",
+    imgUrl: "./img/jessica-telles.jpg",
+    domain: "Interns"
+  },
+  {
+    name: "Joanna Slusarewicz",
+    position: "Intern",
+    bio:
+      "I am a sophomore at Rice University, majoring in computer science. I am a SWAG to College Data Analyst/Mentor/Blogger. Additionally I do research in the Rice environmental engineering department, have taught creative writing classes in middle schools across the country, and am president of Fastwarp board game club. In my work analyzing data with SWAG To College I hope to ensure that we are serving our mentees in the ways they need us most. At the moment, after college I plan to attend grad school to study renewable energies' development and policy.",
+    imgUrl: "./img/joanna-slu.jpg",
+    domain: "Interns"
+  },
+ 
+ 
+  {
+    name: "John Hansen, Ph.D",
+    position: "Advisor",
+    bio:
+      `Elected to the Houston Community College Board of Trustees in November 2015, Dr. John P. Hansen represents District VI.  Trustee Hansen served on the Board of the Alief Independent School District for 22 years, including three terms as Board President.  During his tenure, Alief ISD passed three bond issues, which resulted in the construction of 17 new schools and laid the groundwork for such District improvements as the Career and Technology Education (CTE) Center and Pre-Kindergarten pods at each elementary school. 
+
+      Trustee Hansen has made a long-lasting impact in the Alief community with contributions including: the creation of a magnet academic program for gifted and talented students at the elementary level; improving college readiness for graduating students through building relationships with HCC; and giving Alief ISD one of the lowest tax rates in the region while moving teacher salaries to among the highest in the region and producing a major turnaround in student academic success.  Trustee Hansen has served for 20 years on the Alief ISD Education Foundation Board of Directors, including numerous terms as President of the Foundation Board.  During his tenure, the Alief ISD Foundation has increased fundraising by a factor of 15.  In addition, Trustee Hansen serves as the Chairman of the Boy Scouts of America Tatanka (Alief) District.  He also served as Co-Chair of the successful capital campaign to build the Alief YMCA.
+      
+      Trustee Hansen holds a Bachelor of Science degree in Mathematics from Spring Hill College in Mobile, Alabama and Master of Arts and Doctor of Philosophy degrees in Economics from Rice University.  A resident of the Alief area since 1980, he has lengthy experience as a college professor at the University of St. Thomas, Ohio Wesleyan University and Houston Baptist University, where he was President of the Faculty Assembly.  He also has extensive experience as a business consultant and has served on a number of corporate boards.
+      
+      As the newest member of the HCC Board of Trustees, Trustee Hansen intends to bring his many years of experience on the Alief ISD Board to the service of the College and expects to play a constructive and integral part in taking the College to even higher levels of success.  Trustee Hansen believes that, other than the statutory functions, the most important role of a governing board is to create a supportive environment in which the professional staff are encouraged to achieve their individual and group potential.  Trustee Hansen initial areas of interest will be to enhance the effectiveness of the Student Success Initiative, to enhance programs to improve the quality of instruction and to expand programs for workforce development.`,
+    imgUrl: "./img/john-hansen.jpg",
+    domain: "Board of Advisors"
+  },
+  {
+    name: "Karen Banda",
+    position: "Intern",
+    bio:
+      "I am a sophomore at Smith College, double majoring in Government and Latin American Studies, with a theme in Latino Immigration Studies. I am a SWAG to College Intern/Mentor/Mentor Manager, EMERGE Scholar Board Founder and President, Smith College Nosotr@s Conference Chair, Smith College Pre-Law Society Social Chair, Capen House Social Events Coordinator, and the Office of Multicultural Affairs Intern. I love being part of SWAG and EMERGE because of my passion and dedication in college access for minority students. After college, I would like to pursue (hopefully) a Fulbright Research Fellowship in México and then a JD in either Human Rights, International Law, or Immigration Law. I am passionate about closing the educational gap and equal opportunities for all.",
+    imgUrl: "./img/karen-banda.jpg",
+    domain: "Interns"
+  },
+  {
     name: "Katheline Estrada",
     position: "Intern",
     bio:
@@ -81,116 +146,13 @@ const Team = [
     domain: "Interns"
   },
   {
-    name: "Maria Sanchez",
-    position: "Intern",
-    bio:
-      "I am a first generation sophomore at Texas A&M University majoring in Industrial & Systems Engineering with a concentration in Health & Human systems. My hobbies include working out and watching Netflix. I also love helping people, which is one of the reasons I enjoy being a part of DACAmented team in SWAG. We provide resources for undocumented students and their families. Most of these students are first generation too and being undocumented can make them think that college is not an option at all but our goal is to help them learn that it is an option. ",
-    imgUrl: "./img/maria.jpg",
-    domain: "Interns"
-  },
-  {
-    name: "Melissa Campos",
-    position: "Intern",
-    bio: `Hi I am Melissa Campos and I am a senior at Texas A&amp;M University A-Whoop! My major is
-        Psychology and I will be graduating on May of 2018. I am also an Alumni from YES Prep
-        Gulfton’s first graduating class! Many people don’t know how small I am when I say I am small. I
-        am 4 feet 8 inches but have a very large and unique personality with a goal of also getting my
-        Masters in counseling to be a support system for students of any grade. I believe that having a
-        support system is necessary to be able to achieve their goal. I am a natural care giver and would
-        like to offer my help to those in need. I am currently working to get experience in Teaching for a
-        few years before I pursue my career. One fun fact about me is that I have an obsession with
-        turtles and I have three of my own.`,
-    imgUrl: "./img/melissa-campos.png",
-    domain: "Interns"
-  },
-  {
-    name: "Monserrat Viveros",
-    position: "Intern",
-    bio:
-      "I am a second year marketing major at the University of Texas at Austin. I really enjoy politics, healthcare, and helping people out. I enjoy being a part of SWAG because they really value the people they serve and try to do what they can to help them. Through SWAG I am part of the DACAmented team, where we focus on helping students and families with immigrant concerns. Our work is important because we try to provide information that is not commonly known and that can be very helpful to undocumented individuals.",
-    imgUrl: "./img/monserrat.png",
-    domain: "Interns"
-  },
-  {
-    name: "Stephanie Square",
-    position: "Board Member",
-    bio:`Stephanie Square, along with her twin sister, was born in Houston, Texas to immigrant parents. Both parents are native to Nicaragua and moved to the United States to escape perils of civil war and to provide their children better opportunities.  In the next five years, the family grew by three, a new sister three years later, and another set of twin girls two years after that. Stephanie is a product of Houston ISD schools, and graduated with distinguished honor roll from Texas Southern University. She is also a graduate of Rice University’s Jones Graduate School of Business. Square began her teaching career as an Algebra I teacher at Yates High School, where she also served as a lead teacher, varsity soccer coach, and math department chairperson. In 2011, she won Teacher of the Year. She also served as a Teacher Specialist at Wheatley High School and Assistant Principal at North Forest High School. As an Assistant Principal at Austin High School, she led the mathematics department, oversaw dual credit programming, and executed a plan to increase linkage and usage of Khan Academy and College Board resources. 
-
-    Stephanie currently serves as principal of East Early College High School in Houston’s East End. She is most proud for the opportunity to support first generation college goers like herself. 
-    
-    Stephanie Square has been married for 14 years and is a proud mom of three boys, including a set of identical twins. `,
-    imgUrl: "./img/stephanie-square.jpg",
-    domain: "Board of Directors"
-  },
-  {
-    name: "Nancy Uroza",
-    position: "Intern",
-    bio: `Hi! My name is Nancy Uroza and I am a first-generation college sophomore at the University of Houston-Downtown. I am currently working towards a Bachelor of Art degree in Mathematics with a minor in General Business. I am still unsure about what I plan to do with my degree but, as of right now, I am looking into becoming an actuary. I hope that whatever my future career is, I am able to make enough money so that I can create my own non-profit organization and focus on helping orphan children and/or scholars.
-        I am an Intern for S.W.A.G. to College, more specifically, its Fundraising domain where we work towards raising money through grants, crowdfunding, and individual donations. Not only has this been an opportunity for me to gain experience in the business field for my minor but, it has also given me insight of the work it takes to run a successful non-profit and making it grow.`,
-    imgUrl: "./img/nancy.png",
-    domain: "Interns"
-  },
-  {
-    name: "Nicole Trujillo",
-    position: "Intern",
-    bio: "I am a first-generation",
-    imgUrl: "./img/nicole-tru.jpg",
-    domain: "Interns"
-  },
-  {
-    name: "Priscila Escamilla",
-    position: "Intern",
-    bio:
-      "I am a senior at the University of Houston, I am studying Integrated Communications which is basically a mix of public relations and advertising and double minoring in Business Administration and Marketing. My biggest passions are reading and watching shows from other countries, I love figuring out what that country values, i find it completely fascinating how each culture is so different yet in some aspects the same.  I have been a part of SWAG since August 2017, and my role in SWAG is the Chief Operating Officer where I work with each domain to manas",
-    imgUrl: "./img/priscilla.jpg",
-    domain: "Interns"
-  },
-  {
-    name: "Sarah Montero",
-    position: "Intern",
-    bio: "sarah montero",
-    imgUrl: "./img/sarah-montero.png",
-    domain: "Interns"
-  },
-  {
-    name: "Victor Hernandez",
-    position: "Intern",
-    bio:
-      "My name is Victor Hernandez and I was born into a divorce. I grew up poor, and most of my life without a father. I was homeless at times and separated from my mother and siblings. Despite my troubling up bringing, I have dedicated my life to being the person I always needed in my life, for others in need. My journey starts by studying to be a teacher at the University of Houston (main campus) and working hard with SWAG to College, so that young student know that hard times will pass. I know what it is like to watch life fall apart, feel hopeless, but I also know what it's like to build it back up.",
-    imgUrl: "./img/victor-hernandez.png",
-    domain: "Interns"
-  },
-  {
-    name: "Raj Salhotra",
-    position: "Co-founder",
-    bio: `I am first-year Associate at Baker Botts and recent graduate of Harvard Law School in May 2018. Before coming to law school, I served as a Teach For America Corps Member in Houston. I taught 11th and 12th grade math at YES Prep Southwest. Before YES, I was a student at Rice University where I majored in economics and public policy. While at Rice, I took classes in educational inequality and sociology and gained a greater understanding of the challenges many Americans face. My work teaching provided concrete experiences to complement my classroom learning.
-   
-    After teaching, building on experiences inside and outside the classroom, I co-founded SWAG To College to help more students gain the knowledge and opportunities they need to reach their goals. Through SWAG, my hope is we can reduce educational inequality and ensure that all students, regardless of background, can reach their dreams. ​ ​`,
-    imgUrl: "./img/raj.jpg",
-    domain: "Board of Directors"
-  },
-  {
-    name: "Marcus Rolls",
-    position: "Board Member",
-    bio: "Associate Vice President at Morgan Stanley",
-    imgUrl: "./img/marcus.png",
-    domain: "Board of Directors"
-  },
-  {
-    name: "Rick Cruz",
+    name: "Kathy Heinzerling",
     position: "Advisor",
-    bio: `Rick Cruz currently serves as the Chief Strategy & Innovation Officer for the Houston Independent School District. In that role, he is responsible for overseeing a wide portfolio of programming and initiatives aimed at promoting equity, increasing educational opportunities, and driving student achievement. He’s held a number of other senior leadership roles within the district all focused on preparing students for postsecondary success. After graduating from Yale, Rick worked at the law firm of Baker Botts before joining Teach for America, through which he became a fifth grade bilingual teacher in Houston ISD. His experiences in the classroom led him to found EMERGE, a college readiness, access, and persistence program that helps talented low-income students attend and graduate from the nation’s top colleges and universities. Rick successfully entered into a public-private partnership with Houston ISD and led the expansion of the program from one high school to 45 high schools.  Rick’s passion is helping students – particularly those from underserved communities – prepare to be successful in college.  This is why he strongly supports programs like SWAG To College that are bridging the college opportunity gap. Rick also holds a master’s and a doctorate in educational leadership and policy from the University of Texas at Austin.`,
-    imgUrl: "./img/rick-cruz.jpg",
-    domain: "Board of Advisors"
+    bio:`Kathy comes to Breakthrough Houston after 31 years as co-director at The Chinquapin School.  Her background working with economically disadvantaged students, as well as her experience with education and administration, makes Kathy uniquely qualified for her role. She holds a Bachelor of Science degree from Barat College and a Masters of Science from the University of St. Louis. A tireless volunteer for various civic organizations, she has won numerous honors and recognitions, including the keys to the City of Houston in recognition of her educational leadership.`,
+    imgUrl:"./img/kathy-heinzerling.jpg",
+    domain:"Board of Advisors"
   },
-  {
-    name: "Eduardo Garcia",
-    position: "Intern",
-    bio:
-      "I am a senior at Mirabeau B. Lamar High School. I was born and raised in Houston, Texas. I am passionate about computer science and computers in general, you can constantly finding me making a new program for my own fun. I am heavily involved in community service and love being able to give back to the community that has already given me so much. I am the co-president of our high school’s Key Club. I am passionate about what SWAG to College has to offer to students, because I come from the exact same background as our mentees. I understand how hard it is when it feels like no one is there to help, but now it doesn’t have to be that way! I am a firm believer in equal access to higher education, and achieving something greater shouldn’t have to be impossible.",
-    imgUrl: "./img/eduardo.jpg",
-    domain: "Interns"
-  },
+ 
   {
     name: "Luly Castillo",
     position: "Board Member",
@@ -209,20 +171,6 @@ const Team = [
     domain: "Board of Directors"
   },
   {
-    name: "Andy Canales",
-    position: "Board Member",
-    bio: "The Legend",
-    imgUrl: "./img/andy-canales.jpg",
-    domain: "Board of Directors"
-  },
-  {
-    name: "Sumantha Ray",
-    position: "Board Member",
-    bio: "Work hard. Stay humble. Be kind. Do everything in love.",
-    imgUrl: "./img/sumantha.jpg",
-    domain: "Board of Directors"
-  },
-  {
     name: "Maddie Coles",
     position: "Intern",
     bio:
@@ -230,45 +178,61 @@ const Team = [
     imgUrl: "./img/maddie.jpg",
     domain: "Interns"
   },
+ 
   {
-    name: "Chidozie Alozie",
+    name: "Maria Sanchez",
     position: "Intern",
     bio:
-      "I am a sophomore at Vanderbilt University, majoring in Mechanical Engineering, with a minor in German. I am a SWAG to College Data Analyst and Director of YES Prep Partnerships, Arnold Scholar at Vanderbilt, Vice President of JPAC (Juggling and Physical Acts Club), and amateur sports writer. I grew up loving sports, numbers, and current events. What I love most about being a part of SWAG is it feeds my passion for providing indispensable services to underrepresented students who would otherwise not have them. I am a firm believer that SWAG to College has what it takes to be a vital instrument in the challenge to provide for students in need. ",
-    imgUrl: "./img/chidozie.jpg",
+      "I am a first generation sophomore at Texas A&M University majoring in Industrial & Systems Engineering with a concentration in Health & Human systems. My hobbies include working out and watching Netflix. I also love helping people, which is one of the reasons I enjoy being a part of DACAmented team in SWAG. We provide resources for undocumented students and their families. Most of these students are first generation too and being undocumented can make them think that college is not an option at all but our goal is to help them learn that it is an option. ",
+    imgUrl: "./img/maria.jpg",
     domain: "Interns"
   },
   {
-    name: "Karen Banda",
+    name: "Marcus Rolls",
+    position: "Board Member",
+    bio: "Associate Vice President at Morgan Stanley",
+    imgUrl: "./img/marcus.png",
+    domain: "Board of Directors"
+  },
+  
+  {
+    name: "Monserrat Viveros",
     position: "Intern",
     bio:
-      "I am a sophomore at Smith College, double majoring in Government and Latin American Studies, with a theme in Latino Immigration Studies. I am a SWAG to College Intern/Mentor/Mentor Manager, EMERGE Scholar Board Founder and President, Smith College Nosotr@s Conference Chair, Smith College Pre-Law Society Social Chair, Capen House Social Events Coordinator, and the Office of Multicultural Affairs Intern. I love being part of SWAG and EMERGE because of my passion and dedication in college access for minority students. After college, I would like to pursue (hopefully) a Fulbright Research Fellowship in México and then a JD in either Human Rights, International Law, or Immigration Law. I am passionate about closing the educational gap and equal opportunities for all.",
-    imgUrl: "./img/karen-banda.jpg",
+      "I am a second year marketing major at the University of Texas at Austin. I really enjoy politics, healthcare, and helping people out. I enjoy being a part of SWAG because they really value the people they serve and try to do what they can to help them. Through SWAG I am part of the DACAmented team, where we focus on helping students and families with immigrant concerns. Our work is important because we try to provide information that is not commonly known and that can be very helpful to undocumented individuals.",
+    imgUrl: "./img/monserrat.png",
     domain: "Interns"
   },
   {
-    name: "Jessica Telles",
-    position: "Intern",
-    bio:
-      "I am a sophomore at Rice University majoring in Computational and Applied Mathematics and minoring in Statistics and Financial Computation and Modeling. This is my second year as a SWAG To College mentor. I went to a high school that had very little resources and offered no support to students so having a mentor would have been life-changing. Interning with SWAG to College has made me realize the ample resources out there that, even as a college student, I didn’t know about. I am passionate about helping high school students who are first-generation, low income and/or underserved and who are unaware of the many opportunities available that can help them follow their dreams and continue their education. ",
-    imgUrl: "./img/jessica-telles.jpg",
-    domain: "Interns"
-  },
-  {
-    name: "Joanna Slusarewicz",
-    position: "Intern",
-    bio:
-      "I am a sophomore at Rice University, majoring in computer science. I am a SWAG to College Data Analyst/Mentor/Blogger. Additionally I do research in the Rice environmental engineering department, have taught creative writing classes in middle schools across the country, and am president of Fastwarp board game club. In my work analyzing data with SWAG To College I hope to ensure that we are serving our mentees in the ways they need us most. At the moment, after college I plan to attend grad school to study renewable energies' development and policy.",
-    imgUrl: "./img/joanna-slu.jpg",
-    domain: "Interns"
-  },
-  {
-    name: "Shannen Garza",
+    name: "Morris Nwogwugwu",
     position: "Advisor",
-    bio:
-      "Shannen Garza currently serves as the Director of Alumni Affairs at YES Prep Public Schools. Her work centers around working with 5,000+ alumni to increase matriculation, persistence, and college graduation among the alumni student body. She previously served as a College Counselor at KIPP Houston High School and Program Coordinator at Genesys Works working to expand college access for underserved minority students. She holds a degree in Communications from the University of St. Thomas and a MA in Cross-Cultural Studies from the University of Houston-Clear Lake.",
-    imgUrl: "./img/shannen-garza.jpg",
+    bio:`Morris joined Breakthrough Houston in 2010 after his second summer as a Breakthrough teacher at LearningWorks at Blake: A Breakthrough Program. Morris received his B.A in American Studies in 2010 from Carleton College, and he received his M.Ed: Curriculum and Instruction in 2015 from Houston Baptist University. Morris’ passion for the non-profit world stems from his high school education at Chinquapin Preparatory School and his time spent earning his Nonprofit Management Certification from Texas A&M University. He is now adamant about equal access and quality education and commits himself fully to the students at Breakthrough Houston.`,
+    imgUrl:"./img/morris-ngwogwugwu.jpg",
+    domain:"Board of Advisors"
+  },
+ 
+  {
+    name: "Nancy Uroza",
+    position: "Intern",
+    bio: `Hi! My name is Nancy Uroza and I am a first-generation college sophomore at the University of Houston-Downtown. I am currently working towards a Bachelor of Art degree in Mathematics with a minor in General Business. I am still unsure about what I plan to do with my degree but, as of right now, I am looking into becoming an actuary. I hope that whatever my future career is, I am able to make enough money so that I can create my own non-profit organization and focus on helping orphan children and/or scholars.
+        I am an Intern for S.W.A.G. to College, more specifically, its Fundraising domain where we work towards raising money through grants, crowdfunding, and individual donations. Not only has this been an opportunity for me to gain experience in the business field for my minor but, it has also given me insight of the work it takes to run a successful non-profit and making it grow.`,
+    imgUrl: "./img/nancy.png",
+    domain: "Interns"
+  },
+  {
+    name: "Nella García Urban",
+    position: "Advisor",
+    bio:`Nella García Urban is the Chief Program Officer for YES Prep Public Schools where she leads a team charged with driving excellence in teaching and learning.  Prior to this appointment, she served as the Chief Talent Officer for 4 years. She received her master’s degree from Sam Houston State University in Educational Leadership, a program designed for charter school leaders. `,
+    imgUrl: "./img/nella-garcia.jpg",
     domain: "Board of Advisors"
+  },
+  {
+    name: "Priscila Escamilla",
+    position: "Intern",
+    bio:
+      "I am a senior at the University of Houston, I am studying Integrated Communications which is basically a mix of public relations and advertising and double minoring in Business Administration and Marketing. My biggest passions are reading and watching shows from other countries, I love figuring out what that country values, i find it completely fascinating how each culture is so different yet in some aspects the same.  I have been a part of SWAG since August 2017, and my role in SWAG is the Chief Operating Officer where I work with each domain to manas",
+    imgUrl: "./img/priscilla.jpg",
+    domain: "Interns"
   },
   {
     name: "Randi Jones",
@@ -279,19 +243,83 @@ const Team = [
     domain: "Board of Advisors"
   },
   {
-    name: "John Hansen, Ph.D",
+    name: "Raj Salhotra",
+    position: "Co-founder",
+    bio: `I am first-year Associate at Baker Botts and recent graduate of Harvard Law School in May 2018. Before coming to law school, I served as a Teach For America Corps Member in Houston. I taught 11th and 12th grade math at YES Prep Southwest. Before YES, I was a student at Rice University where I majored in economics and public policy. While at Rice, I took classes in educational inequality and sociology and gained a greater understanding of the challenges many Americans face. My work teaching provided concrete experiences to complement my classroom learning.
+   
+    After teaching, building on experiences inside and outside the classroom, I co-founded SWAG To College to help more students gain the knowledge and opportunities they need to reach their goals. Through SWAG, my hope is we can reduce educational inequality and ensure that all students, regardless of background, can reach their dreams. ​ ​`,
+    imgUrl: "./img/raj.jpg",
+    domain: "Board of Directors"
+  },
+  {
+    name: "Rick Cruz",
+    position: "Advisor",
+    bio: `Rick Cruz currently serves as the Chief Strategy & Innovation Officer for the Houston Independent School District. In that role, he is responsible for overseeing a wide portfolio of programming and initiatives aimed at promoting equity, increasing educational opportunities, and driving student achievement. He’s held a number of other senior leadership roles within the district all focused on preparing students for postsecondary success. After graduating from Yale, Rick worked at the law firm of Baker Botts before joining Teach for America, through which he became a fifth grade bilingual teacher in Houston ISD. His experiences in the classroom led him to found EMERGE, a college readiness, access, and persistence program that helps talented low-income students attend and graduate from the nation’s top colleges and universities. Rick successfully entered into a public-private partnership with Houston ISD and led the expansion of the program from one high school to 45 high schools.  Rick’s passion is helping students – particularly those from underserved communities – prepare to be successful in college.  This is why he strongly supports programs like SWAG To College that are bridging the college opportunity gap. Rick also holds a master’s and a doctorate in educational leadership and policy from the University of Texas at Austin.`,
+    imgUrl: "./img/rick-cruz.jpg",
+    domain: "Board of Advisors"
+  },
+  {
+    name: "Ronald Soligo",
     position: "Advisor",
     bio:
-      `Elected to the Houston Community College Board of Trustees in November 2015, Dr. John P. Hansen represents District VI.  Trustee Hansen served on the Board of the Alief Independent School District for 22 years, including three terms as Board President.  During his tenure, Alief ISD passed three bond issues, which resulted in the construction of 17 new schools and laid the groundwork for such District improvements as the Career and Technology Education (CTE) Center and Pre-Kindergarten pods at each elementary school. 
-
-      Trustee Hansen has made a long-lasting impact in the Alief community with contributions including: the creation of a magnet academic program for gifted and talented students at the elementary level; improving college readiness for graduating students through building relationships with HCC; and giving Alief ISD one of the lowest tax rates in the region while moving teacher salaries to among the highest in the region and producing a major turnaround in student academic success.  Trustee Hansen has served for 20 years on the Alief ISD Education Foundation Board of Directors, including numerous terms as President of the Foundation Board.  During his tenure, the Alief ISD Foundation has increased fundraising by a factor of 15.  In addition, Trustee Hansen serves as the Chairman of the Boy Scouts of America Tatanka (Alief) District.  He also served as Co-Chair of the successful capital campaign to build the Alief YMCA.
-      
-      Trustee Hansen holds a Bachelor of Science degree in Mathematics from Spring Hill College in Mobile, Alabama and Master of Arts and Doctor of Philosophy degrees in Economics from Rice University.  A resident of the Alief area since 1980, he has lengthy experience as a college professor at the University of St. Thomas, Ohio Wesleyan University and Houston Baptist University, where he was President of the Faculty Assembly.  He also has extensive experience as a business consultant and has served on a number of corporate boards.
-      
-      As the newest member of the HCC Board of Trustees, Trustee Hansen intends to bring his many years of experience on the Alief ISD Board to the service of the College and expects to play a constructive and integral part in taking the College to even higher levels of success.  Trustee Hansen believes that, other than the statutory functions, the most important role of a governing board is to create a supportive environment in which the professional staff are encouraged to achieve their individual and group potential.  Trustee Hansen initial areas of interest will be to enhance the effectiveness of the Student Success Initiative, to enhance programs to improve the quality of instruction and to expand programs for workforce development.`,
-    imgUrl: "./img/john-hansen.jpg",
+      `Ronald Soligo is a Professor Emeritus who joined the economics department in 1967. Professor Soligo earned his PhD from Yale University and prior to coming to Rice held positions with the Yale-Pakistan project in Karachi and Assistant Professor at Yale. His areas of expertise include issues in economic development and energy economics. Dr. Soligo is also interested in educational equality. This interest stems from his own experiences growing up in Canada in a working-class family and also his recent research with SWAG Co-Founder Raj Salhotra. Soligo and Salhotra researched income inequality and social mobility and identified education as the crucial lever to expanding opportunity. Soligo co-founded the Summer Writing Program with Raj Salhotra wherein graduating seniors meet weekly to improve their writing skills.`,
+    imgUrl: "./img/ron-soligo.jpg",
     domain: "Board of Advisors"
-  }
+  },
+  {
+    name: "Sarah Montero",
+    position: "Intern",
+    bio: "sarah montero",
+    imgUrl: "./img/sarah-montero.png",
+    domain: "Interns"
+  },
+  {
+    name: "Stephanie Square",
+    position: "Board Member",
+    bio:`Stephanie Square, along with her twin sister, was born in Houston, Texas to immigrant parents. Both parents are native to Nicaragua and moved to the United States to escape perils of civil war and to provide their children better opportunities.  In the next five years, the family grew by three, a new sister three years later, and another set of twin girls two years after that. Stephanie is a product of Houston ISD schools, and graduated with distinguished honor roll from Texas Southern University. She is also a graduate of Rice University’s Jones Graduate School of Business. Square began her teaching career as an Algebra I teacher at Yates High School, where she also served as a lead teacher, varsity soccer coach, and math department chairperson. In 2011, she won Teacher of the Year. She also served as a Teacher Specialist at Wheatley High School and Assistant Principal at North Forest High School. As an Assistant Principal at Austin High School, she led the mathematics department, oversaw dual credit programming, and executed a plan to increase linkage and usage of Khan Academy and College Board resources. 
+
+    Stephanie currently serves as principal of East Early College High School in Houston’s East End. She is most proud for the opportunity to support first generation college goers like herself. 
+    
+    Stephanie Square has been married for 14 years and is a proud mom of three boys, including a set of identical twins. `,
+    imgUrl: "./img/stephanie-square.jpg",
+    domain: "Board of Directors"
+  },
+ 
+  {
+    name: "Sumantha Ray",
+    position: "Board Member",
+    bio: "Work hard. Stay humble. Be kind. Do everything in love.",
+    imgUrl: "./img/sumantha.jpg",
+    domain: "Board of Directors"
+  },
+  
+  
+  {
+    name: "Shannen Garza",
+    position: "Advisor",
+    bio:
+      "Shannen Garza currently serves as the Director of Alumni Affairs at YES Prep Public Schools. Her work centers around working with 5,000+ alumni to increase matriculation, persistence, and college graduation among the alumni student body. She previously served as a College Counselor at KIPP Houston High School and Program Coordinator at Genesys Works working to expand college access for underserved minority students. She holds a degree in Communications from the University of St. Thomas and a MA in Cross-Cultural Studies from the University of Houston-Clear Lake.",
+    imgUrl: "./img/shannen-garza.jpg",
+    domain: "Board of Advisors"
+  },
+  {
+    name: "Tomiko Brown-Nagin",
+    position: "Advisor",
+    bio:`Tomiko Brown-Nagin is an award-winning legal historian and expert in constitutional law and education law and policy. Her 2011 book, Courage to Dissent: Atlanta and the Long History of the Civil Rights Movement (Oxford), won the Bancroft Prize in US History, the highest honor awarded annually to a work in the field of history. Prior to joining the Harvard faculty, Brown-Nagin held joint appointments in law and history at the University of Virginia and at Washington University. Before entering academia, Brown-Nagin clerked for the Honorable Robert L. Carter of the U. S. District Court, Southern District of New York, and for the Honorable Jane Roth of the U.S. Court of Appeals for the Third Circuit. She also worked as a litigation associate at Paul, Weiss, Rifkind, Wharton & Garrison in New York City. 
+    
+    Brown-Nagin currently is at work on two major projects. The first argues that in today's hypercompetive admissions environment, selective institutions of higher education are obligated to ensure access for talented, first-generation and economically disadvantaged college students.  The second is a biography of the Honorable Constance Baker Motley. Brown-Nagin earned a law degree from Yale, where she served as an editor of the Yale Law Journal, a doctorate in history from Duke, and a B.A. in history, summa cum laude, from Furman University.
+`,
+    imgUrl:"./img/tomiko-brown.jpg",
+    domain:"Board of Advisors"
+  },
+  {
+    name: "Victor Hernandez",
+    position: "Intern",
+    bio:
+      "My name is Victor Hernandez and I was born into a divorce. I grew up poor, and most of my life without a father. I was homeless at times and separated from my mother and siblings. Despite my troubling up bringing, I have dedicated my life to being the person I always needed in my life, for others in need. My journey starts by studying to be a teacher at the University of Houston (main campus) and working hard with SWAG to College, so that young student know that hard times will pass. I know what it is like to watch life fall apart, feel hopeless, but I also know what it's like to build it back up.",
+    imgUrl: "./img/victor-hernandez.png",
+    domain: "Interns"
+  },
 ];
 
 export default Team;

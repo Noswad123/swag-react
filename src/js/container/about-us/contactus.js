@@ -105,8 +105,8 @@ class ContactUs extends Component{
                             <img src={"./img/library-icon.png"} alt="HS Program"/>
                         </Logo>
                         <Header> High School Program</Header>
-                        <Name>​​Graciela Lopez</Name>
-                        <Email>graciela.lopez@swagtocollege.org</Email>
+                        <Name>​​Jessica Telles</Name>
+                        <Email>jessica.telles@swagtocollege.org</Email>
                     </Contact>
                     </Row>
                     <Row>
@@ -115,8 +115,8 @@ class ContactUs extends Component{
                             <img src={"./img/student-hat-icon.png"} alt="Upper Classmen"/>
                         </Logo>
                         <Header> Upperclassmen Program</Header>
-                        <Name>​​Jennifer Dzul</Name>
-                        <Email>jennifer.dzul@swagtocollege.org</Email>
+                        <Name>​​Nicole Fraga</Name>
+                        <Email>nicole.fraga@swagtocollege.org</Email>
                     </Contact>
                     <Contact>
                         <Logo>

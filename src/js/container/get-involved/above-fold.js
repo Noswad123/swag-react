@@ -56,7 +56,7 @@ export default class AboveFold extends Component {
                 Get Involved
             </Title>
             <Text>
-            We all know someone, whether ourselves, a friend, or a family member who wants to pursue higher education, but doesn’t know where to start. We believe everyone deserves equal access to the information needed to apply and succeed in college. At Swag, we pair students with mentors that will guide them through the application process. Join us today to be a part of our growing community. 
+            We all know someone, whether ourselves, a friend, or a family member who wants to pursue higher education, but doesn’t know where to start. We believe everyone deserves equal access to the information needed to apply and succeed in college. At SWAG To College, we pair students with mentors that will guide them through the application process. Join us today to be a part of our growing community! 
 
             </Text>
           </Top>
@@ -65,7 +65,7 @@ export default class AboveFold extends Component {
             <MentorMentee pic="./img/mentorsays.jpg" 
               text="As a mentor, you will provide the support and counsel a student needs to succeed."/>
               <MentorMentee pic="./img/menteesays.jpg" 
-            text="As a mentee, you will receive the help you need on your journey to college. "/>
+            text="As a mentee, you will receive the help you need on your journey to and through college. "/>
           </Bottom>
           
       </Container>
