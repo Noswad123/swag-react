@@ -190,8 +190,11 @@ const Team = [
   {
     name: "Marcus Rolls",
     position: "Board Member",
-    bio: "Associate Vice President at Morgan Stanley",
-    imgUrl: "./img/marcus.png",
+    bio: `Marcus Rolls is a native Houstonian.  He attended Southern Methodist University where he was a walk on wide receiver on the football team. After graduating in 2008 with a degree in Economics, he began his career in the financial services industry. He was worked for large firms such as JP Morgan Chase, Wells Fargo Advisors.  In 2011 he and his team the Rolls Valdez Group moved over to Morgan Stanley.  In 2013, Marcus was recognized in Texas Monthly magazine as Five Star Wealth Manager.  
+    In February of 2015, Marcus assumed the role of Complex Business Development Manager for the Houston Galleria Complex.  His primary role is to drive revenue growth within the complex and help advisors grow their practice.  Marcus was also named to the National Complex Business Development Manager Council for Morgan Stanley.
+   Last May Marcus accepted the role as Associate Complex Manager for the Greater Houston Area Complex.  In that role, Marcus works hand and hand with the complex manager to achieve complex initiatives.  These initiatives include recruiting, hiring trainees, managing the P&L and helping advisors deliver the full resources of the firm.  He is currently a member of the National ACM Council.
+   `,
+    imgUrl: "./img/marcus-rolls.jpg",
     domain: "Board of Directors"
   },
   
