@@ -6,6 +6,7 @@ import AboveFold from './above-fold/above-fold';
 import Styles from '../../style/styles';
 import {connect} from 'react-redux'
 import Statistics from './statistics';
+import {isIOS} from 'react-device-detect'
 
 const Container = styled.div `
   width:100%;
@@ -26,9 +27,9 @@ class Home extends Component {
       < Container > 
         <AboveFold lang = {this.props.isEng}/>
         <Statistics />
-        <Paralax background="./img/jls-3073_orig.jpg"/>
+       { isIOS? "" :<Paralax background="./img/jls-3073_orig.jpg"/>}
         <SecondPart/>
-        <Paralax background="./img/homebottom.jpg"/>
+        { isIOS? "" :<Paralax background="./img/homebottom.jpg"/>}
     </Container>);
   }
 }

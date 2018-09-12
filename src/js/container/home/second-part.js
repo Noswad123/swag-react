@@ -4,7 +4,7 @@ import Styles from '../../style/styles';
 import {connect} from 'react-redux';
 
 const Container = styled.div `
-    min-height:50vw;
+    height:600px;
     color: ${Styles.color.font1};
     width:100%;
     display: flex;
@@ -48,9 +48,7 @@ const PicRow = styled.div`
   }
 `
 const Pic=styled.img`
-  
-
-height:15vw;
+height:200px;
 `
 const Quote =styled.div`
    border: white solid;

@@ -12,6 +12,7 @@ import Styles from "./js/style/styles";
 import Footer from "./js/component/footer";
 import Checkin from "./js/container/checkin/checkin";
 import CheckinForms from "./js/container/checkin/checkin-forms";
+import MobileMenu from "./js/component/menu/mobile/menu_mobile";
 import Menu from "./js/component/menu/menu";
 
 import AboutUs from "./js/container/about-us/about-us";
@@ -25,7 +26,7 @@ import GetInvolvementTemplate from "./js/container/get-involved/get-involved-tem
 import donate from "./js/container/donate/donate";
 import SignUp from "./js/container/signup/signup"
 import SignUpForms from "./js/container/signup/signup-forms"
-
+import {isIOS} from 'react-device-detect'
 
 const Container = styled.div`
   background-color:${Styles.color.secondary};
@@ -36,7 +37,8 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Container>
-        <Menu/>
+      { isIOS? <MobileMenu/> :<Menu/>}
+        
         <Route exact path="/" component={Home} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/getinvolved" component={GetInvolved} />

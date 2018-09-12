@@ -15,9 +15,9 @@ const Container = styled.div `
   justify-content:space-between;
   background-color:${Styles.color.primary};
   color:${Styles.color.font1};
-  padding:10px 40px;
+  padding:10px 20px;
   box-sizing:border-box;
-  min-height:250px;
+  height:300px;
   @media (max-width: 880px) {
     flex-direction:column;
   }
@@ -41,7 +41,6 @@ const Statistic=styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
-  padding:20px;
   font-family:${Styles.font.title};
   text-align:center;
 `
