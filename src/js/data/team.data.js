@@ -18,8 +18,14 @@ const Team = [
   {
     name: "Angie Garcia",
     position: "Intern",
-    bio:
-      "Currently I am a high school senior at East Early College High School, and I hope to attend the University of Washington majoring in Journalism and minoring in either Chinese (Mandarin) or Portuguese Language and Literature. My biggest passions and motivations, I would say, are films, documentaries, and learning about diverse cultures and communities all around the world, as well as the issues that they face. I knew that by joining the SWAG to college team, I would be able to support and guide those in my community to conquer the issues that they face. Working with the SWAG team has been wonderful because not only is the team very motivated and hard-working, but they are dedicated to the program, one of the most admirable qualities one could have. I am forever grateful to be a part of this program, and I am looking forward towards continuing being a part of the SWAG to College team. ",
+    bio:`Andy Canales is the Executive Director, Greater Houston of Latinos for Education, an education non-profit that develops, connects, and places essential Latino talent in the education sector. 
+
+    Previously, Andy led the Center for Social Measurement and Evaluation at Children at Risk and served as a founding director of the Commit Partnership in Dallas where he led the organization’s flagship initiative to improve early literacy outcomes for over 8,000 children. Beforehand, Andy worked in corporate philanthropy and as a teacher in high-need communities NYC and in Miami as a Teach For America corps member.
+    
+    Andy is a Harris County Leadership ISD Fellow and serves on the board of multiple organizations making a difference in the community. Andy holds a dual B.A. in Political Science and Religion from Pepperdine University and a Master’s of Science in Education from Hunter College. 
+    
+    As the son of Salvadoran immigrants and first one in his family to graduate from college, Andy is passionate about expanding educational equity. 
+    `,
     imgUrl: "./img/angie.png",
     domain: "Interns"
   },
