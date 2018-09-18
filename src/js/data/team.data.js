@@ -92,14 +92,7 @@ const Team = [
   {
     name: "Jamal Dawson",
     position: "Co-founder",
-    bio: `Jamal Dawson received a degree in applied mathematics with a minor in statics from University of Houston Downtown.  
-    Starting his teaching career as an Apollo Fellow, Jamal fought to close the achievement gap.  
-    He has been involved with education for over 5 years. Jamal has established after school tutorial programs and SAT prep 
-    courses to better serve the youth in the Missouri city area.
-
-    Currently, Jamal is a math teacher at Beechnut Academy, where he continues to dedicate himself to 
-    improving students’ success inside and outside the classroom.  As a co-founder of SWAG to College, 
-    he hopes to diminish high school and college dropout rates by providing clarity to the college process.`,
+    bio: `After obtaining a degree in applied mathematics with a minor in statics from University of Houston Downtown, Jamal taught high school mathematics for 6 years. His goal was to reduce the achievement gap for low income and first-generation students.  Alongside teaching full-time, Jamal established after school tutorial programs and SAT prep courses to better serve the youth in the Missouri city area.  He went on to cofound SWAG to College to diminish high school and college dropout rates by providing clarity to the college process.`,
     imgUrl: "./img/jamal.jpg",
     domain: "Board of Directors"
   },
@@ -297,7 +290,9 @@ const Team = [
   {
     name: "Sumantha Ray",
     position: "Board Member",
-    bio: "Work hard. Stay humble. Be kind. Do everything in love.",
+    bio: `I am a Human Resources professional currently working in the energy industry at Chevron as an HR Business Partner. I have held multiple HR roles both domestically and internationally. Prior to starting my career, I attended Texas A&M University where I obtained a Bachelor of Business Administration in Management and a Master of Science in Human Resources Management. 
+    I have worked in various organizations and held leadership roles that influence the educational advancement and professional development of others. Seeing the power of learning and preparation firsthand, I am passionate about working with others to progress our communities and investing in the future. 
+    `,
     imgUrl: "./img/sumantha.jpg",
     domain: "Board of Directors"
   },
