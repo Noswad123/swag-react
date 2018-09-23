@@ -85,7 +85,7 @@ export default class Bottom extends Component {
                 <Wrapper>
                     <BlueDiv>
                         <Link to="/getinvolved/hsstudent">
-                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                      
                             <Text>
                                 High School Student
                             </Text>
@@ -93,7 +93,7 @@ export default class Bottom extends Component {
                     </BlueDiv>
                     <BlueDiv>
                         <Link to="/getinvolved/collegestudent">
-                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                          
                             <Text>
                                 College Student
                             </Text>
@@ -101,7 +101,7 @@ export default class Bottom extends Component {
                     </BlueDiv>
                     <BlueDiv>
                         <Link to="/getinvolved/parent">
-                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                            
                             <Text>
                                 Parent
                             </Text>
@@ -109,7 +109,7 @@ export default class Bottom extends Component {
                     </BlueDiv>
                     <BlueDiv>
                         <Link to="/getinvolved/communitymember">
-                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                          
                             <Text>
                                 Community Member
                             </Text>
@@ -117,7 +117,7 @@ export default class Bottom extends Component {
                     </BlueDiv>
                     <BlueDiv>
                         <Link to="/getinvolved/yp">
-                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                       
                             <Text>
                                 Young Professional
                             </Text>
@@ -125,7 +125,7 @@ export default class Bottom extends Component {
                     </BlueDiv>
                     <BlueDiv>
                         <Link to="/getinvolved/schooladmin">
-                            <Pic src={"./img/profile2.jpg"} alt="pic1"/>
+                         
                             <Text>
                                 School Admin
                             </Text>
