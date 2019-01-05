@@ -49,9 +49,7 @@ const BlueDiv=styled.div`
         
     }
 `
-const Pic=styled.img`
-    width:50px;
-`
+
 const Wrapper=styled.div`
     display: flex;
     justify-content:space-around;

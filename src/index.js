@@ -32,6 +32,8 @@ const Container = styled.div`
   background-color:${Styles.color.secondary};
   font-family:${Styles.font.text};
   width:100%;
+  min-height: 100vh;
+  box-sizing: border-box;
 `;
 ReactDOM.render(
   <Provider store={store}>

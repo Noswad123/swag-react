@@ -6,12 +6,12 @@ import Bottom from "./bottom";
 import Navbar from "../../component/navbar"
 
 const Container = styled.div`
-
   display: flex;
   justify-content: space-between;
   flex-direction:column;
   align-items:center;
   width:100%;
+  height: 150px;
 `;
 
 class GetInvolved extends Component {
