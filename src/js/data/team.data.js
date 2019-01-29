@@ -1,5 +1,4 @@
 const Team = [
-  
   {
     name: "Ana Lenaker",
     position: "Enrichment Director",
@@ -15,29 +14,7 @@ const Team = [
     imgUrl: "./img/andy-canales.jpg",
     domain: "Board of Directors"
   },
-  {
-    name: "Angie Garcia",
-    position: "Intern",
-    bio:`Andy Canales is the Executive Director, Greater Houston of Latinos for Education, an education non-profit that develops, connects, and places essential Latino talent in the education sector. 
 
-    Previously, Andy led the Center for Social Measurement and Evaluation at Children at Risk and served as a founding director of the Commit Partnership in Dallas where he led the organization’s flagship initiative to improve early literacy outcomes for over 8,000 children. Beforehand, Andy worked in corporate philanthropy and as a teacher in high-need communities NYC and in Miami as a Teach For America corps member.
-    
-    Andy is a Harris County Leadership ISD Fellow and serves on the board of multiple organizations making a difference in the community. Andy holds a dual B.A. in Political Science and Religion from Pepperdine University and a Master’s of Science in Education from Hunter College. 
-    
-    As the son of Salvadoran immigrants and first one in his family to graduate from college, Andy is passionate about expanding educational equity. 
-    `,
-    imgUrl: "./img/angie.png",
-    domain: "Interns"
-  },
-  
-  {
-    name: "Belkis Moreno",
-    position: "Intern",
-    bio:
-      "I am Belkis Moreno, currently attending East Early College High School. I will be attending Oberlin College this fall, and plan on majoring in Journalism and Women/Gender Studies, along with a minor in Latin American Studies. I am very passionate towards advocating for social issues, writing, painting, and listening to music. I express myself best through my writing, and I find a haven within music and art. Due to my passion for writing, I want to educate others on the issues that humanity is facing through my written words. Additionally, I want to give a voice, a platform to minorities, immigrants, women; anyone whose voice and opinion is overlooked. I want to write about their experiences, their stories, to open my readers’ eyes, and show them the diversity in our society. I want to humanize all the people whose voice is forgotten; I want to put a face to those who are overlooked by society, and show people that they are just like us. Being a part of SWAG To College, has added fuel to my determination, because by being a part of this organization, I have been able to open my eyes a lot wider and see the struggles many students go through when trying to receive an education. Swag to College has showed me that by building a community, we can slowly, but surely, help those in our society who are at a disadvantage.  I am proud to be a part of this team.",
-    imgUrl: "./img/belkis.png",
-    domain: "Interns"
-  },
   {
     name: "Charles J. Ogletree, Jr",
     position: "Advisor",
@@ -70,25 +47,7 @@ const Team = [
     imgUrl: "./img/eduardo.jpg",
     domain: "Interns"
   },
-  {
-    name: "Elescia Martinez",
-    position: "Intern",
-    bio: `Hola! My name is Elescia, but most people call me Ele. I am currently a senior at East Early
-        College High School and hope to pursue a degree in Psychology, Behavioral Studies, or
-        Linguistics this coming fall. I have a passion for writing, music, and for learning about new
-        social perspectives and cultures. Some of my most favorite hobbies include exploring different
-        genres of music, writing imaginative short stories, and watching videos that open my mind to the
-        various issues people across the world face on a day to day basis. I also thoroughly enjoy helping
-        others succeed and realize their full potential, therefore, being a part of SWAG to College has
-        been a beyond amazing experience. This organization has given me the opportunity to reach out
-        to an abundance of people in ways I could have never imagined. By working alongside such a
-        brilliant and diverse set of individuals I have learned to push my own boundaries and encourage
-        others to do the same. Being a part of such an awe-inspiring team has been a priceless and
-        fulfilling opportunity that has left a remarkable impact on me and I cannot wait to see what plans
-        the team at SWAG to College has in store for the future.`,
-    imgUrl: "./img/elescia.png",
-    domain: "Interns"
-  },
+
   {
     name: "Jamal Dawson",
     position: "Co-founder",
@@ -102,14 +61,6 @@ const Team = [
     bio:
       "I am a sophomore at Rice University majoring in Computational and Applied Mathematics and minoring in Statistics and Financial Computation and Modeling. This is my second year as a SWAG To College mentor. I went to a high school that had very little resources and offered no support to students so having a mentor would have been life-changing. Interning with SWAG to College has made me realize the ample resources out there that, even as a college student, I didn’t know about. I am passionate about helping high school students who are first-generation, low income and/or underserved and who are unaware of the many opportunities available that can help them follow their dreams and continue their education. ",
     imgUrl: "./img/jessica-telles.jpg",
-    domain: "Interns"
-  },
-  {
-    name: "Joanna Slusarewicz",
-    position: "Intern",
-    bio:
-      "I am a sophomore at Rice University, majoring in computer science. I am a SWAG to College Data Analyst/Mentor/Blogger. Additionally I do research in the Rice environmental engineering department, have taught creative writing classes in middle schools across the country, and am president of Fastwarp board game club. In my work analyzing data with SWAG To College I hope to ensure that we are serving our mentees in the ways they need us most. At the moment, after college I plan to attend grad school to study renewable energies' development and policy.",
-    imgUrl: "./img/joanna-slu.jpg",
     domain: "Interns"
   },
  
@@ -128,22 +79,7 @@ const Team = [
     imgUrl: "./img/john-hansen.jpg",
     domain: "Board of Advisors"
   },
-  {
-    name: "Karen Banda",
-    position: "Intern",
-    bio:
-      "I am a sophomore at Smith College, double majoring in Government and Latin American Studies, with a theme in Latino Immigration Studies. I am a SWAG to College Intern/Mentor/Mentor Manager, EMERGE Scholar Board Founder and President, Smith College Nosotr@s Conference Chair, Smith College Pre-Law Society Social Chair, Capen House Social Events Coordinator, and the Office of Multicultural Affairs Intern. I love being part of SWAG and EMERGE because of my passion and dedication in college access for minority students. After college, I would like to pursue (hopefully) a Fulbright Research Fellowship in México and then a JD in either Human Rights, International Law, or Immigration Law. I am passionate about closing the educational gap and equal opportunities for all.",
-    imgUrl: "./img/karen-banda.jpg",
-    domain: "Interns"
-  },
-  {
-    name: "Katheline Estrada",
-    position: "Intern",
-    bio:
-      "Hello, my name is Katheline Estrada, I am currently a Junior at The University of Texas at San Antonio. I am a student in the College of Business and Majoring in Marketing with a minor in Psychology. I am involved in my community with being the Marketing Chair in the Professional Businesswomen Society and being a member in the National Society of Leadership and Success. I have been on the SWAG Social Media team as a Social Media Intern since October of 2017. I have the opportunity to run the SAT Tips and Inspirational Moments segments and create the monthly newsletter. As a first-generation student, I enjoy getting to work with an organization that benefits students in low-income communities from my hometown. In my spare time I love going on hiking trails, keeping up with current events, and binging on Grey’s Anatomy! I want to return to Houston and give back to my community by working with a local business.",
-    imgUrl: "./img/katheline.png",
-    domain: "Interns"
-  },
+
   {
     name: "Kathy Heinzerling",
     position: "Advisor",
@@ -169,23 +105,7 @@ const Team = [
     imgUrl: "./img/luly.jpg",
     domain: "Board of Directors"
   },
-  {
-    name: "Maddie Coles",
-    position: "Intern",
-    bio:
-      "I am a junior at Georgetown University, double majoring in government and theology with a minor in computer science. I am originally from New Braunfels, Texas. I serve as the director of the Young Professionals Program, co-director of High School Partnerships, and a mentor for SWAG To College. Outside of SWAG, I also copy edit for a student newspaper, participate in student theatre, and conduct research in religion and public affairs. I am interested in pursuing law school or a master’s related to peace studies after college. As a nerd who has always loved school, I want all students to have the support and resources to achieve their academic goals. ",
-    imgUrl: "./img/maddie.jpg",
-    domain: "Interns"
-  },
- 
-  {
-    name: "Maria Sanchez",
-    position: "Intern",
-    bio:
-      "I am a first generation sophomore at Texas A&M University majoring in Industrial & Systems Engineering with a concentration in Health & Human systems. My hobbies include working out and watching Netflix. I also love helping people, which is one of the reasons I enjoy being a part of DACAmented team in SWAG. We provide resources for undocumented students and their families. Most of these students are first generation too and being undocumented can make them think that college is not an option at all but our goal is to help them learn that it is an option. ",
-    imgUrl: "./img/maria.jpg",
-    domain: "Interns"
-  },
+
   {
     name: "Marcus Rolls",
     position: "Board Member",
@@ -197,14 +117,6 @@ const Team = [
     domain: "Board of Directors"
   },
   
-  {
-    name: "Monserrat Viveros",
-    position: "Intern",
-    bio:
-      "I am a second year marketing major at the University of Texas at Austin. I really enjoy politics, healthcare, and helping people out. I enjoy being a part of SWAG because they really value the people they serve and try to do what they can to help them. Through SWAG I am part of the DACAmented team, where we focus on helping students and families with immigrant concerns. Our work is important because we try to provide information that is not commonly known and that can be very helpful to undocumented individuals.",
-    imgUrl: "./img/monserrat.png",
-    domain: "Interns"
-  },
   {
     name: "Morris Nwogwugwu",
     position: "Advisor",
@@ -268,13 +180,7 @@ const Team = [
     imgUrl: "./img/ron-soligo.jpg",
     domain: "Board of Advisors"
   },
-  {
-    name: "Sarah Montero",
-    position: "Intern",
-    bio: "sarah montero",
-    imgUrl: "./img/sarah-montero.png",
-    domain: "Interns"
-  },
+
   {
     name: "Stephanie Square",
     position: "Board Member",
@@ -315,14 +221,6 @@ const Team = [
 `,
     imgUrl:"./img/tomiko-brown.jpg",
     domain:"Board of Advisors"
-  },
-  {
-    name: "Victor Hernandez",
-    position: "Intern",
-    bio:
-      "My name is Victor Hernandez and I was born into a divorce. I grew up poor, and most of my life without a father. I was homeless at times and separated from my mother and siblings. Despite my troubling up bringing, I have dedicated my life to being the person I always needed in my life, for others in need. My journey starts by studying to be a teacher at the University of Houston (main campus) and working hard with SWAG to College, so that young student know that hard times will pass. I know what it is like to watch life fall apart, feel hopeless, but I also know what it's like to build it back up.",
-    imgUrl: "./img/victor-hernandez.png",
-    domain: "Interns"
   },
 ];
 
